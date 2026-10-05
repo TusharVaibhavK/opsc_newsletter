@@ -1,0 +1,119 @@
+---
+import '../styles/global.css';
+import { meta } from '../lib/data';
+import { ageLabel } from '../lib/dates';
+import { href, isActive } from '../lib/paths';
+import { REPO_URL, SITE_NAME, SITE_TAGLINE } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  narrow?: boolean;
+}
+const { title, description = SITE_TAGLINE, narrow = false } = Astro.props;
+const pageTitle = title ? `${title} · ${SITE_NAME}` : `${SITE_NAME}: open source programs, orgs and first contributions`;
+const path = Astro.url.pathname;
+const nav = [
+  ['/start/', 'Start here'],
+  ['/programs/', 'Programs'],
+  ['/orgs/', 'Orgs'],
+  ['/issues/', 'First issues'],
+  ['/timeline/', 'Timeline'],
+  ['/guides/', 'Guides'],
+  ['/dashboard/', 'Dashboard'],
+] as const;
+const githubRefreshed = meta.last_ok?.collect_github;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={href('/favicon.svg')} type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} changes`} href={href('/rss.xml')} />
+    <meta name="color-scheme" content="light dark" />
+    <script is:inline>
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={href('/')}>
+          <svg viewBox="0 0 32 32" aria-hidden="true"
+            ><rect width="32" height="32" rx="7" fill="var(--accent)"></rect><path
+              d="M9 21.5 14 11l4 7 2.5-4L24 21.5"
+              fill="none"
+              stroke="var(--bg)"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+          <span>{SITE_NAME}</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            {
+              nav.map(([to, label]) => (
+                <li>
+                  <a href={href(to)} aria-current={isActive(path, to) ? 'page' : undefined}>
+                    {label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" hidden data-theme-toggle aria-label="Toggle dark mode">Theme</button>
+      </div>
+    </header>
+    <main id="main">
+      <div class:list={['wrap', { narrow }]}>
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Data refreshed {ageLabel(meta.generated_at)} · GitHub metrics {
+            githubRefreshed ? `updated ${ageLabel(githubRefreshed)}` : 'not collected yet'
+          } · <a href={href('/changes/')}>Changes</a> · <a href={href('/rss.xml')}>RSS</a> ·
+          <a href={href('/deadlines.ics')}>Calendar feed</a> · <a href={href('/about/')}>Methodology</a> ·
+          <a href={href('/admin/')}>Collector status</a>
+        </p>
+        <p>
+          Crowding levels are estimates from public signals, not published applicant numbers. Dates marked
+          “est.” follow last year's pattern; always confirm on the program's official site.
+        </p>
+        {REPO_URL && <p><a href={REPO_URL}>Source and data on GitHub</a>; corrections welcome as pull requests.</p>}
+      </div>
+    </footer>
+    <script is:inline>
+      (() => {
+        const button = document.querySelector('[data-theme-toggle]');
+        if (!button) return;
+        const root = document.documentElement;
+        const current = () =>
+          root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const label = () => (button.textContent = current() === 'dark' ? 'Light mode' : 'Dark mode');
+        button.hidden = false;
+        label();
+        button.addEventListener('click', () => {
+          const next = current() === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          try {
+            localStorage.setItem('theme', next);
+          } catch {}
+          label();
+        });
+      })();
+    </script>
+  </body>
+</html>

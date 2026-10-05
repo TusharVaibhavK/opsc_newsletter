@@ -1,0 +1,200 @@
+# Jargon buster. Plain-language definitions of words maintainers use without explaining.
+# Keep definitions to one or two sentences; link related terms with see_also.
+
+- term: Open source
+  slug: open-source
+  definition: Software whose source code is published under a license that lets anyone use, study, change and share it. Most projects welcome outside contributions through a public process.
+  see_also: [license, contributing-guide]
+- term: Repository (repo)
+  slug: repository
+  definition: A project's folder of code plus its full history of changes, usually hosted on GitHub or GitLab.
+  see_also: [fork, clone]
+- term: Fork
+  slug: fork
+  definition: Your own copy of someone else's repository on GitHub. You push changes to your fork, then ask the original project to pull them in.
+  see_also: [upstream, pull-request]
+- term: Clone
+  slug: clone
+  definition: Downloading a repository to your computer with `git clone`, so you can build it and edit it locally.
+  see_also: [fork]
+- term: Upstream
+  slug: upstream
+  definition: The original project you forked from. By convention your local Git remote for it is called `upstream`, and your fork is `origin`.
+  see_also: [origin, fork, rebase]
+- term: Origin
+  slug: origin
+  definition: The default name Git gives the remote you cloned from. In the fork workflow, that's your fork.
+  see_also: [upstream]
+- term: Branch
+  slug: branch
+  definition: A separate line of work in a repository. Make one branch per change, named after what it does, instead of working on main.
+  see_also: [commit, pull-request]
+- term: Commit
+  slug: commit
+  definition: A saved snapshot of changes with a message explaining why. Good commit messages say what changed and why in the first line.
+  see_also: [branch, squash, dco]
+- term: Pull request (PR)
+  slug: pull-request
+  definition: A request for the maintainers to review and merge the changes on your branch. GitLab calls it a merge request.
+  see_also: [draft-pr, review, merge]
+- term: Draft pull request
+  slug: draft-pr
+  definition: A pull request marked as not ready to merge. Useful to show your approach early, get feedback, and signal that you're working on an issue.
+  see_also: [pull-request, wip]
+- term: Review
+  slug: review
+  definition: A maintainer or another contributor reading your pull request and leaving comments, approval or change requests.
+  see_also: [lgtm, nit, ptal]
+- term: Merge
+  slug: merge
+  definition: Combining your branch's changes into the main branch. Once merged, your contribution is part of the project.
+  see_also: [pull-request, squash]
+- term: Rebase
+  slug: rebase
+  definition: Replaying your commits on top of the latest upstream code so your branch is current. Projects often ask you to rebase instead of merging main into your branch.
+  see_also: [upstream, merge-conflict]
+- term: Squash
+  slug: squash
+  definition: Combining several commits into one, so the history shows a single clean change. Some projects squash for you when merging.
+  see_also: [commit, rebase]
+- term: Merge conflict
+  slug: merge-conflict
+  definition: When your change and someone else's touch the same lines, Git can't combine them automatically and asks you to choose.
+  see_also: [rebase]
+- term: CI (continuous integration)
+  slug: ci
+  definition: Automated checks (tests, linters, builds) that run on every pull request. A red CI check usually needs fixing before anyone reviews.
+  see_also: [linter, pre-commit]
+- term: Linter
+  slug: linter
+  definition: A tool that checks code style and common mistakes, such as ruff, eslint or golangci-lint. Run it locally before pushing.
+  see_also: [ci, pre-commit]
+- term: Pre-commit hook
+  slug: pre-commit
+  definition: A script that runs automatically before each commit, usually formatters and linters. Many projects ship a pre-commit config you install once.
+  see_also: [linter]
+- term: Issue
+  slug: issue
+  definition: A tracked bug report, feature request or task. Some projects use GitHub issues; others use Jira, Trac or a mailing list.
+  see_also: [good-first-issue, triage]
+- term: Good first issue
+  slug: good-first-issue
+  definition: A label maintainers put on small, well-described issues meant for newcomers. The exact label name varies by project.
+  see_also: [help-wanted, issue]
+- term: Help wanted
+  slug: help-wanted
+  definition: A label meaning maintainers would welcome an outside contributor on this issue. Not always beginner-sized.
+  see_also: [good-first-issue]
+- term: Triage
+  slug: triage
+  definition: "Sorting new issues: reproducing bugs, adding labels, closing duplicates. A useful way to contribute without writing code."
+  see_also: [issue]
+- term: Maintainer
+  slug: maintainer
+  definition: Someone with responsibility for a project, who reviews and merges contributions and sets direction.
+  see_also: [committer, reviewer]
+- term: Committer / core developer
+  slug: committer
+  definition: A contributor trusted with permission to merge changes. Becoming one usually takes months or years of steady work.
+  see_also: [maintainer]
+- term: Reviewer
+  slug: reviewer
+  definition: The person reviewing a pull request. Reviewing others' PRs is valued work, and a fast way to learn a codebase.
+  see_also: [review]
+- term: Mentor
+  slug: mentor
+  definition: In a program like GSoC, a project contributor who guides a participant through their project, reviews their work, and evaluates their progress.
+  see_also: [org-admin, evaluation]
+- term: Org admin
+  slug: org-admin
+  definition: "The person who runs an organization's participation in a program: applies for the org, assigns mentors, and allocates slots."
+  see_also: [mentor, slot]
+- term: LGTM
+  slug: lgtm
+  definition: “Looks good to me”. An approval, often the last step before merge.
+  see_also: [review]
+- term: Nit
+  slug: nit
+  definition: A small, optional style suggestion in a review (“nit, rename this variable”). Fix nits anyway; it's quick and appreciated.
+  see_also: [review]
+- term: PTAL
+  slug: ptal
+  definition: “Please take another look”. What you write after pushing changes that address review comments.
+  see_also: [review]
+- term: WIP
+  slug: wip
+  definition: “Work in progress”. Not ready for review yet; a draft PR says the same thing more clearly.
+  see_also: [draft-pr]
+- term: DCO and sign-off
+  slug: dco
+  definition: The Developer Certificate of Origin, a statement that you have the right to submit your code. Projects that use it need every commit signed off with `git commit -s`.
+  see_also: [cla, commit]
+- term: CLA
+  slug: cla
+  definition: A Contributor License Agreement you sign once before your first contribution is accepted, usually through a bot comment on your PR.
+  see_also: [dco, license]
+- term: Code of conduct
+  slug: code-of-conduct
+  definition: The project's rules for respectful behaviour. Read it; it applies in issues, chat and reviews.
+  see_also: [contributing-guide]
+- term: Contributing guide
+  slug: contributing-guide
+  definition: Usually CONTRIBUTING.md. How to set up the project, run tests, format code, and submit changes. Read it before your first PR.
+  see_also: [code-of-conduct]
+- term: License
+  slug: license
+  definition: The legal terms for using and changing the code, such as MIT, Apache 2.0 or GPL. Your contribution is released under the project's license.
+  see_also: [open-source, cla]
+- term: Ideas list
+  slug: ideas-list
+  definition: The page where an org lists the projects it wants program participants to work on, with mentors, skills and size.
+  see_also: [proposal]
+- term: Proposal
+  slug: proposal
+  definition: "Your application for a specific project: the problem, your technical plan, a week-by-week timeline, and why you can deliver it."
+  see_also: [ideas-list, slot]
+- term: Slot
+  slug: slot
+  definition: One funded participant position. Google gives each GSoC org a number of slots, and the org decides which proposals fill them.
+  see_also: [proposal, org-admin]
+- term: Stipend
+  slug: stipend
+  definition: The payment a program gives participants for their work, often scaled by country and project size.
+  see_also: [slot]
+- term: Community bonding
+  slug: community-bonding
+  definition: The period between selection and coding when you get to know mentors and the community and finalise your plan.
+  see_also: [evaluation]
+- term: Evaluation
+  slug: evaluation
+  definition: Mid-point and final check-ins where mentors confirm you're on track. Failing one ends the project.
+  see_also: [mentor]
+- term: Mailing list
+  slug: mailing-list
+  definition: An email discussion group. Projects like PostgreSQL and the Linux kernel do most development discussion and patch review there.
+  see_also: [chat]
+- term: Chat (Slack, Zulip, Discord, Matrix, IRC)
+  slug: chat
+  definition: Real-time project channels. Ask questions in public channels, not private messages, so others can help and learn.
+  see_also: [mailing-list]
+- term: SIG or working group
+  slug: sig
+  definition: A Special Interest Group inside a large project, such as Kubernetes SIG Release, that owns one area.
+  see_also: [maintainer]
+- term: Monorepo
+  slug: monorepo
+  definition: One repository holding many packages or services. Build and test only the part you change; the contributor guide says how.
+- term: Semantic versioning
+  slug: semver
+  definition: Version numbers in MAJOR.MINOR.PATCH form, where a major bump means breaking changes.
+  see_also: [changelog]
+- term: Changelog
+  slug: changelog
+  definition: A file listing notable changes per release. Some projects ask contributors to add an entry with each PR.
+  see_also: [semver]
+- term: Bus factor
+  slug: bus-factor
+  definition: How many people would have to disappear before a project stalls. Helping with reviews and docs raises it.
+- term: Bikeshedding
+  slug: bikeshedding
+  definition: Long debate about a trivial detail. If a review thread turns into one, ask the maintainer to decide and move on.

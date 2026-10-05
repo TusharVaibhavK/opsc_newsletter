@@ -1,0 +1,134 @@
+---
+import Base from '../layouts/Base.astro';
+import Freshness from '../components/Freshness.astro';
+import { jobs, meta, pages } from '../lib/data';
+import { ageLabel } from '../lib/dates';
+
+const SOURCES = [
+  ['collect_github', 'GitHub signals', 'daily'],
+  ['watch_pages', 'Ideas pages', 'daily'],
+  ['score_and_notify', 'Scores and alerts', 'daily'],
+  ['import_gsoc', 'GSoC archive', 'weekly; daily Jan 15 – May 15'],
+  ['scrape_programs', 'Program pages', 'weekly'],
+] as const;
+const lastRun = (job: string) => jobs.find((j) => j.job === job);
+const problems = pages.filter((p) => p.consecutive_errors > 0 || (p.note && !['not published yet'].includes(p.note)));
+const confirm = pages.filter((p) => p.needs_confirmation);
+---
+
+<Base title="Collector status" description="When each collector last ran, what it cost, and which watched pages need attention.">
+  <header class="page-head">
+    <h1>Collector status</h1>
+    <p class="lede">
+      Data generated {ageLabel(meta.generated_at)} in <strong>{meta.data_mode === 'history' ? 'history mode' : 'Postgres mode'}</strong>
+      {meta.data_mode === 'history' ? '(no hosted database: each run rebuilds from the committed history in data/db/)' : ''}.
+    </p>
+  </header>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Source</th><th>Schedule</th><th>Last run</th><th>Status</th><th>Last success</th><th class="num">Requests</th></tr>
+      </thead>
+      <tbody>
+        {
+          SOURCES.map(([job, label, schedule]) => {
+            const run = lastRun(job);
+            return (
+              <tr>
+                <td>{label}<div class="tiny muted"><code>{job}</code></div></td>
+                <td class="small">{schedule}</td>
+                <td class="small">{run ? ageLabel(run.started_at) : 'never'}</td>
+                <td>
+                  {run ? (
+                    <span class:list={['badge', run.status === 'ok' ? 'ok' : run.status === 'error' ? 'danger' : '']}>{run.status}</span>
+                  ) : (
+                    '—'
+                  )}
+                  {run?.summary && <div class="tiny muted">{run.summary}</div>}
+                </td>
+                <td><Freshness at={meta.last_ok?.[job]} prefix="" /></td>
+                <td class="num">{run?.api_calls ?? '—'}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <section class="section">
+    <h2>Needs a human</h2>
+    {
+      confirm.length ? (
+        <>
+          <p class="muted small">These program pages changed and showed new dates. Check them, then update the dates in <code>content/programs/</code> by hand.</p>
+          <ul class="plain divided">
+            {confirm.map((p) => (
+              <li class="spread">
+                <a href={p.url}>{p.url}</a>
+                <span class="small muted">{p.entity_slug} · changed {ageLabel(p.last_changed_at)}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p class="muted">Nothing to confirm.</p>
+      )
+    }
+  </section>
+
+  <section class="section">
+    <h2>Watched pages with problems</h2>
+    {
+      problems.length ? (
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Page</th><th>For</th><th>Problem</th><th class="num">Failures in a row</th></tr>
+            </thead>
+            <tbody>
+              {problems.map((p) => (
+                <tr>
+                  <td class="small"><a href={p.url}>{p.url}</a></td>
+                  <td class="small">{p.entity_slug} · {p.kind}</td>
+                  <td class="small">{p.note ?? `HTTP ${p.last_status}`}</td>
+                  <td class="num">{p.consecutive_errors}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="muted">All watched pages fetched cleanly.</p>
+      )
+    }
+    <p class="small muted">Pages that need JavaScript, block automated requests (HTTP 403), or ask robots not to visit are noted, never worked around.</p>
+  </section>
+
+  <section class="section">
+    <h2>Recent runs</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Job</th><th>Started</th><th>Status</th><th>Summary</th><th class="num">Requests</th></tr>
+        </thead>
+        <tbody>
+          {
+            jobs.slice(0, 40).map((j) => (
+              <tr>
+                <td class="small"><code>{j.job}</code></td>
+                <td class="small">{ageLabel(j.started_at)}</td>
+                <td>
+                  <span class:list={['badge', j.status === 'ok' ? 'ok' : j.status === 'error' ? 'danger' : '']}>{j.status}</span>
+                </td>
+                <td class="small">{j.summary}</td>
+                <td class="num">{j.api_calls}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>

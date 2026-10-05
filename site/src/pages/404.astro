@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/paths';
+---
+
+<Base title="Not found" narrow>
+  <h1>Page not found</h1>
+  <p class="lede">That page doesn't exist, or an org was renamed.</p>
+  <ul>
+    <li><a href={href('/start/')}>Start here</a> if you're new to open source</li>
+    <li><a href={href('/programs/')}>All programs</a></li>
+    <li><a href={href('/orgs/')}>All orgs</a></li>
+  </ul>
+</Base>

@@ -1,0 +1,23 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: postgresql
+name: PostgreSQL
+tracks:
+- backend
+- data
+track_label: Backend / data
+stack:
+- C
+- Go
+- SQL
+languages:
+- c
+- go
+competition_estimate: medium
+why: Database internals and tooling; strong signal for backend roles
+github_owners:
+- postgres
+repos_note: Core development happens on the pgsql-hackers mailing list, not GitHub pull requests.
+programs:
+- gsoc

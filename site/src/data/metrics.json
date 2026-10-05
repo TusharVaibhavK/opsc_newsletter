@@ -1,0 +1,599 @@
+{
+ "orgs": {
+  "aboutcode": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "aboutcode-org/scancode-toolkit",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    },
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "aboutcode-org/vulnerablecode",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "api-dash": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "foss42/apidash",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "checkstyle": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "checkstyle/checkstyle",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "dbpedia": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "dbpedia/extraction-framework",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "deepchem": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "Good First Contribution"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "deepchem/deepchem",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "django": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "django/django",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "gemini-cli": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "google-gemini/gemini-cli",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "kubeflow": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "kubeflow/pipelines",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    },
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "kubeflow/trainer",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "kubevirt": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue",
+      "good-first-issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "kubevirt/kubevirt",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "mdanalysis": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good-first-issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "MDAnalysis/mdanalysis",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "meshery": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "meshery/meshery",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "metabrainz": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "metabrainz/listenbrainz-server",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "metaflow": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "Netflix/metaflow",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "mllam": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "mllam/neural-lam",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "neuroinformatics-unit": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "neuroinformatics-unit/datashuttle",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    },
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "neuroinformatics-unit/movement",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "open-transit-software-foundation": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "OneBusAway/maglev",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "openelis-global": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue",
+      "beginner"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "DIGI-UW/OpenELIS-Global-2",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "openmrs": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "openmrs/openmrs-core",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "oppia": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "oppia/oppia",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "rocket-chat": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "RocketChat/Rocket.Chat",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "sugar-labs": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "sugarlabs/musicblocks",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "sw360": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "good first issue"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "eclipse-sw360/sw360",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  },
+  "zulip": {
+   "history_days": 0,
+   "last_refreshed": null,
+   "repos": [
+    {
+     "date": null,
+     "gfi_labels": [
+      "help wanted"
+     ],
+     "gfi_median_claim_hours": null,
+     "issues_enabled": null,
+     "median_first_response_hours": null,
+     "name": "zulip/zulip",
+     "new_contributors_30d": null,
+     "open_gfi_count": null,
+     "open_gfi_unclaimed": null,
+     "open_newcomer_prs": null,
+     "prs_sampled": null,
+     "stars": null,
+     "unanswered_pr_share": null
+    }
+   ],
+   "weekly": []
+  }
+ }
+}

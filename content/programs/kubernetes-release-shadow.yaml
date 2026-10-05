@@ -1,0 +1,23 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: kubernetes-release-shadow
+name: Kubernetes Release Team Shadow
+organizer: Kubernetes SIG Release
+url: https://github.com/kubernetes/sig-release/blob/master/release-team/shadows.md
+kind: mentorship
+paid: null
+pay_note: Site lists a stipend; verify
+beginner_friendly: false
+students_only: false
+worldwide: true
+requires_prior_contribution: true
+who_can_apply: Kubernetes SIG contributors
+typical_timing: Every release cycle, about 13 weeks
+tracks:
+- cloud
+tags:
+- kubernetes
+- release-engineering
+fit: medium
+fit_note: Needs prior Kubernetes involvement
+do_now: Later, after CNCF contributions

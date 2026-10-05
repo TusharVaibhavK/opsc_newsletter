@@ -1,0 +1,21 @@
+# Optional local Postgres, to run the collectors the way production does with DATABASE_URL:
+#   docker compose up -d
+#   DATABASE_URL=postgresql+psycopg://ossmap:ossmap@localhost:5432/ossmap ossmap daily
+# Without it, the collectors use a scratch SQLite database rebuilt from data/db/.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ossmap
+      POSTGRES_PASSWORD: ossmap
+      POSTGRES_DB: ossmap
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ossmap']
+      interval: 5s
+      retries: 10
+volumes:
+  pgdata:

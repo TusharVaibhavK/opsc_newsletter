@@ -1,0 +1,84 @@
+name: Collect
+
+# One run a day at 06:00 IST. `ossmap daily` decides which jobs are due: GitHub signals, ideas
+# pages and scoring daily; the GSoC import and program pages weekly (the GSoC import goes daily
+# from Jan 15 to May 15). Results are committed to data/ and site/src/data/, then deployed.
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: 'Comma-separated jobs to run instead of the schedule (blank = whatever is due)'
+        required: false
+        default: ''
+      force:
+        description: 'Ignore same-day freshness and HTTP caches'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -e ".[postgres]"
+
+      - name: Run due jobs
+        id: run
+        continue-on-error: true
+        env:
+          # A fine-grained PAT (secret GH_PAT) is optional; the built-in token can read public repos.
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
+          # Optional. Without it, a SQLite database is rebuilt from data/db/ on every run.
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          args=()
+          [ -n "${{ inputs.jobs }}" ] && args+=(--jobs "${{ inputs.jobs }}")
+          [ "${{ inputs.force }}" = "true" ] && args+=(--force)
+          ossmap daily "${args[@]}"
+
+      # Commit whatever was collected, even if one job failed: the history must not have gaps
+      # because another source broke. Daily commits also keep scheduled workflows enabled.
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/db site/src/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: daily refresh $(date -u +%F)"
+            git push
+          fi
+
+      - name: Fail if a job failed
+        if: steps.run.outcome == 'failure'
+        run: |
+          echo "::error::At least one collector failed; see the run log and the /admin page."
+          exit 1
+
+  deploy:
+    needs: collect
+    if: always() && needs.collect.result != 'cancelled'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml

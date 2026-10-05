@@ -1,0 +1,25 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: metaflow
+name: Metaflow
+tracks:
+- ml
+- backend
+track_label: ML infra
+stack:
+- Python
+- Kubernetes
+languages:
+- python
+competition_estimate: low-medium
+estimate_note: First GSoC year in 2026; first-year orgs don't always return
+why: ML workflow infrastructure
+github_owners:
+- Netflix
+repos:
+- name: Netflix/metaflow
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

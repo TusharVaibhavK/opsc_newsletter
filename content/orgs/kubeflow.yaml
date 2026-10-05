@@ -1,0 +1,29 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: kubeflow
+name: Kubeflow
+tracks:
+- backend
+- ml
+track_label: Backend + ML infra
+stack:
+- Go
+- Python
+- Kubernetes
+languages:
+- go
+- python
+competition_estimate: medium
+why: 'The exact intersection of backend and ML: pipelines, training operators, model serving'
+programs:
+- gsoc
+- lfx-mentorship
+github_owners:
+- kubeflow
+repos:
+- name: kubeflow/pipelines
+  gfi_labels: &id001
+  - good first issue
+- name: kubeflow/trainer
+  gfi_labels: *id001

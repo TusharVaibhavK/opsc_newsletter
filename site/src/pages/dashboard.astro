@@ -1,0 +1,252 @@
+---
+import Base from '../layouts/Base.astro';
+import BandMeter from '../components/BandMeter.astro';
+import DateText from '../components/DateText.astro';
+import EventList from '../components/EventList.astro';
+import FitPlot, { type FitPoint } from '../components/FitPlot.astro';
+import Freshness from '../components/Freshness.astro';
+import WeeklyBars from '../components/WeeklyBars.astro';
+import { getCollection } from 'astro:content';
+import {
+  STATUS_LABEL,
+  currentPhase,
+  orgs as loadOrgs,
+  playbook as loadPlaybook,
+  profile as loadProfile,
+  programs as loadPrograms,
+  upcoming,
+  watchlist as loadWatchlist,
+} from '../lib/content';
+import { activity, events, meta, scores } from '../lib/data';
+import { addDays, daysBetween, formatDate, relativeDays, today } from '../lib/dates';
+import { href } from '../lib/paths';
+
+const now = today();
+const profile = await loadProfile();
+const book = await loadPlaybook();
+const phase = await currentPhase(now);
+const curated = await loadOrgs();
+const bySlug = new Map(curated.map((o) => [o.slug, o]));
+const watch = await loadWatchlist();
+const programs = await loadPrograms();
+const programName = new Map(programs.map((p) => [p.slug, p.name]));
+const applications = (await getCollection('applications')).map((e) => e.data);
+const soon = upcoming(programs, 30, now);
+const gsocNext = upcoming(programs.filter((p) => p.slug === 'gsoc'), undefined, now)[0];
+const weekAgo = addDays(now, -7);
+const thisWeek = events.filter((e) => new Date(e.occurred_at) >= weekAgo);
+
+const laneFromEstimate = (level: string): FitPoint['lane'] =>
+  level === 'low' || level === 'low-medium' ? 'low' : level === 'medium' ? 'medium' : 'high';
+const watchSet = new Set(watch.filter((w) => w.status !== 'dropped').map((w) => w.org));
+const points: FitPoint[] = curated
+  .filter((o) => scores.orgs[o.slug]?.fit !== undefined)
+  .map((o) => {
+    const s = scores.orgs[o.slug];
+    const signal = s.band && s.band !== 'unknown' ? s.band : null;
+    return {
+      slug: o.slug,
+      name: o.name,
+      fit: s.fit ?? 0,
+      lane: signal ?? laneFromEstimate(o.competition_estimate),
+      fromSignals: Boolean(signal),
+      watch: watchSet.has(o.slug),
+    };
+  });
+const weeks = activity.weekly.map((w) => ({ week: w.week, value: w.merged }));
+const checklist = book.checklist;
+const doneCount = checklist.filter((c) => c.done).length;
+---
+
+<Base title="Dashboard" description="The daily view: which org to work on, what to do next, and what changed.">
+  <header class="page-head">
+    <p class="eyebrow">Dashboard · target: {profile.target}</p>
+    <h1>What to work on</h1>
+    <p class="muted small">
+      {phase.phase.title} ({phase.phase.window}) · data refreshed {formatDate(meta.generated_at ?? now)} ·
+      <Freshness at={meta.last_ok?.collect_github} prefix="GitHub signals updated" missing="GitHub signals not collected yet" />
+    </p>
+  </header>
+
+  <section class="grid-2">
+    <div class="card">
+      <h2>Watchlist</h2>
+      <div class="table-wrap" style="border:0">
+        <table>
+          <thead>
+            <tr><th>Org</th><th>Status</th><th>Crowding</th><th class="num">Fit</th><th class="num">Your PRs</th></tr>
+          </thead>
+          <tbody>
+            {
+              watch.map((w) => {
+                const o = bySlug.get(w.org);
+                const s = scores.orgs[w.org];
+                const signal = s?.band && s.band !== 'unknown' ? s.band : undefined;
+                const mine = activity.by_org[w.org];
+                return (
+                  <tr>
+                    <td>
+                      <a href={href(`/orgs/${w.org}/`)}>{o?.name ?? w.org}</a>
+                      <div class="tiny muted">Next: {w.next_action}</div>
+                    </td>
+                    <td class="small">{STATUS_LABEL[w.status]}</td>
+                    <td>{signal ? <BandMeter band={signal} /> : o && <BandMeter level={o.competition_estimate} />}</td>
+                    <td class="num">{s?.fit ?? '—'}</td>
+                    <td class="num">{mine ? `${mine.merged} merged` : '0'}</td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="tiny muted">Edit <code>content/watchlist.yaml</code> to change status or next actions.</p>
+    </div>
+
+    <div class="card">
+      <h2>Next 30 days</h2>
+      {
+        soon.length ? (
+          <ul class="plain divided">
+            {soon.map((e) => (
+              <li class="spread">
+                <span><a href={href(`/programs/${e.program.slug}/`)}>{e.program.name}</a><span class="muted">: {e.label}</span></span>
+                <span class="small">
+                  <DateText date={e.date} precision={e.precision} confirmed={e.confirmed} note={e.note} withYear={false} />
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">Nothing dated in the next 30 days.</p>
+        )
+      }
+      {
+        gsocNext && (
+          <p class="small" style="margin-top:0.8rem">
+            Next GSoC milestone: {gsocNext.label}, <DateText date={gsocNext.date} precision={gsocNext.precision} confirmed={gsocNext.confirmed} note={gsocNext.note} />{' '}
+            <span class="muted">({relativeDays(daysBetween(now, gsocNext.date))})</span>
+          </p>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Fit vs crowding</h2>
+    <p class="muted small">Every curated org, placed by how well it matches your languages, interests, merged PRs and its GSoC streak. Look top right.</p>
+    {points.length ? <FitPlot points={points} /> : <p class="muted">Fit scores appear after the first scoring run (<code>ossmap run score_and_notify</code>).</p>}
+  </section>
+
+  <section class="section grid-2">
+    <div class="card">
+      <div class="spread">
+        <h2>Playbook checklist</h2>
+        <span class="small muted">{doneCount} of {checklist.length} done</span>
+      </div>
+      <ul class="checklist">
+        {
+          checklist.map((c) => {
+            const overdue = !c.done && c.due && c.due < now;
+            return (
+              <li>
+                <input type="checkbox" checked={c.done} disabled aria-label={c.text} />
+                <span class:list={[{ done: c.done }]}>
+                  {c.text}
+                  {c.due && (
+                    <span class:list={['tiny', overdue ? 'stale-note' : 'muted']}>
+                      {' '}
+                      · due {formatDate(c.due, 'day', false)}
+                      {overdue && ' (overdue)'}
+                    </span>
+                  )}
+                </span>
+              </li>
+            );
+          })
+        }
+      </ul>
+      <p class="tiny muted">Tick items by setting <code>done: true</code> in <code>content/playbook.yaml</code>.</p>
+    </div>
+
+    <div class="card">
+      <h2>This week's changes</h2>
+      <EventList items={thisWeek.slice(0, 8)} empty="No changes in the last 7 days." />
+      <p class="small"><a href={href('/changes/')}>All changes</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Your contributions</h2>
+    {
+      activity.username ? (
+        <>
+          <div class="stats">
+            <div class="stat"><div class="value">{activity.totals.merged}</div><div class="label">merged PRs</div></div>
+            <div class="stat"><div class="value">{activity.totals.open}</div><div class="label">open PRs</div></div>
+            <div class="stat"><div class="value">{activity.totals.reviews}</div><div class="label">reviews of others' PRs</div></div>
+            <div class="stat"><div class="value">{activity.streak_weeks}</div><div class="label">week streak</div></div>
+          </div>
+          <h3>Merged PRs per week</h3>
+          <WeeklyBars title="Merged PRs" weeks={weeks} />
+          {activity.prs.length > 0 && (
+            <ul class="plain divided" style="margin-top:1rem">
+              {activity.prs.slice(0, 10).map((a) => (
+                <li class="spread">
+                  <a href={a.url}>{a.title}</a>
+                  <span class="small muted">
+                    {a.org ? bySlug.get(a.org)?.name ?? a.repo : a.repo} · {a.state}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </>
+      ) : (
+        <div class="callout">
+          <p>Set <code>github_username</code> in <code>content/profile.yaml</code> and the daily collector will pull in your pull requests and reviews, count merged PRs per org, and track your weekly streak.</p>
+        </div>
+      )
+    }
+    {
+      activity.log.length > 0 && (
+        <>
+          <h3>Logged by hand</h3>
+          <ul class="plain divided">
+            {activity.log.slice(0, 10).map((l) => (
+              <li class="spread">
+                <span>{l.url ? <a href={l.url}>{l.note}</a> : l.note}</span>
+                <span class="small muted">
+                  {l.kind}
+                  {l.org && ` · ${bySlug.get(l.org)?.name ?? l.org}`} · {formatDate(l.date)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </section>
+
+  <section class="section">
+    <h2>Applications</h2>
+    {
+      applications.length ? (
+        <ul class="plain divided">
+          {applications.map((a) => (
+            <li class="spread">
+              <span>
+                <a href={href(`/programs/${a.program}/`)}>{programName.get(a.program) ?? a.program}</a> · {a.cycle}
+                {a.org && ` · ${bySlug.get(a.org)?.name ?? a.org}`}
+                {a.notes && <div class="small muted">{a.notes}</div>}
+              </span>
+              <span class="badge">{a.status}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="muted">None yet. Track them in <code>content/applications.yaml</code>.</p>
+      )
+    }
+  </section>
+</Base>

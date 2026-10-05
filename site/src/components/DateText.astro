@@ -1,0 +1,20 @@
+---
+// A date that is honest about how sure we are of it.
+import { formatDate } from '../lib/dates';
+
+interface Props {
+  date: Date;
+  precision?: 'day' | 'month';
+  confirmed?: boolean;
+  note?: string | null;
+  withYear?: boolean;
+}
+const { date, precision = 'day', confirmed = false, note, withYear = true } = Astro.props;
+const title = confirmed ? 'Confirmed for this cycle' : `Estimate${note ? `: ${note}` : ', based on last year'}`;
+---
+
+<span title={title}>
+  <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date, precision, withYear)}</time>{
+    !confirmed && <span class="badge est" style="margin-left:0.35rem">est.</span>
+  }
+</span>

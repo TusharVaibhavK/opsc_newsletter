@@ -1,0 +1,23 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: open-mainframe
+name: Open Mainframe Project Mentorship
+organizer: Open Mainframe Project
+url: https://openmainframeproject.org/community/mentorship-program/
+kind: mentorship
+paid: true
+pay_note: Via LFX
+beginner_friendly: true
+students_only: true
+worldwide: true
+min_age: 18
+who_can_apply: University students, 18+
+typical_timing: Spring, summer and fall terms via LFX
+tracks:
+- backend
+tags:
+- java
+- zowe
+fit: medium
+fit_note: Java (Zowe) with a very low crowd
+do_now: Optional niche bet

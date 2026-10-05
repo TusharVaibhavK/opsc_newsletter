@@ -1,0 +1,20 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: fsf-internship
+name: FSF Internship
+organizer: Free Software Foundation
+url: https://www.fsf.org/volunteer/internships
+kind: internship
+paid: null
+pay_note: Not listed
+beginner_friendly: true
+students_only: true
+worldwide: true
+who_can_apply: Students
+typical_timing: Rolling
+tracks:
+- any
+tags: []
+fit: low
+fit_note: Little backend or ML overlap
+do_now: Skip

@@ -1,0 +1,228 @@
+---
+import Base from '../layouts/Base.astro';
+import { TRACK_LABEL, nextEvent, programs as loadPrograms } from '../lib/content';
+import { formatDate } from '../lib/dates';
+import { href } from '../lib/paths';
+
+const programs = await loadPrograms();
+const data = programs.map((p) => {
+  const next = nextEvent(p);
+  return {
+    slug: p.slug,
+    name: p.name,
+    url: href(`/programs/${p.slug}/`),
+    paid: p.paid,
+    payNote: p.pay_note,
+    beginner: p.beginner_friendly,
+    studentsOnly: p.students_only,
+    worldwide: p.worldwide,
+    regions: p.regions,
+    minAge: p.min_age ?? null,
+    underrepresented: p.requires_underrepresented,
+    prior: p.requires_prior_contribution,
+    tracks: p.tracks,
+    kind: p.kind,
+    who: p.who_can_apply,
+    next: next ? `${next.label}: ${formatDate(next.date, next.precision)}${next.confirmed ? '' : ' (est.)'}` : p.typical_timing,
+  };
+});
+const tracks = ['backend', 'ml', 'cloud', 'data', 'scientific', 'systems', 'web'];
+---
+
+<Base title="Program finder" description="Answer seven questions and see which open source programs you can apply to, ranked, with the reasons." narrow>
+  <header class="page-head">
+    <h1>Program finder</h1>
+    <p class="lede">Seven quick questions. You'll get the programs you can apply to, ranked, with why each one matched and what to double-check.</p>
+    <p class="small muted">Nothing you answer leaves your browser. Eligibility here is a first filter; always read the official rules.</p>
+  </header>
+
+  <noscript>
+    <p class="callout">The finder needs JavaScript. You can still <a href={href('/programs/')}>browse and filter every program</a>.</p>
+  </noscript>
+
+  <form id="finder" class="card stack" hidden>
+    <fieldset>
+      <legend>Are you a student?</legend>
+      <label><input type="radio" name="student" value="yes" /> Yes, at a university or college</label>
+      <label><input type="radio" name="student" value="grad" /> Graduated in the last year or so</label>
+      <label><input type="radio" name="student" value="no" /> No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Are you 18 or older?</legend>
+      <label><input type="radio" name="adult" value="yes" /> Yes</label>
+      <label><input type="radio" name="adult" value="no" /> No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Where do you live?</legend>
+      <label><input type="radio" name="region" value="india" /> India</label>
+      <label><input type="radio" name="region" value="other" /> Somewhere else</label>
+    </fieldset>
+    <fieldset>
+      <legend>Do you face underrepresentation or systemic bias in the tech industry where you live?</legend>
+      <p class="tiny muted">Outreachy's eligibility depends on this. Its own rules define it; answer “not sure” if you haven't read them.</p>
+      <label><input type="radio" name="under" value="yes" /> Yes</label>
+      <label><input type="radio" name="under" value="unsure" /> Not sure</label>
+      <label><input type="radio" name="under" value="no" /> No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Do you need a stipend?</legend>
+      <label><input type="radio" name="pay" value="need" /> Yes, it needs to be paid</label>
+      <label><input type="radio" name="pay" value="nice" /> Nice to have</label>
+      <label><input type="radio" name="pay" value="no" /> No, I'm here for the mentoring</label>
+    </fieldset>
+    <fieldset>
+      <legend>Have you contributed to open source before?</legend>
+      <label><input type="radio" name="exp" value="none" /> Not yet</label>
+      <label><input type="radio" name="exp" value="some" /> A few pull requests</label>
+      <label><input type="radio" name="exp" value="lots" /> Regularly, to one project</label>
+    </fieldset>
+    <fieldset>
+      <legend>What do you want to work on? <span class="tiny muted">(pick any)</span></legend>
+      {tracks.map((t) => <label><input type="checkbox" name="track" value={t} /> {TRACK_LABEL[t]}</label>)}
+    </fieldset>
+  </form>
+
+  <section id="results" class="section" aria-live="polite"></section>
+
+  <script type="application/json" id="finder-data" set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />
+</Base>
+
+<style>
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 0.9rem;
+  }
+  legend {
+    font-weight: 650;
+    margin-bottom: 0.3rem;
+  }
+  fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0.15rem 1rem 0.15rem 0;
+  }
+  input[type='radio'],
+  input[type='checkbox'] {
+    accent-color: var(--accent);
+  }
+  #results :global(.result) {
+    margin-bottom: 0.8rem;
+  }
+  #results :global(ul.reasons) {
+    margin: 0.4rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+  }
+  #results :global(.check) {
+    color: var(--warn);
+  }
+</style>
+
+<script>
+  interface P {
+    slug: string;
+    name: string;
+    url: string;
+    paid: boolean | null;
+    payNote: string;
+    beginner: boolean;
+    studentsOnly: boolean;
+    worldwide: boolean | null;
+    regions: string[];
+    minAge: number | null;
+    underrepresented: boolean;
+    prior: boolean;
+    tracks: string[];
+    kind: string;
+    who: string;
+    next: string;
+  }
+  const TRACKS: Record<string, string> = {
+    backend: 'Backend', ml: 'AI / ML', cloud: 'Cloud', data: 'Data', scientific: 'Scientific', systems: 'Systems', web: 'Web',
+  };
+  const form = document.getElementById('finder') as HTMLFormElement;
+  const out = document.getElementById('results') as HTMLElement;
+  const programs = JSON.parse(document.getElementById('finder-data')?.textContent ?? '[]') as P[];
+  form.hidden = false;
+
+  const el = <K extends keyof HTMLElementTagNameMap>(tag: K, text?: string, cls?: string) => {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (cls) node.className = cls;
+    return node;
+  };
+
+  function evaluate(p: P, a: Record<string, string>, tracks: string[]) {
+    const why: string[] = [];
+    const check: string[] = [];
+    const blockers: string[] = [];
+    let score = 0;
+    if (p.studentsOnly && a.student && a.student !== 'yes') blockers.push('For current students only');
+    if (p.minAge && a.adult === 'no') blockers.push(`Minimum age ${p.minAge}`);
+    if (p.underrepresented) {
+      if (a.under === 'no') blockers.push('Eligibility is limited to people facing underrepresentation in tech');
+      else if (a.under === 'unsure') check.push('Read the eligibility rules before applying');
+      else if (a.under === 'yes') { why.push('You may meet its eligibility rules'); score += 2; }
+    }
+    if (p.prior && a.exp === 'none') blockers.push('Expects prior contributions to the project');
+    if (p.regions.includes('india')) {
+      if (a.region === 'india') { why.push('Focused on India'); score += 1; }
+      else if (a.region === 'other') check.push('India-focused: check whether you can apply from elsewhere');
+    }
+    if (p.worldwide === true && a.region === 'other') score += 0.5;
+    if (a.pay === 'need') {
+      if (p.paid === true) { why.push('Paid'); score += 3; }
+      else if (p.paid === false) blockers.push('Unpaid');
+      else check.push(`Pay unclear: ${p.payNote}`);
+    } else if (a.pay === 'nice' && p.paid === true) { why.push('Paid'); score += 1; }
+    if (a.exp === 'none' && p.beginner) { why.push('Welcomes first-time contributors'); score += 1; }
+    if (a.exp === 'none' && !p.beginner) check.push('Usually expects some experience');
+    const overlap = tracks.filter((t) => p.tracks.includes(t));
+    if (overlap.length) { why.push(`Matches ${overlap.map((t) => TRACKS[t]).join(', ')}`); score += 2 * overlap.length; }
+    else if (p.tracks.includes('any')) { why.push('Projects in many stacks'); score += 0.5; }
+    if (p.kind === 'event') { check.push('An event, not a paid mentorship'); score -= 1; }
+    return { score, why, check, blockers };
+  }
+
+  function render() {
+    const fd = new FormData(form);
+    const a: Record<string, string> = {};
+    for (const key of ['student', 'adult', 'region', 'under', 'pay', 'exp']) a[key] = String(fd.get(key) ?? '');
+    const tracks = fd.getAll('track').map(String);
+    const answered = Object.values(a).filter(Boolean).length + (tracks.length ? 1 : 0);
+    out.replaceChildren();
+    if (answered < 3) {
+      out.append(el('p', 'Answer at least three questions to see matches.', 'muted'));
+      return;
+    }
+    const scored = programs.map((p) => ({ p, ...evaluate(p, a, tracks) }));
+    const open = scored.filter((s) => !s.blockers.length).sort((x, y) => y.score - x.score || x.p.name.localeCompare(y.p.name));
+    const closed = scored.filter((s) => s.blockers.length);
+    out.append(el('h2', `${open.length} programs you can likely apply to`));
+    for (const s of open) {
+      const card = el('div', undefined, 'card result');
+      const head = el('div', undefined, 'spread');
+      const link = el('a', s.p.name, 'card-title');
+      link.setAttribute('href', s.p.url);
+      head.append(link, el('span', s.p.next, 'small muted'));
+      card.append(head, el('p', s.p.who, 'small muted'));
+      const list = el('ul', undefined, 'reasons');
+      for (const w of s.why) list.append(el('li', w));
+      for (const c of s.check) list.append(el('li', `Check: ${c}`, 'check'));
+      if (list.childElementCount) card.append(list);
+      out.append(card);
+    }
+    if (closed.length) {
+      const details = el('details');
+      details.append(el('summary', `${closed.length} programs ruled out by your answers`));
+      const list = el('ul', undefined, 'reasons');
+      for (const s of closed) list.append(el('li', `${s.p.name}: ${s.blockers.join('; ')}`));
+      details.append(list);
+      out.append(details);
+    }
+  }
+  form.addEventListener('change', render);
+  render();
+</script>

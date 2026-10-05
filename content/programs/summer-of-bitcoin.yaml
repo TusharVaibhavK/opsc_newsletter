@@ -1,0 +1,28 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: summer-of-bitcoin
+name: Summer of Bitcoin
+organizer: Summer of Bitcoin
+url: https://www.summerofbitcoin.org/
+kind: internship
+paid: true
+pay_note: Paid; check the site for the amount
+beginner_friendly: true
+students_only: true
+worldwide: true
+who_can_apply: University students
+typical_timing: Annual, spring and summer
+tracks:
+- backend
+- systems
+tags:
+- rust
+- c++
+- go
+- python
+- bitcoin
+fit: medium-high
+fit_note: Rust, C++, Go, Python infrastructure
+do_now: Watch for the 2027 announcement
+watch_urls:
+- https://www.summerofbitcoin.org/

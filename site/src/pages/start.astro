@@ -1,0 +1,160 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../lib/paths';
+
+const order = ['get-ready', 'choose', 'first-contribution', 'go-deeper'];
+const phases = (await getCollection('flow'))
+  .map((e) => e.data)
+  .filter((p) => order.includes(p.id))
+  .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+const guideTitles = new Map((await getCollection('guides')).map((g) => [g.id, g.data.title]));
+let n = 0;
+const numbered = phases.map((p) => ({ ...p, steps: p.steps.map((s) => ({ ...s, n: ++n })) }));
+const total = n;
+---
+
+<Base title="Start here" description="New to open source? A numbered path from setting up Git to your first merged pull request and beyond." narrow>
+  <header class="page-head">
+    <p class="eyebrow">New to open source</p>
+    <h1>Start here</h1>
+    <p class="lede">
+      {total} steps from “I've never contributed” to being a familiar name in an open source project. Each one links to a short guide. Most people take
+      two to three months to reach the end, a few hours a week.
+    </p>
+    <p class="small muted" data-progress-text>Tick steps as you finish them; your progress is saved in this browser only.</p>
+    <div class="progress" hidden data-progress><span></span></div>
+  </header>
+
+  <ol class="path plain">
+    {
+      numbered.map((phase) => (
+        <li class="phase">
+          <h2>
+            {phase.title} <span class="small muted">· {phase.when}</span>
+          </h2>
+          <ol class="plain">
+            {phase.steps.map((s) => (
+              <li class="step card">
+                <label class="step-head">
+                  <input type="checkbox" data-step={s.id} />
+                  <span class="num">{s.n}</span>
+                  <span class="step-title">{s.title}</span>
+                </label>
+                <p>{s.summary}</p>
+                <p class="small row">
+                  {s.guide && <a href={href(`/guides/${s.guide}/`)}>Read: {guideTitles.get(s.guide) ?? 'the guide'} →</a>}
+                  {s.link && <a href={href(s.link)}>Open {s.link.replaceAll('/', '')} →</a>}
+                  {s.duration && <span class="muted">· {s.duration}</span>}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </li>
+      ))
+    }
+  </ol>
+
+  <div class="callout">
+    <p><strong>Then: apply.</strong> Once you're a regular in one org, you're ready for a program. See the <a href={href('/flow/')}>whole journey</a>, the <a href={href('/guides/proposal-kit/')}>proposal kit</a> and the <a href={href('/timeline/')}>timeline</a>.</p>
+  </div>
+</Base>
+
+<style>
+  .phase + .phase {
+    margin-top: 1.5rem;
+  }
+  .phase h2 {
+    font-size: 1.15rem;
+  }
+  .step {
+    margin-bottom: 0.75rem;
+  }
+  .step-head {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+  }
+  .step-head input {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--accent);
+    flex: none;
+  }
+  .step .num {
+    display: inline-grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex: none;
+  }
+  .step-title {
+    font-weight: 650;
+  }
+  .step p {
+    margin: 0.5rem 0 0;
+  }
+  .step.is-done .step-title {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+  .progress {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    overflow: hidden;
+  }
+  .progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--accent);
+    border-radius: 999px;
+  }
+</style>
+
+<script>
+  const KEY = 'ossmap:start-progress';
+  const boxes = Array.from(document.querySelectorAll<HTMLInputElement>('[data-step]'));
+  const bar = document.querySelector<HTMLElement>('[data-progress]');
+  const text = document.querySelector<HTMLElement>('[data-progress-text]');
+  let done = new Set<string>();
+  try {
+    done = new Set(JSON.parse(localStorage.getItem(KEY) ?? '[]') as string[]);
+  } catch {
+    /* storage unavailable: progress just isn't saved */
+  }
+  const render = () => {
+    for (const box of boxes) {
+      box.checked = done.has(box.dataset.step ?? '');
+      box.closest('.step')?.classList.toggle('is-done', box.checked);
+    }
+    const count = boxes.filter((b) => b.checked).length;
+    if (bar) {
+      bar.hidden = false;
+      const fill = bar.querySelector<HTMLElement>('span');
+      if (fill) fill.style.width = `${Math.round((100 * count) / boxes.length)}%`;
+    }
+    if (text) text.textContent = `${count} of ${boxes.length} steps done · saved in this browser`;
+  };
+  for (const box of boxes) {
+    box.addEventListener('change', () => {
+      const id = box.dataset.step ?? '';
+      if (box.checked) done.add(id);
+      else done.delete(id);
+      try {
+        localStorage.setItem(KEY, JSON.stringify([...done]));
+      } catch {
+        /* ignore */
+      }
+      render();
+    });
+  }
+  render();
+</script>

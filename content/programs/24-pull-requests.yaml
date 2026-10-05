@@ -1,0 +1,31 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: 24-pull-requests
+name: 24 Pull Requests
+organizer: 24 Pull Requests
+url: https://24pullrequests.com/
+kind: event
+paid: false
+pay_note: None
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: December 1–24
+tracks:
+- any
+tags:
+- event
+fit: low
+fit_note: Warm-up only
+do_now: Use it to keep a December streak
+cycles:
+- name: 24 Pull Requests 2026
+  events:
+  - kind: start
+    date: 2026-12-01
+    confirmed: false
+    note: runs Dec 1–24 every year
+  - kind: end
+    date: 2026-12-24
+    confirmed: false

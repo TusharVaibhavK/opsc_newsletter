@@ -1,0 +1,27 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: sugar-labs
+name: Sugar Labs
+tracks:
+- web
+track_label: Education software
+stack:
+- JavaScript
+- Python
+languages:
+- javascript
+- python
+competition_estimate: high
+why: Learning tools for children, including Music Blocks
+crowded: true
+crowded_reason: Very large contributor surges in recent years
+advice: Pick the least glamorous idea on their list
+github_owners:
+- sugarlabs
+repos:
+- name: sugarlabs/musicblocks
+  gfi_labels: []
+  note: No beginner label found on Oct 5, 2026
+programs:
+- gsoc

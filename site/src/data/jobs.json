@@ -1,0 +1,42 @@
+[
+ {
+  "api_calls": 0,
+  "finished_at": "2026-10-05T07:14:12Z",
+  "job": "score_and_notify",
+  "started_at": "2026-10-05T07:14:11Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 1 deadline alerts, 0 failing jobs, 1 alerts via none"
+ },
+ {
+  "api_calls": 47,
+  "finished_at": "2026-10-05T07:14:11Z",
+  "job": "scrape_programs",
+  "started_at": "2026-10-05T07:13:08Z",
+  "status": "ok",
+  "summary": "25 pages: 22 baseline, 2 error, 1 robots"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-10-05T07:13:08Z",
+  "job": "watch_pages",
+  "started_at": "2026-10-05T07:12:27Z",
+  "status": "ok",
+  "summary": "50 pages: 27 baseline, 1 error, 20 not-yet, 2 robots"
+ },
+ {
+  "api_calls": 0,
+  "finished_at": "2026-10-05T07:12:27Z",
+  "job": "collect_github",
+  "started_at": "2026-10-05T07:12:27Z",
+  "status": "skipped",
+  "summary": "GITHUB_TOKEN is not set; GitHub metrics need a token (Actions provides one)"
+ },
+ {
+  "api_calls": 1,
+  "finished_at": "2026-10-05T07:12:27Z",
+  "job": "import_gsoc",
+  "started_at": "2026-10-05T07:12:23Z",
+  "status": "ok",
+  "summary": "253 orgs, 1542 org-years, 4590 projects, years 2016-2026"
+ }
+]

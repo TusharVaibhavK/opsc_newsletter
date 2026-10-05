@@ -1,0 +1,23 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: checkstyle
+name: checkstyle
+tracks:
+- tooling
+track_label: Java tooling
+stack:
+- Java
+- ANTLR
+languages:
+- java
+competition_estimate: low-medium
+why: Parsers and static analysis; strict review teaches you a lot
+github_owners:
+- checkstyle
+repos:
+- name: checkstyle/checkstyle
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

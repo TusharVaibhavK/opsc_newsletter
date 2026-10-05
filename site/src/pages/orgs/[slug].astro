@@ -1,0 +1,309 @@
+---
+import Base from '../../layouts/Base.astro';
+import BandMeter from '../../components/BandMeter.astro';
+import Freshness from '../../components/Freshness.astro';
+import TrendTile from '../../components/TrendTile.astro';
+import { STATUS_LABEL, orgs as loadOrgs, programs as loadPrograms, watchlist as loadWatchlist, type Org } from '../../lib/content';
+import { activity, gsoc, ideas, issues, metrics, orgTotals, projects, scores, type GsocOrg } from '../../lib/data';
+import { formatDate } from '../../lib/dates';
+import { href } from '../../lib/paths';
+import { privateNote } from '../../lib/private';
+
+export async function getStaticPaths() {
+  const curated = await loadOrgs();
+  const curatedSlugs = new Set(curated.map((o) => o.slug));
+  return [
+    ...curated.map((org) => ({ params: { slug: org.slug }, props: { org, slug: org.slug } })),
+    ...gsoc.orgs.filter((g) => !curatedSlugs.has(g.slug)).map((g) => ({ params: { slug: g.slug }, props: { org: null, slug: g.slug } })),
+  ];
+}
+interface Props {
+  org: Org | null;
+  slug: string;
+}
+const { org, slug } = Astro.props;
+const g: GsocOrg | undefined = gsoc.orgs.find((o) => o.slug === slug);
+const name = org?.name ?? g?.name ?? slug;
+const programs = await loadPrograms();
+const programName = new Map(programs.map((p) => [p.slug, p.name]));
+const watchItem = (await loadWatchlist()).find((w) => w.org === slug);
+const links = g?.links;
+const m = metrics.orgs[slug];
+const totals = orgTotals(slug);
+const score = scores.orgs[slug];
+const signalBand = score?.band && score.band !== 'unknown' ? score.band : undefined;
+const idea = ideas[slug];
+const years = g ? Object.entries(g.years).map(([y, n]) => ({ year: Number(y), n })).sort((a, b) => b.year - a.year) : [];
+const projectList = projects[slug] ?? [];
+const myPrs = activity.prs.filter((a) => a.org === slug);
+const myReviews = activity.reviews.filter((a) => a.org === slug);
+const orgIssues = issues.orgs[slug];
+const weekLabel = (iso: string) => formatDate(iso, 'day', false);
+const series = (key: keyof NonNullable<typeof m>['weekly'][number]) =>
+  (m?.weekly ?? []).map((w) => ({ label: weekLabel(w.week), value: (w[key] as number | null) ?? null }));
+const hours = (v: number) => (v < 48 ? `${Math.round(v)} h` : `${(v / 24).toFixed(1)} days`);
+const description = org?.why ?? g?.description ?? `${name} in Google Summer of Code`;
+const myNote = org ? privateNote(slug) : null;
+---
+
+<Base title={name} description={description}>
+  <p class="breadcrumb"><a href={href('/orgs/')}>Orgs</a> /</p>
+  <header class="page-head">
+    <h1>{name}</h1>
+    {org ? <p class="lede">{org.why}</p> : g?.description && <p class="lede">{g.description}</p>}
+    <div class="row">
+      {org && <span class="badge">{org.track_label}</span>}
+      {(org?.stack ?? g?.technologies.slice(0, 8) ?? []).map((s) => <span class="tag">{s}</span>)}
+    </div>
+    <p class="row small" style="margin-top:0.8rem">
+      {links?.homepage && <a href={links.homepage}>Website ↗</a>}
+      {links?.ideas && <a href={links.ideas}>Ideas page ↗</a>}
+      {links?.guide && <a href={links.guide}>Contributor guide ↗</a>}
+      {links?.chat && <a href={links.chat}>Community chat ↗</a>}
+      {links?.ai_policy && <a href={links.ai_policy}>AI-use policy ↗</a>}
+    </p>
+  </header>
+
+  {
+    org?.crowded && (
+      <div class="callout warn">
+        <p><strong>Approach carefully.</strong> {org.crowded_reason}.</p>
+        {org.advice && <p>If you still want it: {org.advice}.</p>}
+      </div>
+    )
+  }
+  {
+    myNote && (
+      <div class="callout warn">
+        <p>
+          <strong>Private note</strong> <span class="small">(local dev only, never published)</span>: {myNote}
+        </p>
+      </div>
+    )
+  }
+  {
+    watchItem && (
+      <div class="callout">
+        <p>
+          <strong>On your watchlist</strong> · {STATUS_LABEL[watchItem.status]}{watchItem.role && ` · ${watchItem.role}`}. Next action: {watchItem.next_action}.
+        </p>
+      </div>
+    )
+  }
+
+  {
+    org && (
+      <section class="section grid-2">
+        <div class="card">
+          <h2>Crowding</h2>
+          <p class="row">
+            <span class="muted small">Hand estimate:</span> <BandMeter level={org.competition_estimate} />
+          </p>
+          <p class="row">
+            <span class="muted small">From public signals:</span>
+            {signalBand ? <BandMeter band={signalBand} estimate={false} /> : <span class="small muted">not enough data yet</span>}
+          </p>
+          {org.estimate_note && <p class="small">{org.estimate_note}.</p>}
+          <p class="small muted">
+            Relative to the other tracked orgs, from newcomer volume, how fast beginner issues get claimed, review backlog, and supply of slots and ideas.
+            An estimate, not applicant numbers. <a href={href('/about/#crowding')}>Method</a>
+          </p>
+        </div>
+        <div class="card">
+          <h2>Programs</h2>
+          <ul class="plain">
+            {org.programs.map((p) => (
+              <li>
+                <a href={href(`/programs/${p}/`)}>{programName.get(p) ?? p}</a>
+              </li>
+            ))}
+          </ul>
+          {org.notes && <p class="small" style="margin-top:0.8rem">{org.notes}</p>}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    org && (
+      <section class="section">
+        <div class="spread">
+          <h2>Contributor signals</h2>
+          <Freshness at={totals?.lastRefreshed} />
+        </div>
+        {totals ? (
+          <div class="stats">
+            <TrendTile title="Open beginner issues" points={series('open_gfi_count')} hint={totals.unclaimed != null ? `${totals.unclaimed} unclaimed right now` : undefined} />
+            <TrendTile title="Hours to claim a beginner issue" points={series('gfi_median_claim_hours')} format={hours} hint="Median; lower means more competition" />
+            <TrendTile title="First-time contributors, 30 days" points={series('new_contributors_30d')} hint={totals.historyDays < 30 ? `Still building up: ${totals.historyDays} days of history` : undefined} />
+            <TrendTile title="First maintainer reply on PRs" points={series('median_first_response_hours')} format={hours} hint="Median, for outside contributors" />
+            <TrendTile title="Newcomer PRs waiting for review" points={series('open_newcomer_prs')} />
+            <TrendTile title="GitHub stars" points={series('stars')} />
+          </div>
+        ) : (
+          <p class="muted">
+            {org.repos.length === 0
+              ? (org.repos_note ?? 'No GitHub repos tracked for this org.')
+              : 'No GitHub data collected yet. The collector runs daily once a token is configured.'}
+          </p>
+        )}
+        {m && m.repos.length > 0 && (
+          <div class="table-wrap" style="margin-top:1rem">
+            <table>
+              <thead>
+                <tr>
+                  <th>Repo</th>
+                  <th>Beginner labels</th>
+                  <th class="num">Open</th>
+                  <th class="num">Claim (h)</th>
+                  <th class="num">Reply (h)</th>
+                  <th class="num">Unanswered PRs</th>
+                </tr>
+              </thead>
+              <tbody>
+                {m.repos.map((r) => (
+                  <tr>
+                    <td>
+                      <a href={`https://github.com/${r.name}`}>{r.name}</a>
+                    </td>
+                    <td class="small">{r.gfi_labels.length ? r.gfi_labels.join(', ') : <span class="muted">none: issues tracked elsewhere</span>}</td>
+                    <td class="num">{r.open_gfi_count ?? '—'}</td>
+                    <td class="num">{r.gfi_median_claim_hours ?? '—'}</td>
+                    <td class="num">{r.median_first_response_hours ?? '—'}</td>
+                    <td class="num">{r.unanswered_pr_share != null ? `${Math.round(r.unanswered_pr_share * 100)}%` : '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {orgIssues && orgIssues.shown.length > 0 && (
+          <p class="small" style="margin-top:0.8rem">
+            <a href={href(`/issues/#${slug}`)}>See {orgIssues.shown.length} open beginner issues</a>
+            {links?.guide && (
+              <>
+                {' '}
+                · read the <a href={links.guide}>contributor guide</a> first
+              </>
+            )}
+          </p>
+        )}
+      </section>
+    )
+  }
+
+  <section class="section">
+    <h2>Ideas page</h2>
+    {
+      idea?.url ? (
+        <div class="card">
+          <div class="spread">
+            <a href={idea.url}>{idea.url}</a>
+            <Freshness at={idea.checked_at} prefix="Checked" />
+          </div>
+          {idea.status && idea.status !== 200 && <p class="stale-note small">The page returned HTTP {idea.status}: the link may be dead until next year's page goes up.</p>}
+          {idea.note && idea.status === 200 && <p class="small muted">{idea.note}</p>}
+          {idea.titles && idea.titles.length > 0 ? (
+            <>
+              <p class="small muted">{idea.count} ideas found (read from the page's headings, so double-check on the page):</p>
+              <ul>
+                {idea.titles.map((t) => (
+                  <li>
+                    {t}
+                    {idea.added_this_week?.includes(t) && <span class="badge accent" style="margin-left:0.4rem">new this week</span>}
+                  </li>
+                ))}
+              </ul>
+              {idea.removed_this_week && idea.removed_this_week.length > 0 && <p class="small muted">Removed this week: {idea.removed_this_week.join(' · ')}</p>}
+            </>
+          ) : (
+            <p class="small muted">Couldn't read individual ideas from this page; open it to see them.</p>
+          )}
+          {idea.next && (
+            <p class="small" style="margin-top:0.6rem">
+              Next year's page ({idea.next.url}):{' '}
+              {idea.next.published ? <a href={idea.next.url}>published ↗</a> : <span class="muted">not up yet, checked daily</span>}
+            </p>
+          )}
+        </div>
+      ) : links?.ideas ? (
+        <p>
+          <a href={links.ideas}>{links.ideas}</a> <span class="small muted">(not watched{org ? ' yet' : ': only curated orgs are'})</span>
+        </p>
+      ) : (
+        <p class="muted">No ideas page listed.</p>
+      )
+    }
+  </section>
+
+  {
+    org && (myPrs.length > 0 || myReviews.length > 0) && (
+      <section class="section">
+        <h2>Your work here</h2>
+        <p class="muted small">
+          {myPrs.filter((p) => p.state === 'merged').length} merged, {myPrs.filter((p) => p.state === 'open').length} open, {myReviews.length} reviews
+        </p>
+        <ul class="plain divided">
+          {[...myPrs, ...myReviews].slice(0, 20).map((a) => (
+            <li class="spread">
+              <a href={a.url}>{a.title}</a>
+              <span class="small muted">
+                {a.repo} · {a.state} · {formatDate(a.opened_at)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="section">
+    <h2>Google Summer of Code history</h2>
+    {
+      years.length ? (
+        <>
+          <p class="muted small">
+            {years.length} years in GSoC since {g?.first_year}. Projects per year: {years.slice(0, 6).map((y) => `${y.year}: ${y.n}`).join(' · ')}
+          </p>
+          {years.map((y) => {
+            const list = projectList.filter((p) => p.year === y.year);
+            return list.length ? (
+              <details class="year">
+                <summary>
+                  {y.year} · {y.n} project{y.n === 1 ? '' : 's'}
+                </summary>
+                <ul>
+                  {list.map((p) => (
+                    <li>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</li>
+                  ))}
+                </ul>
+              </details>
+            ) : null;
+          })}
+          <p class="tiny muted">From the community-run GSoC Organizations dataset; verify surprising numbers against the official archive.</p>
+        </>
+      ) : (
+        <p class="muted">No GSoC history found.</p>
+      )
+    }
+  </section>
+
+  {
+    !org && (
+      <p class="small muted section">
+        This org has no hand-written notes or live metrics. If it fits you, add it to <code>content/orgs/</code> with its repos and the collectors start tracking it the next day.
+      </p>
+    )
+  }
+</Base>
+
+<style>
+  .year {
+    border-bottom: 1px solid var(--border);
+    padding: 0.45rem 0;
+  }
+  .year summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+</style>

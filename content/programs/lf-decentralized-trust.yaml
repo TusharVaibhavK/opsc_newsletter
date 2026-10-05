@@ -1,0 +1,23 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: lf-decentralized-trust
+name: LF Decentralized Trust Mentorship
+organizer: LF Decentralized Trust
+url: https://lf-decentralized-trust-mentorships.github.io/mentorship-program/main/
+kind: mentorship
+paid: true
+pay_note: Via LFX
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: Multiple terms via LFX
+tracks:
+- backend
+tags:
+- go
+- java
+- blockchain
+fit: medium
+fit_note: Go and Java blockchain infrastructure
+do_now: Pick one project if blockchain interests you

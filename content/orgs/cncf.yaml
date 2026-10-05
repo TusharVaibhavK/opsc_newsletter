@@ -1,0 +1,26 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: cncf
+name: CNCF
+tracks:
+- backend
+- cloud
+track_label: Go backend
+stack:
+- Go
+- Kubernetes
+- Prometheus
+- OpenTelemetry
+languages:
+- go
+competition_estimate: medium
+estimate_note: Medium overall, Low on less-hyped projects
+why: Umbrella of dozens of projects; also runs LFX Mentorship three times a year
+umbrella: true
+programs:
+- gsoc
+- lfx-mentorship
+github_owners:
+- cncf
+repos_note: 'Umbrella org: add the specific CNCF projects you pick to repos.'

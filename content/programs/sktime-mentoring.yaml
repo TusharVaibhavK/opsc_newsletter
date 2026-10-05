@@ -1,0 +1,22 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: sktime-mentoring
+name: sktime Mentoring
+organizer: sktime
+url: https://www.sktime.net/en/latest/get_involved/mentoring.html
+kind: mentorship
+paid: null
+pay_note: Varies
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Time-series ML contributors
+typical_timing: Rolling, seasonal
+tracks:
+- ml
+tags:
+- python
+- time-series
+fit: high
+fit_note: Python ML with a low crowd
+do_now: Start with a good first issue

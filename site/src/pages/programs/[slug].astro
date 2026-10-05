@@ -1,0 +1,129 @@
+---
+import Base from '../../layouts/Base.astro';
+import BandMeter from '../../components/BandMeter.astro';
+import DateText from '../../components/DateText.astro';
+import Freshness from '../../components/Freshness.astro';
+import { LEVEL_LABEL, TRACK_LABEL, allEvents, orgs as loadOrgs, programs as loadPrograms, type Program } from '../../lib/content';
+import { pages } from '../../lib/data';
+import { today } from '../../lib/dates';
+import { href } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const programs = await loadPrograms();
+  return programs.map((program) => ({ params: { slug: program.slug }, props: { program } }));
+}
+interface Props {
+  program: Program;
+}
+const { program: p } = Astro.props;
+const now = today();
+const events = allEvents([p]);
+const cycles = p.cycles.map((c) => ({
+  ...c,
+  events: events.filter((e) => e.cycle === c.name),
+}));
+const orgs = (await loadOrgs()).filter((o) => o.programs.includes(p.slug));
+const watched = pages.filter((w) => w.entity_type === 'program' && w.entity_slug === p.slug);
+const yesNo = (v: boolean | null) => (v === true ? 'Yes' : v === false ? 'No' : 'Unclear: check the official site');
+---
+
+<Base title={p.name} description={`${p.name}: who can apply, pay, dates and how to prepare.`}>
+  <p class="breadcrumb"><a href={href('/programs/')}>Programs</a> /</p>
+  <header class="page-head">
+    <h1>{p.name}</h1>
+    <p class="lede">{p.organizer} · {p.kind}. {p.typical_timing}.</p>
+    <p><a href={p.url}>Official site ↗</a></p>
+  </header>
+
+  <div class="grid-2">
+    <section class="card">
+      <h2>At a glance</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Pay</th><td>{p.pay_note}</td></tr>
+          <tr><th scope="row">Who can apply</th><td>{p.who_can_apply}</td></tr>
+          <tr><th scope="row">Beginner friendly</th><td>{yesNo(p.beginner_friendly)}</td></tr>
+          <tr><th scope="row">Students only</th><td>{yesNo(p.students_only)}</td></tr>
+          <tr><th scope="row">Open worldwide</th><td>{yesNo(p.worldwide)}{p.regions.length > 0 && ` (focus: ${p.regions.join(', ')})`}</td></tr>
+          {p.min_age && <tr><th scope="row">Minimum age</th><td>{p.min_age}</td></tr>}
+          {p.requires_underrepresented && <tr><th scope="row">Eligibility</th><td>Has specific eligibility rules about underrepresentation. Read them before investing time.</td></tr>}
+          {p.requires_prior_contribution && <tr><th scope="row">Prior work</th><td>Expects prior contributions to the project.</td></tr>}
+          <tr><th scope="row">Tracks</th><td>{p.tracks.map((t) => TRACK_LABEL[t]).join(', ') || '—'}</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>What to do now</h2>
+      <p>{p.do_now}.</p>
+      <p class="small muted">Fit for a backend / AI-ML (Python, Go, Java) profile: <strong>{LEVEL_LABEL[p.fit]}</strong>. {p.fit_note}.</p>
+    </section>
+  </div>
+
+  <section class="section">
+    <h2>Dates</h2>
+    {
+      cycles.length === 0 ? (
+        <p class="muted">No dated cycles yet. Typical timing: {p.typical_timing}. Check the <a href={p.url}>official site</a>.</p>
+      ) : (
+        cycles.map((c) => (
+          <div class="card" style="margin-bottom:1rem">
+            <div class="spread">
+              <h3 style="margin:0">{c.name}</h3>
+              {c.source_url && <a class="small" href={c.source_url}>Source ↗</a>}
+            </div>
+            <ul class="plain divided" style="margin-top:0.5rem">
+              {c.events.map((e) => (
+                <li class="spread">
+                  <span class:list={[{ faint: e.end < now }]}>{e.label}</span>
+                  <span class="small">
+                    <DateText date={e.date} precision={e.precision} confirmed={e.confirmed} note={e.note} />
+                    {e.note && <span class="muted"> · {e.note}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      )
+    }
+    <p class="small muted">Dates marked est. follow last year's pattern and will move. The collector checks this program's pages weekly and flags changes.</p>
+  </section>
+
+  {
+    orgs.length > 0 && (
+      <section class="section">
+        <h2>Tracked orgs in this program</h2>
+        <ul class="plain divided">
+          {orgs.map((o) => (
+            <li class="spread">
+              <a href={href(`/orgs/${o.slug}/`)}>{o.name}</a>
+              <span class="row small muted">
+                {o.track_label} · <BandMeter level={o.competition_estimate} />
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    watched.length > 0 && (
+      <section class="section">
+        <h2>Page watch</h2>
+        <ul class="plain divided small">
+          {watched.map((w) => (
+            <li class="spread">
+              <a href={w.url}>{w.url}</a>
+              <span>
+                <Freshness at={w.last_changed_at} prefix="Last changed" />
+                {w.note && <span class="muted"> · {w.note}</span>}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Base>

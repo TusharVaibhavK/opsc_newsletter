@@ -1,0 +1,24 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: humanai
+name: HumanAI
+tracks:
+- ml
+track_label: ML for humanities
+stack:
+- Python
+- ML
+languages:
+- python
+competition_estimate: high
+why: AI projects for the humanities and social sciences
+crowded: true
+crowded_reason: The "ML research" label attracts thousands; screening tests are common
+advice: Start the evaluation tasks the day they're posted
+umbrella: true
+github_owners:
+- humanai-foundation
+repos_note: 'Umbrella org: projects live in many repos.'
+programs:
+- gsoc

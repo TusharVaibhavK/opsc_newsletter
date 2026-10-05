@@ -1,0 +1,166 @@
+---
+// Fit (x) against crowding band (lanes). Emphasis form: watchlist orgs in the accent and
+// labelled, other tracked orgs in recessive grey. Vertical position inside a lane carries no
+// meaning; it only keeps dots and labels from colliding. Hollow dots: no signal data yet, so the
+// lane comes from the hand estimate.
+import { href } from '../lib/paths';
+
+export interface FitPoint {
+  slug: string;
+  name: string;
+  fit: number;
+  lane: 'low' | 'medium' | 'high';
+  fromSignals: boolean;
+  watch: boolean;
+}
+interface Props {
+  points: FitPoint[];
+}
+const { points } = Astro.props;
+
+const W = 760;
+const M = { left: 92, right: 16, top: 26, bottom: 34 };
+const ROW = 22;
+const LANE_PAD = 10;
+const plotW = W - M.left - M.right;
+const x = (fit: number) => M.left + (Math.max(0, Math.min(100, fit)) / 100) * plotW;
+const charW = 6.9; // approx. width of a 12px system-font character
+const LANES = [
+  { key: 'low', label: 'Low' },
+  { key: 'medium', label: 'Medium' },
+  { key: 'high', label: 'High' },
+] as const;
+
+interface Placed extends FitPoint {
+  cx: number;
+  cy: number;
+  labelX: number;
+  anchor: 'start' | 'end';
+}
+let cursor = M.top;
+const lanes = LANES.map((lane) => {
+  const items = points.filter((p) => p.lane === lane.key).sort((a, b) => a.fit - b.fit);
+  const rows: number[] = []; // right edge of the last thing placed in each row
+  const placed: Omit<Placed, 'cy'>[] = [];
+  const rowOf: number[] = [];
+  for (const p of items) {
+    const cx = x(p.fit);
+    const labelW = p.watch ? p.name.length * charW + 8 : 0;
+    const flip = cx + 8 + labelW > W - M.right; // no room on the right: label to the left
+    const left = flip ? cx - 8 - labelW : cx - 7;
+    const right = flip ? cx + 7 : cx + 8 + labelW;
+    let row = rows.findIndex((edge) => edge + 6 < left);
+    if (row === -1) {
+      rows.push(right);
+      row = rows.length - 1;
+    } else {
+      rows[row] = right;
+    }
+    rowOf.push(row);
+    placed.push({ ...p, cx, labelX: flip ? cx - 9 : cx + 9, anchor: flip ? 'end' : 'start' });
+  }
+  const height = Math.max(1, rows.length) * ROW + LANE_PAD * 2;
+  const top = cursor;
+  cursor += height;
+  return {
+    ...lane,
+    top,
+    height,
+    items: placed.map((p, i) => ({ ...p, cy: top + LANE_PAD + rowOf[i] * ROW + ROW / 2 })),
+  };
+});
+const H = cursor + M.bottom;
+const ticks = [0, 25, 50, 75, 100];
+const bandText = { low: 'Low', medium: 'Medium', high: 'High' };
+const rows = [...points].sort((a, b) => Number(b.watch) - Number(a.watch) || b.fit - a.fit);
+---
+
+<figure style="margin:0">
+  <div class="chart-scroll">
+    <svg
+      class="viz"
+      viewBox={`0 0 ${W} ${H}`}
+      style="min-width:560px"
+      role="img"
+      aria-label="Tracked orgs by fit with your profile and crowding level"
+    >
+      <text x={W - M.right} y="14" text-anchor="end">Best bets: high fit, low crowding ↗</text>
+      <text x="4" y="14">Crowding</text>
+      {
+        ticks.map((t) => (
+          <g>
+            <line class="grid-line" x1={x(t)} x2={x(t)} y1={M.top} y2={H - M.bottom} />
+            <text x={x(t)} y={H - M.bottom + 16} text-anchor="middle" class="num">
+              {t}
+            </text>
+          </g>
+        ))
+      }
+      <text x={M.left + plotW / 2} y={H - 4} text-anchor="middle">Fit with your profile →</text>
+      {
+        lanes.map((lane, i) => (
+          <g>
+            {i > 0 && <line class="grid-line" x1="4" x2={W - M.right} y1={lane.top} y2={lane.top} />}
+            <text x="4" y={lane.top + lane.height / 2 + 4} class="label-strong">
+              {lane.label}
+            </text>
+            {lane.items.map((p) => (
+              <a href={href(`/orgs/${p.slug}/`)}>
+                <circle class="hit" cx={p.cx} cy={p.cy} r="12">
+                  <title>
+                    {`${p.name}: fit ${Math.round(p.fit)}, crowding ${bandText[p.lane]}${p.fromSignals ? '' : ' (hand estimate)'}`}
+                  </title>
+                </circle>
+                <circle
+                  class="mark"
+                  cx={p.cx}
+                  cy={p.cy}
+                  r="5"
+                  fill={p.fromSignals ? (p.watch ? 'var(--viz-accent)' : 'var(--viz-muted)') : 'var(--surface)'}
+                  stroke={p.fromSignals ? 'var(--surface)' : p.watch ? 'var(--viz-accent)' : 'var(--viz-muted)'}
+                  stroke-width="2"
+                />
+                {p.watch && (
+                  <text x={p.labelX} y={p.cy + 4} text-anchor={p.anchor} class="label-strong">
+                    {p.name}
+                  </text>
+                )}
+              </a>
+            ))}
+          </g>
+        ))
+      }
+    </svg>
+  </div>
+  <ul class="legend">
+    <li><span class="key-dot" style="background:var(--viz-accent)"></span>On your watchlist</li>
+    <li><span class="key-dot" style="background:var(--viz-muted)"></span>Other tracked orgs</li>
+    <li>
+      <span class="key-dot" style="border:2px solid var(--muted);width:11px;height:11px"></span>Hollow: hand estimate
+      (no signal data yet)
+    </li>
+  </ul>
+  <details class="table-view">
+    <summary>Table view</summary>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Org</th><th>Crowding</th><th>Source</th><th class="num">Fit</th><th>Watchlist</th></tr>
+        </thead>
+        <tbody>
+          {
+            rows.map((p) => (
+              <tr>
+                <td><a href={href(`/orgs/${p.slug}/`)}>{p.name}</a></td>
+                <td>{bandText[p.lane]}</td>
+                <td>{p.fromSignals ? 'Public signals' : 'Hand estimate'}</td>
+                <td class="num">{Math.round(p.fit)}</td>
+                <td>{p.watch ? 'Yes' : ''}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </details>
+</figure>

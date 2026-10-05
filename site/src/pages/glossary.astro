@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import Filters from '../components/Filters.astro';
+import { getCollection } from 'astro:content';
+
+const terms = (await getCollection('glossary')).map((e) => e.data).sort((a, b) => a.term.localeCompare(b.term));
+const bySlug = new Map(terms.map((t) => [t.slug, t]));
+const letters = [...new Set(terms.map((t) => t.term[0].toUpperCase()))];
+// `code` spans in definitions are written with backticks in the YAML.
+const parts = (text: string) => text.split(/(`[^`]+`)/g).map((p) => ({ code: p.startsWith('`'), text: p.replace(/`/g, '') }));
+---
+
+<Base title="Glossary" description="Plain-language definitions of the words open source maintainers use without explaining." narrow>
+  <header class="page-head">
+    <h1>Glossary</h1>
+    <p class="lede">{terms.length} words maintainers use without explaining, in plain language.</p>
+    <p class="small">{letters.map((l) => <a href={`#letter-${l}`} style="margin-right:0.5rem">{l}</a>)}</p>
+  </header>
+  <Filters target="#terms" search="Find a term" groups={[]} noun={['term', 'terms']} />
+  <dl id="terms" class="terms">
+    {
+      terms.map((t, i) => (
+        <div data-item data-search={`${t.term} ${t.definition}`.toLowerCase()} id={t.slug}>
+          {(i === 0 || terms[i - 1].term[0].toUpperCase() !== t.term[0].toUpperCase()) && <span id={`letter-${t.term[0].toUpperCase()}`} />}
+          <dt>
+            <a href={`#${t.slug}`}>{t.term}</a>
+          </dt>
+          <dd>
+            {parts(t.definition).map((p) => (p.code ? <code>{p.text}</code> : p.text))}
+            {t.see_also.length > 0 && (
+              <span class="small muted">
+                {' '}
+                See also:{' '}
+                {t.see_also.map((s, j) => (
+                  <>
+                    {j > 0 && ', '}
+                    <a href={`#${s}`}>{bySlug.get(s)?.term ?? s}</a>
+                  </>
+                ))}
+                .
+              </span>
+            )}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</Base>
+
+<style>
+  .terms > div {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+    scroll-margin-top: 1rem;
+  }
+  dt {
+    font-weight: 650;
+  }
+  dt a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  dd {
+    margin: 0.2rem 0 0;
+  }
+  .terms > div:target {
+    background: var(--accent-soft);
+  }
+</style>

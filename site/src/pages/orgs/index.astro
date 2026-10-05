@@ -1,0 +1,179 @@
+---
+import Base from '../../layouts/Base.astro';
+import BandMeter from '../../components/BandMeter.astro';
+import Filters from '../../components/Filters.astro';
+import { TRACK_LABEL, orgs as loadOrgs, programs as loadPrograms, watchlist as loadWatchlist } from '../../lib/content';
+import { gsoc, gsocOrg, orgTotals, recentYears, scores } from '../../lib/data';
+import { href } from '../../lib/paths';
+
+const curated = await loadOrgs();
+const programs = await loadPrograms();
+const programName = new Map(programs.map((p) => [p.slug, p.name]));
+const watch = new Set((await loadWatchlist()).filter((w) => w.status !== 'dropped').map((w) => w.org));
+const languages = [...new Set(curated.flatMap((o) => o.languages))].sort();
+const tracks = [...new Set(curated.flatMap((o) => o.tracks))].filter((t) => t !== 'any');
+const orgPrograms = [...new Set(curated.flatMap((o) => o.programs))];
+const latest = gsoc.latest_year;
+const others = gsoc.orgs.filter((o) => !o.curated);
+const categories = [...new Set(others.map((o) => o.category).filter((c): c is string => Boolean(c)))].sort();
+const bandOf = (slug: string) => {
+  const b = scores.orgs[slug]?.band;
+  return b && b !== 'unknown' ? b : undefined;
+};
+const bandKey = (o: (typeof curated)[number]) => {
+  const signal = bandOf(o.slug);
+  if (signal) return signal;
+  return o.competition_estimate === 'low' || o.competition_estimate === 'low-medium'
+    ? 'low'
+    : o.competition_estimate === 'medium'
+      ? 'medium'
+      : 'high';
+};
+---
+
+<Base title="Orgs" description="Open source orgs to contribute to: stacks, GSoC history, crowding estimates and live beginner-issue data.">
+  <header class="page-head">
+    <h1>Orgs</h1>
+    <p class="lede">
+      {curated.length} orgs with hand-written notes and daily GitHub signals, plus every org from GSoC {latest ? `${latest - 2}–${latest}` : ''}.
+      Crowding is an estimate, never a ranking: a busy org isn't a bad one.
+    </p>
+    <p class="small muted">How to read these: <a href={href('/guides/choosing-an-org/')}>choosing an org</a> · <a href={href('/about/#crowding')}>how crowding is estimated</a></p>
+  </header>
+
+  <section>
+    <h2>Curated orgs</h2>
+    <Filters
+      target="#curated"
+      search="Search by name or stack"
+      noun={['org', 'orgs']}
+      groups={[
+        { key: 'track', label: 'Track', options: tracks.map((t) => ({ value: t, label: TRACK_LABEL[t] })) },
+        { key: 'lang', label: 'Language', options: languages.map((l) => ({ value: l, label: l[0].toUpperCase() + l.slice(1) })) },
+        {
+          key: 'band',
+          label: 'Crowding',
+          options: [
+            { value: 'low', label: 'Low' },
+            { value: 'medium', label: 'Medium' },
+            { value: 'high', label: 'High' },
+          ],
+        },
+        { key: 'program', label: 'Program', options: orgPrograms.map((p) => ({ value: p, label: programName.get(p) ?? p })) },
+        {
+          key: 'extra',
+          label: 'Show',
+          options: [
+            { value: 'watch', label: 'My watchlist' },
+            { value: 'issues', label: 'Has open beginner issues' },
+          ],
+        },
+      ]}
+    />
+    <div class="table-wrap">
+      <table id="curated">
+        <thead>
+          <tr>
+            <th>Org</th>
+            <th>Track · stack</th>
+            <th>GSoC slots{latest ? ` ${latest - 2}–${String(latest).slice(2)}` : ''}</th>
+            <th>Crowding</th>
+            <th class="num">Open beginner issues</th>
+            <th class="num">First reply (median)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            curated.map((o) => {
+              const g = gsocOrg(o.slug);
+              const t = orgTotals(o.slug);
+              const signal = bandOf(o.slug);
+              const extras = [watch.has(o.slug) ? 'watch' : '', (t?.unclaimed ?? 0) > 0 ? 'issues' : ''].join(' ');
+              return (
+                <tr
+                  data-item
+                  data-track={o.tracks.join(' ')}
+                  data-lang={o.languages.join(' ')}
+                  data-band={bandKey(o)}
+                  data-program={o.programs.join(' ')}
+                  data-extra={extras}
+                  data-search={`${o.name} ${o.stack.join(' ')} ${o.track_label}`.toLowerCase()}
+                >
+                  <td>
+                    <a href={href(`/orgs/${o.slug}/`)}>
+                      <strong>{o.name}</strong>
+                    </a>
+                    <div class="row" style="margin-top:0.2rem">
+                      {watch.has(o.slug) && <span class="badge accent">Watchlist</span>}
+                      {o.crowded && <span class="badge warn">Approach carefully</span>}
+                      {o.umbrella && <span class="badge">Umbrella</span>}
+                    </div>
+                  </td>
+                  <td>
+                    <div>{o.track_label}</div>
+                    <div class="small muted">{o.stack.join(', ')}</div>
+                  </td>
+                  <td class="num small">
+                    {recentYears(g).map((y) => y.count).reverse().join(' · ')}
+                    {g && g.streak > 0 && <div class="tiny muted">{g.streak}-year streak</div>}
+                  </td>
+                  <td>
+                    {signal ? <BandMeter band={signal} /> : <BandMeter level={o.competition_estimate} />}
+                  </td>
+                  <td class="num">{t?.openGfi ?? <span class="faint">—</span>}{t?.unclaimed != null && t.openGfi ? <div class="tiny muted">{t.unclaimed} unclaimed</div> : null}</td>
+                  <td class="num">{t?.responseHours != null ? `${Math.round(t.responseHours)} h` : <span class="faint">—</span>}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">
+      “est.” means the crowding level is the hand estimate from research notes; it switches to a level computed from public GitHub signals once enough data exists.
+      Dashes mean no data yet, or the org tracks issues outside GitHub.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>All GSoC orgs{latest ? `, ${latest - 2}–${latest}` : ''}</h2>
+    <p class="muted">{others.length} more orgs from the GSoC archive, without hand-written notes or live metrics. Useful for finding a niche match.</p>
+    <Filters
+      target="#all-orgs"
+      search="Search name, technology or topic"
+      noun={['org', 'orgs']}
+      groups={[
+        { key: 'cat', label: 'Category', options: categories.map((c) => ({ value: c.toLowerCase().replace(/[^a-z0-9]+/g, '-'), label: c })) },
+        { key: 'latest', label: 'Year', options: latest ? [{ value: 'yes', label: `In GSoC ${latest}` }] : [] },
+      ]}
+    />
+    <ul id="all-orgs" class="plain all-orgs">
+      {
+        others.map((o) => (
+          <li
+            data-item
+            data-cat={(o.category ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-')}
+            data-latest={o.in_latest ? 'yes' : 'no'}
+            data-search={`${o.name} ${o.technologies.join(' ')} ${o.topics.join(' ')}`.toLowerCase()}
+          >
+            <a href={href(`/orgs/${o.slug}/`)}>{o.name}</a>
+            <span class="small muted"> · {o.category ?? 'Uncategorised'} · {Object.keys(o.years).length} GSoC years</span>
+            <div class="tiny muted">{o.technologies.slice(0, 6).join(', ')}</div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .all-orgs {
+    columns: 2 22rem;
+    column-gap: 2rem;
+  }
+  .all-orgs li {
+    break-inside: avoid;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+</style>

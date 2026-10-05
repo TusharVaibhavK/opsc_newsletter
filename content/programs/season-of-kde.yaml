@@ -1,0 +1,43 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: season-of-kde
+name: Season of KDE
+organizer: KDE
+url: https://season.kde.org/
+kind: mentorship
+paid: null
+pay_note: Site lists a stipend; verify
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open, students preferred
+typical_timing: Applications around mid-January, work January to March
+tracks:
+- systems
+tags:
+- c++
+- qt
+- desktop
+fit: low
+fit_note: Mostly C++/Qt
+do_now: Skip unless you like desktop apps
+watch_urls:
+- https://season.kde.org/
+cycles:
+- name: Season of KDE 2027
+  events:
+  - kind: apply_close
+    date: 2027-01-01
+    precision: month
+    confirmed: false
+    note: around mid-January
+  - kind: start
+    date: 2027-01-01
+    precision: month
+    confirmed: false
+    label: Work starts
+  - kind: end
+    date: 2027-03-01
+    precision: month
+    confirmed: false
+    label: Work ends

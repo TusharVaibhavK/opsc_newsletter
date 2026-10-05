@@ -1,0 +1,110 @@
+---
+// Stat tile: the latest value, a 12-week sparkline (de-emphasis line, current week in the accent),
+// native hover tooltips per week, and a table view so no value is hover-only.
+interface Point {
+  label: string;
+  value: number | null;
+}
+interface Props {
+  title: string;
+  points: Point[];
+  format?: (v: number) => string;
+  hint?: string;
+}
+const { title, points, format = (v: number) => v.toLocaleString('en-US'), hint } = Astro.props;
+const W = 288;
+const H = 56;
+const PAD = { top: 8, bottom: 8, x: 6 };
+const known = points.filter((p): p is { label: string; value: number } => p.value !== null);
+const latest = known.at(-1);
+let lo = Math.min(...known.map((p) => p.value));
+let hi = Math.max(...known.map((p) => p.value));
+if (!Number.isFinite(lo)) [lo, hi] = [0, 1];
+if (lo === hi) [lo, hi] = [lo - 1, hi + 1];
+const n = points.length;
+const step = n > 1 ? (W - 2 * PAD.x) / (n - 1) : 0;
+const x = (i: number) => PAD.x + i * step;
+const y = (v: number) => PAD.top + (1 - (v - lo) / (hi - lo)) * (H - PAD.top - PAD.bottom);
+// Split the line wherever a week is missing, instead of drawing across the gap.
+const segments: string[] = [];
+let current: string[] = [];
+points.forEach((p, i) => {
+  if (p.value === null) {
+    if (current.length > 1) segments.push(current.join(' '));
+    current = [];
+  } else {
+    current.push(`${current.length ? 'L' : 'M'}${x(i).toFixed(1)},${y(p.value).toFixed(1)}`);
+  }
+});
+if (current.length > 1) segments.push(current.join(' '));
+const lastIndex = latest ? points.lastIndexOf(latest) : -1;
+const drawable = known.length >= 2;
+---
+
+<div class="stat">
+  <div class="label">{title}</div>
+  <div class="value">{latest ? format(latest.value) : '—'}</div>
+  {hint && <div class="tiny muted">{hint}</div>}
+  {
+    drawable ? (
+      <svg class="viz" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${title}, last ${n} weeks`}>
+        <line class="grid-line" x1={PAD.x} x2={W - PAD.x} y1={H - PAD.bottom} y2={H - PAD.bottom} />
+        {segments.map((d) => (
+          <path d={d} fill="none" stroke="var(--viz-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        ))}
+        {points.map((p, i) =>
+          p.value === null ? null : (
+            <g>
+              <rect class="hit" x={x(i) - step / 2} y="0" width={Math.max(step, 1)} height={H}>
+                <title>{`Week of ${p.label}: ${format(p.value)}`}</title>
+              </rect>
+              <circle class="pt" cx={x(i)} cy={y(p.value)} r="3.5" fill="var(--viz-muted)" />
+            </g>
+          ),
+        )}
+        {lastIndex >= 0 && latest && (
+          <circle cx={x(lastIndex)} cy={y(latest.value)} r="4.5" fill="var(--viz-accent)" stroke="var(--surface)" stroke-width="2" />
+        )}
+      </svg>
+    ) : (
+      <p class="tiny muted" style="margin:0.4rem 0 0">The trend appears after two weeks of data.</p>
+    )
+  }
+  {
+    known.length > 0 && (
+      <details class="table-view">
+        <summary>Table view</summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Week of</th>
+                <th class="num">{title}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {points.map((p) => (
+                <tr>
+                  <td>{p.label}</td>
+                  <td class="num">{p.value === null ? '—' : format(p.value)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </details>
+    )
+  }
+</div>
+
+<style>
+  .stat :global(.viz) {
+    margin-top: 0.5rem;
+  }
+  .stat :global(.pt) {
+    opacity: 0;
+  }
+  .stat :global(.hit:hover + .pt) {
+    opacity: 1;
+  }
+</style>

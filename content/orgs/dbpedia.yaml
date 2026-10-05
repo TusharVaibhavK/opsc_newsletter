@@ -1,0 +1,28 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: dbpedia
+name: DBpedia
+tracks:
+- data
+- ml
+track_label: Data + AI
+stack:
+- Java
+- Python
+- Scala
+- RDF
+languages:
+- java
+- python
+- scala
+competition_estimate: low-medium
+why: Knowledge graphs meeting LLMs; in GSoC every year since 2016
+github_owners:
+- dbpedia
+repos:
+- name: dbpedia/extraction-framework
+  gfi_labels: []
+  note: No beginner label; ideas are discussed on the DBpedia forum
+programs:
+- gsoc

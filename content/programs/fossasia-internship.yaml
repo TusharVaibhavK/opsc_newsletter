@@ -1,0 +1,20 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: fossasia-internship
+name: FOSSASIA Internship
+organizer: FOSSASIA
+url: https://fossasia.org/internship
+kind: internship
+paid: null
+pay_note: Not listed
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: Rolling, project-based
+tracks:
+- any
+tags: []
+fit: medium
+fit_note: Depends on the project
+do_now: Optional

@@ -1,0 +1,77 @@
+---
+import type { FeedEvent } from '../lib/data';
+import { ageLabel } from '../lib/dates';
+import { href } from '../lib/paths';
+
+interface Props {
+  items: FeedEvent[];
+  empty?: string;
+  detailed?: boolean;
+}
+const { items, empty = 'Nothing yet.', detailed = false } = Astro.props;
+const KIND: Record<string, string> = {
+  deadline: 'Deadline',
+  ideas_published: 'New ideas page',
+  ideas_changed: 'Ideas changed',
+  org_announced: 'Org announced',
+  org_not_listed: 'Not listed',
+  gsoc_orgs_published: 'GSoC orgs out',
+  program_page_changed: 'Program update',
+  pr_merged: 'Merged',
+  job_failing: 'Collector failing',
+};
+const entityLink = (e: FeedEvent) =>
+  e.entity_type === 'org' && e.entity_slug
+    ? href(`/orgs/${e.entity_slug}/`)
+    : e.entity_type === 'program' && e.entity_slug
+      ? href(`/programs/${e.entity_slug}/`)
+      : null;
+const list = (v: unknown): string[] => (Array.isArray(v) ? v.map(String) : []);
+---
+
+{
+  items.length === 0 ? (
+    <p class="muted small">{empty}</p>
+  ) : (
+    <ul class="plain divided">
+      {items.map((e) => {
+        const link = entityLink(e);
+        const added = list(e.detail.added);
+        const removed = list(e.detail.removed);
+        const dates = list(e.detail.dates_found);
+        return (
+          <li id={`e-${e.id}`}>
+            <div class="spread">
+              <span class="badge">{KIND[e.kind] ?? e.kind}</span>
+              <span class="tiny muted">{ageLabel(e.occurred_at)}</span>
+            </div>
+            <div style="margin-top:0.3rem">
+              {link ? <a href={link}>{e.title}</a> : e.title}
+              {e.url && (
+                <a class="small" href={e.url} rel="noopener" style="margin-left:0.4rem">
+                  source ↗
+                </a>
+              )}
+            </div>
+            {detailed && (added.length > 0 || removed.length > 0) && (
+              <div class="small muted" style="margin-top:0.3rem">
+                {added.length > 0 && <div>Added: {added.join(' · ')}</div>}
+                {removed.length > 0 && <div>Removed: {removed.join(' · ')}</div>}
+              </div>
+            )}
+            {detailed && dates.length > 0 && (
+              <details class="small" style="margin-top:0.3rem">
+                <summary>Dates found on the page (confirm before trusting)</summary>
+                <ul>
+                  {dates.map((d) => (
+                    <li>{d}</li>
+                  ))}
+                </ul>
+              </details>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  )
+}

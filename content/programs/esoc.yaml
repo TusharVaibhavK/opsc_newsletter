@@ -1,0 +1,47 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: esoc
+name: European Summer of Code
+organizer: European Summer of Code
+url: https://www.esoc.dev/
+kind: mentorship
+paid: null
+pay_note: Stipends possible
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: New contributors, worldwide
+typical_timing: Two batches, February to April
+tracks:
+- any
+tags: []
+fit: medium
+fit_note: Depends on the listed projects
+do_now: Check projects in February
+watch_urls:
+- https://www.esoc.dev/
+cycles:
+- name: 2027 Batch 1
+  events:
+  - kind: start
+    date: 2027-02-18
+    confirmed: false
+    label: Batch 1 starts
+    note: Feb 18 in 2026
+  - kind: end
+    date: 2027-03-18
+    confirmed: false
+    label: Batch 1 ends
+    note: Mar 18 in 2026
+- name: 2027 Batch 2
+  events:
+  - kind: start
+    date: 2027-03-19
+    confirmed: false
+    label: Batch 2 starts
+    note: Mar 19 in 2026
+  - kind: end
+    date: 2027-04-16
+    confirmed: false
+    label: Batch 2 ends
+    note: Apr 16 in 2026

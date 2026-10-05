@@ -1,0 +1,24 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: fossee-fellowship
+name: FOSSEE Summer Fellowship
+organizer: FOSSEE, IIT Bombay
+url: https://fossee.in/
+kind: fellowship
+paid: true
+pay_note: Stipend
+beginner_friendly: true
+students_only: true
+worldwide: null
+regions:
+- india
+who_can_apply: Students, mainly in India
+typical_timing: Summer
+tracks:
+- scientific
+tags:
+- python
+- scientific-computing
+fit: medium
+fit_note: Scientific Python
+do_now: Watch for the spring announcement

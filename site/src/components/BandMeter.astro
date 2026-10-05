@@ -1,0 +1,41 @@
+---
+// Crowding shown as three neutral bars, never red/green: crowded is not "bad", just busier.
+import type { Band } from '../lib/data';
+import { LEVEL_LABEL, LEVEL_VALUE, type Level } from '../lib/content';
+
+interface Props {
+  level?: Level; // hand estimate from content/
+  band?: Band; // computed from public signals
+  estimate?: boolean;
+  compact?: boolean;
+}
+const { level, band, estimate = Boolean(level && !band), compact = false } = Astro.props;
+const BAND_VALUE: Record<Band, number> = { low: 1, medium: 2, high: 3, unknown: 0 };
+const BAND_LABEL: Record<Band, string> = { low: 'Low', medium: 'Medium', high: 'High', unknown: 'Unknown' };
+const value = band ? BAND_VALUE[band] : level ? LEVEL_VALUE[level] : 0;
+const text = band ? BAND_LABEL[band] : level ? LEVEL_LABEL[level] : 'Unknown';
+const aria = `Crowding: ${text}${estimate ? ' (estimate)' : ''}`;
+const bars = [0, 1, 2].map((i) => {
+  const fill = value >= i + 1 ? 1 : value > i ? 0.5 : 0;
+  return { x: i * 6.5, h: 6 + i * 3.5, fill };
+});
+---
+
+<span class="band" role="img" aria-label={aria} title={aria}>
+  <svg viewBox="0 0 18 14" aria-hidden="true">
+    {
+      bars.map((b) => (
+        <rect
+          x={b.x}
+          y={14 - b.h}
+          width="5"
+          height={b.h}
+          rx="1.5"
+          fill={b.fill ? 'var(--muted)' : 'var(--border-strong)'}
+          opacity={b.fill === 0.5 ? 0.55 : 1}
+        />
+      ))
+    }
+  </svg>
+  {!compact && <span class="small">{text}{estimate && <span class="faint"> est.</span>}</span>}
+</span>

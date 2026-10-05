@@ -1,0 +1,21 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: python-software-foundation
+name: Python Software Foundation
+tracks:
+- any
+track_label: Umbrella for Python projects
+stack:
+- Python
+languages:
+- python
+competition_estimate: high
+why: Umbrella for many Python sub-projects
+crowded: true
+crowded_reason: Python is the most common applicant skill
+advice: Target a sub-project under PSF with a niche domain
+umbrella: true
+repos_note: 'Umbrella org: each sub-project has its own repo.'
+programs:
+- gsoc

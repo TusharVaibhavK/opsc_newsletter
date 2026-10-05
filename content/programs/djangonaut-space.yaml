@@ -1,0 +1,25 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: djangonaut-space
+name: Djangonaut Space
+organizer: Djangonaut Space
+url: https://djangonaut.space/
+kind: mentorship
+paid: false
+pay_note: Unpaid, free mentoring
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: People who want to contribute to Django and its ecosystem
+typical_timing: 8-week sessions, several per year
+tracks:
+- backend
+- web
+tags:
+- python
+- django
+fit: high
+fit_note: Python backend
+do_now: Land a Django PR, then apply for the next session
+watch_urls:
+- https://djangonaut.space/

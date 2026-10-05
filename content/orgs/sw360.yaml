@@ -1,0 +1,25 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: sw360
+name: SW360
+gsoc_name: SW360
+tracks:
+- backend
+track_label: Java backend
+stack:
+- Java
+- CouchDB
+- REST
+languages:
+- java
+competition_estimate: low
+why: Eclipse software-supply-chain tool; small, backend-heavy
+github_owners:
+- eclipse-sw360
+repos:
+- name: eclipse-sw360/sw360
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

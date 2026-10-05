@@ -1,0 +1,181 @@
+---
+import Base from '../layouts/Base.astro';
+import DateText from '../components/DateText.astro';
+import EventList from '../components/EventList.astro';
+import { ACTION_KINDS, currentPhase, orgs as loadOrgs, programs as loadPrograms, upcoming } from '../lib/content';
+import { events, gsoc, issues, meta } from '../lib/data';
+import { daysBetween, formatDate, relativeDays, today } from '../lib/dates';
+import { href } from '../lib/paths';
+import { SITE_TAGLINE } from '../lib/site';
+
+const now = today();
+const programs = await loadPrograms();
+const curated = await loadOrgs();
+const phaseInfo = await currentPhase(now);
+const deadlines = upcoming(programs, 200, now)
+  .filter((e) => ACTION_KINDS.has(e.kind) || e.kind === 'results')
+  .slice(0, 7);
+const paid = programs.filter((p) => p.paid === true).length;
+const openIssues = Object.values(issues.orgs).reduce((s, o) => s + o.open_to_newcomers, 0);
+const recentYears = gsoc.latest_year ? `${gsoc.latest_year - 2}–${gsoc.latest_year}` : '';
+const monthName = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+
+<Base>
+  <section class="hero">
+    <p class="eyebrow">Open source programs · orgs · first contributions</p>
+    <h1>Find your way into open source</h1>
+    <p class="lede">{SITE_TAGLINE} Every mentorship program in one place, the orgs inside them, and a step-by-step path from your first pull request to a GSoC proposal.</p>
+    <div class="row" style="margin-top:1rem">
+      <a class="button primary" href={href('/start/')}>New here? Start with the guide</a>
+      <a class="button" href={href('/programs/')}>Browse {programs.length} programs</a>
+      <a class="button" href={href('/orgs/')}>Explore orgs</a>
+    </div>
+  </section>
+
+  <section class="section grid-2">
+    <div class="card">
+      <p class="eyebrow">
+        {phaseInfo.state === 'current' ? `This month's move · ${monthName}` : phaseInfo.state === 'upcoming' ? `Next phase · starts ${relativeDays(phaseInfo.inDays ?? 0)}` : 'Playbook'}
+      </p>
+      <h2>{phaseInfo.phase.title}: {phaseInfo.phase.window}</h2>
+      <p>{phaseInfo.phase.goal}</p>
+      <ul>
+        {phaseInfo.phase.actions.map((a) => <li>{a}</li>)}
+      </ul>
+      <p class="small muted">Done when: {phaseInfo.phase.done_when}</p>
+      <p class="small"><a href={href('/dashboard/')}>Open the dashboard</a> · <a href={href('/flow/')}>See the whole journey</a></p>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Coming up</p>
+      <h2>Next deadlines</h2>
+      {
+        deadlines.length ? (
+          <ul class="plain divided">
+            {deadlines.map((e) => (
+              <li class="spread">
+                <span><a href={href(`/programs/${e.program.slug}/`)}>{e.program.name}</a><span class="muted">: {e.label}</span></span>
+                <span class="small num">
+                  <DateText date={e.date} precision={e.precision} confirmed={e.confirmed} note={e.note} />
+                  {e.precision === 'day' && <span class="muted"> · {relativeDays(daysBetween(now, e.date))}</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">No dated deadlines in the next six months.</p>
+        )
+      }
+      <p class="small"><a href={href('/timeline/')}>Full timeline</a> · <a href={href('/deadlines.ics')}>Subscribe in your calendar</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="stats">
+      <div class="stat"><div class="value">{programs.length}</div><div class="label">mentorship programs, {paid} of them paid</div></div>
+      <div class="stat"><div class="value">{gsoc.orgs.length}</div><div class="label">GSoC orgs active {recentYears}</div></div>
+      <div class="stat"><div class="value">{curated.length}</div><div class="label">orgs with hand-written notes</div></div>
+      <div class="stat">
+        <div class="value">{openIssues || '—'}</div>
+        <div class="label">{openIssues ? 'open beginner issues in tracked repos' : 'beginner issues: collected daily once enabled'}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Three steps to your first contribution</h2>
+    <ol class="steps">
+      <li>
+        <h3>Pick a program</h3>
+        <p class="muted">GSoC, Outreachy, LFX and 19 more, with who can apply, pay and dates.</p>
+        <a href={href('/finder/')}>Find programs you're eligible for</a>
+      </li>
+      <li>
+        <h3>Pick an org</h3>
+        <p class="muted">Compare stacks, GSoC history and how responsive maintainers are.</p>
+        <a href={href('/guides/choosing-an-org/')}>How to choose an org</a>
+      </li>
+      <li>
+        <h3>Land a first PR</h3>
+        <p class="muted">Build the project, claim a small issue, open a pull request, handle review.</p>
+        <a href={href('/guides/first-contribution/')}>Your first contribution, step by step</a>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section grid-2">
+    <div>
+      <h2>Recent changes</h2>
+      <EventList items={events.slice(0, 5)} empty="No changes recorded yet. The collectors log new orgs, ideas pages and program updates here." />
+      <p class="small"><a href={href('/changes/')}>All changes</a> · <a href={href('/rss.xml')}>RSS</a></p>
+    </div>
+    <div class="callout">
+      <p><strong>Honest numbers.</strong> In 2026, GSoC accepted 1,141 of 15,245 applicants across 184 orgs: about 7.5%, roughly 6 slots per org. Steady, real contributions over months are what get people selected.</p>
+      <p><a href={href('/guides/honest-expectations/')}>What actually gets you selected</a></p>
+    </div>
+  </section>
+  <p class="tiny faint" style="margin-top:2rem">Data generated {formatDate(meta.generated_at ?? new Date())}.</p>
+</Base>
+
+<style>
+  .hero {
+    padding: 1rem 0 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.5rem 0.95rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 550;
+  }
+  .button:hover {
+    border-color: var(--accent);
+    color: var(--accent-strong);
+  }
+  .button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+  }
+  .button.primary:hover {
+    background: var(--accent-strong);
+    color: var(--bg);
+  }
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    counter-reset: step;
+  }
+  .steps li {
+    counter-increment: step;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+  }
+  .steps li::before {
+    content: counter(step);
+    display: inline-grid;
+    place-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+  .steps h3 {
+    margin: 0.5rem 0 0.25rem;
+  }
+  .steps p {
+    margin-bottom: 0.5rem;
+  }
+</style>

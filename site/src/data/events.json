@@ -1,0 +1,15 @@
+[
+ {
+  "detail": {
+   "confirmed": true,
+   "date": "2026-10-05"
+  },
+  "entity_slug": "outreachy",
+  "entity_type": "program",
+  "id": "648947a3661f",
+  "kind": "deadline",
+  "occurred_at": "2026-10-05T07:14:12Z",
+  "title": "Outreachy December 2026 cohort: the contribution period starts today (Oct 5)",
+  "url": "https://www.outreachy.org/"
+ }
+]

@@ -1,0 +1,24 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: deepchem
+name: DeepChem
+tracks:
+- ml
+track_label: AI/ML
+stack:
+- Python
+- PyTorch
+- Hugging Face
+languages:
+- python
+competition_estimate: medium
+why: Applied deep learning for drug discovery; 2026 ideas included foundation models
+github_owners:
+- deepchem
+repos:
+- name: deepchem/deepchem
+  gfi_labels:
+  - Good First Contribution
+programs:
+- gsoc

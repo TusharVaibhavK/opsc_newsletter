@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import { scores } from '../lib/data';
+import { href } from '../lib/paths';
+import { REPO_URL, SITE_NAME } from '../lib/site';
+
+const WEIGHT_LABEL: Record<string, string> = {
+  new_contributors: 'First-time contributors in the last 30 days',
+  claim_speed: 'How fast beginner issues get claimed (1 / median hours)',
+  newcomer_backlog: 'Open, unreviewed PRs from first-time contributors',
+  log_stars: 'GitHub stars (log scale), a proxy for brand recognition',
+  slots: 'Average GSoC projects a year over the last 3 years',
+  ideas: 'Ideas on the current ideas list',
+};
+const weights = Object.entries(scores.weights ?? {});
+---
+
+<Base title="Methodology" description={`How ${SITE_NAME} collects data, estimates crowding and scores fit, and what it deliberately doesn't do.`} narrow>
+  <header class="page-head">
+    <h1>Methodology and sources</h1>
+    <p class="lede">What the numbers mean, where they come from, and where they stop being trustworthy.</p>
+  </header>
+
+  <div class="prose">
+    <h2 id="data">Where the data comes from</h2>
+    <ul>
+      <li><strong>Programs</strong>: hand-curated in <code>content/programs/</code>, seeded from research notes and each program's official page. Dates marked “est.” are last year's dates moved forward a year.</li>
+      <li><strong>GSoC history</strong>: the <a href="https://www.gsocorganizations.dev/">GSoC Organizations</a> dataset (community-run, scraped from the official archive). Refreshed weekly, daily from mid-January to mid-May.</li>
+      <li><strong>GitHub signals</strong>: one GitHub GraphQL query per tracked repo per day. Public data only.</li>
+      <li><strong>Ideas and program pages</strong>: fetched once a day (ideas) or once a week (programs), honouring robots.txt. Only a fingerprint and the page's headings are kept.</li>
+    </ul>
+
+    <h2 id="signals">What each signal means</h2>
+    <dl>
+      <dt>Open beginner issues</dt>
+      <dd>Open issues with any of the repo's beginner labels (for example “good first issue”). Repos that track issues outside GitHub show a dash.</dd>
+      <dt>Hours to claim a beginner issue</dt>
+      <dd>For the 30 newest beginner issues, the median time until the first sign someone took it: an assignment, a linked pull request, or a first comment from someone other than the author or a maintainer. Needs at least 3 claimed issues.</dd>
+      <dt>First-time contributors, 30 days</dt>
+      <dd>People GitHub marks as first-time contributors whose first pull request appeared in the last 30 days. Collected daily, so it undercounts for the first month of tracking.</dd>
+      <dt>First maintainer reply on PRs</dt>
+      <dd>For pull requests by people outside the project opened 2–60 days ago: median hours until the first review by someone else, or the merge. Bots and maintainers' own PRs are excluded. This is the best single answer to “will my work be seen?”</dd>
+      <dt>Newcomer PRs waiting for review</dt>
+      <dd>Open pull requests from first-time contributors with no review yet.</dd>
+    </dl>
+
+    <h2 id="crowding">How crowding is estimated</h2>
+    <p>No public source says how many people apply to each org, so crowding is estimated from signals that track it: demand (newcomers crowding in) against supply (slots and ideas). Each input is standardised across the tracked orgs (a z-score), combined with these weights, and turned into a percentile:</p>
+    {
+      weights.length > 0 && (
+        <table>
+          <thead>
+            <tr><th>Input</th><th class="num">Weight</th></tr>
+          </thead>
+          <tbody>
+            {weights.map(([k, w]) => (
+              <tr>
+                <td>{WEIGHT_LABEL[k] ?? k}</td>
+                <td class="num">{w > 0 ? '+' : ''}{w}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )
+    }
+    <p>Positive weights push towards crowded; negative ones (more slots, more ideas) push towards roomy. The bottom third of tracked orgs is shown as <strong>Low</strong>, the middle third <strong>Medium</strong>, the top third <strong>High</strong>. Orgs missing more than half the inputs keep the hand estimate from the research notes instead, marked “est.”</p>
+    <p>Three deliberate choices:</p>
+    <ul>
+      <li><strong>Bands, not numbers, and no leaderboard.</strong> Publishing a ranked list of the “least competitive” orgs would send everyone to the top of it within one cycle, which destroys the signal and swamps a small community's maintainers.</li>
+      <li><strong>Relative, not absolute.</strong> “High” means busier than most orgs tracked here. Popular orgs also tend to have more slots; crowded isn't hopeless.</li>
+      <li><strong>Calibrate, don't trust.</strong> The weights are starting guesses. A few orgs publish proposal counts after each GSoC; those are the check.</li>
+    </ul>
+
+    <h2 id="fit">How fit is scored</h2>
+    <p>Fit is about you, not the org: 40% language overlap with your profile, 20% whether the org's tracks match your interests, 25% your merged PRs there (capped at 5), and 15% the org's GSoC streak (capped at 5 years), as a 0–100 score.</p>
+
+    <h2 id="not-collected">What is deliberately not collected</h2>
+    <ul>
+      <li>No chat scraping. Slack and Discord would need admin-installed bots; message content is never stored.</li>
+      <li>No pages behind logins, and nothing a site's robots.txt asks automated tools to skip.</li>
+      <li>GSoC contributors' names stay out of the site, even though the archive lists them.</li>
+      <li>No mentor or org “quality” ratings.</li>
+      <li>No analytics or tracking on this site.</li>
+    </ul>
+
+    <h2 id="caveats">Caveats</h2>
+    <ul>
+      <li>GSoC 2027 and Outreachy May 2027 dates were not announced when this was built; every such date is an estimate.</li>
+      <li>Ideas counts come from page headings. Some pages (Google Docs, Confluence, JavaScript-heavy sites) can't be read this way; those are linked, not counted.</li>
+      <li>GitHub's first-time-contributor flag is GitHub's own and changes after someone's first merge.</li>
+    </ul>
+
+    <h2 id="contributing">Contributing</h2>
+    <p>Everything on this site is generated from plain files in the repository:</p>
+    <ul>
+      <li>Add or fix a program: edit <code>content/programs/&lt;slug&gt;.yaml</code>.</li>
+      <li>Add an org (and its repos, so the collectors track it): add <code>content/orgs/&lt;slug&gt;.yaml</code>.</li>
+      <li>Improve a guide: edit <code>content/guides/&lt;slug&gt;.md</code>.</li>
+    </ul>
+    <p>CI validates every file against its schema before anything merges. {REPO_URL ? <a href={REPO_URL}>The repository</a> : 'See the repository README'} has the details.</p>
+    <p><a href={href('/admin/')}>Collector status</a> shows when each source last refreshed.</p>
+
+    <h2 id="credits">Credits</h2>
+    <p>GSoC history from <a href="https://www.gsocorganizations.dev/">gsocorganizations.dev</a>. Program list started from the <a href="https://open-source-mv.vercel.app/">Open source programs directory</a>. Acceptance numbers from the <a href="https://opensource.googleblog.com/2026/04/the-journey-begins-meet-the-2026-gsoc-contributors.html">Google Open Source Blog</a>.</p>
+  </div>
+</Base>
+
+<style>
+  dt {
+    font-weight: 650;
+    margin-top: 0.9rem;
+  }
+  dd {
+    margin: 0.2rem 0 0;
+    color: var(--muted);
+  }
+</style>

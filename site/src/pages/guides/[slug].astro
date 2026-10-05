@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { href } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+  return guides.map((guide, i) => ({
+    params: { slug: guide.id },
+    props: { guide, prev: guides[i - 1] ?? null, next: guides[i + 1] ?? null },
+  }));
+}
+interface Props {
+  guide: CollectionEntry<'guides'>;
+  prev: CollectionEntry<'guides'> | null;
+  next: CollectionEntry<'guides'> | null;
+}
+const { guide, prev, next } = Astro.props;
+const { Content, headings } = await render(guide);
+const toc = headings.filter((h) => h.depth === 2);
+---
+
+<Base title={guide.data.title} description={guide.data.summary}>
+  <p class="breadcrumb"><a href={href('/guides/')}>Guides</a> /</p>
+  <div class="guide-layout">
+    <article class="prose">
+      <h1>{guide.data.title}</h1>
+      <p class="lede">{guide.data.summary}</p>
+      {guide.data.reading_minutes && <p class="tiny faint">{guide.data.reading_minutes} min read</p>}
+      <Content />
+      <nav class="pager" aria-label="More guides">
+        {prev ? <a href={href(`/guides/${prev.id}/`)}>← {prev.data.title}</a> : <span></span>}
+        {next ? <a href={href(`/guides/${next.id}/`)}>{next.data.title} →</a> : <a href={href('/start/')}>Back to Start here →</a>}
+      </nav>
+    </article>
+    {
+      toc.length > 2 && (
+        <aside class="toc" aria-label="On this page">
+          <p class="eyebrow">On this page</p>
+          <ul class="plain">
+            {toc.map((h) => (
+              <li>
+                <a href={`#${h.slug}`}>{h.text}</a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )
+    }
+  </div>
+</Base>
+
+<style>
+  .guide-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 64rem) {
+    .guide-layout {
+      grid-template-columns: minmax(0, 44rem) 14rem;
+      justify-content: space-between;
+    }
+    .toc {
+      position: sticky;
+      top: 1.5rem;
+      align-self: start;
+    }
+  }
+  .toc li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+  }
+  .toc a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .toc a:hover {
+    color: var(--accent);
+  }
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+</style>

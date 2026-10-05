@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local database (production uses DATABASE_URL; CI hydrates from data/db/*.jsonl)
+data/local.db
+data/local.db-*
+*.sqlite3
+
+# Private, never published: candid notes about orgs
+content/notes.private.yaml
+
+# Node / Astro
+node_modules/
+site/dist/
+site/.astro/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

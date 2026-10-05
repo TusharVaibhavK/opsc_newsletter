@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../lib/paths';
+
+const ORDER = ['get-ready', 'choose', 'first-contribution', 'go-deeper', 'apply'];
+const all = (await getCollection('flow')).map((e) => e.data);
+const main = ORDER.map((id) => all.find((p) => p.id === id)).filter((p): p is (typeof all)[number] => Boolean(p));
+const selected = all.find((p) => p.id === 'selected');
+const notSelected = all.find((p) => p.id === 'not-selected');
+const stepLink = (s: { guide?: string | null; link?: string | null }) =>
+  s.guide ? href(`/guides/${s.guide}/`) : s.link ? href(s.link) : null;
+---
+
+<Base title="The journey" description="The whole path into open source mentorship programs, from setting up Git to finishing a program, with a guide for every step.">
+  <header class="page-head">
+    <h1>The journey</h1>
+    <p class="lede">Every step from zero to a merged pull request to a mentorship program, and what to do whichever way the results go. Each step links to its guide.</p>
+    <p class="small"><a href={href('/start/')}>Prefer a checklist? Start here</a></p>
+  </header>
+
+  <ol class="journey plain">
+    {
+      main.map((phase, i) => (
+        <li class="stop">
+          <div class="marker" aria-hidden="true">{i + 1}</div>
+          <div class="body">
+            <h2>{phase.title}</h2>
+            <p class="small muted">{phase.when}</p>
+            <ul class="plain step-list">
+              {phase.steps.map((s) => {
+                const link = stepLink(s);
+                return (
+                  <li>
+                    {link ? <a href={link}>{s.title}</a> : <span>{s.title}</span>}
+                    <span class="small muted"> · {s.summary}</span>
+                  </li>
+                );
+              })}
+            </ul>
+            {phase.branch && <p class="small">{phase.branch}</p>}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  <div class="fork" aria-label="Two possible outcomes">
+    {
+      [selected, notSelected].map(
+        (phase) =>
+          phase && (
+            <section class="card">
+              <h2>{phase.title}</h2>
+              <p class="small muted">{phase.when}</p>
+              <ul class="plain step-list">
+                {phase.steps.map((s) => {
+                  const link = stepLink(s);
+                  return (
+                    <li>
+                      {link ? <a href={link}>{s.title}</a> : <span>{s.title}</span>}
+                      <span class="small muted"> · {s.summary}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          ),
+      )
+    }
+  </div>
+  <p class="small muted" style="margin-top:1.5rem">Both roads lead back to the same place: keep contributing to a community you care about.</p>
+</Base>
+
+<style>
+  .journey {
+    position: relative;
+    margin-top: 1rem;
+  }
+  .journey::before {
+    content: '';
+    position: absolute;
+    left: 1.05rem;
+    top: 0.5rem;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent);
+    opacity: 0.35;
+  }
+  .stop {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0.9rem;
+    padding-bottom: 1.4rem;
+    position: relative;
+  }
+  .marker {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    position: relative;
+  }
+  .body h2 {
+    margin: 0.25rem 0 0;
+    font-size: 1.15rem;
+  }
+  .body > p {
+    margin: 0.1rem 0 0.5rem;
+  }
+  .step-list li {
+    padding: 0.3rem 0;
+  }
+  .fork {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    margin-left: 3.1rem;
+  }
+  .fork h2 {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 40rem) {
+    .fork {
+      margin-left: 0;
+    }
+  }
+</style>

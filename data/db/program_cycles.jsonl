@@ -1,0 +1,32 @@
+{"confirmed":false,"cycle":"24 Pull Requests 2026","date":"2026-12-24","event":"end","label":"","precision":"day","program":"24-pull-requests","source_url":null}
+{"confirmed":false,"cycle":"24 Pull Requests 2026","date":"2026-12-01","event":"start","label":"","precision":"day","program":"24-pull-requests","source_url":null}
+{"confirmed":false,"cycle":"2027 Batch 1","date":"2027-03-18","event":"end","label":"Batch 1 ends","precision":"day","program":"esoc","source_url":null}
+{"confirmed":false,"cycle":"2027 Batch 1","date":"2027-02-18","event":"start","label":"Batch 1 starts","precision":"day","program":"esoc","source_url":null}
+{"confirmed":false,"cycle":"2027 Batch 2","date":"2027-04-16","event":"end","label":"Batch 2 ends","precision":"day","program":"esoc","source_url":null}
+{"confirmed":false,"cycle":"2027 Batch 2","date":"2027-03-19","event":"start","label":"Batch 2 starts","precision":"day","program":"esoc","source_url":null}
+{"confirmed":false,"cycle":"GSoC 2027","date":"2027-03-31","event":"apply_close","label":"","precision":"day","program":"gsoc","source_url":"https://developers.google.com/open-source/gsoc/timeline"}
+{"confirmed":false,"cycle":"GSoC 2027","date":"2027-03-16","event":"apply_open","label":"","precision":"day","program":"gsoc","source_url":"https://developers.google.com/open-source/gsoc/timeline"}
+{"confirmed":false,"cycle":"GSoC 2027","date":"2027-02-19","event":"orgs_announced","label":"","precision":"day","program":"gsoc","source_url":"https://developers.google.com/open-source/gsoc/timeline"}
+{"confirmed":false,"cycle":"GSoC 2027","date":"2027-04-30","event":"results","label":"","precision":"day","program":"gsoc","source_url":"https://developers.google.com/open-source/gsoc/timeline"}
+{"confirmed":false,"cycle":"GSoC 2027","date":"2027-05-25","event":"start","label":"Coding starts","precision":"day","program":"gsoc","source_url":"https://developers.google.com/open-source/gsoc/timeline"}
+{"confirmed":true,"cycle":"Hacktoberfest 2026","date":"2026-10-31","event":"end","label":"","precision":"day","program":"hacktoberfest","source_url":"https://hacktoberfest.com/questions/"}
+{"confirmed":true,"cycle":"Hacktoberfest 2026","date":"2026-10-01","event":"start","label":"","precision":"day","program":"hacktoberfest","source_url":"https://hacktoberfest.com/questions/"}
+{"confirmed":false,"cycle":"2026 Term 3","date":"2026-11-01","event":"end","label":"Term ends","precision":"month","program":"lfx-mentorship","source_url":null}
+{"confirmed":false,"cycle":"2026 Term 3","date":"2026-09-01","event":"start","label":"Term starts","precision":"month","program":"lfx-mentorship","source_url":null}
+{"confirmed":false,"cycle":"2027 Term 1","date":"2027-02-10","event":"apply_close","label":"","precision":"day","program":"lfx-mentorship","source_url":"https://contribute.cncf.io/blog/2026/01/07/cncf-lfx-2026-term-1-announcement"}
+{"confirmed":false,"cycle":"2027 Term 1","date":"2027-01-26","event":"apply_open","label":"","precision":"day","program":"lfx-mentorship","source_url":"https://contribute.cncf.io/blog/2026/01/07/cncf-lfx-2026-term-1-announcement"}
+{"confirmed":false,"cycle":"2027 Term 1","date":"2027-05-01","event":"end","label":"Term ends","precision":"month","program":"lfx-mentorship","source_url":"https://contribute.cncf.io/blog/2026/01/07/cncf-lfx-2026-term-1-announcement"}
+{"confirmed":false,"cycle":"2027 Term 1","date":"2027-03-01","event":"start","label":"Term starts","precision":"month","program":"lfx-mentorship","source_url":"https://contribute.cncf.io/blog/2026/01/07/cncf-lfx-2026-term-1-announcement"}
+{"confirmed":false,"cycle":"2027 Term 2","date":"2027-08-01","event":"end","label":"Term ends","precision":"month","program":"lfx-mentorship","source_url":null}
+{"confirmed":false,"cycle":"2027 Term 2","date":"2027-06-01","event":"start","label":"Term starts","precision":"month","program":"lfx-mentorship","source_url":null}
+{"confirmed":true,"cycle":"December 2026 cohort","date":"2026-08-31","event":"apply_close","label":"Initial applications closed","precision":"day","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":true,"cycle":"December 2026 cohort","date":"2026-11-02","event":"contribution_end","label":"","precision":"day","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":true,"cycle":"December 2026 cohort","date":"2026-10-05","event":"contribution_start","label":"","precision":"day","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":true,"cycle":"December 2026 cohort","date":"2027-03-08","event":"end","label":"Internship ends","precision":"day","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":true,"cycle":"December 2026 cohort","date":"2026-12-07","event":"start","label":"Internship starts","precision":"day","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":false,"cycle":"May 2027 cohort","date":"2027-02-01","event":"apply_open","label":"Initial applications","precision":"month","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":false,"cycle":"May 2027 cohort","date":"2027-04-01","event":"contribution_end","label":"","precision":"month","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":false,"cycle":"May 2027 cohort","date":"2027-03-01","event":"contribution_start","label":"","precision":"month","program":"outreachy","source_url":"https://www.outreachy.org/"}
+{"confirmed":false,"cycle":"Season of KDE 2027","date":"2027-01-01","event":"apply_close","label":"","precision":"month","program":"season-of-kde","source_url":null}
+{"confirmed":false,"cycle":"Season of KDE 2027","date":"2027-03-01","event":"end","label":"Work ends","precision":"month","program":"season-of-kde","source_url":null}
+{"confirmed":false,"cycle":"Season of KDE 2027","date":"2027-01-01","event":"start","label":"Work starts","precision":"month","program":"season-of-kde","source_url":null}

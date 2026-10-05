@@ -1,0 +1,23 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: mlh-fellowship
+name: MLH Fellowship
+organizer: Major League Hacking
+url: https://fellowship.mlh.io/
+kind: fellowship
+paid: true
+pay_note: Educational stipend
+beginner_friendly: false
+students_only: false
+worldwide: true
+min_age: 18
+who_can_apply: 18+, students and recent graduates
+typical_timing: 12 weeks, several cohorts a year
+tracks:
+- backend
+- web
+tags:
+- competitive
+fit: medium-high
+fit_note: Open source and backend tracks; competitive
+do_now: Prepare a portfolio project (this tracker fits)

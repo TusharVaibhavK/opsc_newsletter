@@ -1,0 +1,21 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: nexus-spring-of-code
+name: Nexus Spring of Code
+organizer: Nexus
+url: https://www.nsoc.in/
+kind: mentorship
+paid: true
+pay_note: Stipend
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open
+typical_timing: 45 days; timing varies
+tracks:
+- any
+tags:
+- new-program
+fit: low-medium
+fit_note: Newer program; verify before investing time
+do_now: Optional

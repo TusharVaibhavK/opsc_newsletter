@@ -1,0 +1,25 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: igalia-coding-experience
+name: Igalia Coding Experience
+organizer: Igalia
+url: https://www.igalia.com/coding-experience/
+kind: internship
+paid: true
+pay_note: $7,000
+beginner_friendly: false
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: Rolling openings
+tracks:
+- systems
+tags:
+- c
+- c++
+- browsers
+- compilers
+- graphics
+fit: medium
+fit_note: Browsers, compilers, graphics (C/C++)
+do_now: Only if you want systems work

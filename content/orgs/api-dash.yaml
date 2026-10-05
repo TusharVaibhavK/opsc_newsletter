@@ -1,0 +1,26 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: api-dash
+name: API Dash
+tracks:
+- tooling
+track_label: Dart / Flutter tooling
+stack:
+- Dart
+- Flutter
+languages:
+- dart
+competition_estimate: high
+why: Open-source API client and testing tool
+crowded: true
+crowded_reason: Very large contributor surges in recent years
+advice: Pick the least glamorous idea on their list
+github_owners:
+- foss42
+repos:
+- name: foss42/apidash
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

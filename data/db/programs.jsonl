@@ -1,0 +1,22 @@
+{"kind":"event","name":"24 Pull Requests","organizer":"24 Pull Requests","paid":false,"slug":"24-pull-requests","url":"https://24pullrequests.com/","watch_urls":[]}
+{"kind":"mentorship","name":"Code for GovTech (C4GT) DMP","organizer":"Code for GovTech","paid":true,"slug":"c4gt","url":"https://app.codeforgovtech.in/","watch_urls":[]}
+{"kind":"mentorship","name":"Djangonaut Space","organizer":"Djangonaut Space","paid":false,"slug":"djangonaut-space","url":"https://djangonaut.space/","watch_urls":["https://djangonaut.space/"]}
+{"kind":"mentorship","name":"European Summer of Code","organizer":"European Summer of Code","paid":null,"slug":"esoc","url":"https://www.esoc.dev/","watch_urls":["https://www.esoc.dev/"]}
+{"kind":"internship","name":"FOSSASIA Internship","organizer":"FOSSASIA","paid":null,"slug":"fossasia-internship","url":"https://fossasia.org/internship","watch_urls":[]}
+{"kind":"fellowship","name":"FOSSEE Summer Fellowship","organizer":"FOSSEE, IIT Bombay","paid":true,"slug":"fossee-fellowship","url":"https://fossee.in/","watch_urls":[]}
+{"kind":"internship","name":"FSF Internship","organizer":"Free Software Foundation","paid":null,"slug":"fsf-internship","url":"https://www.fsf.org/volunteer/internships","watch_urls":[]}
+{"kind":"mentorship","name":"Google Summer of Code","organizer":"Google","paid":true,"slug":"gsoc","url":"https://summerofcode.withgoogle.com/","watch_urls":["https://developers.google.com/open-source/gsoc/timeline"]}
+{"kind":"event","name":"Hacktoberfest","organizer":"DigitalOcean","paid":false,"slug":"hacktoberfest","url":"https://hacktoberfest.com/","watch_urls":[]}
+{"kind":"internship","name":"Igalia Coding Experience","organizer":"Igalia","paid":true,"slug":"igalia-coding-experience","url":"https://www.igalia.com/coding-experience/","watch_urls":[]}
+{"kind":"mentorship","name":"Kubernetes Release Team Shadow","organizer":"Kubernetes SIG Release","paid":null,"slug":"kubernetes-release-shadow","url":"https://github.com/kubernetes/sig-release/blob/master/release-team/shadows.md","watch_urls":[]}
+{"kind":"mentorship","name":"LF Decentralized Trust Mentorship","organizer":"LF Decentralized Trust","paid":true,"slug":"lf-decentralized-trust","url":"https://lf-decentralized-trust-mentorships.github.io/mentorship-program/main/","watch_urls":[]}
+{"kind":"mentorship","name":"LFX Mentorship","organizer":"Linux Foundation","paid":true,"slug":"lfx-mentorship","url":"https://mentorship.lfx.linuxfoundation.org/","watch_urls":["https://contribute.cncf.io/blog/","https://github.com/cncf/mentoring/blob/main/programs/lfx-mentorship/README.md"]}
+{"kind":"mentorship","name":"Linux Kernel Mentorship","organizer":"Linux Foundation","paid":true,"slug":"linux-kernel-mentorship","url":"https://wiki.linuxfoundation.org/lkmp","watch_urls":[]}
+{"kind":"fellowship","name":"MLH Fellowship","organizer":"Major League Hacking","paid":true,"slug":"mlh-fellowship","url":"https://fellowship.mlh.io/","watch_urls":[]}
+{"kind":"mentorship","name":"Nexus Spring of Code","organizer":"Nexus","paid":true,"slug":"nexus-spring-of-code","url":"https://www.nsoc.in/","watch_urls":[]}
+{"kind":"mentorship","name":"Open Mainframe Project Mentorship","organizer":"Open Mainframe Project","paid":true,"slug":"open-mainframe","url":"https://openmainframeproject.org/community/mentorship-program/","watch_urls":[]}
+{"kind":"mentorship","name":"Open Source Research Experience","organizer":"UC Santa Cruz OSPO","paid":null,"slug":"osre","url":"https://ucsc-ospo.github.io/osre/","watch_urls":[]}
+{"kind":"internship","name":"Outreachy","organizer":"Software Freedom Conservancy","paid":true,"slug":"outreachy","url":"https://www.outreachy.org/","watch_urls":["https://www.outreachy.org/"]}
+{"kind":"mentorship","name":"Season of KDE","organizer":"KDE","paid":null,"slug":"season-of-kde","url":"https://season.kde.org/","watch_urls":["https://season.kde.org/"]}
+{"kind":"mentorship","name":"sktime Mentoring","organizer":"sktime","paid":null,"slug":"sktime-mentoring","url":"https://www.sktime.net/en/latest/get_involved/mentoring.html","watch_urls":[]}
+{"kind":"internship","name":"Summer of Bitcoin","organizer":"Summer of Bitcoin","paid":true,"slug":"summer-of-bitcoin","url":"https://www.summerofbitcoin.org/","watch_urls":["https://www.summerofbitcoin.org/"]}

@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import DateText from '../components/DateText.astro';
+import TimelineChart from '../components/TimelineChart.astro';
+import { allEvents, programs as loadPrograms } from '../lib/content';
+import { monthKey, monthLabel, today } from '../lib/dates';
+import { href } from '../lib/paths';
+
+const now = today();
+const programs = await loadPrograms();
+const events = allEvents(programs);
+const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1));
+const MONTHS = 13;
+const end = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + MONTHS, 0));
+const visible = events.filter((e) => e.end >= start && e.date <= end);
+const byMonth = new Map<string, typeof visible>();
+for (const e of visible) {
+  const key = monthKey(e.date);
+  byMonth.set(key, [...(byMonth.get(key) ?? []), e]);
+}
+const undated = programs.filter((p) => !visible.some((e) => e.program.slug === p.slug));
+---
+
+<Base title="Timeline" description="Every program's application windows and deadlines, month by month, confirmed vs estimated.">
+  <header class="page-head">
+    <h1>Timeline</h1>
+    <p class="lede">Application windows and deadlines for the next year. Solid marks are confirmed; dashed ones follow last year's pattern and will move.</p>
+    <p class="small">
+      <a href={href('/deadlines.ics')}>Subscribe to the calendar feed</a>
+      <span class="muted">(dated deadlines only; add the URL to Google Calendar under “From URL”)</span>
+    </p>
+  </header>
+
+  <TimelineChart programs={programs} events={events} start={start} months={MONTHS} now={now} />
+
+  <section class="section">
+    <h2>Month by month</h2>
+    {
+      [...byMonth.entries()].map(([key, list]) => (
+        <div class="month">
+          <h3>{monthLabel(key)}</h3>
+          <ul class="plain divided">
+            {list.map((e) => (
+              <li class="spread">
+                <span><a href={href(`/programs/${e.program.slug}/`)}>{e.program.name}</a><span class="muted"> · {e.cycle.startsWith(e.program.name) ? e.label : `${e.cycle}: ${e.label}`}</span></span>
+                <span class="small">
+                  {e.precision === 'month' && <span class="muted">sometime in </span>}
+                  <DateText date={e.date} precision={e.precision} confirmed={e.confirmed} note={e.note} withYear={false} />
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </section>
+
+  {
+    undated.length > 0 && (
+      <section class="section">
+        <h2>No dates yet</h2>
+        <p class="muted small">These run on rolling or unannounced schedules. Typical timing is shown; check each official site.</p>
+        <ul class="plain divided">
+          {undated.map((p) => (
+            <li class="spread">
+              <a href={href(`/programs/${p.slug}/`)}>{p.name}</a>
+              <span class="small muted">{p.typical_timing}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Base>
+
+<style>
+  .month h3 {
+    margin: 1.4rem 0 0.3rem;
+  }
+</style>

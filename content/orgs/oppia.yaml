@@ -1,0 +1,30 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: oppia
+name: Oppia
+gsoc_name: Oppia Foundation
+tracks:
+- web
+- backend
+track_label: Python + TypeScript web
+stack:
+- Python
+- TypeScript
+- Angular
+languages:
+- python
+- typescript
+competition_estimate: high
+why: Free interactive learning platform
+crowded: true
+crowded_reason: Long-famous "first GSoC org" pick with a huge newcomer community
+advice: Start by October and aim for substantial backend PRs, not typo fixes
+github_owners:
+- oppia
+repos:
+- name: oppia/oppia
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

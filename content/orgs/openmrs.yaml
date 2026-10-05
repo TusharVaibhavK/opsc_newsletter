@@ -1,0 +1,25 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: openmrs
+name: OpenMRS
+tracks:
+- backend
+track_label: Java backend
+stack:
+- Java
+- Hibernate
+- FHIR
+languages:
+- java
+competition_estimate: medium
+estimate_note: Backend ideas draw fewer applicants than frontend
+why: Mature healthcare platform; excellent mentoring culture
+github_owners:
+- openmrs
+repos:
+- name: openmrs/openmrs-core
+  gfi_labels: []
+  note: Issues live in OpenMRS Jira, not GitHub
+programs:
+- gsoc

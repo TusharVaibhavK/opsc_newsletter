@@ -1,0 +1,30 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: zulip
+name: Zulip
+tracks:
+- backend
+- web
+track_label: Python backend + web
+stack:
+- Python
+- Django
+- TypeScript
+languages:
+- python
+- typescript
+competition_estimate: high
+why: Open-source team chat with a large, well-run contributor community
+crowded: true
+crowded_reason: Long-famous "first GSoC org" pick with a huge newcomer community
+advice: Start by October and aim for substantial backend PRs, not typo fixes
+github_owners:
+- zulip
+repos:
+- name: zulip/zulip
+  gfi_labels:
+  - help wanted
+  note: Zulip marks open-to-contributors issues as help wanted
+programs:
+- gsoc

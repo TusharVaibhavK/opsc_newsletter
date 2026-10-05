@@ -1,0 +1,1891 @@
+{
+ "orgs": {
+  "aboutcode": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "api-dash": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 9,
+   "fit_parts": {
+    "languages": 0.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "cern-hsf": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "checkstyle": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "cncf": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "dbpedia": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 62,
+   "fit_parts": {
+    "languages": 0.67,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "deepchem": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 69,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "django": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "gemini-cli": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 23,
+   "fit_parts": {
+    "languages": 0.0,
+    "merged_prs": 0.0,
+    "streak": 0.2,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "humanai": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 69,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "kubeflow": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 69,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "kubevirt": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 63,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.2,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "mdanalysis": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "meshery": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 26,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 0.4,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "metabrainz": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "metaflow": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 63,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.2,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "ml4sci": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "mllam": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 63,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.2,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "neuroinformatics-unit": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 66,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.4,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "open-transit-software-foundation": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 69,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "openelis-global": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.25,
+   "fit": 69,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.6,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots"
+   ]
+  },
+  "openmrs": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "oppia": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "postgresql": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "python-software-foundation": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "rocket-chat": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 35,
+   "fit_parts": {
+    "languages": 0.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "sugar-labs": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 35,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 0.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "sw360": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 66,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 0.4,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  },
+  "zulip": {
+   "band": "unknown",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-07-20"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-07-27"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-05"
+    }
+   ],
+   "confidence": 0.38,
+   "fit": 55,
+   "fit_parts": {
+    "languages": 0.5,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "slots",
+    "ideas"
+   ]
+  }
+ },
+ "week": "2026-10-05",
+ "weights": {
+  "claim_speed": 0.25,
+  "ideas": -0.2,
+  "log_stars": 0.1875,
+  "new_contributors": 0.375,
+  "newcomer_backlog": 0.1875,
+  "slots": -0.4
+ }
+}

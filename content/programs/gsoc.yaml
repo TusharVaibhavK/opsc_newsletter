@@ -1,0 +1,57 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: gsoc
+name: Google Summer of Code
+organizer: Google
+url: https://summerofcode.withgoogle.com/
+kind: mentorship
+paid: true
+pay_note: Stipend scaled by project size and country (see the official FAQ)
+beginner_friendly: true
+students_only: false
+worldwide: true
+min_age: 18
+who_can_apply: 18+, students or people new to open source
+typical_timing: Orgs announced in February, proposals in March, coding May–August
+tracks:
+- backend
+- ml
+- data
+- cloud
+- tooling
+- scientific
+- web
+- systems
+tags:
+- flagship
+- remote
+fit: high
+fit_note: 'The main target: 184 orgs in 2026, many with backend, Go, Java and ML ideas'
+do_now: Pick 2–3 orgs and start contributing now
+watch_urls:
+- https://developers.google.com/open-source/gsoc/timeline
+cycles:
+- name: GSoC 2027
+  source_url: https://developers.google.com/open-source/gsoc/timeline
+  events:
+  - kind: orgs_announced
+    date: 2027-02-19
+    confirmed: false
+    note: Feb 19 in 2026
+  - kind: apply_open
+    date: 2027-03-16
+    confirmed: false
+    note: Mar 16 in 2026
+  - kind: apply_close
+    date: 2027-03-31
+    confirmed: false
+    note: Mar 31 in 2026
+  - kind: results
+    date: 2027-04-30
+    confirmed: false
+    note: Apr 30 in 2026
+  - kind: start
+    date: 2027-05-25
+    confirmed: false
+    label: Coding starts
+    note: May 25 in 2026

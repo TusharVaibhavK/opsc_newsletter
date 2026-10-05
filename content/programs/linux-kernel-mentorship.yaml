@@ -1,0 +1,22 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: linux-kernel-mentorship
+name: Linux Kernel Mentorship
+organizer: Linux Foundation
+url: https://wiki.linuxfoundation.org/lkmp
+kind: mentorship
+paid: true
+pay_note: Stipend
+beginner_friendly: false
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: Follows LFX cycles
+tracks:
+- systems
+tags:
+- c
+- kernel
+fit: low
+fit_note: C and kernel work
+do_now: Skip for now

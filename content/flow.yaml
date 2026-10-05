@@ -1,0 +1,130 @@
+# The journey from zero to a merged PR to a mentorship program, as phases of steps.
+# The Start here page walks the first four phases as a numbered checklist;
+# the Journey page draws all of them. Each step links to a guide in content/guides/.
+
+- id: get-ready
+  title: Get ready
+  when: Any time · about a week
+  steps:
+    - id: set-up
+      title: Set up Git and GitHub
+      summary: Install Git, make a GitHub account with a clear profile, and practise the fork, branch and pull request loop once on a throwaway repo.
+      guide: setup-git-github
+      duration: 1–2 hours
+    - id: expectations
+      title: Learn how selection really works
+      summary: Programs pick people who show up steadily and communicate well, not people with the most pull requests. Know the numbers before you start.
+      guide: honest-expectations
+      duration: 20 minutes
+    - id: vocabulary
+      title: Learn the vocabulary
+      summary: Upstream, rebase, DCO, triage, LGTM. Skim the glossary once so maintainers' messages read clearly.
+      link: /glossary/
+      duration: 15 minutes
+
+- id: choose
+  title: Choose where to contribute
+  when: 1–2 weeks
+  steps:
+    - id: choose-program
+      title: Pick the programs you're eligible for
+      summary: GSoC, Outreachy, LFX and others have different rules, pay and calendars. Find the two or three that fit you.
+      guide: choosing-a-program
+      duration: 1 hour
+    - id: choose-org
+      title: Shortlist 3–5 orgs
+      summary: Match an org's stack to your skills, check that maintainers are responsive, and prefer a technical barrier you can climb over a famous name.
+      guide: choosing-an-org
+      duration: A few evenings
+
+- id: first-contribution
+  title: Make your first contribution
+  when: 2–6 weeks
+  steps:
+    - id: build-locally
+      title: Build and run the project locally
+      summary: Clone it, follow the contributor guide, get the tests passing on your machine, and read 20 recent merged pull requests.
+      guide: first-contribution
+      duration: 1–3 evenings per project
+    - id: find-issue
+      title: Find and claim a first issue
+      summary: Pick an unclaimed issue you can reproduce, read the whole thread, and comment once with a short plan.
+      guide: finding-a-first-issue
+      duration: 1 evening
+    - id: open-pr
+      title: Open your first pull request
+      summary: Small, focused, tested, with a clear description that links the issue. Open it as a draft early if you're unsure.
+      guide: first-contribution
+      duration: A few days
+    - id: handle-review
+      title: Handle review well
+      summary: Reply to every comment, push fixes promptly, and summarise decisions. Review is where maintainers get to know you.
+      guide: working-with-mentors
+      duration: Ongoing
+
+- id: go-deeper
+  title: Go deeper in one org
+  when: 1–3 months
+  steps:
+    - id: medium-work
+      title: Take on bigger work and become a familiar name
+      summary: Move from small fixes to a medium issue, review other people's pull requests, and help newcomers in chat.
+      guide: going-deeper
+      duration: Weeks
+    - id: pitch-idea
+      title: Pitch an idea in public
+      summary: Open a discussion describing a problem, a rough design and a small proof of concept. Strong threads become official ideas.
+      guide: going-deeper
+      duration: 1–2 weeks
+
+- id: apply
+  title: Apply
+  when: February–March for GSoC
+  branch: Results arrive around the end of April. Whichever way it goes, the next step is below.
+  steps:
+    - id: talk-to-mentor
+      title: Talk to the mentor of your idea
+      summary: Ask focused questions in public channels, agree on scope, and show what you've already tried.
+      guide: working-with-mentors
+      duration: 1–2 weeks
+    - id: proof-of-concept
+      title: Build a small proof of concept
+      summary: A working sliver of the idea beats three pages of promises. Link it from your proposal.
+      guide: proposal-kit
+      duration: 1–2 weeks
+    - id: write-proposal
+      title: Write, review and submit the proposal
+      summary: Share a draft with mentors 10+ days before the deadline. Week-by-week plan, merged PRs, risks. Submit to 1–2 orgs.
+      guide: proposal-kit
+      duration: 2–3 weeks
+
+- id: selected
+  title: If you're selected
+  when: May–August
+  steps:
+    - id: bonding
+      title: Community bonding and planning
+      summary: Meet your mentors, refine the plan, set up a weekly update rhythm, and land a few warm-up PRs.
+      guide: during-the-program
+      duration: About 3 weeks
+    - id: deliver
+      title: Build, report weekly, pass evaluations
+      summary: Ship in small reviewed pieces, write weekly updates, raise problems early, and finish with a clear final report.
+      guide: during-the-program
+      duration: 12+ weeks
+
+- id: not-selected
+  title: If you're not selected
+  when: Any time
+  steps:
+    - id: regroup
+      title: Ask for feedback and keep contributing
+      summary: Most applicants aren't selected. The ones who keep contributing are the ones mentors remember next year.
+      guide: if-not-selected
+      duration: Ongoing
+    - id: next-program
+      title: Apply to a program on another calendar
+      summary: LFX runs three terms a year and Outreachy two cohorts. Your track record carries over.
+      guide: if-not-selected
+      link: /timeline/
+      duration: Next cycle

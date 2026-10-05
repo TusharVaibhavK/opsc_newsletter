@@ -1,0 +1,104 @@
+---
+import Base from '../layouts/Base.astro';
+import Filters from '../components/Filters.astro';
+import Freshness from '../components/Freshness.astro';
+import { TRACK_LABEL, orgs as loadOrgs } from '../lib/content';
+import { gsocOrg, issues, meta } from '../lib/data';
+import { href } from '../lib/paths';
+
+const curated = (await loadOrgs()).filter((o) => o.repos.some((r) => r.gfi_labels.length > 0));
+const languages = [...new Set(curated.flatMap((o) => o.languages))].sort();
+const tracks = [...new Set(curated.flatMap((o) => o.tracks))].filter((t) => t !== 'any');
+const searchUrl = (repo: string, labels: string[]) =>
+  `https://github.com/${repo}/issues?q=${encodeURIComponent(`is:issue is:open no:assignee ${labels.map((l) => `label:"${l}"`).join(' ')}`)}`;
+const STATUS = { unclaimed: 'No comments yet', discussed: 'Has discussion', assigned: 'Assigned', 'pr-linked': 'PR linked' } as const;
+const hasData = Object.keys(issues.orgs).length > 0;
+---
+
+<Base title="First issues" description="Open beginner issues across tracked open source orgs, with how fresh and how contested each one is.">
+  <header class="page-head">
+    <h1>First issues</h1>
+    <p class="lede">Open beginner-labelled issues from the tracked orgs. At most {issues.per_org} per org are shown, rotated daily, so the same issue doesn't get fifty “can I work on this?” comments.</p>
+    <Freshness at={meta.last_ok?.collect_github} missing="Issue data not collected yet" />
+  </header>
+
+  <div class="callout">
+    <p><strong>Before you comment on an issue:</strong> read the org's contributor guide, reproduce the problem locally, then comment once with a short plan. Claim one issue at a time, and open a draft PR within a few days so the claim doesn't go stale.</p>
+    <p class="small"><a href={href('/guides/finding-a-first-issue/')}>How to pick and claim a first issue</a> · <a href={href('/guides/working-with-mentors/#templates')}>Message templates</a></p>
+  </div>
+
+  <Filters
+    target="#issue-orgs"
+    noun={['org', 'orgs']}
+    groups={[
+      { key: 'lang', label: 'Language', options: languages.map((l) => ({ value: l, label: l[0].toUpperCase() + l.slice(1) })) },
+      { key: 'track', label: 'Track', options: tracks.map((t) => ({ value: t, label: TRACK_LABEL[t] })) },
+    ]}
+  />
+
+  {!hasData && <p class="muted">No issue data collected yet. Until the daily collector runs, use the GitHub searches below: they already filter to open, unassigned beginner issues.</p>}
+
+  <div id="issue-orgs">
+    {
+      curated.map((o) => {
+        const data = issues.orgs[o.slug];
+        const guide = gsocOrg(o.slug)?.links.guide;
+        return (
+          <section class="card org-issues" id={o.slug} data-item data-lang={o.languages.join(' ')} data-track={o.tracks.join(' ')}>
+            <div class="spread">
+              <h2 style="margin:0">
+                <a href={href(`/orgs/${o.slug}/`)}>{o.name}</a>
+              </h2>
+              <span class="small muted">
+                {data ? `${data.open_to_newcomers} open to newcomers` : 'not collected yet'} · {o.languages.join(', ')}
+              </span>
+            </div>
+            {guide && (
+              <p class="small" style="margin:0.4rem 0 0">
+                Start here: <a href={guide}>contributor guide ↗</a>
+              </p>
+            )}
+            {data && data.shown.length > 0 ? (
+              <ul class="plain divided" style="margin-top:0.5rem">
+                {data.shown.map((i) => (
+                  <li>
+                    <a href={i.url}>{i.title}</a>
+                    <div class="row tiny muted" style="margin-top:0.15rem">
+                      <span>
+                        {i.repo}#{i.number}
+                      </span>
+                      <span>· opened {i.age_days === 0 ? 'today' : `${i.age_days} days ago`}</span>
+                      <span>· {i.comments} comment{i.comments === 1 ? '' : 's'}</span>
+                      <span class:list={['badge', i.status === 'unclaimed' ? 'ok' : '']}>{STATUS[i.status]}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              data && <p class="small muted">No unclaimed beginner issues right now.</p>
+            )}
+            <p class="tiny" style="margin:0.6rem 0 0">
+              {o.repos
+                .filter((r) => r.gfi_labels.length > 0)
+                .map((r, idx) => (
+                  <>
+                    {idx > 0 && ' · '}
+                    <a href={searchUrl(r.name, r.gfi_labels)}>All open in {r.name} ↗</a>
+                  </>
+                ))}
+            </p>
+          </section>
+        );
+      })
+    }
+  </div>
+</Base>
+
+<style>
+  .org-issues {
+    margin-bottom: 1rem;
+  }
+  .org-issues h2 {
+    font-size: 1.1rem;
+  }
+</style>

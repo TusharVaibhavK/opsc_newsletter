@@ -1,0 +1,29 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: rocket-chat
+name: Rocket.Chat
+gsoc_name: rocket.chat
+tracks:
+- web
+- backend
+track_label: TypeScript / Node.js
+stack:
+- TypeScript
+- Node.js
+- MongoDB
+languages:
+- typescript
+competition_estimate: high
+why: Open-source team communication platform
+crowded: true
+crowded_reason: Long-famous "first GSoC org" pick with a huge newcomer community
+advice: Start by October and aim for substantial backend PRs, not typo fixes
+github_owners:
+- RocketChat
+repos:
+- name: RocketChat/Rocket.Chat
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

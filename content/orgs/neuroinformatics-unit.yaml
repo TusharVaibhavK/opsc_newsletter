@@ -1,0 +1,27 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: neuroinformatics-unit
+name: Neuroinformatics Unit
+tracks:
+- ml
+- scientific
+track_label: AI/ML
+stack:
+- Python
+- NumPy
+- Deep learning
+languages:
+- python
+competition_estimate: low
+why: Young org with ML tooling for neuroscience research
+github_owners:
+- neuroinformatics-unit
+repos:
+- name: neuroinformatics-unit/movement
+  gfi_labels: &id001
+  - good first issue
+- name: neuroinformatics-unit/datashuttle
+  gfi_labels: *id001
+programs:
+- gsoc

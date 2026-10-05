@@ -1,0 +1,7 @@
+# Who this tracker is for. Used for the fit score and for pulling your own PRs.
+# Set github_username to start tracking your pull requests and reviews.
+github_username: TusharVaibhavK
+languages: [go, java, python]
+interests: [backend, ml]
+timezone: Asia/Kolkata
+target: GSoC 2027

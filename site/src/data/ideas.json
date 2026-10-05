@@ -1,0 +1,654 @@
+{
+ "aboutcode": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:27Z",
+  "checked_at": "2026-10-05T07:12:27Z",
+  "count": 10,
+  "next": {
+   "checked_at": "2026-10-05T07:12:27Z",
+   "published": false,
+   "url": "https://github.com/aboutcode-org/aboutcode/wiki/GSOC-2027-project-ideas"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Project Ideas Index",
+   "Abbreviations and acronyms used here",
+   "PURLdb project ideas",
+   "VulnerableCode project ideas",
+   "ScanCode.io project ideas",
+   "ScanCode Toolkit project ideas",
+   "Project Priority",
+   "Project Length",
+   "Project Tags",
+   "Project Difficulty Level"
+  ],
+  "url": "https://github.com/aboutcode-org/aboutcode/wiki/GSOC-2026-project-ideas"
+ },
+ "api-dash": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:28Z",
+  "checked_at": "2026-10-05T07:12:28Z",
+  "count": 14,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "GSoC 2026 [List of Ideas|Application Guide]",
+   "AI Usage Policy",
+   "Mentors for GSoC 2026",
+   "Tech Stack for Projects",
+   "Final words",
+   "1. MCP Testing",
+   "2. Multimodal AI and Agent API Eval Framework",
+   "3. Git Support, UI Workflow Builder & Collection Dashboard",
+   "4. Agentic API Testing",
+   "5. Open Responses & Generative UI",
+   "6. CLI & MCP Support",
+   "7. WebSocket, MQTT & gRPC",
+   "8. API Explorer",
+   "Want to propose any other new idea?"
+  ],
+  "url": "https://github.com/foss42/apidash/discussions/1054"
+ },
+ "cern-hsf": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:29Z",
+  "checked_at": "2026-10-05T07:12:29Z",
+  "count": 0,
+  "next": {
+   "checked_at": "2026-10-05T07:12:30Z",
+   "published": false,
+   "url": "https://hepsoftwarefoundation.org/gsoc/2027/summary.html"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [],
+  "url": "https://hepsoftwarefoundation.org/gsoc/2026/summary.html"
+ },
+ "checkstyle": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:30Z",
+  "checked_at": "2026-10-05T07:12:30Z",
+  "count": 13,
+  "next": {
+   "checked_at": "2026-10-05T07:12:31Z",
+   "published": false,
+   "url": "https://github.com/checkstyle/checkstyle/wiki/Checkstyle-GSoC-2027-Project-Ideas"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Project Name: Implementation of auto-fix Recipes",
+   "Project Name: Java 25 Language Features Support",
+   "Project Name: Enhancement For Website",
+   "Project Name: AI-Powered XPath Generator for Checkstyle Suppressions",
+   "Project Name: Markdown Javadoc Support",
+   "Project Name: Optimization of distance between methods in single Java class",
+   "Project Name: Reconcile formatters of Eclipse , NetBeans and IntelliJ IDEA IDEs by Checkstyle config.",
+   "Project Name: Open JDK Code convention coverage",
+   "Project Name: Coverage of Documentation Comments Style Guide",
+   "Project Name: Spellcheck of Identifiers by English dictionary",
+   "Project Name: Eliminate Maven Plugin Usage",
+   "Project Name: Patch Suppression improvement",
+   "Project Name: Extend Checker Framework Integration"
+  ],
+  "url": "https://github.com/checkstyle/checkstyle/wiki/Checkstyle-GSoC-2026-Project-Ideas"
+ },
+ "cncf": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:32Z",
+  "checked_at": "2026-10-05T07:12:32Z",
+  "count": 13,
+  "next": {
+   "checked_at": "2026-10-05T07:12:32Z",
+   "published": false,
+   "url": "https://github.com/cncf/mentoring/blob/main/programs/summerofcode/2027.md"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "CNCF Project Name",
+   "Drasi",
+   "Inspektor Gadget",
+   "Jaeger",
+   "kgateway",
+   "KitOps",
+   "Kmesh",
+   "[kpt](https://kpt.dev/)",
+   "ModelPack",
+   "OpenKruise",
+   "OSCAL Compass",
+   "PipeCD",
+   "WasmEdge"
+  ],
+  "url": "https://github.com/cncf/mentoring/blob/main/programs/summerofcode/2026.md"
+ },
+ "dbpedia": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:32Z",
+  "checked_at": "2026-10-05T07:12:32Z",
+  "count": 0,
+  "next": {
+   "checked_at": "2026-10-05T07:12:34Z",
+   "published": false,
+   "url": "https://forum.dbpedia.org/tag/gsoc2027-ideas"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [],
+  "url": "https://forum.dbpedia.org/tag/gsoc2026-ideas"
+ },
+ "deepchem": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:34Z",
+  "checked_at": "2026-10-05T07:12:34Z",
+  "count": 0,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [],
+  "url": "https://github.com/deepchem/deepchem/discussions/4703"
+ },
+ "django": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:35Z",
+  "checked_at": "2026-10-05T07:12:35Z",
+  "count": 10,
+  "next": {
+   "checked_at": "2026-10-05T07:12:35Z",
+   "published": false,
+   "url": "https://code.djangoproject.com/wiki/SummerOfCode2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Context Navigation",
+   "Students",
+   "How can I improve my chances of being accepted?",
+   "Experimental feature flags and processes",
+   "Add types to parts of Django",
+   "Add ergonomic control over behaviour of missing variables in templates",
+   "Switch to Playwright tests for integration testing",
+   "Add support for generate_series in postgres",
+   "[PLACEHOLDER] Project name",
+   "Or Create Your Own"
+  ],
+  "url": "https://code.djangoproject.com/wiki/SummerOfCode2026"
+ },
+ "gemini-cli": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:35Z",
+  "checked_at": "2026-10-05T07:12:35Z",
+  "count": 0,
+  "note": "little text: page may need JavaScript",
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [],
+  "url": "https://docs.google.com/document/d/1iaMZliqwUn-ACyZAbgzdXmDiQZ7l5gp8UQIIY2BnPO8/edit?usp=sharing"
+ },
+ "humanai": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:37Z",
+  "checked_at": "2026-10-05T07:12:37Z",
+  "count": 4,
+  "next": {
+   "checked_at": "2026-10-05T07:12:37Z",
+   "published": false,
+   "url": "https://humanai.foundation/activities/gsoc2027.html"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Projects in 2026",
+   "Participating Organizations in 2026",
+   "Administrators",
+   "Contacts"
+  ],
+  "url": "https://humanai.foundation/activities/gsoc2026.html"
+ },
+ "kubeflow": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:37Z",
+  "checked_at": "2026-10-05T07:12:37Z",
+  "count": 11,
+  "next": {
+   "checked_at": "2026-10-05T07:12:41Z",
+   "published": false,
+   "url": "https://www.kubeflow.org/events/upcoming-events/gsoc-2027/"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Project 1: Agentic RAG on Kubeflow (Expansion of kubeflow/docs-agent)",
+   "Project 2: OptimizationJob CRD for Hyperparameter Optimization",
+   "Project 3: KServe Models Web Application",
+   "Project 4: Platform Scalability and Security",
+   "Project 5: Helm Charts",
+   "Project 6: MCP Server for Kubeflow SDK",
+   "Project 7 : Integrate Kubeflow SDK with OpenTelemetry",
+   "Project 10: Dynamic LLM Trainer Framework for Kubeflow",
+   "Project 11: Composable Kale Notebooks with Visual Pipeline Editor",
+   "Project 12: Kubeflow SDK/SparkClient - Batch Jobs, Observability & Production Readiness",
+   "Project 13: Kubeflow Pipelines - Enhance Support for Pod Lifecycle Failure"
+  ],
+  "url": "https://www.kubeflow.org/events/upcoming-events/gsoc-2026/"
+ },
+ "kubevirt": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:42Z",
+  "checked_at": "2026-10-05T07:12:42Z",
+  "count": 6,
+  "next": {
+   "checked_at": "2026-10-05T07:12:43Z",
+   "published": false,
+   "url": "https://github.com/kubevirt/community/wiki/Google-Summer-of-Code-2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "1. Title: Early Enablement of CBOR",
+   "2. Adaptingk8s.io/apiserverin KubeVirt",
+   "3. Component base testing framework",
+   "4. Declarative validation",
+   "5. Build System Evaluation",
+   "Custom project proposals"
+  ],
+  "url": "https://github.com/kubevirt/community/wiki/Google-Summer-of-Code-2026"
+ },
+ "mdanalysis": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:44Z",
+  "checked_at": "2026-10-05T07:12:44Z",
+  "count": 6,
+  "next": {
+   "checked_at": "2026-10-05T07:12:45Z",
+   "published": false,
+   "url": "https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2027-Project-Ideas"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Project 1: Dashboard for tracking MD simulation progress with the new streaming interface",
+   "Project 2: Better interfacing of Blender and MDAnalysis",
+   "Project 3: Benchmarking and performance optimization",
+   "Project 4: Lazy trajectory loading and indexing",
+   "Project 5: Dashboard for tracking WESTPA simulation progress",
+   "Project 6: Interface for post-simulation analysis (\"crawling\") of WESTPA simulations"
+  ],
+  "url": "https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2026-Project-Ideas"
+ },
+ "meshery": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:45Z",
+  "checked_at": "2026-10-05T07:12:45Z",
+  "count": 6,
+  "next": {
+   "checked_at": "2026-10-05T07:12:46Z",
+   "published": false,
+   "url": "https://meshery.io/programs/gsoc/2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Project 1. Support for Azure in Meshery",
+   "Project 2. Relationships for AWS services",
+   "Project 3. Adapter for AI and LLMs",
+   "Project 4. Graph Database Integration",
+   "Project 5. Workflow Engine in Meshery",
+   "Project 6. New Meshery Nighthawk Adapter"
+  ],
+  "url": "https://meshery.io/programs/gsoc/2026"
+ },
+ "metabrainz": {
+  "added_this_week": [],
+  "changed_at": null,
+  "checked_at": "2026-10-05T07:12:46Z",
+  "count": 0,
+  "next": {
+   "checked_at": "2026-10-05T07:12:47Z",
+   "published": false,
+   "url": "https://wiki.musicbrainz.org/Development/Summer_of_Code/2027"
+  },
+  "note": "skipped: disallowed by robots.txt",
+  "removed_this_week": [],
+  "status": null,
+  "titles": [],
+  "url": "https://wiki.musicbrainz.org/Development/Summer_of_Code/2026"
+ },
+ "metaflow": {
+  "added_this_week": [],
+  "changed_at": null,
+  "checked_at": "2026-10-05T07:12:47Z",
+  "count": 0,
+  "next": {
+   "checked_at": "2026-10-05T07:12:47Z",
+   "published": false,
+   "url": "https://github.com/Netflix/metaflow/blob/master/GSOC_2027_PROPOSALS.md"
+  },
+  "note": "HTTP 404",
+  "removed_this_week": [],
+  "status": 404,
+  "titles": [],
+  "url": "https://github.com/Netflix/metaflow/blob/master/GSOC_2026_PROPOSALS.md"
+ },
+ "ml4sci": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:47Z",
+  "checked_at": "2026-10-05T07:12:47Z",
+  "count": 4,
+  "next": {
+   "checked_at": "2026-10-05T07:12:48Z",
+   "published": false,
+   "url": "https://ml4sci.org/activities/gsoc2027.html"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Projects in 2026",
+   "Participating Organizations in 2026",
+   "Administrators",
+   "Contacts"
+  ],
+  "url": "https://ml4sci.org/activities/gsoc2026.html"
+ },
+ "mllam": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:48Z",
+  "checked_at": "2026-10-05T07:12:48Z",
+  "count": 5,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "About neural-lam and the MLLAM community",
+   "1. Flexible graph construction",
+   "2. Automatic generation of documentation from source code files",
+   "3. Generalizing to probabilistic forecasting models",
+   "4. Global weather forecasting"
+  ],
+  "url": "https://github.com/mllam/neural-lam/wiki/GSoC-ideas"
+ },
+ "neuroinformatics-unit": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:49Z",
+  "checked_at": "2026-10-05T07:12:49Z",
+  "count": 5,
+  "next": {
+   "checked_at": "2026-10-05T07:12:50Z",
+   "published": false,
+   "url": "https://neuroinformatics.dev/get-involved/gsoc/2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "GSoC NIU Projects 2026",
+   "BrainGlobe",
+   "Movement",
+   "Ethology",
+   "Team"
+  ],
+  "url": "https://neuroinformatics.dev/get-involved/gsoc/2026"
+ },
+ "open-transit-software-foundation": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:50Z",
+  "checked_at": "2026-10-05T07:12:50Z",
+  "count": 4,
+  "next": {
+   "checked_at": "2026-10-05T07:12:51Z",
+   "published": false,
+   "url": "https://opentransitsoftwarefoundation.org/2027/01/google-summer-of-code-2027-project-ideas/"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "iOS App/Apple Platforms",
+   "Golang/Backend Projects",
+   "Web UI",
+   "Your Idea Here!"
+  ],
+  "url": "https://opentransitsoftwarefoundation.org/2026/01/google-summer-of-code-2026-project-ideas/"
+ },
+ "openelis-global": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:51Z",
+  "checked_at": "2026-10-05T07:12:51Z",
+  "count": 0,
+  "note": "little text: page may need JavaScript",
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [],
+  "url": "https://uwdigi.atlassian.net/wiki/spaces/OG/pages/931594241/GSoC+2026"
+ },
+ "openmrs": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:54Z",
+  "checked_at": "2026-10-05T07:12:54Z",
+  "count": 6,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Write Code. Save Lives.",
+   "GSoC 2026 Program Administrators",
+   "Project Ideas for GSoC 2026",
+   "Pending Project Ideas",
+   "Program Timeline",
+   "OpenMRS resources to know"
+  ],
+  "url": "https://openmrs.atlassian.net/wiki/spaces/RES/pages/752844801/Summer+of+Code+2026"
+ },
+ "oppia": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:56Z",
+  "checked_at": "2026-10-05T07:12:56Z",
+  "count": 16,
+  "next": {
+   "checked_at": "2026-10-05T07:12:57Z",
+   "published": false,
+   "url": "https://github.com/oppia/oppia/wiki/Google-Summer-of-Code-2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Tips for writing a good project plan",
+   "What should applicants expect from mentors in a proposal review?",
+   "Learners, Educators, Allies, and Parents (LEAP) team",
+   "Creators, Operations, Reviewers, and Editors (CORE) team",
+   "Developer Workflow team",
+   "Android team",
+   "1.1. Web user feedback",
+   "1.2. Learner assessments",
+   "1.3. Re-design the topic page",
+   "2.1. Automatic translation suggestions",
+   "2.2. Extend translation infrastructure to exploration metadata and skills",
+   "3.1. Improve acceptance test infrastructure",
+   "3.2. Consolidate entity migration jobs",
+   "3.3. Standardize and validate domain objects and storage models",
+   "4.1 Support for Lesson Progress, Study Guides, and Worked Examples",
+   "4.2 Streamlining Release Automation"
+  ],
+  "url": "https://github.com/oppia/oppia/wiki/Google-Summer-of-Code-2026"
+ },
+ "postgresql": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:12:58Z",
+  "checked_at": "2026-10-05T07:12:58Z",
+  "count": 10,
+  "next": {
+   "checked_at": "2026-10-05T07:13:00Z",
+   "published": false,
+   "url": "https://wiki.postgresql.org/wiki/GSoC_2027"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Status",
+   "Admins",
+   "Results",
+   "pgagroal: Advanced security",
+   "pgmoneta: Model Context Server implementation",
+   "pgmoneta: Write-Ahead Log (WAL) & Model Context Server (MCP)",
+   "pgmoneta: Storage engines",
+   "pgexporter: Historic data",
+   "B-tree Index Bloat Reduction (Page Merge)",
+   "Monitoring Tools Performance: pg_stat_statements and LWLock Contention"
+  ],
+  "url": "https://wiki.postgresql.org/wiki/GSoC_2026"
+ },
+ "python-software-foundation": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:13:00Z",
+  "checked_at": "2026-10-05T07:13:00Z",
+  "count": 9,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Ideas for GSoC 2026",
+   "pocketpy",
+   "Borg Collective",
+   "Open World Holidays Framework",
+   "ilastik",
+   "MNE-Python",
+   "Pwndbg",
+   "FURY",
+   "DIPY"
+  ],
+  "url": "https://python-gsoc.org/ideas.html"
+ },
+ "rocket-chat": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:13:01Z",
+  "checked_at": "2026-10-05T07:13:01Z",
+  "count": 23,
+  "next": {
+   "checked_at": "2026-10-05T07:13:01Z",
+   "published": false,
+   "url": "https://github.com/RocketChat/google-summer-of-code/blob/main/google-summer-of-code-2027.md#-project-ideas"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Contacting Rocket.Chat",
+   "Latest update",
+   "💡 High-Performance Message Parser Rewrite",
+   "💡 AI Rocket.Chat Apps Generator",
+   "💡 Refactor Virtualized Lists to Use TanStack Virtual",
+   "💡 Rocket.Chat Code Analyzer: agentic inference context reduction mechanics",
+   "💡 Embedded Chat 2026",
+   "💡 Replace old Rest Api definitions over the new API",
+   "💡 OpenClaw Integration for Rocket.Chat",
+   "💡 Minimal MCP Server Generator for Rocket.Chat",
+   "💡 AI Generated Regression Test Suite for Desktop (Electron) App",
+   "💡 Mobile Apps: Notifications Improvements",
+   "💡 Mobile Apps: Use bottom tabs navigation",
+   "💡 Custom mentions",
+   "💡 Activity Hub",
+   "💡 Desktop App: Multiple Conversation Tabs",
+   "💡 Agenda Jobs Admin Page",
+   "💡 Personal Calendar",
+   "💡 Rebuilding the Jira Integration App for Rocket.Chat",
+   "💡 Apps Engine Test Framework for Apps",
+   "💡 Warning and Reporting for Login Attempts from Inactive or Deactivated Users",
+   "💡 Room Header Buttons Ordering",
+   "💡 New Users Anti Spammer System"
+  ],
+  "url": "https://github.com/RocketChat/google-summer-of-code/blob/main/google-summer-of-code-2026.md#-project-ideas"
+ },
+ "sugar-labs": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:13:02Z",
+  "checked_at": "2026-10-05T07:13:02Z",
+  "count": 18,
+  "next": {
+   "checked_at": "2026-10-05T07:13:02Z",
+   "published": false,
+   "url": "https://github.com/sugarlabs/GSoC/blob/master/Ideas-2027.md"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Git Backend for Music Blocks Part 2",
+   "GTK4 Transition Part 1 Fructose",
+   "GTK4 Transition Part 2 Sugar Shell",
+   "GTK4 Transition Part 3 Wayland",
+   "Sugar Activity on Demand",
+   "AI Optimization",
+   "AI Reflection in the Sugar Journal",
+   "Automated Release Pipeline for Music Blocks",
+   "Music Blocks Maintenance",
+   "Music Blocks Performance",
+   "Music Blocks Temperament",
+   "Sugarizer Connect the Dots Activity",
+   "Speak-AI Multilingual Support",
+   "Criteria for Ideas",
+   "Coding Mentors",
+   "Assisting Mentors",
+   "Everyone Else",
+   "Suggested Issues"
+  ],
+  "url": "https://github.com/sugarlabs/GSoC/blob/master/Ideas-2026.md"
+ },
+ "sw360": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:13:02Z",
+  "checked_at": "2026-10-05T07:13:02Z",
+  "count": 9,
+  "next": {
+   "checked_at": "2026-10-05T07:13:04Z",
+   "published": false,
+   "url": "https://eclipse.dev/sw360/gsoc/gsoc-projects-2027/"
+  },
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Creating Components as a separate service in SW360",
+   "SBOM Validator",
+   "CLIXML visualizer for release attachments",
+   "Integration of SW360 and LicenseDB",
+   "Remove Apache Thrift and Migrate to Direct Spring Service Calls",
+   "Archival of Components and Projects",
+   "Project 360 view",
+   "Customize Copy Project",
+   "Provide alternative Component link"
+  ],
+  "url": "https://eclipse.dev/sw360/gsoc/gsoc-projects-2026/"
+ },
+ "zulip": {
+  "added_this_week": [],
+  "changed_at": "2026-10-05T07:13:07Z",
+  "checked_at": "2026-10-05T07:13:07Z",
+  "count": 4,
+  "note": null,
+  "removed_this_week": [],
+  "status": 200,
+  "titles": [
+   "Full stack and web frontend focused projects",
+   "Terminal app",
+   "Desktop app",
+   "Mobile app"
+  ],
+  "url": "https://zulip.readthedocs.io/en/latest/outreach/gsoc.html"
+ }
+}

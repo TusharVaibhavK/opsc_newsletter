@@ -1,0 +1,28 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: django
+name: Django
+gsoc_name: Django Software Foundation
+tracks:
+- backend
+- web
+track_label: Python web framework
+stack:
+- Python
+languages:
+- python
+competition_estimate: high
+why: The Python web framework
+crowded: true
+crowded_reason: Python is the most common applicant skill
+advice: Target a niche-domain sub-project, or go through Djangonaut Space first
+programs:
+- gsoc
+- djangonaut-space
+github_owners:
+- django
+repos:
+- name: django/django
+  gfi_labels: []
+  note: Tickets live in Django Trac, not GitHub issues

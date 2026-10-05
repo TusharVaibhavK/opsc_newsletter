@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../../lib/paths';
+
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const SECTIONS = [
+  ['start', 'Getting started'],
+  ['contribute', 'Contributing'],
+  ['apply', 'Applying'],
+  ['program', 'During and after'],
+] as const;
+---
+
+<Base title="Guides" description="Short, practical guides for every step of contributing to open source and applying to mentorship programs.">
+  <header class="page-head">
+    <h1>Guides</h1>
+    <p class="lede">Short and practical, written the way a mentor would explain it. Read them in order, or jump to the step you're on.</p>
+    <p class="small"><a href={href('/start/')}>Start here</a> · <a href={href('/flow/')}>See the whole journey</a> · <a href={href('/glossary/')}>Glossary</a></p>
+  </header>
+  {
+    SECTIONS.map(([key, label]) => {
+      const list = guides.filter((g) => g.data.section === key);
+      return list.length ? (
+        <section class="section">
+          <h2>{label}</h2>
+          <div class="grid">
+            {list.map((g) => (
+              <a class="card card-link" href={href(`/guides/${g.id}/`)}>
+                <p class="card-title">{g.data.title}</p>
+                <p class="small muted" style="margin:0.3rem 0 0">{g.data.summary}</p>
+                {g.data.reading_minutes && <p class="tiny faint" style="margin:0.5rem 0 0">{g.data.reading_minutes} min read</p>}
+              </a>
+            ))}
+          </div>
+        </section>
+      ) : null;
+    })
+  }
+</Base>

@@ -1,0 +1,26 @@
+{"full_name":"DIGI-UW/OpenELIS-Global-2","gfi_labels":["good first issue","beginner"],"org":"openelis-global","tracked":true}
+{"full_name":"MDAnalysis/mdanalysis","gfi_labels":["good-first-issue"],"org":"mdanalysis","tracked":true}
+{"full_name":"Netflix/metaflow","gfi_labels":["good first issue"],"org":"metaflow","tracked":true}
+{"full_name":"OneBusAway/maglev","gfi_labels":["good first issue"],"org":"open-transit-software-foundation","tracked":true}
+{"full_name":"RocketChat/Rocket.Chat","gfi_labels":["good first issue"],"org":"rocket-chat","tracked":true}
+{"full_name":"aboutcode-org/scancode-toolkit","gfi_labels":["good first issue"],"org":"aboutcode","tracked":true}
+{"full_name":"aboutcode-org/vulnerablecode","gfi_labels":["good first issue"],"org":"aboutcode","tracked":true}
+{"full_name":"checkstyle/checkstyle","gfi_labels":["good first issue"],"org":"checkstyle","tracked":true}
+{"full_name":"dbpedia/extraction-framework","gfi_labels":[],"org":"dbpedia","tracked":true}
+{"full_name":"deepchem/deepchem","gfi_labels":["Good First Contribution"],"org":"deepchem","tracked":true}
+{"full_name":"django/django","gfi_labels":[],"org":"django","tracked":true}
+{"full_name":"eclipse-sw360/sw360","gfi_labels":["good first issue"],"org":"sw360","tracked":true}
+{"full_name":"foss42/apidash","gfi_labels":["good first issue"],"org":"api-dash","tracked":true}
+{"full_name":"google-gemini/gemini-cli","gfi_labels":["good first issue"],"org":"gemini-cli","tracked":true}
+{"full_name":"kubeflow/pipelines","gfi_labels":["good first issue"],"org":"kubeflow","tracked":true}
+{"full_name":"kubeflow/trainer","gfi_labels":["good first issue"],"org":"kubeflow","tracked":true}
+{"full_name":"kubevirt/kubevirt","gfi_labels":["good first issue","good-first-issue"],"org":"kubevirt","tracked":true}
+{"full_name":"meshery/meshery","gfi_labels":["good first issue"],"org":"meshery","tracked":true}
+{"full_name":"metabrainz/listenbrainz-server","gfi_labels":[],"org":"metabrainz","tracked":true}
+{"full_name":"mllam/neural-lam","gfi_labels":["good first issue"],"org":"mllam","tracked":true}
+{"full_name":"neuroinformatics-unit/datashuttle","gfi_labels":["good first issue"],"org":"neuroinformatics-unit","tracked":true}
+{"full_name":"neuroinformatics-unit/movement","gfi_labels":["good first issue"],"org":"neuroinformatics-unit","tracked":true}
+{"full_name":"openmrs/openmrs-core","gfi_labels":[],"org":"openmrs","tracked":true}
+{"full_name":"oppia/oppia","gfi_labels":["good first issue"],"org":"oppia","tracked":true}
+{"full_name":"sugarlabs/musicblocks","gfi_labels":[],"org":"sugar-labs","tracked":true}
+{"full_name":"zulip/zulip","gfi_labels":["help wanted"],"org":"zulip","tracked":true}

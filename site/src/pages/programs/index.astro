@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Filters from '../../components/Filters.astro';
+import ProgramCard from '../../components/ProgramCard.astro';
+import { TRACK_LABEL, nextEvent, programs as loadPrograms } from '../../lib/content';
+import { href } from '../../lib/paths';
+
+const programs = await loadPrograms();
+// Programs with a dated next step first, soonest first; undated ones after, by name.
+const sorted = [...programs].sort((a, b) => {
+  const na = nextEvent(a);
+  const nb = nextEvent(b);
+  if (na && nb) return na.date.getTime() - nb.date.getTime();
+  if (na) return -1;
+  if (nb) return 1;
+  return a.name.localeCompare(b.name);
+});
+const paid = programs.filter((p) => p.paid === true).length;
+const tracks = ['backend', 'ml', 'cloud', 'data', 'scientific', 'systems', 'web'];
+---
+
+<Base title="Programs" description="Every open source mentorship program in one place: who can apply, pay, and the next deadline.">
+  <header class="page-head">
+    <h1>Mentorship programs</h1>
+    <p class="lede">
+      {programs.length} programs that pay or mentor you to work on open source. <strong>{paid} of {programs.length} are paid.</strong>
+      Sorted by the next thing you can act on.
+    </p>
+    <p class="small muted">
+      Not sure which you can apply to? <a href={href('/finder/')}>Answer six questions</a>. Want dates side by side? <a href={href('/timeline/')}>See the timeline</a>.
+    </p>
+  </header>
+
+  <Filters
+    target="#program-list"
+    search="Search programs"
+    noun={['program', 'programs']}
+    groups={[
+      { key: 'paid', label: 'Pay', options: [{ value: 'yes', label: 'Paid' }] },
+      {
+        key: 'beginner',
+        label: 'Level',
+        options: [{ value: 'yes', label: 'Beginner friendly' }],
+      },
+      {
+        key: 'students',
+        label: 'Students',
+        options: [
+          { value: 'no', label: 'Open to non-students' },
+          { value: 'yes', label: 'Students only' },
+        ],
+      },
+      { key: 'worldwide', label: 'Where', options: [{ value: 'yes', label: 'Open worldwide' }] },
+      { key: 'track', label: 'Track', options: tracks.map((t) => ({ value: t, label: TRACK_LABEL[t] })) },
+    ]}
+  />
+
+  <div id="program-list" class="grid">
+    {sorted.map((p) => <ProgramCard program={p} />)}
+  </div>
+
+  <p class="small muted section">
+    Pay and timing come mostly from each program's own page and the
+    <a href="https://open-source-mv.vercel.app/">Open source programs directory</a>; anything marked “verify” or “est.” wasn't confirmed
+    for the 2027 cycle. Missing a program? <a href={href('/about/#contributing')}>Add it with a pull request</a>.
+  </p>
+</Base>

@@ -1,0 +1,180 @@
+---
+// Program windows across the next 13 months. Applying (accent) vs program running (grey);
+// estimated dates are drawn as a dashed outline over a light wash, confirmed ones solid.
+// The month-by-month list on the timeline page is this chart's table view.
+import { ACTION_KINDS, type Program, type ProgramEvent } from '../lib/content';
+import { addDays, endOf, formatDate } from '../lib/dates';
+import { href } from '../lib/paths';
+
+interface Props {
+  programs: Program[];
+  events: ProgramEvent[];
+  start: Date;
+  months: number;
+  now: Date;
+}
+const { programs, events, start, months, now } = Astro.props;
+const end = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + months, 0));
+const W = 980;
+const LABEL_W = 200;
+const ROW = 30;
+const TOP = 34;
+const plotW = W - LABEL_W - 10;
+const span = end.getTime() - start.getTime() + 86_400_000;
+const x = (d: Date) => LABEL_W + ((Math.min(Math.max(d.getTime(), start.getTime()), end.getTime() + 86_400_000) - start.getTime()) / span) * plotW;
+
+const PAIRS: [string, string, boolean][] = [
+  ['apply_open', 'apply_close', true],
+  ['contribution_start', 'contribution_end', true],
+  ['start', 'end', false],
+];
+interface Mark {
+  kind: 'bar' | 'dot';
+  x1: number;
+  x2: number;
+  applying: boolean;
+  confirmed: boolean;
+  title: string;
+}
+const inRange = (e: ProgramEvent) => e.end >= start && e.date <= end;
+const rows = programs
+  .map((program) => {
+    const own = events.filter((e) => e.program.slug === program.slug);
+    const marks: Mark[] = [];
+    const used = new Set<ProgramEvent>();
+    for (const cycle of new Set(own.map((e) => e.cycle))) {
+      const ce = own.filter((e) => e.cycle === cycle);
+      for (const [a, b, applying] of PAIRS) {
+        const ea = ce.find((e) => e.kind === a);
+        const eb = ce.find((e) => e.kind === b);
+        if (!ea || !eb) continue;
+        used.add(ea).add(eb);
+        if (eb.end < start || ea.date > end) continue;
+        const confirmed = ea.confirmed && eb.confirmed;
+        marks.push({
+          kind: 'bar',
+          x1: x(ea.date),
+          x2: x(addDays(endOf(eb.date, eb.precision), 1)),
+          applying,
+          confirmed,
+          title: `${program.name}, ${cycle}: ${ea.label} ${formatDate(ea.date, ea.precision)} to ${eb.label.toLowerCase()} ${formatDate(eb.date, eb.precision)}${confirmed ? '' : ' (estimated)'}`,
+        });
+      }
+      for (const e of ce) {
+        if (used.has(e) || !inRange(e)) continue;
+        const month = e.precision === 'month';
+        marks.push({
+          kind: month ? 'bar' : 'dot',
+          x1: x(e.date),
+          x2: month ? x(addDays(e.end, 1)) : x(e.date),
+          applying: ACTION_KINDS.has(e.kind),
+          confirmed: e.confirmed,
+          title: `${program.name}, ${cycle}: ${e.label} ${month ? 'sometime in ' : ''}${formatDate(e.date, e.precision)}${e.confirmed ? '' : ' (estimated)'}`,
+        });
+      }
+    }
+    return { program, marks };
+  })
+  .filter((r) => r.marks.length > 0)
+  .sort((a, b) => Math.min(...a.marks.map((m) => m.x1)) - Math.min(...b.marks.map((m) => m.x1)))
+  // Overlapping windows (one cohort's internship during the next cohort's applications) get
+  // their own sub-row instead of being drawn on top of each other.
+  .flatMap(({ program, marks }) => {
+    const lanes: Mark[][] = [];
+    const extent = (m: Mark) => (m.kind === 'dot' ? [m.x1 - 8, m.x1 + 8] : [m.x1, m.x2]);
+    for (const mark of [...marks].sort((a, b) => a.x1 - b.x1)) {
+      const [lo] = extent(mark);
+      // Touching is fine (one term ending as the next begins); only true overlaps need a new row.
+      const lane = lanes.find((l) => l.every((other) => extent(other)[1] <= lo + 0.5));
+      if (lane) lane.push(mark);
+      else lanes.push([mark]);
+    }
+    return lanes.map((laneMarks, i) => ({ program, marks: laneMarks, first: i === 0 }));
+  });
+
+const H = TOP + rows.length * ROW + 10;
+const monthTicks = Array.from({ length: months }, (_, i) => new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + i, 1)));
+const todayX = x(now);
+const short = (s: string) => (s.length > 27 ? `${s.slice(0, 26)}…` : s);
+---
+
+<figure style="margin:0">
+  <div class="chart-scroll">
+    <svg class="viz" viewBox={`0 0 ${W} ${H}`} style="min-width:760px" role="img" aria-label="Program dates over the next year">
+      {
+        monthTicks.map((m) => (
+          <g>
+            <line class="grid-line" x1={x(m)} x2={x(m)} y1={TOP - 8} y2={H - 6} />
+            <text x={x(m) + 4} y={TOP - 14}>
+              {m.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}
+              {m.getUTCMonth() === 0 || m === monthTicks[0] ? ` ${m.getUTCFullYear()}` : ''}
+            </text>
+          </g>
+        ))
+      }
+      {
+        rows.map((r, i) => {
+          const cy = TOP + i * ROW + ROW / 2;
+          return (
+            <g>
+              {r.first && (
+                <a href={href(`/programs/${r.program.slug}/`)}>
+                  <text x="0" y={cy + 4} class="label-strong">
+                    <title>{r.program.name}</title>
+                    {short(r.program.name)}
+                  </text>
+                </a>
+              )}
+              {r.marks.map((m) => {
+                const color = m.applying ? 'var(--viz-accent)' : 'var(--viz-muted)';
+                return m.kind === 'bar' ? (
+                  <g>
+                    <rect class="hit" x={m.x1} y={cy - 12} width={Math.max(m.x2 - m.x1, 24)} height="24">
+                      <title>{m.title}</title>
+                    </rect>
+                    <rect
+                      class="mark"
+                      x={m.x1 + 1}
+                      y={cy - 6}
+                      width={Math.max(m.x2 - m.x1 - 2, 4)}
+                      height="12"
+                      rx="4"
+                      fill={color}
+                      fill-opacity={m.confirmed ? 1 : 0.28}
+                      stroke={m.confirmed ? 'none' : color}
+                      stroke-width="1.5"
+                      stroke-dasharray={m.confirmed ? undefined : '4 3'}
+                    />
+                  </g>
+                ) : (
+                  <g>
+                    <circle class="hit" cx={m.x1} cy={cy} r="12">
+                      <title>{m.title}</title>
+                    </circle>
+                    <circle
+                      class="mark"
+                      cx={m.x1}
+                      cy={cy}
+                      r="5"
+                      fill={m.confirmed ? color : 'var(--surface)'}
+                      stroke={m.confirmed ? 'var(--surface)' : color}
+                      stroke-width="2"
+                    />
+                  </g>
+                );
+              })}
+            </g>
+          );
+        })
+      }
+      <line x1={todayX} x2={todayX} y1={TOP - 8} y2={H - 6} stroke="var(--text)" stroke-width="1" />
+      <text x={todayX + 4} y={H - 8} class="label-strong">Today</text>
+    </svg>
+  </div>
+  <ul class="legend">
+    <li><span class="key-bar" style="background:var(--viz-accent)"></span>Applying / contribution period</li>
+    <li><span class="key-bar" style="background:var(--viz-muted)"></span>Program running</li>
+    <li><span class="key-bar" style="border:1.5px dashed var(--muted);background:transparent"></span>Estimated from last year</li>
+    <li><span class="key-dot" style="background:var(--viz-accent)"></span>Single-day deadline</li>
+  </ul>
+</figure>

@@ -1,0 +1,67 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: outreachy
+name: Outreachy
+organizer: Software Freedom Conservancy
+url: https://www.outreachy.org/
+kind: internship
+paid: true
+pay_note: Paid internship stipend (amount on outreachy.org)
+beginner_friendly: true
+students_only: false
+worldwide: true
+requires_underrepresented: true
+who_can_apply: People facing underrepresentation or systemic bias in tech where they live; students need
+  42 consecutive days free of classes and exams during the internship
+typical_timing: Two cohorts a year (May and December); initial application gates the project list
+tracks:
+- any
+tags:
+- remote
+- diversity
+fit: medium
+fit_note: Strong if you are eligible; read the eligibility rules before investing time
+do_now: Check your eligibility and prepare essays for the May 2027 cohort
+watch_urls:
+- https://www.outreachy.org/
+cycles:
+- name: December 2026 cohort
+  source_url: https://www.outreachy.org/
+  events:
+  - kind: apply_close
+    date: 2026-08-31
+    confirmed: true
+    label: Initial applications closed
+  - kind: contribution_start
+    date: 2026-10-05
+    confirmed: true
+  - kind: contribution_end
+    date: 2026-11-02
+    confirmed: true
+  - kind: start
+    date: 2026-12-07
+    confirmed: true
+    label: Internship starts
+  - kind: end
+    date: 2027-03-08
+    confirmed: true
+    label: Internship ends
+- name: May 2027 cohort
+  source_url: https://www.outreachy.org/
+  events:
+  - kind: apply_open
+    date: 2027-02-01
+    precision: month
+    confirmed: false
+    label: Initial applications
+    note: early February, based on the 2026 pattern
+  - kind: contribution_start
+    date: 2027-03-01
+    precision: month
+    confirmed: false
+    note: mid-March in 2026
+  - kind: contribution_end
+    date: 2027-04-01
+    precision: month
+    confirmed: false
+    note: mid-April in 2026

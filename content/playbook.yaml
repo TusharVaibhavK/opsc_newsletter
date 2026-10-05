@@ -1,0 +1,107 @@
+# The Oct 2026 – Apr 2027 contribution playbook from the Open Source Starting Map.
+# The home page shows whichever phase contains today's date as "this month's move".
+# Target: 6–10 merged PRs in one or two orgs by mid-March, at least two touching
+# real backend or ML logic. Depth in one community beats shallow PRs across five.
+
+phases:
+  - slug: explore
+    title: Explore
+    window: October 2026
+    start: 2026-10-01
+    end: 2026-10-31
+    goal: Shortlist 5 orgs and get each one building on your machine.
+    actions:
+      - Shortlist 5 orgs from the recommended list.
+      - For each, clone and build the project and run the tests.
+      - Join each org's chat and read the contributor guide.
+      - Read 20 recent merged PRs to see what reviewers care about.
+    done_when: All 5 build locally, and your first PR is merged by the end of October.
+
+  - slug: first-contributions
+    title: First contributions
+    window: November 2026
+    start: 2026-11-01
+    end: 2026-11-30
+    goal: Narrow to 2–3 orgs and land small, real PRs in each.
+    actions:
+      - Narrow to 2–3 orgs.
+      - Land 2–3 small PRs in each (tests, bug fixes, docs with code).
+      - Ask questions in public channels, never by private DM.
+    done_when: Each of your 2–3 orgs has at least one merged PR from you.
+
+  - slug: go-deeper
+    title: Go deeper
+    window: December 2026 – January 2027
+    start: 2026-12-01
+    end: 2027-01-31
+    goal: Pick one primary org and become a familiar name there.
+    actions:
+      - Pick one primary org by mid-December.
+      - Take on a medium-sized issue.
+      - Review other people's PRs and help newcomers in chat.
+      - Open a discussion thread for an idea you'd like to own, with a rough design.
+    done_when: Maintainers of your primary org recognise your name, and your idea thread has replies.
+
+  - slug: org-announcements
+    title: Org announcements
+    window: February 2027
+    start: 2027-02-01
+    end: 2027-02-28
+    goal: Confirm your org was accepted and lock in an idea with its mentor.
+    actions:
+      - Confirm your org is on the GSoC 2027 list (around Feb 19, based on 2026).
+      - Read the official ideas list closely.
+      - Talk to the mentor of your chosen idea in a public channel.
+      - Build a small proof of concept for that idea.
+    done_when: A mentor has seen your proof of concept and agreed the idea's scope.
+
+  - slug: proposal
+    title: Proposal
+    window: March 2027
+    start: 2027-03-01
+    end: 2027-03-31
+    goal: Submit a proposal mentors have already reviewed.
+    actions:
+      - Share a draft with mentors 10+ days before the deadline.
+      - Include a week-by-week timeline, your merged PRs, and risks.
+      - Submit to 1–2 orgs, 3 at most.
+    done_when: Submitted before the deadline, with mentor feedback incorporated.
+
+  - slug: keep-contributing
+    title: Keep contributing
+    window: April 2027
+    start: 2027-04-01
+    end: 2027-04-30
+    goal: Stay visible while proposals are reviewed.
+    actions:
+      - Keep landing PRs and reviewing in your org.
+      - Answer mentor questions about your proposal quickly.
+    done_when: Results day (around Apr 30, based on 2026).
+
+checklist:
+  - id: profile-readme
+    text: Set up a GitHub profile README with your focus (backend, AI/ML, Go/Java/Python)
+  - id: build-five-orgs
+    text: Build and run tests for 5 shortlisted orgs
+    due: 2026-10-31
+  - id: first-merged-pr
+    text: First merged PR by the end of October
+    due: 2026-10-31
+  - id: primary-org
+    text: Narrow to one primary org by mid-December
+    due: 2026-12-15
+  - id: draft-proposal
+    text: Draft proposal shared with mentors by early March
+    due: 2027-03-05
+  - id: tracker-repo
+    text: Tracker repo created with README and license
+    done: true
+  - id: tracker-watchlist
+    text: Watchlist YAML with 20–30 orgs from the starting map
+    done: true
+  - id: tracker-first-run
+    text: First successful scheduled run of collect_github
+  - id: tracker-deployed
+    text: Deployed dashboard reachable from your phone
+  - id: tracker-first-alert
+    text: First alert received for a changed ideas page

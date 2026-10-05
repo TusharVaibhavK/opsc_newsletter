@@ -1,0 +1,25 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: openelis-global
+name: OpenELIS Global
+tracks:
+- backend
+track_label: Java backend
+stack:
+- Java
+- Spring
+- Database
+languages:
+- java
+competition_estimate: low
+why: Lab information system used in health programs; few applicants know it
+github_owners:
+- DIGI-UW
+repos:
+- name: DIGI-UW/OpenELIS-Global-2
+  gfi_labels:
+  - good first issue
+  - beginner
+programs:
+- gsoc

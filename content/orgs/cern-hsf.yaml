@@ -1,0 +1,25 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: cern-hsf
+name: CERN-HSF
+tracks:
+- ml
+- data
+- scientific
+track_label: AI/ML + data
+stack:
+- Python
+- C++
+- ML
+languages:
+- python
+- c++
+competition_estimate: medium
+why: Many slots spread across physics projects; ML ideas every year
+umbrella: true
+github_owners:
+- HSF
+repos_note: 'Umbrella org: each project has its own repo; add the ones you pick.'
+programs:
+- gsoc

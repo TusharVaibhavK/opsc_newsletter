@@ -1,0 +1,6 @@
+# Applications you are planning or have submitted.
+# status: interested | drafting | applied | accepted | rejected | withdrawn
+- program: gsoc
+  cycle: GSoC 2027
+  status: interested
+  notes: Pick the final org in February, after the org list is announced.

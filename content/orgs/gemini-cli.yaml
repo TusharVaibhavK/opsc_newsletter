@@ -1,0 +1,27 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: gemini-cli
+name: Gemini CLI
+tracks:
+- ml
+- tooling
+track_label: AI agents / tooling
+stack:
+- TypeScript
+- Node.js
+languages:
+- typescript
+competition_estimate: high
+why: Google's open-source AI agent CLI
+crowded: true
+crowded_reason: First year in 2026, Google brand, AI agents hype
+advice: Expect intense volume; only worth it with deep TypeScript and agent experience
+github_owners:
+- google-gemini
+repos:
+- name: google-gemini/gemini-cli
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

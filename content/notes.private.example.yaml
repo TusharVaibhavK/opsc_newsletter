@@ -1,0 +1,6 @@
+# Copy this file to content/notes.private.yaml (gitignored) for candid notes about orgs:
+# mentor responsiveness, chat impressions, things you'd never publish. They appear on org
+# pages only when you run the site locally with `npm run dev`, never in a build.
+kubeflow: >-
+  Pipelines reviewers answered within a day in #kubeflow-pipelines. Ask about the
+  OpenTelemetry idea in January.

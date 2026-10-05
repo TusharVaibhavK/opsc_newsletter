@@ -1,0 +1,25 @@
+---
+// "Updated 2 days ago", greyed and flagged once the data is older than STALE_AFTER_DAYS.
+import { ageLabel, daysBetween, today } from '../lib/dates';
+import { STALE_AFTER_DAYS } from '../lib/site';
+
+interface Props {
+  at: string | null | undefined;
+  prefix?: string;
+  missing?: string;
+}
+const { at, prefix = 'Updated', missing = 'Not collected yet' } = Astro.props;
+const age = at ? daysBetween(new Date(at), today()) : null;
+const stale = age !== null && age > STALE_AFTER_DAYS;
+---
+
+{
+  at ? (
+    <span class:list={['small', stale ? 'stale-note' : 'muted']} title={at}>
+      {prefix} {ageLabel(at)}
+      {stale && ' · stale, the collector may be failing'}
+    </span>
+  ) : (
+    <span class="small muted">{missing}</span>
+  )
+}

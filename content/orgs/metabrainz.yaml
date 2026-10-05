@@ -1,0 +1,26 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: metabrainz
+name: MetaBrainz
+gsoc_name: MetaBrainz Foundation Inc
+tracks:
+- backend
+- ml
+track_label: Python backend + ML
+stack:
+- Python
+- PostgreSQL
+- ML
+languages:
+- python
+competition_estimate: low-medium
+why: Music metadata and recommendation backends (ListenBrainz)
+github_owners:
+- metabrainz
+repos:
+- name: metabrainz/listenbrainz-server
+  gfi_labels: []
+  note: Issues live in the MetaBrainz Jira, not GitHub
+programs:
+- gsoc

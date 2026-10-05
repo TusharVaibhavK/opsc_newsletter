@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Collectors (${{ matrix.db }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        db: [sqlite, postgres]
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: ossmap_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: ${{ matrix.db == 'postgres' && 'postgresql+psycopg://postgres:postgres@localhost:5432/ossmap_test' || '' }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -e ".[dev,postgres]"
+      - name: Validate content/
+        run: ossmap validate
+      - name: Lint and format
+        if: matrix.db == 'sqlite'
+        run: |
+          ruff check .
+          ruff format --check .
+      - name: Type-check
+        if: matrix.db == 'sqlite'
+        run: mypy collectors
+      - name: Tests
+        run: pytest
+
+  site:
+    name: Site build and privacy gate
+    runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: npm ci
+        working-directory: site
+      - name: Type-check pages
+        run: npm run check
+        working-directory: site
+      - name: Build
+        run: npm run build
+        working-directory: site
+      - name: Internal links
+        run: python scripts/check_links.py site/dist /
+      - name: Privacy gate
+        run: |
+          pip install pyyaml
+          python scripts/check_privacy.py

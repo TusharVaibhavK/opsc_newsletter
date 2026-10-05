@@ -1,0 +1,27 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: kubevirt
+name: KubeVirt
+tracks:
+- backend
+- cloud
+track_label: Go backend
+stack:
+- Go
+- gRPC
+- Kubernetes
+languages:
+- go
+competition_estimate: low
+why: Virtual machines on Kubernetes; the steep learning curve filters out the crowd
+programs:
+- gsoc
+- lfx-mentorship
+github_owners:
+- kubevirt
+repos:
+- name: kubevirt/kubevirt
+  gfi_labels:
+  - good first issue
+  - good-first-issue

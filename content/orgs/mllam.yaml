@@ -1,0 +1,26 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: mllam
+name: MLLAM
+tracks:
+- ml
+- scientific
+track_label: AI/ML
+stack:
+- Python
+- Zarr
+- Deep learning
+languages:
+- python
+competition_estimate: low
+estimate_note: First GSoC year in 2026; first-year orgs don't always return
+why: AI weather forecasting research software
+github_owners:
+- mllam
+repos:
+- name: mllam/neural-lam
+  gfi_labels:
+  - good first issue
+programs:
+- gsoc

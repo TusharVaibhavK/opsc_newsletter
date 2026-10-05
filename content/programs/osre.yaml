@@ -1,0 +1,23 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: osre
+name: Open Source Research Experience
+organizer: UC Santa Cruz OSPO
+url: https://ucsc-ospo.github.io/osre/
+kind: mentorship
+paid: null
+pay_note: Varies
+beginner_friendly: true
+students_only: true
+worldwide: true
+who_can_apply: Undergraduate and graduate students
+typical_timing: Summer, also via GSoC
+tracks:
+- ml
+- scientific
+- data
+tags:
+- research-software
+fit: high
+fit_note: Research software and ML
+do_now: Read last year's project list

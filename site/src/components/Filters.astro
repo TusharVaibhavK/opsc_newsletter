@@ -1,0 +1,97 @@
+---
+// Filter chips over a list. Without JavaScript the chips stay hidden and every item shows.
+// Items opt in with data-<key>="value value2" (space-separated). Chips in one group are OR'd,
+// groups are AND'd. Optional free-text search matches each item's data-search attribute.
+interface Group {
+  key: string;
+  label: string;
+  options: { value: string; label: string }[];
+}
+interface Props {
+  target: string; // CSS selector of the list container
+  groups: Group[];
+  search?: string; // placeholder text; omit for no search box
+  noun?: [string, string]; // singular, plural
+}
+const { target, groups, search, noun = ['item', 'items'] } = Astro.props;
+---
+
+<div class="filters" hidden data-filters data-target={target} data-noun={noun.join('|')}>
+  {
+    search && (
+      <label class="row">
+        <span class="visually-hidden">Search</span>
+        <input class="input" type="search" placeholder={search} data-search-input />
+      </label>
+    )
+  }
+  {
+    groups.map((g) => (
+      <div class="row" role="group" aria-label={g.label}>
+        <span class="small muted">{g.label}:</span>
+        {g.options.map((o) => (
+          <button type="button" class="chip" aria-pressed="false" data-key={g.key} data-value={o.value}>
+            {o.label}
+          </button>
+        ))}
+      </div>
+    ))
+  }
+  <p class="count-line" aria-live="polite" data-count></p>
+</div>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-filters]')) {
+    const list = document.querySelector(root.dataset.target ?? '');
+    if (!list) continue;
+    const items = Array.from(list.querySelectorAll<HTMLElement>('[data-item]'));
+    const [one, many] = (root.dataset.noun ?? 'item|items').split('|');
+    const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('.chip'));
+    const searchBox = root.querySelector<HTMLInputElement>('[data-search-input]');
+    const count = root.querySelector<HTMLElement>('[data-count]');
+    const params = new URLSearchParams(location.search);
+
+    for (const chip of chips) {
+      const wanted = params.getAll(chip.dataset.key ?? '');
+      if (wanted.includes(chip.dataset.value ?? '')) chip.setAttribute('aria-pressed', 'true');
+    }
+    if (searchBox && params.get('q')) searchBox.value = params.get('q') ?? '';
+
+    const apply = () => {
+      const active = new Map<string, string[]>();
+      for (const chip of chips) {
+        if (chip.getAttribute('aria-pressed') !== 'true') continue;
+        const key = chip.dataset.key ?? '';
+        active.set(key, [...(active.get(key) ?? []), chip.dataset.value ?? '']);
+      }
+      const q = (searchBox?.value ?? '').trim().toLowerCase();
+      let shown = 0;
+      for (const item of items) {
+        let ok = true;
+        for (const [key, values] of active) {
+          const have = (item.dataset[key] ?? '').split(' ');
+          if (!values.some((v) => have.includes(v))) ok = false;
+        }
+        if (ok && q) ok = (item.dataset.search ?? item.textContent ?? '').toLowerCase().includes(q);
+        item.hidden = !ok;
+        if (ok) shown++;
+      }
+      if (count) count.textContent = `Showing ${shown} of ${items.length} ${items.length === 1 ? one : many}`;
+      const next = new URLSearchParams();
+      for (const [key, values] of active) for (const v of values) next.append(key, v);
+      if (q) next.set('q', q);
+      const qs = next.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    };
+
+    for (const chip of chips) {
+      chip.addEventListener('click', () => {
+        chip.setAttribute('aria-pressed', chip.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+        apply();
+      });
+    }
+    searchBox?.addEventListener('input', apply);
+    root.hidden = false;
+    apply();
+  }
+</script>

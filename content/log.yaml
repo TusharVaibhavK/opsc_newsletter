@@ -1,0 +1,9 @@
+# Manual contribution log: things the GitHub collector can't see.
+# kind: chat-help | docs | talk | review | triage | issue | pr | other
+# Example:
+# - date: 2026-10-12
+#   kind: chat-help
+#   org: kubeflow
+#   note: Helped a newcomer get the pipelines dev environment running
+#   url: https://cloud-native.slack.com/archives/...
+[]

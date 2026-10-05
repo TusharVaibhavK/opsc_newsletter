@@ -1,0 +1,25 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: c4gt
+name: Code for GovTech (C4GT) DMP
+organizer: Code for GovTech
+url: https://app.codeforgovtech.in/
+kind: mentorship
+paid: true
+pay_note: Paid; check the site for the amount
+beginner_friendly: true
+students_only: false
+worldwide: null
+regions:
+- india
+who_can_apply: Students and professionals
+typical_timing: About 3 months, usually summer
+tracks:
+- backend
+tags:
+- java
+- python
+- digital-public-goods
+fit: high
+fit_note: Java and Python backends for public digital goods (India-focused)
+do_now: Browse their listed projects in spring

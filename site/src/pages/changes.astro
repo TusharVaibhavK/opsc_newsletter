@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import EventList from '../components/EventList.astro';
+import { events } from '../lib/data';
+import { href } from '../lib/paths';
+---
+
+<Base title="Changes" description="New orgs, changed ideas pages, program updates and approaching deadlines, as the collectors see them.">
+  <header class="page-head">
+    <h1>Changes</h1>
+    <p class="lede">What the collectors noticed: orgs announced, ideas pages added or edited, program pages that changed, and deadlines a week out.</p>
+    <p class="small"><a href={href('/rss.xml')}>Subscribe with RSS</a> <span class="muted">· alerts can also go to Telegram (see the README)</span></p>
+  </header>
+  <EventList items={events} detailed empty="Nothing recorded yet. The first scheduled run takes a baseline of every watched page; changes appear from the second run on." />
+</Base>

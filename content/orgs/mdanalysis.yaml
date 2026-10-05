@@ -1,0 +1,24 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: mdanalysis
+name: MDAnalysis
+tracks:
+- scientific
+track_label: Python / scientific
+stack:
+- Python
+- Cython
+- NumPy
+languages:
+- python
+competition_estimate: low
+why: Performance-focused scientific Python; the domain barrier keeps numbers down
+github_owners:
+- MDAnalysis
+repos:
+- name: MDAnalysis/mdanalysis
+  gfi_labels:
+  - good-first-issue
+programs:
+- gsoc

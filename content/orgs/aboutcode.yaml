@@ -1,0 +1,27 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: aboutcode
+name: AboutCode
+tracks:
+- backend
+track_label: Python + Go backend
+stack:
+- Python
+- Django
+- Go
+languages:
+- python
+- go
+competition_estimate: low-medium
+why: License and vulnerability scanning backends; steady, practical work
+github_owners:
+- aboutcode-org
+repos:
+- name: aboutcode-org/scancode-toolkit
+  gfi_labels: &id001
+  - good first issue
+- name: aboutcode-org/vulnerablecode
+  gfi_labels: *id001
+programs:
+- gsoc

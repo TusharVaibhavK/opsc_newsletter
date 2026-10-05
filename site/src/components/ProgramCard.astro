@@ -1,0 +1,51 @@
+---
+import DateText from './DateText.astro';
+import { LEVEL_LABEL, TRACK_LABEL, nextEvent, type Program } from '../lib/content';
+import { href } from '../lib/paths';
+
+interface Props {
+  program: Program;
+}
+const { program: p } = Astro.props;
+const next = nextEvent(p);
+const attrs = {
+  'data-item': '',
+  'data-paid': p.paid === true ? 'yes' : p.paid === false ? 'no' : 'unknown',
+  'data-beginner': p.beginner_friendly ? 'yes' : 'no',
+  'data-students': p.students_only ? 'yes' : 'no',
+  'data-worldwide': p.worldwide === true ? 'yes' : p.worldwide === false ? 'no' : 'unknown',
+  'data-track': p.tracks.join(' '),
+  'data-kind': p.kind,
+  'data-search': `${p.name} ${p.organizer} ${p.tags.join(' ')} ${p.who_can_apply}`.toLowerCase(),
+};
+const payBadge = p.paid === true ? 'Paid' : p.paid === false ? 'Unpaid' : 'Pay varies';
+---
+
+<article class="card program" {...attrs}>
+  <div class="spread">
+    <a class="card-link" href={href(`/programs/${p.slug}/`)}><h3 class="card-title">{p.name}</h3></a>
+    <span class:list={['badge', p.paid === true ? 'accent' : p.paid === null ? 'est' : '']}>{payBadge}</span>
+  </div>
+  <p class="small muted" style="margin:0 0 0.6rem">{p.organizer} · {p.kind}</p>
+  <p class="small" style="margin-bottom:0.5rem"><strong>Pay:</strong> {p.pay_note}</p>
+  <p class="small" style="margin-bottom:0.5rem"><strong>Who:</strong> {p.who_can_apply}</p>
+  <p class="small" style="margin-bottom:0.6rem">
+    <strong>Next:</strong>
+    {
+      next ? (
+        <span>{next.label} <DateText date={next.date} precision={next.precision} confirmed={next.confirmed} note={next.note} /></span>
+      ) : (
+        <span class="muted">{p.typical_timing}</span>
+      )
+    }
+  </p>
+  <ul class="tags">
+    {p.beginner_friendly && <li class="tag">Beginner friendly</li>}
+    {p.students_only && <li class="tag">Students only</li>}
+    {p.worldwide === true && <li class="tag">Worldwide</li>}
+    {p.requires_underrepresented && <li class="tag">Eligibility rules</li>}
+    {p.requires_prior_contribution && <li class="tag">Needs prior contributions</li>}
+    {p.tracks.filter((t) => t !== 'any').slice(0, 3).map((t) => <li class="tag">{TRACK_LABEL[t]}</li>)}
+  </ul>
+  <p class="tiny muted" style="margin:0.6rem 0 0">Fit for a backend / AI-ML profile: {LEVEL_LABEL[p.fit]}</p>
+</article>

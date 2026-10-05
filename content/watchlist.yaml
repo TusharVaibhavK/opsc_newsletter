@@ -1,0 +1,42 @@
+# Your watchlist: the orgs you are actively evaluating. Edit this by hand as you go.
+# status: not_started | exploring | contributing | primary | backup | dropped
+# priority: 1 = primary candidate for its track, 2 = backup, 3 = exploring
+# Seeded from the starter tracker in the Open Source Starting Map (Oct 4, 2026).
+
+- org: kubeflow
+  status: not_started
+  priority: 1
+  role: Primary candidate, backend + ML
+  next_action: Build and run tests
+- org: sw360
+  status: not_started
+  priority: 1
+  role: Primary candidate, Java backend
+  next_action: Set up local dev
+- org: metabrainz
+  status: not_started
+  priority: 1
+  role: Primary candidate, Python/ML
+  next_action: Run ListenBrainz locally
+- org: openmrs
+  status: not_started
+  priority: 2
+  role: Backup, Java backend
+  next_action: Pick a backend module
+- org: mdanalysis
+  status: not_started
+  priority: 2
+  role: Backup, Python/ML
+  next_action: Fix a good first issue
+- org: kubevirt
+  status: not_started
+  priority: 3
+  next_action: Read contributor guide
+- org: open-transit-software-foundation
+  status: not_started
+  priority: 3
+  next_action: Join chat, find first issue
+- org: deepchem
+  status: not_started
+  priority: 3
+  next_action: Run a tutorial, read model code

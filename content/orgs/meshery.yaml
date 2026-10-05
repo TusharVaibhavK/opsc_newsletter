@@ -1,0 +1,30 @@
+# Curated org. Editorial fields seeded from the Open Source Starting Map (Oct 4, 2026).
+# competition_estimate is a judgement call, not published data. Links not set here
+# (ideas page, contributor guide, chat) come from the GSoC Organizations import.
+slug: meshery
+name: Meshery
+tracks:
+- cloud
+- web
+track_label: Cloud native management
+stack:
+- Go
+- TypeScript
+- Kubernetes
+languages:
+- go
+- typescript
+competition_estimate: high
+why: Cloud native infrastructure manager (CNCF project)
+crowded: true
+crowded_reason: Very large contributor surges in recent years
+advice: Pick the least glamorous idea on their list
+programs:
+- gsoc
+- lfx-mentorship
+github_owners:
+- meshery
+repos:
+- name: meshery/meshery
+  gfi_labels:
+  - good first issue

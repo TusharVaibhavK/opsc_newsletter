@@ -1,0 +1,74 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: lfx-mentorship
+name: LFX Mentorship
+organizer: Linux Foundation
+url: https://mentorship.lfx.linuxfoundation.org/
+kind: mentorship
+paid: true
+pay_note: Stipend, per LFX policy
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: 'Three terms: Mar–May, Jun–Aug, Sep–Nov'
+tracks:
+- backend
+- cloud
+tags:
+- go
+- kubernetes
+- cloud
+- cncf
+fit: high
+fit_note: Go, Kubernetes, observability
+do_now: Contribute to 2 CNCF projects before January
+watch_urls:
+- https://contribute.cncf.io/blog/
+- https://github.com/cncf/mentoring/blob/main/programs/lfx-mentorship/README.md
+cycles:
+- name: 2026 Term 3
+  events:
+  - kind: start
+    date: 2026-09-01
+    precision: month
+    confirmed: false
+    label: Term starts
+  - kind: end
+    date: 2026-11-01
+    precision: month
+    confirmed: false
+    label: Term ends
+- name: 2027 Term 1
+  source_url: https://contribute.cncf.io/blog/2026/01/07/cncf-lfx-2026-term-1-announcement
+  events:
+  - kind: apply_open
+    date: 2027-01-26
+    confirmed: false
+    note: Jan 26 in 2026
+  - kind: apply_close
+    date: 2027-02-10
+    confirmed: false
+    note: Feb 10 in 2026
+  - kind: start
+    date: 2027-03-01
+    precision: month
+    confirmed: false
+    label: Term starts
+  - kind: end
+    date: 2027-05-01
+    precision: month
+    confirmed: false
+    label: Term ends
+- name: 2027 Term 2
+  events:
+  - kind: start
+    date: 2027-06-01
+    precision: month
+    confirmed: false
+    label: Term starts
+  - kind: end
+    date: 2027-08-01
+    precision: month
+    confirmed: false
+    label: Term ends

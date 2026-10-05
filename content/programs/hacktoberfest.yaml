@@ -1,0 +1,32 @@
+# Program registry entry. Seeded from the Open Source Starting Map (Oct 4, 2026).
+# Dates with confirmed: false are estimates; the site labels them as such.
+slug: hacktoberfest
+name: Hacktoberfest
+organizer: DigitalOcean
+url: https://hacktoberfest.com/
+kind: event
+paid: false
+pay_note: Swag and recognition
+beginner_friendly: true
+students_only: false
+worldwide: true
+who_can_apply: Open to all
+typical_timing: October 1–31
+tracks:
+- any
+tags:
+- event
+- open-source-ai
+fit: medium
+fit_note: 2026 no longer counts pull requests; it hosts events on building with open-source AI
+do_now: Join an online event this month
+cycles:
+- name: Hacktoberfest 2026
+  source_url: https://hacktoberfest.com/questions/
+  events:
+  - kind: start
+    date: 2026-10-01
+    confirmed: true
+  - kind: end
+    date: 2026-10-31
+    confirmed: true
