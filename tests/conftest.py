@@ -14,7 +14,7 @@ import pytest
 from sqlalchemy import Engine, text
 from sqlalchemy.orm import Session
 
-from collectors.content import Content, load_content
+from collectors.content import Content, Cycle, CycleEvent, Profile, WatchItem, load_content
 from collectors.db.models import Base
 from collectors.db.session import make_engine, migrate
 from collectors.http import Http
@@ -26,7 +26,43 @@ TODAY = dt.date(2026, 10, 5)
 
 @pytest.fixture(scope="session")
 def content() -> Content:
+    """The real content/, for the tests that check it. Everything else uses `pinned`."""
     return load_content()
+
+
+@pytest.fixture(scope="session")
+def pinned(content: Content) -> Content:
+    """Real programs and orgs, but a fixed profile and watchlist, so editing your own
+    profile.yaml or watchlist.yaml can never break a test."""
+    profile = Profile(
+        github_username=None,
+        languages=["go", "java", "python"],
+        interests=["backend", "ml"],
+        timezone="Asia/Kolkata",
+        target="GSoC 2027",
+    )
+    watchlist = [
+        WatchItem(org="kubeflow", status="primary", priority=1, next_action="x"),
+        WatchItem(org="sw360", status="exploring", priority=2, next_action="x"),
+    ]
+    return content.model_copy(update={"profile": profile, "watchlist": watchlist})
+
+
+def with_username(content: Content, username: str) -> Content:
+    profile = content.profile.model_copy(update={"github_username": username})
+    return content.model_copy(update={"profile": profile})
+
+
+@pytest.fixture(scope="session")
+def with_deadline(pinned: Content) -> Content:
+    """GSoC gets one dated event, so deadline tests don't depend on dates in content/."""
+    cycle = Cycle(
+        name="GSoC 2027",
+        events=[CycleEvent(kind="apply_close", date=dt.date(2027, 3, 31), confirmed=False)],
+    )
+    gsoc = pinned.program("gsoc").model_copy(update={"cycles": [cycle]})
+    programs = [gsoc if p.slug == "gsoc" else p for p in pinned.programs]
+    return pinned.model_copy(update={"programs": programs})
 
 
 def _reset(eng: Engine) -> None:
@@ -68,11 +104,11 @@ def http() -> Iterator[Http]:
 
 
 @pytest.fixture
-def make_ctx(session: Session, content: Content, http: Http) -> Callable[..., JobContext]:
+def make_ctx(session: Session, pinned: Content, http: Http) -> Callable[..., JobContext]:
     def build(**overrides: object) -> JobContext:
         params: dict[str, object] = {
             "session": session,
-            "content": content,
+            "content": pinned,
             "http": http,
             "today": TODAY,
             "log": lambda _m: None,
@@ -81,3 +117,9 @@ def make_ctx(session: Session, content: Content, http: Http) -> Callable[..., Jo
         return JobContext(**params)  # type: ignore[arg-type]
 
     return build
+
+
+@pytest.fixture
+def deadline_ctx(make_ctx: Callable[..., JobContext], with_deadline: Content) -> JobContext:
+    """A context set a week before the synthetic GSoC deadline above."""
+    return make_ctx(content=with_deadline, today=dt.date(2027, 3, 25))

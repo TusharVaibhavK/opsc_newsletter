@@ -135,9 +135,9 @@ const myNote = org ? privateNote(slug) : null;
           <div class="stats">
             <TrendTile title="Open beginner issues" points={series('open_gfi_count')} hint={totals.unclaimed != null ? `${totals.unclaimed} unclaimed right now` : undefined} />
             <TrendTile title="Hours to claim a beginner issue" points={series('gfi_median_claim_hours')} format={hours} hint="Median; lower means more competition" />
-            <TrendTile title="First-time contributors, 30 days" points={series('new_contributors_30d')} hint={totals.historyDays < 30 ? `Still building up: ${totals.historyDays} days of history` : undefined} />
-            <TrendTile title="First maintainer reply on PRs" points={series('median_first_response_hours')} format={hours} hint="Median, for outside contributors" />
-            <TrendTile title="Newcomer PRs waiting for review" points={series('open_newcomer_prs')} />
+            <TrendTile title="New contributors, 30 days" points={series('new_contributors_30d')} hint={totals.historyDays < 30 ? `Still building up: ${totals.historyDays} day${totals.historyDays === 1 ? "" : "s"} of history` : undefined} />
+            <TrendTile title="First maintainer reply on PRs" points={series('median_first_response_hours')} format={hours} hint="Median, for outside contributors; bots excluded" />
+            <TrendTile title="Newcomer PRs waiting for a reply" points={series('open_newcomer_prs')} />
             <TrendTile title="GitHub stars" points={series('stars')} />
           </div>
         ) : (

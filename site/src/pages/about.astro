@@ -5,9 +5,9 @@ import { href } from '../lib/paths';
 import { REPO_URL, SITE_NAME } from '../lib/site';
 
 const WEIGHT_LABEL: Record<string, string> = {
-  new_contributors: 'First-time contributors in the last 30 days',
+  new_contributors: 'New contributors (no merged PR yet) in the last 30 days',
   claim_speed: 'How fast beginner issues get claimed (1 / median hours)',
-  newcomer_backlog: 'Open, unreviewed PRs from first-time contributors',
+  newcomer_backlog: 'Open PRs from new contributors that nobody has answered',
   log_stars: 'GitHub stars (log scale), a proxy for brand recognition',
   slots: 'Average GSoC projects a year over the last 3 years',
   ideas: 'Ideas on the current ideas list',
@@ -35,13 +35,13 @@ const weights = Object.entries(scores.weights ?? {});
       <dt>Open beginner issues</dt>
       <dd>Open issues with any of the repo's beginner labels (for example “good first issue”). Repos that track issues outside GitHub show a dash.</dd>
       <dt>Hours to claim a beginner issue</dt>
-      <dd>For the 30 newest beginner issues, the median time until the first sign someone took it: an assignment, a linked pull request, or a first comment from someone other than the author or a maintainer. Needs at least 3 claimed issues.</dd>
-      <dt>First-time contributors, 30 days</dt>
-      <dd>People GitHub marks as first-time contributors whose first pull request appeared in the last 30 days. Collected daily, so it undercounts for the first month of tracking.</dd>
+      <dd>For the 30 newest beginner issues, the median time until the first sign someone other than its author took it: an assignment to another person, another person's linked pull request, or a first comment from someone who is neither the author nor a maintainer. Bots never count. Needs at least 3 claimed issues.</dd>
+      <dt>New contributors, 30 days</dt>
+      <dd>People with no merged contribution to the repo yet whose first pull request we saw opened in the last 30 days. GitHub only shows its own “first-time contributor” flag to people with access to the repo; to everyone else a newcomer appears as having no association, which is what this counts. Collected daily, so it undercounts for the first month of tracking.</dd>
       <dt>First maintainer reply on PRs</dt>
-      <dd>For pull requests by people outside the project opened 2–60 days ago: median hours until the first review by someone else, or the merge. Bots and maintainers' own PRs are excluded. This is the best single answer to “will my work be seen?”</dd>
-      <dt>Newcomer PRs waiting for review</dt>
-      <dd>Open pull requests from first-time contributors with no review yet.</dd>
+      <dd>For pull requests by people outside the project opened 2–60 days ago: median hours until the first review or comment from a person with standing in the repo (a maintainer or past contributor, never a bot or the author), or the merge. Bots' and maintainers' own PRs are excluded. This is the best single answer to “will my work be seen?”</dd>
+      <dt>Newcomer PRs waiting for a reply</dt>
+      <dd>Open pull requests from new contributors that no maintainer or past contributor has answered yet. Bot reviews don't count as an answer.</dd>
     </dl>
 
     <h2 id="crowding">How crowding is estimated</h2>

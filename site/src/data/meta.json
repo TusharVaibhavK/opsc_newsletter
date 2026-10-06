@@ -1,16 +1,16 @@
 {
  "counts": {
-  "events": 7,
+  "events": 1,
   "gsoc_orgs": 253,
   "open_issues": 322,
   "orgs_with_metrics": 23
  },
  "data_mode": "history",
- "generated_at": "2026-10-06T06:42:20Z",
+ "generated_at": "2026-10-06T08:26:05Z",
  "last_ok": {
   "collect_github": "2026-10-06T06:42:01Z",
   "import_gsoc": "2026-10-05T07:12:27Z",
-  "score_and_notify": "2026-10-06T06:42:20Z",
+  "score_and_notify": "2026-10-06T08:26:05Z",
   "scrape_programs": "2026-10-05T07:14:11Z",
   "watch_pages": "2026-10-06T06:42:20Z"
  },

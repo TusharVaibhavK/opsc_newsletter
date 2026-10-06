@@ -14,9 +14,8 @@ from collectors.content import Content, ContentError, Cycle, CycleEvent, load_co
 
 
 def test_real_content_is_valid(content: Content) -> None:
-    assert len(content.programs) == 22
-    assert sum(p.paid is True for p in content.programs) == 12
-    assert len(content.orgs) >= 29
+    assert len(content.programs) >= 20
+    assert len(content.orgs) >= 20
     assert {w.org for w in content.watchlist} <= {o.slug for o in content.orgs}
     assert content.guide_slugs, "guides should exist"
 

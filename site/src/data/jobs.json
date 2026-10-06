@@ -1,6 +1,14 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-10-06T08:26:05Z",
+  "job": "score_and_notify",
+  "started_at": "2026-10-06T08:26:05Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-10-06T06:42:20Z",
   "job": "score_and_notify",
   "started_at": "2026-10-06T06:42:20Z",

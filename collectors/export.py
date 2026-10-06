@@ -274,15 +274,18 @@ def export_activity(session: Session, content: Content, today: dt.date) -> dict[
             "merged_at": _iso(a.merged_at),
         }
 
-    prs = [a for a in acts if a.kind == "pr"]
-    reviews = [a for a in acts if a.kind == "review"]
+    # Headline numbers, the chart and the streak count work in orgs you track (the playbook's
+    # "N merged PRs in one or two orgs"). PRs to other repos are listed separately.
+    prs = [a for a in acts if a.kind == "pr" and a.org]
+    reviews = [a for a in acts if a.kind == "review" and a.org]
+    other_prs = [a for a in acts if a.kind == "pr" and not a.org]
     by_org: dict[str, dict[str, int]] = defaultdict(
         lambda: {"merged": 0, "open": 0, "closed": 0, "reviews": 0}
     )
     for a in prs:
-        by_org[a.org or "other"][a.state] += 1
+        by_org[str(a.org)][a.state] += 1
     for a in reviews:
-        by_org[a.org or "other"]["reviews"] += 1
+        by_org[str(a.org)]["reviews"] += 1
 
     weeks: dict[dt.date, dict[str, int]] = {}
     for back in range(25, -1, -1):
@@ -320,12 +323,14 @@ def export_activity(session: Session, content: Content, today: dt.date) -> dict[
             "merged": sum(1 for a in prs if a.state == "merged"),
             "open": sum(1 for a in prs if a.state == "open"),
             "reviews": len(reviews),
+            "other_prs": len(other_prs),
         },
         "streak_weeks": run,
         "by_org": dict(by_org),
         "weekly": [{"week": _iso(w), **c} for w, c in sorted(weeks.items())],
         "prs": [item(a) for a in prs[:60]],
         "reviews": [item(a) for a in reviews[:60]],
+        "other_prs": [item(a) for a in other_prs[:20]],
         "log": log,
     }
 

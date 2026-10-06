@@ -40,7 +40,7 @@ Every table is keyed by natural keys (org slug, repo full name, program slug) so
 | `orgs` | Curated orgs plus every GSoC org from the last 3 years | sync, import_gsoc |
 | `program_years`, `projects_history` | GSoC slots per year, project titles (no contributor names) | import_gsoc |
 | `repo_snapshots` | One row per repo per day of contributor signals | collect_github |
-| `newcomers` | Hashed logins of first-time contributors, with first-PR time | collect_github |
+| `newcomers` | Hashed logins of new contributors (no merged PR yet), with first-PR time | collect_github |
 | `open_issues` | Current open beginner issues (replaced each run) | collect_github |
 | `my_activity` | Your PRs and reviews | collect_github |
 | `watched_pages`, `page_snapshots`, `ideas` | Page state, change history (headings and dates only), idea titles | watch_pages, scrape_programs |

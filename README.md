@@ -122,7 +122,7 @@ CI runs all of it on every push, with the test suite against both SQLite and Pos
 - **Estimates are labelled as estimates.** Unconfirmed dates show “est.”; crowding shows its source.
 - **Bands, not rankings.** Crowding is Low / Medium / High relative to the tracked orgs. The numeric score never leaves the database, and nothing is sorted by it: a public “least competitive orgs” list would send everyone to the top of it.
 - **Polite collection.** One request per page per day, robots.txt honoured, no logins bypassed, no chat scraping.
-- **Data minimisation.** No GSoC contributor names; first-time contributors are counted by one-way hash.
+- **Data minimisation.** No GSoC contributor names; new contributors are counted by one-way hash.
 - **Nothing private ships.** Tokens stay in Actions secrets; CI checks the build for them.
 
 ## Credits

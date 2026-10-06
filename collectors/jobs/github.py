@@ -2,14 +2,19 @@
 
 Definitions (also shown on the site's methodology page):
 - open_gfi_count: open issues carrying any of the repo's beginner labels.
-- gfi_median_claim_hours: for the 30 newest beginner issues, hours until the first sign someone
-  took it: an assignment, a linked pull request, or a first comment from someone who is neither
-  the issue author nor a maintainer. Needs at least 3 claimed issues.
-- new_contributors_30d: distinct people GitHub flags as first-time contributors whose first PR we
-  saw in the last 30 days. Accumulates daily, so it is an undercount for the first month.
-- open_newcomer_prs: open PRs from first-time contributors with no review yet.
-- median_first_response_hours: for PRs by people outside the project opened 2–60 days ago, hours
-  until the first review by someone else or the merge. Bots and maintainers' own PRs excluded.
+- gfi_median_claim_hours: for the 30 newest beginner issues, hours until the first sign that
+  someone other than the issue's author took it: an assignment to another person, a pull request
+  from another person linked to it, or a first comment from someone who is neither the author nor
+  a maintainer. Bots never count. Needs at least 3 claimed issues.
+- new_contributors_30d: distinct people with no merged contribution yet, whose first pull request
+  we saw opened in the last 30 days. GitHub only reveals its first-timer flags to people with
+  access to the repo, so for everyone else a newcomer shows up as association NONE; that is what
+  we count (plus the first-timer flags, where visible). Accumulates daily, so it undercounts for
+  the first month.
+- open_newcomer_prs: open PRs from those newcomers that no human with standing has replied to.
+- median_first_response_hours: for PRs by people outside the project opened 2-60 days ago, hours
+  until the first review or comment from a human with standing in the repo (not the author, not a
+  bot, not another newcomer), or the merge. Bots' and maintainers' own PRs are excluded.
 """
 
 from __future__ import annotations
@@ -21,28 +26,44 @@ from typing import Any
 
 from sqlalchemy import delete, func, insert, select
 
-from collectors.db.models import MyActivity, Newcomer, OpenIssue, Repo, RepoSnapshot
+from collectors.db.models import Event, MyActivity, Newcomer, OpenIssue, Repo, RepoSnapshot
 from collectors.db.session import upsert
 from collectors.http import GitHubError, RateLimited
 from collectors.jobs import JobContext, Partial, Skip, emit
 
-NEWCOMER = {"FIRST_TIME_CONTRIBUTOR", "FIRST_TIMER"}
+# "NONE" is what a newcomer looks like to anyone without access to the repo.
+NEWCOMER = {"NONE", "FIRST_TIME_CONTRIBUTOR", "FIRST_TIMER"}
 MAINTAINER = {"OWNER", "MEMBER", "COLLABORATOR"}
+# Whose reply counts as "someone with standing answered": maintainers and past contributors.
+STANDING = MAINTAINER | {"CONTRIBUTOR"}
 MIN_SAMPLES = 3
+RECENT_MERGE_DAYS = 3  # an unseen merge older than this is backfill, not news
+MERGE_EVENT_KEEP_DAYS = 30
 
 ISSUE_FIELDS = """
 fragment IssueFields on Issue {
   number title url createdAt state
   author { login }
-  comments(first: 5) { totalCount nodes { createdAt authorAssociation author { login } } }
+  comments(first: 10) {
+    totalCount
+    nodes { createdAt authorAssociation author { __typename login } }
+  }
   assignees(first: 1) { totalCount }
   labels(first: 10) { nodes { name } }
-  timelineItems(first: 10, itemTypes: [ASSIGNED_EVENT, CONNECTED_EVENT, CROSS_REFERENCED_EVENT]) {
+  timelineItems(first: 20, itemTypes: [ASSIGNED_EVENT, CONNECTED_EVENT, CROSS_REFERENCED_EVENT]) {
     nodes {
       __typename
-      ... on AssignedEvent { createdAt }
-      ... on ConnectedEvent { createdAt }
-      ... on CrossReferencedEvent { createdAt source { __typename ... on PullRequest { state } } }
+      ... on AssignedEvent {
+        createdAt
+        actor { login }
+        assignee { __typename ... on User { login } ... on Bot { login } }
+      }
+      ... on ConnectedEvent { createdAt actor { login } }
+      ... on CrossReferencedEvent {
+        createdAt
+        actor { login }
+        source { __typename ... on PullRequest { state author { __typename login } } }
+      }
     }
   }
 }
@@ -52,7 +73,8 @@ PR_FIELDS = """
 fragment PrFields on PullRequest {
   number url createdAt mergedAt state authorAssociation
   author { __typename login }
-  reviews(first: 5) { nodes { createdAt author { login } } }
+  reviews(first: 10) { nodes { createdAt authorAssociation author { __typename login } } }
+  comments(first: 10) { nodes { createdAt authorAssociation author { __typename login } } }
 }
 """
 
@@ -128,26 +150,55 @@ def _login(node: dict[str, Any] | None) -> str | None:
     return (node or {}).get("login")
 
 
+def _is_bot(actor: dict[str, Any] | None) -> bool:
+    """GraphQL reports apps as type Bot (login without the REST API's "[bot]" suffix)."""
+    actor = actor or {}
+    return actor.get("__typename") == "Bot" or str(actor.get("login") or "").endswith("[bot]")
+
+
+def _claim_event_time(event: dict[str, Any], author: str | None) -> dt.datetime | None:
+    """When this timeline event shows someone other than the issue's author taking the issue."""
+    kind = event.get("__typename")
+    if kind == "AssignedEvent":
+        assignee = event.get("assignee") or {}
+        who = assignee.get("login")
+        if not who or who == author or assignee.get("__typename") == "Bot":
+            return None
+    elif kind == "ConnectedEvent":
+        actor = event.get("actor")
+        if not _login(actor) or _login(actor) == author or _is_bot(actor):
+            return None
+    elif kind == "CrossReferencedEvent":
+        source = event.get("source") or {}
+        if source.get("__typename") != "PullRequest":
+            return None
+        pr_author = source.get("author")
+        if not _login(pr_author) or _login(pr_author) == author or _is_bot(pr_author):
+            return None
+    else:
+        return None
+    return parse_ts(event.get("createdAt"))
+
+
 def claimed_at(issue: dict[str, Any]) -> dt.datetime | None:
-    """Earliest sign someone took the issue: assignment, linked PR, or an outside comment."""
+    """Earliest sign someone other than the author took the issue."""
     times: list[dt.datetime] = []
     author = _login(issue.get("author"))
     for comment in issue["comments"]["nodes"]:
-        login = _login(comment.get("author"))
-        if login and login != author and comment.get("authorAssociation") not in MAINTAINER:
-            ts = parse_ts(comment["createdAt"])
-            if ts:
+        actor = comment.get("author")
+        login = _login(actor)
+        if (
+            login
+            and login != author
+            and not _is_bot(actor)
+            and comment.get("authorAssociation") not in MAINTAINER
+        ):
+            if ts := parse_ts(comment.get("createdAt")):
                 times.append(ts)
             break
     for event in issue["timelineItems"]["nodes"]:
-        kind = event.get("__typename")
-        source = event.get("source") or {}
-        if kind in ("AssignedEvent", "ConnectedEvent") or (
-            kind == "CrossReferencedEvent" and source.get("__typename") == "PullRequest"
-        ):
-            ts = parse_ts(event.get("createdAt"))
-            if ts:
-                times.append(ts)
+        if ts := _claim_event_time(event, author):
+            times.append(ts)
     return min(times) if times else None
 
 
@@ -162,22 +213,30 @@ def has_linked_pr(issue: dict[str, Any]) -> bool:
 
 
 def first_response(pr: dict[str, Any]) -> dt.datetime | None:
+    """Earliest human reply with standing in the repo (or the merge itself)."""
     author = _login(pr.get("author"))
-    times = [
-        ts
-        for review in pr["reviews"]["nodes"]
-        if _login(review.get("author")) not in (None, author)
-        and (ts := parse_ts(review.get("createdAt"))) is not None
-    ]
-    merged = parse_ts(pr.get("mergedAt"))
-    if merged:
+    times: list[dt.datetime] = []
+    for kind in ("reviews", "comments"):
+        for node in (pr.get(kind) or {}).get("nodes") or []:
+            actor = node.get("author")
+            login = _login(actor)
+            if not login or login == author or _is_bot(actor):
+                continue
+            if node.get("authorAssociation") not in STANDING:
+                continue
+            if ts := parse_ts(node.get("createdAt")):
+                times.append(ts)
+    if merged := parse_ts(pr.get("mergedAt")):
         times.append(merged)
     return min(times) if times else None
 
 
-def _is_bot(pr: dict[str, Any]) -> bool:
-    author = pr.get("author") or {}
-    return author.get("__typename") == "Bot" or str(author.get("login", "")).endswith("[bot]")
+def _is_newcomer_pr(pr: dict[str, Any]) -> bool:
+    return (
+        pr.get("authorAssociation") in NEWCOMER
+        and bool(_login(pr.get("author")))
+        and not _is_bot(pr.get("author"))
+    )
 
 
 def repo_metrics(repo: dict[str, Any], now: dt.datetime, has_labels: bool) -> dict[str, Any]:
@@ -212,15 +271,15 @@ def repo_metrics(repo: dict[str, Any], now: dt.datetime, has_labels: bool) -> di
 
     newcomers: dict[str, dt.datetime] = {}
     for pr in repo["recentPrs"]["nodes"] + repo["openPrs"]["nodes"]:
-        login = _login(pr.get("author"))
         created = parse_ts(pr["createdAt"])
-        if login and created and not _is_bot(pr) and pr.get("authorAssociation") in NEWCOMER:
+        if created and _is_newcomer_pr(pr):
+            login = str(_login(pr.get("author")))
             newcomers[login] = min(created, newcomers.get(login, created))
 
     waits, unanswered = [], 0
     for pr in repo["recentPrs"]["nodes"]:
         created = parse_ts(pr["createdAt"])
-        if not created or _is_bot(pr) or pr.get("authorAssociation") in MAINTAINER:
+        if not created or _is_bot(pr.get("author")) or pr.get("authorAssociation") in MAINTAINER:
             continue
         age_days = (now - created).total_seconds() / 86400
         if not 2 <= age_days <= 60:
@@ -233,11 +292,7 @@ def repo_metrics(repo: dict[str, Any], now: dt.datetime, has_labels: bool) -> di
     sampled = len(waits) + unanswered
 
     open_newcomer = sum(
-        1
-        for pr in repo["openPrs"]["nodes"]
-        if pr.get("authorAssociation") in NEWCOMER
-        and not _is_bot(pr)
-        and first_response(pr) is None
+        1 for pr in repo["openPrs"]["nodes"] if _is_newcomer_pr(pr) and first_response(pr) is None
     )
     return {
         "snapshot": {
@@ -305,7 +360,8 @@ def _collect_repo(ctx: JobContext, repo: Repo, now: dt.datetime) -> None:
         )
 
 
-def _collect_my_activity(ctx: JobContext, username: str) -> int:
+def _collect_my_activity(ctx: JobContext, username: str, now: dt.datetime) -> int:
+    me = username.lower()
     owners = {owner.lower(): o.slug for o in ctx.content.orgs for owner in o.github_owners}
     existing = {a.url: a.state for a in ctx.session.scalars(select(MyActivity))}
     rows: list[dict[str, Any]] = []
@@ -317,9 +373,11 @@ def _collect_my_activity(ctx: JobContext, username: str) -> int:
         for node in data["search"]["nodes"]:
             if not node:
                 continue
+            repo = node["repository"]
+            if repo["owner"]["login"].lower() == me:
+                continue  # your own repos aren't contributions to someone else's project
             merged = parse_ts(node.get("mergedAt"))
             state = "merged" if merged else ("closed" if node["state"] == "CLOSED" else "open")
-            repo = node["repository"]
             rows.append(
                 {
                     "url": node["url"],
@@ -334,23 +392,37 @@ def _collect_my_activity(ctx: JobContext, username: str) -> int:
                 }
             )
     rows = list({r["url"]: r for r in rows}.values())
+
+    # Forget anything recorded before own repos were excluded. Merge events are celebrations
+    # rather than history, so they also expire after a month, which clears first-run backfill.
+    ctx.session.execute(delete(MyActivity).where(func.lower(MyActivity.repo).like(f"{me}/%")))
+    ctx.session.execute(
+        delete(Event).where(
+            Event.kind == "pr_merged",
+            (func.lower(Event.url).like(f"https://github.com/{me}/%"))
+            | (Event.occurred_at < now - dt.timedelta(days=MERGE_EVENT_KEEP_DAYS)),
+        )
+    )
     upsert(ctx.session, MyActivity, rows)
+
+    recent = now - dt.timedelta(days=RECENT_MERGE_DAYS)
     for row in rows:
-        if (
-            row["kind"] == "pr"
-            and row["state"] == "merged"
-            and existing.get(row["url"]) != "merged"
-        ):
-            emit(
-                ctx.session,
-                key=f"pr-merged:{row['url']}",
-                kind="pr_merged",
-                title=f"Merged: {row['title']} ({row['repo']})",
-                entity_type="org" if row["org"] else None,
-                entity_slug=row["org"],
-                url=row["url"],
-                when=row["merged_at"],
-            )
+        if row["kind"] != "pr" or row["state"] != "merged" or existing.get(row["url"]) == "merged":
+            continue
+        # Newly merged since we last looked, or merged just now. A merge we are seeing for the
+        # first time that happened weeks ago is backfill, not news.
+        if row["url"] not in existing and (row["merged_at"] is None or row["merged_at"] < recent):
+            continue
+        emit(
+            ctx.session,
+            key=f"pr-merged:{row['url']}",
+            kind="pr_merged",
+            title=f"Merged: {row['title']} ({row['repo']})",
+            entity_type="org" if row["org"] else None,
+            entity_slug=row["org"],
+            url=row["url"],
+            when=row["merged_at"],
+        )
     return len(rows)
 
 
@@ -388,7 +460,7 @@ def collect_github(ctx: JobContext) -> str:
     username = ctx.content.profile.github_username
     if username and not any("rate limited" in e for e in errors):
         try:
-            activity = _collect_my_activity(ctx, username)
+            activity = _collect_my_activity(ctx, username, now)
         except GitHubError as exc:
             errors.append(f"my activity: {exc}")
 

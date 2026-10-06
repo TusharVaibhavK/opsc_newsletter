@@ -182,14 +182,14 @@ const doneCount = checklist.filter((c) => c.done).length;
       activity.username ? (
         <>
           <div class="stats">
-            <div class="stat"><div class="value">{activity.totals.merged}</div><div class="label">merged PRs</div></div>
-            <div class="stat"><div class="value">{activity.totals.open}</div><div class="label">open PRs</div></div>
+            <div class="stat"><div class="value">{activity.totals.merged}</div><div class="label">merged PRs in your orgs</div></div>
+            <div class="stat"><div class="value">{activity.totals.open}</div><div class="label">open PRs in your orgs</div></div>
             <div class="stat"><div class="value">{activity.totals.reviews}</div><div class="label">reviews of others' PRs</div></div>
             <div class="stat"><div class="value">{activity.streak_weeks}</div><div class="label">week streak</div></div>
           </div>
           <h3>Merged PRs per week</h3>
           <WeeklyBars title="Merged PRs" weeks={weeks} />
-          {activity.prs.length > 0 && (
+          {activity.prs.length > 0 ? (
             <ul class="plain divided" style="margin-top:1rem">
               {activity.prs.slice(0, 10).map((a) => (
                 <li class="spread">
@@ -200,6 +200,23 @@ const doneCount = checklist.filter((c) => c.done).length;
                 </li>
               ))}
             </ul>
+          ) : (
+            <p class="muted small">No pull requests to your tracked orgs yet. The first one is the goal for October.</p>
+          )}
+          {(activity.other_prs ?? []).length > 0 && (
+            <details class="small" style="margin-top:0.8rem">
+              <summary>
+                {activity.totals.other_prs} PRs to other repos (not counted above; your own repos are never included)
+              </summary>
+              <ul class="plain divided">
+                {(activity.other_prs ?? []).map((a) => (
+                  <li class="spread">
+                    <a href={a.url}>{a.title}</a>
+                    <span class="muted">{a.repo} · {a.state}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
           )}
         </>
       ) : (

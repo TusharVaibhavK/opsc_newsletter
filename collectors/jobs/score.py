@@ -35,9 +35,9 @@ from collectors.jobs import JobContext, Partial, emit
 from collectors.notify import send_alerts
 
 WEIGHTS: dict[str, float] = {
-    "new_contributors": 0.375,  # first-time contributors, last 30 days
+    "new_contributors": 0.375,  # people with no merged PR yet, first seen in the last 30 days
     "claim_speed": 0.25,  # 1 / median hours until a beginner issue is claimed
-    "newcomer_backlog": 0.1875,  # open, unreviewed PRs from first-time contributors
+    "newcomer_backlog": 0.1875,  # open newcomer PRs nobody has answered
     "log_stars": 0.1875,  # brand recognition proxy
     "slots": -0.40,  # average GSoC projects a year, last 3 years (supply)
     "ideas": -0.20,  # ideas on the current list (supply)

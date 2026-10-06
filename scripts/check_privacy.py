@@ -82,13 +82,18 @@ def main() -> int:
     history = ROOT / "data" / "db"
     newcomers = history / "newcomers.jsonl"
     if newcomers.exists():
-        for line in newcomers.read_text(encoding="utf-8").splitlines()[:50]:
-            if '"login"' in line:
+        for line in newcomers.read_text(encoding="utf-8").splitlines():
+            if "login" in json.loads(line):
                 problems.append("data/db/newcomers.jsonl contains raw logins")
                 break
     projects = history / "projects_history.jsonl"
-    if projects.exists() and "contributor" in projects.read_text(encoding="utf-8")[:20000]:
-        problems.append("data/db/projects_history.jsonl contains contributor names")
+    if projects.exists():
+        # Look at the data keys, not at words: a project may well be titled "Contributor ...".
+        for line in projects.read_text(encoding="utf-8").splitlines():
+            row = json.loads(line)
+            if {"contributor_name", "student_name"} & row.keys():
+                problems.append("data/db/projects_history.jsonl contains contributor names")
+                break
 
     scores = ROOT / "site" / "src" / "data" / "scores.json"
     if scores.exists() and "competition_score" in json.dumps(

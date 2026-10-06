@@ -172,12 +172,14 @@ export const issues = issuesRaw as unknown as {
 };
 export const activity = activityRaw as unknown as {
   username: string | null;
-  totals: { prs: number; merged: number; open: number; reviews: number };
+  // Counts are for orgs in content/orgs/; other_prs counts PRs to everyone else's repos.
+  totals: { prs: number; merged: number; open: number; reviews: number; other_prs?: number };
   streak_weeks: number;
   by_org: Record<string, { merged: number; open: number; closed: number; reviews: number }>;
   weekly: { week: string; merged: number; opened: number; reviews: number }[];
   prs: ActivityItem[];
   reviews: ActivityItem[];
+  other_prs?: ActivityItem[];
   log: { date: string; kind: string; org: string | null; note: string; url: string | null }[];
 };
 export const events = eventsRaw as unknown as FeedEvent[];

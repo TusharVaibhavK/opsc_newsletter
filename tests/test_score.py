@@ -83,8 +83,8 @@ def test_fit_rewards_language_overlap(make_ctx: Callable[..., JobContext]) -> No
     assert fits["kubeflow"]["fit"] > fits["api-dash"]["fit"]
 
 
-def test_deadline_alert_a_week_out(make_ctx: Callable[..., JobContext]) -> None:
-    ctx = make_ctx(today=dt.date(2027, 3, 25))
+def test_deadline_alert_a_week_out(deadline_ctx: JobContext) -> None:
+    ctx = deadline_ctx
     deadline_events(ctx)
     titles = [e.title for e in ctx.session.scalars(select(Event).where(Event.kind == "deadline"))]
     assert "GSoC 2027: applications close in 6 days (Mar 31, estimated)" in titles
@@ -105,12 +105,10 @@ def test_two_failures_in_a_row_alert(make_ctx: Callable[..., JobContext]) -> Non
     assert failing_job_events(ctx) == 1
 
 
-def test_alerts_go_to_telegram(
-    make_ctx: Callable[..., JobContext], monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_alerts_go_to_telegram(deadline_ctx: JobContext, monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "123456:SECRET")
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
-    ctx = make_ctx(today=dt.date(2027, 3, 25))
+    ctx = deadline_ctx
     with respx.mock() as router:
         route = router.post("https://api.telegram.org/bot123456:SECRET/sendMessage").respond(
             200, json={"ok": True}
@@ -123,11 +121,11 @@ def test_alerts_go_to_telegram(
 
 
 def test_failed_delivery_retries_later_and_hides_token(
-    make_ctx: Callable[..., JobContext], monkeypatch: pytest.MonkeyPatch
+    deadline_ctx: JobContext, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "123456:SECRET")
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
-    ctx = make_ctx(today=dt.date(2027, 3, 25))
+    ctx = deadline_ctx
     with respx.mock() as router:
         router.post("https://api.telegram.org/bot123456:SECRET/sendMessage").mock(
             return_value=httpx.Response(401)
@@ -142,10 +140,10 @@ def test_failed_delivery_retries_later_and_hides_token(
 
 
 def test_without_a_channel_alerts_are_only_in_the_feed(
-    make_ctx: Callable[..., JobContext], monkeypatch: pytest.MonkeyPatch
+    deadline_ctx: JobContext, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
-    ctx = make_ctx(today=dt.date(2027, 3, 25))
+    ctx = deadline_ctx
     run = run_job("score_and_notify", score_and_notify, ctx)
     assert run.status == "ok"
     assert {e.notified_via for e in ctx.session.scalars(select(Event))} == {"none"}
