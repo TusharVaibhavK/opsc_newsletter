@@ -1,6 +1,30 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-10-06T08:34:39Z",
+  "job": "score_and_notify",
+  "started_at": "2026-10-06T08:34:38Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-10-06T08:34:38Z",
+  "job": "watch_pages",
+  "started_at": "2026-10-06T08:34:21Z",
+  "status": "ok",
+  "summary": "50 pages: 2 edited, 1 error, 20 not-yet, 2 robots, 25 unchanged"
+ },
+ {
+  "api_calls": 5,
+  "finished_at": "2026-10-06T08:34:21Z",
+  "job": "collect_github",
+  "started_at": "2026-10-06T08:33:45Z",
+  "status": "error",
+  "summary": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-10-06T08:26:05Z",
   "job": "score_and_notify",
   "started_at": "2026-10-06T08:26:05Z",
