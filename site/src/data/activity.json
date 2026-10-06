@@ -1,16 +1,78 @@
 {
- "by_org": {},
+ "by_org": {
+  "other": {
+   "closed": 0,
+   "merged": 6,
+   "open": 0,
+   "reviews": 0
+  }
+ },
  "log": [],
- "prs": [],
+ "prs": [
+  {
+   "merged_at": "2026-03-26T20:15:07Z",
+   "opened_at": "2026-03-26T20:14:59Z",
+   "org": null,
+   "repo": "trahulprabhu38/nexus-AgenticAI",
+   "state": "merged",
+   "title": "Merging IntentAgent3",
+   "url": "https://github.com/trahulprabhu38/nexus-AgenticAI/pull/2"
+  },
+  {
+   "merged_at": "2026-03-26T20:13:40Z",
+   "opened_at": "2026-03-26T20:13:27Z",
+   "org": null,
+   "repo": "TusharVaibhavK/nexus-AgenticAI",
+   "state": "merged",
+   "title": "Made changes to Frontend, Added API_Integrations dir to maintain cent…",
+   "url": "https://github.com/TusharVaibhavK/nexus-AgenticAI/pull/1"
+  },
+  {
+   "merged_at": "2025-03-22T00:20:33Z",
+   "opened_at": "2025-03-22T00:20:13Z",
+   "org": null,
+   "repo": "trahulprabhu38/resQ",
+   "state": "merged",
+   "title": "Ml test",
+   "url": "https://github.com/trahulprabhu38/resQ/pull/2"
+  },
+  {
+   "merged_at": "2023-01-05T09:59:44Z",
+   "opened_at": "2023-01-05T09:59:37Z",
+   "org": null,
+   "repo": "TusharVaibhavK/MLAlgos",
+   "state": "merged",
+   "title": "Sike i gat al the algooos",
+   "url": "https://github.com/TusharVaibhavK/MLAlgos/pull/1"
+  },
+  {
+   "merged_at": "2022-11-06T17:42:47Z",
+   "opened_at": "2022-11-06T17:42:40Z",
+   "org": null,
+   "repo": "TusharVaibhavK/ProjectMSR",
+   "state": "merged",
+   "title": "Dev2",
+   "url": "https://github.com/TusharVaibhavK/ProjectMSR/pull/3"
+  },
+  {
+   "merged_at": "2022-10-18T07:01:19Z",
+   "opened_at": "2022-10-18T03:52:00Z",
+   "org": null,
+   "repo": "TusharVaibhavK/ProjectMSR",
+   "state": "merged",
+   "title": "Create Module1",
+   "url": "https://github.com/TusharVaibhavK/ProjectMSR/pull/2"
+  }
+ ],
  "reviews": [],
  "streak_weeks": 0,
  "totals": {
-  "merged": 0,
+  "merged": 6,
   "open": 0,
-  "prs": 0,
+  "prs": 6,
   "reviews": 0
  },
- "username": null,
+ "username": "TusharVaibhavK",
  "weekly": [
   {
    "merged": 0,

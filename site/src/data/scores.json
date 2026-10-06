@@ -1,7 +1,7 @@
 {
  "orgs": {
   "aboutcode": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -48,11 +48,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 75,
    "fit_parts": {
     "languages": 1.0,
@@ -61,12 +61,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "api-dash": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -113,11 +117,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 9,
    "fit_parts": {
     "languages": 0.0,
@@ -126,6 +130,10 @@
     "tracks": 0.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
@@ -195,7 +203,7 @@
    ]
   },
   "checkstyle": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -242,11 +250,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 55,
    "fit_parts": {
     "languages": 1.0,
@@ -255,6 +263,10 @@
     "tracks": 0.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
@@ -325,7 +337,7 @@
    ]
   },
   "dbpedia": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -372,11 +384,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.72,
    "fit": 62,
    "fit_parts": {
     "languages": 0.67,
@@ -385,11 +397,14 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
   "deepchem": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -436,11 +451,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.88,
    "fit": 69,
    "fit_parts": {
     "languages": 1.0,
@@ -449,11 +464,15 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
   "django": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -500,11 +519,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 0.84,
    "fit": 75,
    "fit_parts": {
     "languages": 1.0,
@@ -513,12 +532,15 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "gemini-cli": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -565,11 +587,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.88,
    "fit": 23,
    "fit_parts": {
     "languages": 0.0,
@@ -578,6 +600,10 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
@@ -647,7 +673,7 @@
    ]
   },
   "kubeflow": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -694,11 +720,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 69,
    "fit_parts": {
     "languages": 1.0,
@@ -707,12 +733,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "kubevirt": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -759,11 +789,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 63,
    "fit_parts": {
     "languages": 1.0,
@@ -772,12 +802,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "mdanalysis": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -824,11 +858,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 55,
    "fit_parts": {
     "languages": 1.0,
@@ -837,12 +871,16 @@
     "tracks": 0.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "meshery": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -889,11 +927,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 26,
    "fit_parts": {
     "languages": 0.5,
@@ -902,12 +940,16 @@
     "tracks": 0.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "metabrainz": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -954,11 +996,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.72,
    "fit": 75,
    "fit_parts": {
     "languages": 1.0,
@@ -967,11 +1009,14 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
   "metaflow": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -1018,11 +1063,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.72,
    "fit": 63,
    "fit_parts": {
     "languages": 1.0,
@@ -1031,6 +1076,9 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
@@ -1100,7 +1148,7 @@
    ]
   },
   "mllam": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -1147,11 +1195,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 63,
    "fit_parts": {
     "languages": 1.0,
@@ -1160,12 +1208,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "neuroinformatics-unit": {
-   "band": "unknown",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -1212,11 +1264,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 66,
    "fit_parts": {
     "languages": 1.0,
@@ -1225,12 +1277,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "open-transit-software-foundation": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1277,11 +1333,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 69,
    "fit_parts": {
     "languages": 1.0,
@@ -1290,12 +1346,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "openelis-global": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1342,11 +1402,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.25,
+   "confidence": 0.88,
    "fit": 69,
    "fit_parts": {
     "languages": 1.0,
@@ -1355,11 +1415,15 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots"
    ]
   },
   "openmrs": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1406,11 +1470,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 0.84,
    "fit": 75,
    "fit_parts": {
     "languages": 1.0,
@@ -1419,12 +1483,15 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "oppia": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1471,11 +1538,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 55,
    "fit_parts": {
     "languages": 0.5,
@@ -1484,6 +1551,10 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
@@ -1619,7 +1690,7 @@
    ]
   },
   "rocket-chat": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1666,11 +1737,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 35,
    "fit_parts": {
     "languages": 0.0,
@@ -1679,12 +1750,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "sugar-labs": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1731,11 +1806,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 0.84,
    "fit": 35,
    "fit_parts": {
     "languages": 0.5,
@@ -1744,12 +1819,15 @@
     "tracks": 0.0
    },
    "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "sw360": {
-   "band": "unknown",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -1796,11 +1874,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 66,
    "fit_parts": {
     "languages": 1.0,
@@ -1809,12 +1887,16 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
   },
   "zulip": {
-   "band": "unknown",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1861,11 +1943,11 @@
      "week": "2026-09-28"
     },
     {
-     "band": "unknown",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
-   "confidence": 0.38,
+   "confidence": 1.0,
    "fit": 55,
    "fit_parts": {
     "languages": 0.5,
@@ -1874,6 +1956,10 @@
     "tracks": 1.0
    },
    "inputs_present": [
+    "new_contributors",
+    "claim_speed",
+    "newcomer_backlog",
+    "log_stars",
     "slots",
     "ideas"
    ]
