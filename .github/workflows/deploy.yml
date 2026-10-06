@@ -1,7 +1,7 @@
 name: Deploy
 
 # Builds the static site and publishes it to GitHub Pages. Runs on pushes to main (content or
-# code changes), after every daily collection, and on demand.
+# code changes), after every Collect run, and on demand.
 # One-time setup: Settings > Pages > Build and deployment > Source: GitHub Actions.
 on:
   push:
@@ -11,7 +11,9 @@ on:
       - 'site/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
-  workflow_call:
+  workflow_run:
+    workflows: [Collect]
+    types: [completed]
 
 permissions:
   contents: read
@@ -24,6 +26,8 @@ concurrency:
 
 jobs:
   build:
+    # After a Collect run, publish whatever it committed, unless the run was cancelled.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
     runs-on: ubuntu-latest
     env:
       ASTRO_TELEMETRY_DISABLED: '1'

@@ -2,7 +2,9 @@ name: Collect
 
 # One run a day at 06:00 IST. `ossmap daily` decides which jobs are due: GitHub signals, ideas
 # pages and scoring daily; the GSoC import and program pages weekly (the GSoC import goes daily
-# from Jan 15 to May 15). Results are committed to data/ and site/src/data/, then deployed.
+# from Jan 15 to May 15). Results are committed to data/ and site/src/data/; the Deploy
+# workflow then publishes them. Deploy is a separate workflow on purpose: if a deployment ever
+# hangs, it can only delay publishing, never block the next day's collection.
 on:
   schedule:
     - cron: '30 0 * * *'
@@ -73,12 +75,3 @@ jobs:
         run: |
           echo "::error::At least one collector failed; see the run log and the /admin page."
           exit 1
-
-  deploy:
-    needs: collect
-    if: always() && needs.collect.result != 'cancelled'
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    uses: ./.github/workflows/deploy.yml
