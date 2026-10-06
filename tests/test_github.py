@@ -248,8 +248,8 @@ def mock_graphql(
     def respond(request: httpx.Request) -> httpx.Response:
         assert request.headers["Authorization"] == "Bearer test-token"
         body = json.loads(request.content)
-        if "RepoMetrics" in body["query"]:
-            calls.append("repo")
+        if "RepoPrs" in body["query"] or "RepoIssues" in body["query"]:
+            calls.append("prs" if "RepoPrs" in body["query"] else "issues")
             data = {"rateLimit": {}, "repository": repository()}
         else:
             calls.append("search")
@@ -266,7 +266,8 @@ def test_collect_saves_snapshot_and_hashes_logins(make_ctx: Callable[..., JobCon
         mock_graphql(router, calls)
         ctx = make_ctx(only_repo="kubeflow/pipelines", clock=lambda: NOW)
         summary = collect_github(ctx)
-    assert summary.startswith("1 repos collected") and calls == ["repo"]  # no username: no search
+    assert summary.startswith("1 repos collected")
+    assert calls == ["prs", "issues"]  # two small queries; no username, so no search
     snap = ctx.session.get(RepoSnapshot, ("kubeflow/pipelines", dt.date(2026, 10, 5)))
     assert snap is not None and snap.stars == 4200 and snap.new_contributors_30d == 6
     assert ctx.session.scalar(select(func.count()).select_from(OpenIssue)) == 3
@@ -281,9 +282,9 @@ def test_same_day_rerun_spends_no_repo_calls(make_ctx: Callable[..., JobContext]
         mock_graphql(router, calls)
         collect_github(make_ctx(only_repo="kubeflow/pipelines", clock=lambda: NOW))
         summary = collect_github(make_ctx(only_repo="kubeflow/pipelines", clock=lambda: NOW))
-        assert calls.count("repo") == 1 and "1 already fresh" in summary
+        assert calls.count("prs") == 1 and "1 already fresh" in summary
         collect_github(make_ctx(only_repo="kubeflow/pipelines", force=True, clock=lambda: NOW))
-        assert calls.count("repo") == 2
+        assert calls.count("prs") == 2
     assert len(list(make_ctx().session.scalars(select(RepoSnapshot)))) == 1  # upserted
 
 
@@ -298,7 +299,7 @@ def test_rate_limit_keeps_partial_results(make_ctx: Callable[..., JobContext]) -
 
     def respond(_request: httpx.Request) -> httpx.Response:
         state["n"] += 1
-        if state["n"] == 1:
+        if state["n"] <= 2:  # both queries for the first repo succeed
             return httpx.Response(200, json={"data": {"rateLimit": {}, "repository": repository()}})
         errors = [{"type": "RATE_LIMITED", "message": "API rate limit exceeded"}]
         return httpx.Response(200, json={"errors": errors})
@@ -391,3 +392,24 @@ def test_pr_that_gets_merged_is_announced_once(
         collect_github(ctx)
     merges = select(func.count()).select_from(Event).where(Event.kind == "pr_merged")
     assert ctx.session.scalar(merges) == 1
+
+
+def test_one_broken_repo_does_not_lose_the_others(make_ctx: Callable[..., JobContext]) -> None:
+    """A huge repo timing out (GitHub sends back a non-JSON page) costs that repo only."""
+
+    def respond(request: httpx.Request) -> httpx.Response:
+        if json.loads(request.content)["variables"].get("owner") == "RocketChat":
+            return httpx.Response(200, text="<html>Server timeout</html>")
+        return httpx.Response(200, json={"data": {"rateLimit": {}, "repository": repository()}})
+
+    with respx.mock(assert_all_called=False) as router:
+        router.post(GITHUB_GRAPHQL).mock(side_effect=respond)
+        ctx = make_ctx(clock=lambda: NOW)
+        run = run_job("collect_github", collect_github, ctx)
+    tracked = sum(len(o.repos) for o in ctx.content.orgs)
+    assert run.status == "error"
+    assert "RocketChat/Rocket.Chat: GitHub GraphQL failed after 2 attempts: non-JSON" in (
+        run.summary or ""
+    )
+    saved = ctx.session.scalar(select(func.count()).select_from(RepoSnapshot))
+    assert saved == tracked - 1  # every other repo kept its snapshot

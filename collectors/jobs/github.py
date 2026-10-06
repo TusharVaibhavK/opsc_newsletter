@@ -78,23 +78,16 @@ fragment PrFields on PullRequest {
 }
 """
 
-REPO_QUERY = (
+# Two smaller queries per repo instead of one big one: on very large repos a single query
+# asking for issues, PRs, reviews and comments together can run past GitHub's time limit.
+PRS_QUERY = (
     """
-query RepoMetrics($owner: String!, $name: String!, $labels: [String!], $withIssues: Boolean!) {
+query RepoPrs($owner: String!, $name: String!) {
   rateLimit { cost remaining resetAt }
   repository(owner: $owner, name: $name) {
     nameWithOwner
     stargazerCount
     hasIssuesEnabled
-    openGfi: issues(states: OPEN, labels: $labels, first: 50,
-                    orderBy: {field: CREATED_AT, direction: DESC}) @include(if: $withIssues) {
-      totalCount
-      nodes { ...IssueFields }
-    }
-    recentGfi: issues(labels: $labels, first: 30,
-                      orderBy: {field: CREATED_AT, direction: DESC}) @include(if: $withIssues) {
-      nodes { ...IssueFields }
-    }
     recentPrs: pullRequests(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) {
       nodes { ...PrFields }
     }
@@ -104,8 +97,26 @@ query RepoMetrics($owner: String!, $name: String!, $labels: [String!], $withIssu
   }
 }
 """
-    + ISSUE_FIELDS
     + PR_FIELDS
+)
+
+ISSUES_QUERY = (
+    """
+query RepoIssues($owner: String!, $name: String!, $labels: [String!]) {
+  rateLimit { cost remaining resetAt }
+  repository(owner: $owner, name: $name) {
+    openGfi: issues(states: OPEN, labels: $labels, first: 50,
+                    orderBy: {field: CREATED_AT, direction: DESC}) {
+      totalCount
+      nodes { ...IssueFields }
+    }
+    recentGfi: issues(labels: $labels, first: 30, orderBy: {field: CREATED_AT, direction: DESC}) {
+      nodes { ...IssueFields }
+    }
+  }
+}
+"""
+    + ISSUE_FIELDS
 )
 
 SEARCH_QUERY = """
@@ -240,7 +251,7 @@ def _is_newcomer_pr(pr: dict[str, Any]) -> bool:
 
 
 def repo_metrics(repo: dict[str, Any], now: dt.datetime, has_labels: bool) -> dict[str, Any]:
-    """Turn one RepoMetrics response into snapshot fields, open issues and newcomer sightings."""
+    """Turn the RepoPrs and RepoIssues replies into snapshot fields, issues and newcomers."""
     issues_on = bool(repo.get("hasIssuesEnabled")) and has_labels
     open_issues: list[dict[str, Any]] = []
     gfi_count = unclaimed = claim_hours = None
@@ -316,13 +327,14 @@ def repo_metrics(repo: dict[str, Any], now: dt.datetime, has_labels: bool) -> di
 def _collect_repo(ctx: JobContext, repo: Repo, now: dt.datetime) -> None:
     owner, name = repo.full_name.split("/", 1)
     labels = list(repo.gfi_labels or [])
-    data = ctx.http.graphql(
-        REPO_QUERY,
-        {"owner": owner, "name": name, "labels": labels or None, "withIssues": bool(labels)},
-    )
-    if data.get("repository") is None:
+    variables = {"owner": owner, "name": name}
+    found = ctx.http.graphql(PRS_QUERY, variables).get("repository")
+    if found is None:
         raise GitHubError(f"{repo.full_name} not found (renamed or deleted?)")
-    metrics = repo_metrics(data["repository"], now, has_labels=bool(labels))
+    if labels and found.get("hasIssuesEnabled"):
+        issues = ctx.http.graphql(ISSUES_QUERY, {**variables, "labels": labels})
+        found = {**found, **(issues.get("repository") or {})}
+    metrics = repo_metrics(found, now, has_labels=bool(labels))
 
     upsert(
         ctx.session,
@@ -455,6 +467,8 @@ def collect_github(ctx: JobContext) -> str:
             break
         except GitHubError as exc:
             errors.append(f"{repo.full_name}: {exc}")
+        except (KeyError, TypeError, ValueError) as exc:  # unexpected shape: skip this repo only
+            errors.append(f"{repo.full_name}: {type(exc).__name__}: {exc}")
 
     activity = 0
     username = ctx.content.profile.github_username

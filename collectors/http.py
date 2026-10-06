@@ -125,26 +125,41 @@ class Http:
         parser = self._robots[origin]
         return parser is not None and parser.can_fetch(USER_AGENT, url)
 
-    def graphql(self, query: str, variables: dict[str, Any]) -> dict[str, Any]:
-        """Run a GitHub GraphQL query. Raises GitHubError on any error in the response."""
+    def graphql(self, query: str, variables: dict[str, Any], attempts: int = 2) -> dict[str, Any]:
+        """Run a GitHub GraphQL query. Raises GitHubError on any error in the response.
+
+        A reply that isn't JSON, or a GraphQL-level timeout, is retried once: GitHub produces
+        both when a query on a very large repo runs past its time limit.
+        """
         if not self.token:
             raise GitHubError("GITHUB_TOKEN is required for the GitHub GraphQL API")
-        resp = self.request(
-            "POST",
-            GITHUB_GRAPHQL,
-            json={"query": query, "variables": variables},
-            headers={"Authorization": f"Bearer {self.token}"},
-        )
-        if _is_rate_limited(resp):
-            raise RateLimited(f"GitHub rate limit reached (HTTP {resp.status_code})")
-        if resp.status_code != 200:
-            raise GitHubError(f"GitHub GraphQL HTTP {resp.status_code}: {resp.text[:300]}")
-        payload: dict[str, Any] = resp.json()
-        errors = payload.get("errors")
-        if errors:
-            messages = "; ".join(str(e.get("message", e)) for e in errors)
-            if any(e.get("type") == "RATE_LIMITED" for e in errors):
-                raise RateLimited(messages)
-            raise GitHubError(messages)
-        data: dict[str, Any] = payload["data"]
-        return data
+        problem = "no attempts made"
+        for attempt in range(1, attempts + 1):
+            resp = self.request(
+                "POST",
+                GITHUB_GRAPHQL,
+                json={"query": query, "variables": variables},
+                headers={"Authorization": f"Bearer {self.token}"},
+            )
+            if _is_rate_limited(resp):
+                raise RateLimited(f"GitHub rate limit reached (HTTP {resp.status_code})")
+            if resp.status_code != 200:
+                raise GitHubError(f"GitHub GraphQL HTTP {resp.status_code}: {resp.text[:300]}")
+            try:
+                payload: dict[str, Any] = resp.json()
+            except ValueError:
+                problem = f"non-JSON reply (HTTP 200, {len(resp.content)} bytes)"
+            else:
+                errors = payload.get("errors")
+                if not errors:
+                    data: dict[str, Any] = payload["data"]
+                    return data
+                messages = "; ".join(str(e.get("message", e)) for e in errors)
+                if any(e.get("type") == "RATE_LIMITED" for e in errors):
+                    raise RateLimited(messages)
+                if "timeout" not in messages.lower() and "went wrong" not in messages.lower():
+                    raise GitHubError(messages)
+                problem = messages
+            if attempt < attempts:
+                self.sleep(self._wait(None, attempt))
+        raise GitHubError(f"GitHub GraphQL failed after {attempts} attempts: {problem}")

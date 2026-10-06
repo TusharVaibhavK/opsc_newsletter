@@ -64,3 +64,18 @@ def test_graphql_errors() -> None:
         route.respond(200, json={"errors": [{"type": "RATE_LIMITED", "message": "limit"}]})
         with pytest.raises(RateLimited):
             http.graphql("query", {})
+
+
+def test_graphql_retries_a_non_json_reply_once() -> None:
+    with Http("t", sleep=lambda _s: None) as http, respx.mock() as router:
+        route = router.post(GITHUB_GRAPHQL).mock(
+            side_effect=[
+                httpx.Response(200, text="<html>timeout</html>"),
+                httpx.Response(200, json={"data": {"ok": 1}}),
+            ]
+        )
+        assert http.graphql("query", {}) == {"ok": 1}
+        assert route.call_count == 2
+        route.mock(return_value=httpx.Response(200, text=""))
+        with pytest.raises(GitHubError, match="after 2 attempts: non-JSON"):
+            http.graphql("query", {})
