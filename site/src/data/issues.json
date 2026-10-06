@@ -648,25 +648,8 @@
    "total_open": 4
   },
   "zulip": {
-   "open_to_newcomers": 6,
+   "open_to_newcomers": 2,
    "shown": [
-    {
-     "age_days": 176,
-     "comments": 47,
-     "created_at": "2026-04-13T19:05:09Z",
-     "labels": [
-      "bug",
-      "help wanted",
-      "area: popovers and tooltips",
-      "area: compose (UI & widgets)",
-      "area: compose"
-     ],
-     "number": 38931,
-     "repo": "zulip/zulip",
-     "status": "discussed",
-     "title": "Emoji and global time popover arrows should match background",
-     "url": "https://github.com/zulip/zulip/issues/38931"
-    },
     {
      "age_days": 213,
      "comments": 28,
@@ -681,52 +664,6 @@
      "status": "discussed",
      "title": "Cleanup `buggy_documentation_endpoints`",
      "url": "https://github.com/zulip/zulip/issues/38349"
-    },
-    {
-     "age_days": 321,
-     "comments": 39,
-     "created_at": "2025-11-19T17:10:33Z",
-     "labels": [
-      "bug",
-      "help wanted",
-      "priority: high",
-      "area: mobile web"
-     ],
-     "number": 36676,
-     "repo": "zulip/zulip",
-     "status": "discussed",
-     "title": "Keyboard initially blocks compose box on mobile",
-     "url": "https://github.com/zulip/zulip/issues/36676"
-    },
-    {
-     "age_days": 876,
-     "comments": 35,
-     "created_at": "2024-05-13T19:07:07Z",
-     "labels": [
-      "help wanted",
-      "area: settings (admin/org)"
-     ],
-     "number": 30077,
-     "repo": "zulip/zulip",
-     "status": "discussed",
-     "title": "Make name change permissions more flexible",
-     "url": "https://github.com/zulip/zulip/issues/30077"
-    },
-    {
-     "age_days": 957,
-     "comments": 40,
-     "created_at": "2024-02-22T18:59:58Z",
-     "labels": [
-      "bug",
-      "help wanted",
-      "area: message-editing",
-      "priority: high"
-     ],
-     "number": 29028,
-     "repo": "zulip/zulip",
-     "status": "discussed",
-     "title": "Show message edit button while saving changes",
-     "url": "https://github.com/zulip/zulip/issues/29028"
     },
     {
      "age_days": 985,

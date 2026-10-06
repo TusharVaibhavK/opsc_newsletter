@@ -10,3 +10,6 @@
 {"api_calls":5,"finished_at":"2026-10-06T08:34:21","id":10,"job":"collect_github","started_at":"2026-10-06T08:33:45","status":"error","summary":"JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
 {"api_calls":67,"finished_at":"2026-10-06T08:34:38","id":11,"job":"watch_pages","started_at":"2026-10-06T08:34:21","status":"ok","summary":"50 pages: 2 edited, 1 error, 20 not-yet, 2 robots, 25 unchanged"}
 {"api_calls":0,"finished_at":"2026-10-06T08:34:39","id":12,"job":"score_and_notify","started_at":"2026-10-06T08:34:38","status":"ok","summary":"348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"}
+{"api_calls":52,"finished_at":"2026-10-06T08:47:54","id":13,"job":"collect_github","started_at":"2026-10-06T08:41:30","status":"ok","summary":"26 repos collected, 0 already fresh today, 2 of your PRs/reviews"}
+{"api_calls":67,"finished_at":"2026-10-06T08:48:17","id":14,"job":"watch_pages","started_at":"2026-10-06T08:47:54","status":"ok","summary":"50 pages: 1 edited, 1 error, 20 not-yet, 2 robots, 26 unchanged"}
+{"api_calls":0,"finished_at":"2026-10-06T08:48:17","id":15,"job":"score_and_notify","started_at":"2026-10-06T08:48:17","status":"ok","summary":"348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"}

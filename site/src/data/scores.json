@@ -1,7 +1,7 @@
 {
  "orgs": {
   "aboutcode": {
-   "band": "medium",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -48,7 +48,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
@@ -203,7 +203,7 @@
    ]
   },
   "checkstyle": {
-   "band": "medium",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -250,7 +250,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
@@ -337,7 +337,7 @@
    ]
   },
   "dbpedia": {
-   "band": "medium",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -384,7 +384,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
@@ -404,7 +404,7 @@
    ]
   },
   "deepchem": {
-   "band": "medium",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -451,7 +451,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
@@ -673,7 +673,7 @@
    ]
   },
   "kubeflow": {
-   "band": "low",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -720,7 +720,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "low",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
@@ -811,7 +811,7 @@
    ]
   },
   "mdanalysis": {
-   "band": "high",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -858,7 +858,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "high",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
@@ -1148,7 +1148,7 @@
    ]
   },
   "mllam": {
-   "band": "high",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1195,7 +1195,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "high",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
@@ -1217,7 +1217,7 @@
    ]
   },
   "neuroinformatics-unit": {
-   "band": "high",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1264,7 +1264,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "high",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
@@ -1491,7 +1491,7 @@
    ]
   },
   "oppia": {
-   "band": "low",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1538,7 +1538,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "low",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
