@@ -1,6 +1,23 @@
 [
  {
   "detail": {
+   "headings": [
+    "Context Navigation",
+    "Students",
+    "How can I improve my chances of being accepted?",
+    "[PLACEHOLDER] Project name"
+   ]
+  },
+  "entity_slug": "django",
+  "entity_type": "org",
+  "id": "bff147f546d3",
+  "kind": "ideas_published",
+  "occurred_at": "2026-10-07T06:22:13Z",
+  "title": "Django next-year ideas page is up with 4 ideas",
+  "url": "https://code.djangoproject.com/wiki/SummerOfCode2027"
+ },
+ {
+  "detail": {
    "confirmed": true,
    "date": "2026-10-05"
   },

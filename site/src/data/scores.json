@@ -673,7 +673,7 @@
    ]
   },
   "kubeflow": {
-   "band": "high",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -720,7 +720,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "high",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
@@ -1896,7 +1896,7 @@
    ]
   },
   "zulip": {
-   "band": "medium",
+   "band": "high",
    "bands": [
     {
      "band": "unknown",
@@ -1943,7 +1943,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "high",
      "week": "2026-10-05"
     }
    ],
