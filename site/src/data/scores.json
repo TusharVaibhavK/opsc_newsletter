@@ -811,7 +811,7 @@
    ]
   },
   "mdanalysis": {
-   "band": "medium",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -858,7 +858,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "medium",
+     "band": "low",
      "week": "2026-10-05"
     }
    ],
@@ -1690,7 +1690,7 @@
    ]
   },
   "rocket-chat": {
-   "band": "low",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1737,7 +1737,7 @@
      "week": "2026-09-28"
     },
     {
-     "band": "low",
+     "band": "medium",
      "week": "2026-10-05"
     }
    ],
