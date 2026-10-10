@@ -2,16 +2,16 @@
  "aboutcode": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:27Z",
-  "checked_at": "2026-10-09T06:30:40Z",
+  "checked_at": "2026-10-10T06:12:28Z",
   "count": 10,
   "next": {
-   "checked_at": "2026-10-09T06:31:07Z",
+   "checked_at": "2026-10-10T06:12:28Z",
    "published": false,
    "url": "https://github.com/aboutcode-org/aboutcode/wiki/GSOC-2027-project-ideas"
   },
-  "note": "HTTP 504",
+  "note": null,
   "removed_this_week": [],
-  "status": 504,
+  "status": 200,
   "titles": [
    "Project Ideas Index",
    "Abbreviations and acronyms used here",
@@ -29,7 +29,7 @@
  "api-dash": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:28Z",
-  "checked_at": "2026-10-09T06:31:28Z",
+  "checked_at": "2026-10-10T06:12:29Z",
   "count": 14,
   "note": null,
   "removed_this_week": [],
@@ -55,10 +55,10 @@
  "cern-hsf": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:29Z",
-  "checked_at": "2026-10-09T06:31:30Z",
+  "checked_at": "2026-10-10T06:12:30Z",
   "count": 0,
   "next": {
-   "checked_at": "2026-10-09T06:31:30Z",
+   "checked_at": "2026-10-10T06:12:31Z",
    "published": false,
    "url": "https://hepsoftwarefoundation.org/gsoc/2027/summary.html"
   },
@@ -71,10 +71,10 @@
  "checkstyle": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:30Z",
-  "checked_at": "2026-10-09T06:31:30Z",
+  "checked_at": "2026-10-10T06:12:31Z",
   "count": 13,
   "next": {
-   "checked_at": "2026-10-09T06:31:41Z",
+   "checked_at": "2026-10-10T06:12:31Z",
    "published": false,
    "url": "https://github.com/checkstyle/checkstyle/wiki/Checkstyle-GSoC-2027-Project-Ideas"
   },
@@ -101,10 +101,10 @@
  "cncf": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:32Z",
-  "checked_at": "2026-10-09T06:31:59Z",
+  "checked_at": "2026-10-10T06:12:32Z",
   "count": 13,
   "next": {
-   "checked_at": "2026-10-09T06:31:59Z",
+   "checked_at": "2026-10-10T06:12:32Z",
    "published": false,
    "url": "https://github.com/cncf/mentoring/blob/main/programs/summerofcode/2027.md"
   },
@@ -130,11 +130,11 @@
  },
  "dbpedia": {
   "added_this_week": [],
-  "changed_at": "2026-10-09T06:31:59Z",
-  "checked_at": "2026-10-09T06:31:59Z",
+  "changed_at": "2026-10-10T06:12:32Z",
+  "checked_at": "2026-10-10T06:12:32Z",
   "count": 0,
   "next": {
-   "checked_at": "2026-10-09T06:31:59Z",
+   "checked_at": "2026-10-10T06:12:36Z",
    "published": false,
    "url": "https://forum.dbpedia.org/tag/gsoc2027-ideas"
   },
@@ -147,7 +147,7 @@
  "deepchem": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:34Z",
-  "checked_at": "2026-10-09T06:32:00Z",
+  "checked_at": "2026-10-10T06:12:36Z",
   "count": 0,
   "note": null,
   "removed_this_week": [],
@@ -158,10 +158,10 @@
  "django": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:35Z",
-  "checked_at": "2026-10-09T06:32:01Z",
+  "checked_at": "2026-10-10T06:12:37Z",
   "count": 10,
   "next": {
-   "checked_at": "2026-10-09T06:32:02Z",
+   "checked_at": "2026-10-10T06:12:37Z",
    "published": true,
    "url": "https://code.djangoproject.com/wiki/SummerOfCode2027"
   },
@@ -185,7 +185,7 @@
  "gemini-cli": {
   "added_this_week": [],
   "changed_at": "2026-10-06T09:41:08Z",
-  "checked_at": "2026-10-09T06:32:02Z",
+  "checked_at": "2026-10-10T06:12:38Z",
   "count": 0,
   "note": "little text: page may need JavaScript",
   "removed_this_week": [],
@@ -196,10 +196,10 @@
  "humanai": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:37Z",
-  "checked_at": "2026-10-09T06:32:02Z",
+  "checked_at": "2026-10-10T06:12:38Z",
   "count": 4,
   "next": {
-   "checked_at": "2026-10-09T06:32:02Z",
+   "checked_at": "2026-10-10T06:12:39Z",
    "published": false,
    "url": "https://humanai.foundation/activities/gsoc2027.html"
   },
@@ -217,10 +217,10 @@
  "kubeflow": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:37Z",
-  "checked_at": "2026-10-09T06:32:02Z",
+  "checked_at": "2026-10-10T06:12:39Z",
   "count": 11,
   "next": {
-   "checked_at": "2026-10-09T06:32:03Z",
+   "checked_at": "2026-10-10T06:12:39Z",
    "published": false,
    "url": "https://www.kubeflow.org/events/upcoming-events/gsoc-2027/"
   },
@@ -245,10 +245,10 @@
  "kubevirt": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:42Z",
-  "checked_at": "2026-10-09T06:32:03Z",
+  "checked_at": "2026-10-10T06:12:39Z",
   "count": 6,
   "next": {
-   "checked_at": "2026-10-09T06:32:11Z",
+   "checked_at": "2026-10-10T06:12:40Z",
    "published": false,
    "url": "https://github.com/kubevirt/community/wiki/Google-Summer-of-Code-2027"
   },
@@ -268,16 +268,16 @@
  "mdanalysis": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:44Z",
-  "checked_at": "2026-10-09T06:32:32Z",
+  "checked_at": "2026-10-10T06:12:40Z",
   "count": 6,
   "next": {
-   "checked_at": "2026-10-09T06:32:58Z",
+   "checked_at": "2026-10-10T06:12:41Z",
    "published": false,
    "url": "https://github.com/MDAnalysis/mdanalysis/wiki/GSoC-2027-Project-Ideas"
   },
-  "note": "HTTP 504",
+  "note": null,
   "removed_this_week": [],
-  "status": 504,
+  "status": 200,
   "titles": [
    "Project 1: Dashboard for tracking MD simulation progress with the new streaming interface",
    "Project 2: Better interfacing of Blender and MDAnalysis",
@@ -291,10 +291,10 @@
  "meshery": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:45Z",
-  "checked_at": "2026-10-09T06:33:06Z",
+  "checked_at": "2026-10-10T06:12:41Z",
   "count": 6,
   "next": {
-   "checked_at": "2026-10-09T06:33:07Z",
+   "checked_at": "2026-10-10T06:12:41Z",
    "published": false,
    "url": "https://meshery.io/programs/gsoc/2027"
   },
@@ -314,10 +314,10 @@
  "metabrainz": {
   "added_this_week": [],
   "changed_at": null,
-  "checked_at": "2026-10-09T06:33:07Z",
+  "checked_at": "2026-10-10T06:12:41Z",
   "count": 0,
   "next": {
-   "checked_at": "2026-10-09T06:33:07Z",
+   "checked_at": "2026-10-10T06:12:41Z",
    "published": false,
    "url": "https://wiki.musicbrainz.org/Development/Summer_of_Code/2027"
   },
@@ -330,10 +330,10 @@
  "metaflow": {
   "added_this_week": [],
   "changed_at": null,
-  "checked_at": "2026-10-09T06:33:07Z",
+  "checked_at": "2026-10-10T06:12:41Z",
   "count": 0,
   "next": {
-   "checked_at": "2026-10-09T06:33:07Z",
+   "checked_at": "2026-10-10T06:12:42Z",
    "published": false,
    "url": "https://github.com/Netflix/metaflow/blob/master/GSOC_2027_PROPOSALS.md"
   },
@@ -346,10 +346,10 @@
  "ml4sci": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:47Z",
-  "checked_at": "2026-10-09T06:33:07Z",
+  "checked_at": "2026-10-10T06:12:42Z",
   "count": 4,
   "next": {
-   "checked_at": "2026-10-09T06:33:07Z",
+   "checked_at": "2026-10-10T06:12:42Z",
    "published": false,
    "url": "https://ml4sci.org/activities/gsoc2027.html"
   },
@@ -367,7 +367,7 @@
  "mllam": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:48Z",
-  "checked_at": "2026-10-09T06:33:07Z",
+  "checked_at": "2026-10-10T06:12:42Z",
   "count": 5,
   "note": null,
   "removed_this_week": [],
@@ -384,10 +384,10 @@
  "neuroinformatics-unit": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:49Z",
-  "checked_at": "2026-10-09T06:33:09Z",
+  "checked_at": "2026-10-10T06:12:42Z",
   "count": 5,
   "next": {
-   "checked_at": "2026-10-09T06:33:09Z",
+   "checked_at": "2026-10-10T06:12:43Z",
    "published": false,
    "url": "https://neuroinformatics.dev/get-involved/gsoc/2027"
   },
@@ -406,10 +406,10 @@
  "open-transit-software-foundation": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:50Z",
-  "checked_at": "2026-10-09T06:33:09Z",
+  "checked_at": "2026-10-10T06:12:43Z",
   "count": 4,
   "next": {
-   "checked_at": "2026-10-09T06:33:10Z",
+   "checked_at": "2026-10-10T06:12:43Z",
    "published": false,
    "url": "https://opentransitsoftwarefoundation.org/2027/01/google-summer-of-code-2027-project-ideas/"
   },
@@ -427,7 +427,7 @@
  "openelis-global": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:51Z",
-  "checked_at": "2026-10-09T06:33:10Z",
+  "checked_at": "2026-10-10T06:12:44Z",
   "count": 0,
   "note": "little text: page may need JavaScript",
   "removed_this_week": [],
@@ -438,7 +438,7 @@
  "openmrs": {
   "added_this_week": [],
   "changed_at": "2026-10-06T09:21:57Z",
-  "checked_at": "2026-10-09T06:33:13Z",
+  "checked_at": "2026-10-10T06:12:46Z",
   "count": 6,
   "note": null,
   "removed_this_week": [],
@@ -456,10 +456,10 @@
  "oppia": {
   "added_this_week": [],
   "changed_at": "2026-10-06T06:42:16Z",
-  "checked_at": "2026-10-09T06:33:15Z",
+  "checked_at": "2026-10-10T06:12:48Z",
   "count": 16,
   "next": {
-   "checked_at": "2026-10-09T06:33:22Z",
+   "checked_at": "2026-10-10T06:12:48Z",
    "published": false,
    "url": "https://github.com/oppia/oppia/wiki/Google-Summer-of-Code-2027"
   },
@@ -489,10 +489,10 @@
  "postgresql": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:12:58Z",
-  "checked_at": "2026-10-09T06:33:49Z",
+  "checked_at": "2026-10-10T06:12:49Z",
   "count": 10,
   "next": {
-   "checked_at": "2026-10-09T06:33:49Z",
+   "checked_at": "2026-10-10T06:12:49Z",
    "published": false,
    "url": "https://wiki.postgresql.org/wiki/GSoC_2027"
   },
@@ -516,7 +516,7 @@
  "python-software-foundation": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:13:00Z",
-  "checked_at": "2026-10-09T06:33:49Z",
+  "checked_at": "2026-10-10T06:12:49Z",
   "count": 9,
   "note": null,
   "removed_this_week": [],
@@ -537,10 +537,10 @@
  "rocket-chat": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:13:01Z",
-  "checked_at": "2026-10-09T06:33:49Z",
+  "checked_at": "2026-10-10T06:12:50Z",
   "count": 23,
   "next": {
-   "checked_at": "2026-10-09T06:33:49Z",
+   "checked_at": "2026-10-10T06:12:50Z",
    "published": false,
    "url": "https://github.com/RocketChat/google-summer-of-code/blob/main/google-summer-of-code-2027.md#-project-ideas"
   },
@@ -577,10 +577,10 @@
  "sugar-labs": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:13:02Z",
-  "checked_at": "2026-10-09T06:33:49Z",
+  "checked_at": "2026-10-10T06:12:50Z",
   "count": 18,
   "next": {
-   "checked_at": "2026-10-09T06:33:50Z",
+   "checked_at": "2026-10-10T06:12:50Z",
    "published": false,
    "url": "https://github.com/sugarlabs/GSoC/blob/master/Ideas-2027.md"
   },
@@ -612,10 +612,10 @@
  "sw360": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:13:02Z",
-  "checked_at": "2026-10-09T06:33:50Z",
+  "checked_at": "2026-10-10T06:12:50Z",
   "count": 9,
   "next": {
-   "checked_at": "2026-10-09T06:33:50Z",
+   "checked_at": "2026-10-10T06:12:51Z",
    "published": false,
    "url": "https://eclipse.dev/sw360/gsoc/gsoc-projects-2027/"
   },
@@ -638,7 +638,7 @@
  "zulip": {
   "added_this_week": [],
   "changed_at": "2026-10-05T07:13:07Z",
-  "checked_at": "2026-10-09T06:33:51Z",
+  "checked_at": "2026-10-10T06:12:52Z",
   "count": 4,
   "note": null,
   "removed_this_week": [],

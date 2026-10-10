@@ -1,6 +1,30 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-10-10T06:12:53Z",
+  "job": "score_and_notify",
+  "started_at": "2026-10-10T06:12:53Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-10-10T06:12:53Z",
+  "job": "watch_pages",
+  "started_at": "2026-10-10T06:12:28Z",
+  "status": "ok",
+  "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
+ },
+ {
+  "api_calls": 51,
+  "finished_at": "2026-10-10T06:12:28Z",
+  "job": "collect_github",
+  "started_at": "2026-10-10T06:08:38Z",
+  "status": "error",
+  "summary": "25 repos collected, 0 already fresh today, 2 of your PRs/reviews | zulip/zulip: GitHub GraphQL failed after 2 attempts: non-JSON reply (HTTP 200, 0 bytes)"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-10-09T06:33:51Z",
   "job": "score_and_notify",
   "started_at": "2026-10-09T06:33:51Z",

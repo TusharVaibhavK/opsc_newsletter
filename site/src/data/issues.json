@@ -1,27 +1,28 @@
 {
- "date": "2026-10-09",
+ "date": "2026-10-10",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 2562,
-     "comments": 10,
-     "created_at": "2019-10-04T14:24:55Z",
+     "age_days": 1688,
+     "comments": 3,
+     "created_at": "2022-02-25T11:56:40Z",
      "labels": [
-      "archive extraction",
-      "new feature",
+      "license scan",
+      "package scan",
       "easy",
-      "good first issue"
+      "good first issue",
+      "package-formats"
      ],
-     "number": 1746,
+     "number": 2879,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "Add support for electron ASAR archives",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
+     "title": "Research https://opendev.org/assets/js/licenses.txt",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 2738,
+     "age_days": 2739,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -37,7 +38,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2792,
+     "age_days": 2793,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -53,7 +54,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2792,
+     "age_days": 2793,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -70,7 +71,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     },
     {
-     "age_days": 3122,
+     "age_days": 3123,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -87,7 +88,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     },
     {
-     "age_days": 3135,
+     "age_days": 3136,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -115,22 +116,7 @@
    "open_to_newcomers": 18,
    "shown": [
     {
-     "age_days": 2832,
-     "comments": 27,
-     "created_at": "2019-01-07T21:36:30Z",
-     "labels": [
-      "help wanted",
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 1486,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "DeepChem Windows Support",
-     "url": "https://github.com/deepchem/deepchem/issues/1486"
-    },
-    {
-     "age_days": 2908,
+     "age_days": 2909,
      "comments": 8,
      "created_at": "2018-10-23T20:22:54Z",
      "labels": [
@@ -144,7 +130,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1436"
     },
     {
-     "age_days": 2952,
+     "age_days": 2953,
      "comments": 5,
      "created_at": "2018-09-09T18:58:42Z",
      "labels": [
@@ -158,7 +144,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1400"
     },
     {
-     "age_days": 3015,
+     "age_days": 3016,
      "comments": 3,
      "created_at": "2018-07-08T03:40:59Z",
      "labels": [
@@ -172,7 +158,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1309"
     },
     {
-     "age_days": 3053,
+     "age_days": 3054,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -186,7 +172,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1282"
     },
     {
-     "age_days": 3129,
+     "age_days": 3130,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -198,6 +184,20 @@
      "status": "discussed",
      "title": "Make Dataset Accept List of X, y, w, ids",
      "url": "https://github.com/deepchem/deepchem/issues/1161"
+    },
+    {
+     "age_days": 3131,
+     "comments": 5,
+     "created_at": "2018-03-15T21:06:27Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1159,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Document Data Requirements for out Models",
+     "url": "https://github.com/deepchem/deepchem/issues/1159"
     }
    ],
    "total_open": 39
@@ -206,7 +206,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 24,
+     "age_days": 25,
      "comments": 4,
      "created_at": "2026-09-15T09:16:22Z",
      "labels": [
@@ -224,7 +224,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/29338"
     },
     {
-     "age_days": 82,
+     "age_days": 83,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -242,7 +242,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
     },
     {
-     "age_days": 121,
+     "age_days": 122,
      "comments": 13,
      "created_at": "2026-06-10T14:07:46Z",
      "labels": [
@@ -271,7 +271,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1820,
+     "age_days": 1821,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -286,7 +286,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1933,
+     "age_days": 1934,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -312,9 +312,9 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 716,
-     "comments": 12,
-     "created_at": "2024-10-23T13:42:36Z",
+     "age_days": 712,
+     "comments": 13,
+     "created_at": "2024-10-28T14:41:25Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
@@ -323,15 +323,15 @@
       "component/extensions",
       "type/visual-design"
      ],
-     "number": 12461,
+     "number": 12502,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Template] Create a Gantt Chart template",
-     "url": "https://github.com/meshery/meshery/issues/12461"
+     "title": "[Template] Create a Design Critique template",
+     "url": "https://github.com/meshery/meshery/issues/12502"
     },
     {
-     "age_days": 717,
-     "comments": 11,
+     "age_days": 718,
+     "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
       "kind/enhancement",
@@ -348,7 +348,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 717,
+     "age_days": 718,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -366,7 +366,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 968,
+     "age_days": 969,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -386,7 +386,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1032,
+     "age_days": 1033,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -402,7 +402,7 @@
      "url": "https://github.com/meshery/meshery/issues/9626"
     },
     {
-     "age_days": 1073,
+     "age_days": 1074,
      "comments": 14,
      "created_at": "2023-11-01T20:54:10Z",
      "labels": [
@@ -422,26 +422,9 @@
    "total_open": 50
   },
   "mllam": {
-   "open_to_newcomers": 1,
-   "shown": [
-    {
-     "age_days": 85,
-     "comments": 9,
-     "created_at": "2026-07-16T07:32:44Z",
-     "labels": [
-      "documentation",
-      "help wanted",
-      "good first issue",
-      "cicd"
-     ],
-     "number": 708,
-     "repo": "mllam/neural-lam",
-     "status": "discussed",
-     "title": "Author notebooks as jupytext-paired `py:percent` sources instead of committing raw `.ipynb`",
-     "url": "https://github.com/mllam/neural-lam/issues/708"
-    }
-   ],
-   "total_open": 10
+   "open_to_newcomers": 0,
+   "shown": [],
+   "total_open": 9
   },
   "neuroinformatics-unit": {
    "open_to_newcomers": 0,
@@ -457,7 +440,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 193,
+     "age_days": 194,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -470,7 +453,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 198,
+     "age_days": 199,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -483,7 +466,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 198,
+     "age_days": 199,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -502,7 +485,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 82,
+     "age_days": 83,
      "comments": 6,
      "created_at": "2026-07-19T16:07:46Z",
      "labels": [
@@ -518,7 +501,7 @@
      "url": "https://github.com/oppia/oppia/issues/26838"
     },
     {
-     "age_days": 196,
+     "age_days": 197,
      "comments": 18,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -534,7 +517,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 438,
+     "age_days": 439,
      "comments": 32,
      "created_at": "2025-07-28T21:04:43Z",
      "labels": [
@@ -550,7 +533,7 @@
      "url": "https://github.com/oppia/oppia/issues/23017"
     },
     {
-     "age_days": 662,
+     "age_days": 663,
      "comments": 78,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -566,24 +549,26 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 858,
-     "comments": 78,
-     "created_at": "2024-06-03T10:40:01Z",
+     "age_days": 800,
+     "comments": 8,
+     "created_at": "2024-08-01T18:41:02Z",
      "labels": [
-      "frontend",
+      "needs debugging",
+      "full-stack",
       "good first issue",
-      "enhancement",
-      "Impact: Medium",
-      "Work: Medium"
+      "bug",
+      "Impact: High",
+      "Work: Medium",
+      "IUJ TM.4"
      ],
-     "number": 20392,
+     "number": 20766,
      "repo": "oppia/oppia",
      "status": "discussed",
-     "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
-     "url": "https://github.com/oppia/oppia/issues/20392"
+     "title": "[BUG]: Images don't show up after opening a concept card",
+     "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 957,
+     "age_days": 958,
      "comments": 10,
      "created_at": "2024-02-25T06:10:58Z",
      "labels": [
@@ -612,7 +597,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3088,
+     "age_days": 3089,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -626,7 +611,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3088,
+     "age_days": 3089,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -646,7 +631,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 216,
+     "age_days": 217,
      "comments": 28,
      "created_at": "2026-03-07T10:45:41Z",
      "labels": [
