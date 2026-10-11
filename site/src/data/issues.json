@@ -1,11 +1,11 @@
 {
- "date": "2026-10-10",
+ "date": "2026-10-11",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1688,
+     "age_days": 1689,
      "comments": 3,
      "created_at": "2022-02-25T11:56:40Z",
      "labels": [
@@ -22,23 +22,23 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 2739,
-     "comments": 3,
-     "created_at": "2019-04-11T14:42:10Z",
+     "age_days": 1695,
+     "comments": 6,
+     "created_at": "2022-02-19T17:15:09Z",
      "labels": [
-      "enhancement",
       "license scan",
       "package scan",
+      "easy",
       "good first issue"
      ],
-     "number": 1525,
+     "number": 2872,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "For Maven declared_license normalization, also consider all text at once as well as POM XML comments",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
+     "title": "Ensure the \"licenseref-license\" convention of npm before 3.10 is detected correctly",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2872"
     },
     {
-     "age_days": 2793,
+     "age_days": 2794,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -54,7 +54,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2793,
+     "age_days": 2794,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -71,7 +71,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     },
     {
-     "age_days": 3123,
+     "age_days": 3124,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -88,7 +88,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     },
     {
-     "age_days": 3136,
+     "age_days": 3137,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -116,21 +116,7 @@
    "open_to_newcomers": 18,
    "shown": [
     {
-     "age_days": 2909,
-     "comments": 8,
-     "created_at": "2018-10-23T20:22:54Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 1436,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "MolDQN Implementation",
-     "url": "https://github.com/deepchem/deepchem/issues/1436"
-    },
-    {
-     "age_days": 2953,
+     "age_days": 2954,
      "comments": 5,
      "created_at": "2018-09-09T18:58:42Z",
      "labels": [
@@ -144,7 +130,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1400"
     },
     {
-     "age_days": 3016,
+     "age_days": 3017,
      "comments": 3,
      "created_at": "2018-07-08T03:40:59Z",
      "labels": [
@@ -158,7 +144,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1309"
     },
     {
-     "age_days": 3054,
+     "age_days": 3055,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -172,7 +158,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1282"
     },
     {
-     "age_days": 3130,
+     "age_days": 3131,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -186,7 +172,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3131,
+     "age_days": 3132,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -198,15 +184,29 @@
      "status": "discussed",
      "title": "Document Data Requirements for out Models",
      "url": "https://github.com/deepchem/deepchem/issues/1159"
+    },
+    {
+     "age_days": 3184,
+     "comments": 3,
+     "created_at": "2018-01-22T17:54:20Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1035,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Enabling dc.feat to accept lists/arrays of smiles",
+     "url": "https://github.com/deepchem/deepchem/issues/1035"
     }
    ],
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 3,
+   "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 25,
+     "age_days": 26,
      "comments": 4,
      "created_at": "2026-09-15T09:16:22Z",
      "labels": [
@@ -224,7 +224,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/29338"
     },
     {
-     "age_days": 83,
+     "age_days": 84,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -240,24 +240,6 @@
      "status": "discussed",
      "title": "can i add image generation model configs for nano banana ?",
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
-    },
-    {
-     "age_days": 122,
-     "comments": 13,
-     "created_at": "2026-06-10T14:07:46Z",
-     "labels": [
-      "priority/p2",
-      "area/core",
-      "status/bot-triaged",
-      "kind/bug",
-      "good first issue",
-      "effort/medium"
-     ],
-     "number": 27790,
-     "repo": "google-gemini/gemini-cli",
-     "status": "discussed",
-     "title": "fix(vscode-ide-companion): comma operator in activate() leaks two Disposables (gemini.diff.accept, onDidChangeWorkspaceFolders)",
-     "url": "https://github.com/google-gemini/gemini-cli/issues/27790"
     }
    ],
    "total_open": 7
@@ -271,7 +253,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1821,
+     "age_days": 1822,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -286,7 +268,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1934,
+     "age_days": 1935,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -312,7 +294,7 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 712,
+     "age_days": 713,
      "comments": 13,
      "created_at": "2024-10-28T14:41:25Z",
      "labels": [
@@ -330,9 +312,9 @@
      "url": "https://github.com/meshery/meshery/issues/12502"
     },
     {
-     "age_days": 718,
-     "comments": 12,
-     "created_at": "2024-10-22T14:51:07Z",
+     "age_days": 713,
+     "comments": 11,
+     "created_at": "2024-10-28T14:33:32Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
@@ -341,14 +323,14 @@
       "component/extensions",
       "type/visual-design"
      ],
-     "number": 12455,
+     "number": 12500,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Template] Create a Mind Map template",
-     "url": "https://github.com/meshery/meshery/issues/12455"
+     "title": "[Template] Create a AWS architecture template",
+     "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 718,
+     "age_days": 719,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -366,7 +348,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 969,
+     "age_days": 970,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -386,7 +368,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1033,
+     "age_days": 1034,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -402,7 +384,7 @@
      "url": "https://github.com/meshery/meshery/issues/9626"
     },
     {
-     "age_days": 1074,
+     "age_days": 1075,
      "comments": 14,
      "created_at": "2023-11-01T20:54:10Z",
      "labels": [
@@ -440,7 +422,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 194,
+     "age_days": 195,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -453,7 +435,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 199,
+     "age_days": 200,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -466,7 +448,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 199,
+     "age_days": 200,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -485,7 +467,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 83,
+     "age_days": 84,
      "comments": 6,
      "created_at": "2026-07-19T16:07:46Z",
      "labels": [
@@ -501,7 +483,7 @@
      "url": "https://github.com/oppia/oppia/issues/26838"
     },
     {
-     "age_days": 197,
+     "age_days": 198,
      "comments": 18,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -517,7 +499,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 439,
+     "age_days": 440,
      "comments": 32,
      "created_at": "2025-07-28T21:04:43Z",
      "labels": [
@@ -533,7 +515,7 @@
      "url": "https://github.com/oppia/oppia/issues/23017"
     },
     {
-     "age_days": 663,
+     "age_days": 664,
      "comments": 78,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -549,7 +531,7 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 800,
+     "age_days": 801,
      "comments": 8,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -568,22 +550,21 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 958,
-     "comments": 10,
-     "created_at": "2024-02-25T06:10:58Z",
+     "age_days": 860,
+     "comments": 78,
+     "created_at": "2024-06-03T10:40:01Z",
      "labels": [
+      "frontend",
       "good first issue",
-      "bug",
+      "enhancement",
       "Impact: Medium",
-      "Work: Medium",
-      "console errors",
-      "IUJ TM.3"
+      "Work: Medium"
      ],
-     "number": 19816,
+     "number": 20392,
      "repo": "oppia/oppia",
      "status": "discussed",
-     "title": "[BUG]: Console error in chapter editor page.",
-     "url": "https://github.com/oppia/oppia/issues/19816"
+     "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
+     "url": "https://github.com/oppia/oppia/issues/20392"
     }
    ],
    "total_open": 50
@@ -597,7 +578,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3089,
+     "age_days": 3090,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -611,7 +592,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3089,
+     "age_days": 3090,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -631,8 +612,8 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 217,
-     "comments": 28,
+     "age_days": 218,
+     "comments": 32,
      "created_at": "2026-03-07T10:45:41Z",
      "labels": [
       "bug",
