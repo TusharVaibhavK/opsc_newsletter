@@ -1,11 +1,11 @@
 {
- "date": "2026-10-13",
+ "date": "2026-10-14",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1691,
+     "age_days": 1692,
      "comments": 3,
      "created_at": "2022-02-25T11:56:40Z",
      "labels": [
@@ -22,7 +22,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 1697,
+     "age_days": 1698,
      "comments": 6,
      "created_at": "2022-02-19T17:15:09Z",
      "labels": [
@@ -38,7 +38,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2872"
     },
     {
-     "age_days": 1713,
+     "age_days": 1714,
      "comments": 3,
      "created_at": "2022-02-03T07:39:54Z",
      "labels": [
@@ -55,7 +55,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2844"
     },
     {
-     "age_days": 1783,
+     "age_days": 1784,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -71,24 +71,24 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 3126,
-     "comments": 7,
-     "created_at": "2018-03-23T16:56:34Z",
+     "age_days": 1829,
+     "comments": 2,
+     "created_at": "2021-10-11T07:04:43Z",
      "labels": [
-      "help wanted",
-      "license scan",
-      "new and improved data",
-      "easy",
-      "good first issue"
+      "new feature",
+      "good first issue",
+      "dependencies",
+      "package-formats",
+      "hacktoberfest"
      ],
-     "number": 1003,
+     "number": 2728,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "Ensure all the licenses at https://github.com/ifrOSS/Lizenzcenter are detected correctly",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
+     "title": "Support new yarn-v2 ways of handling node modules with \"plug and play\"",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2728"
     },
     {
-     "age_days": 3139,
+     "age_days": 3140,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -116,21 +116,21 @@
    "open_to_newcomers": 18,
    "shown": [
     {
-     "age_days": 3057,
+     "age_days": 1653,
      "comments": 2,
-     "created_at": "2018-05-31T19:56:51Z",
+     "created_at": "2022-04-05T01:53:13Z",
      "labels": [
       "Good First Contribution",
       "Contribution Welcome"
      ],
-     "number": 1282,
+     "number": 2895,
      "repo": "deepchem/deepchem",
      "status": "discussed",
-     "title": "Extending Fingerprints to calculate counts",
-     "url": "https://github.com/deepchem/deepchem/issues/1282"
+     "title": "Make DeepChem Tutorials Citeable",
+     "url": "https://github.com/deepchem/deepchem/issues/2895"
     },
     {
-     "age_days": 3133,
+     "age_days": 3134,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -144,7 +144,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3134,
+     "age_days": 3135,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -158,7 +158,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3186,
+     "age_days": 3187,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -172,7 +172,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1035"
     },
     {
-     "age_days": 3305,
+     "age_days": 3306,
      "comments": 3,
      "created_at": "2017-09-25T15:53:45Z",
      "labels": [
@@ -186,7 +186,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/849"
     },
     {
-     "age_days": 3372,
+     "age_days": 3373,
      "comments": 9,
      "created_at": "2017-07-20T15:58:07Z",
      "labels": [
@@ -206,7 +206,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 86,
+     "age_days": 87,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -235,7 +235,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1824,
+     "age_days": 1825,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -250,7 +250,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1937,
+     "age_days": 1938,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -276,7 +276,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 715,
+     "age_days": 716,
      "comments": 11,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -296,7 +296,7 @@
     {
      "age_days": 721,
      "comments": 12,
-     "created_at": "2024-10-22T14:51:07Z",
+     "created_at": "2024-10-23T13:42:36Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
@@ -305,14 +305,14 @@
       "component/extensions",
       "type/visual-design"
      ],
-     "number": 12455,
+     "number": 12461,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Template] Create a Mind Map template",
-     "url": "https://github.com/meshery/meshery/issues/12455"
+     "title": "[Template] Create a Gantt Chart template",
+     "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 721,
+     "age_days": 722,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -330,7 +330,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 972,
+     "age_days": 973,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -350,7 +350,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1036,
+     "age_days": 1037,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -366,7 +366,7 @@
      "url": "https://github.com/meshery/meshery/issues/9626"
     },
     {
-     "age_days": 1077,
+     "age_days": 1078,
      "comments": 14,
      "created_at": "2023-11-01T20:54:10Z",
      "labels": [
@@ -393,7 +393,7 @@
   "neuroinformatics-unit": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 2
+   "total_open": 1
   },
   "open-transit-software-foundation": {
    "open_to_newcomers": 0,
@@ -404,7 +404,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 197,
+     "age_days": 198,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -417,7 +417,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 202,
+     "age_days": 203,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -430,7 +430,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 202,
+     "age_days": 203,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -446,26 +446,26 @@
    "total_open": 25
   },
   "oppia": {
-   "open_to_newcomers": 7,
+   "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 86,
-     "comments": 6,
-     "created_at": "2026-07-19T16:07:46Z",
+     "age_days": 201,
+     "comments": 19,
+     "created_at": "2026-03-27T13:57:48Z",
      "labels": [
       "good first issue",
       "enhancement",
-      "Impact: Medium",
-      "Work: Medium"
+      "IUJ LC.1",
+      "target: Q2 2026"
      ],
-     "number": 26838,
+     "number": 25612,
      "repo": "oppia/oppia",
      "status": "discussed",
-     "title": "[Feature Request]: Migrate acceptance tests for site-moderator from Puppeteer to Playwright",
-     "url": "https://github.com/oppia/oppia/issues/26838"
+     "title": "[Feature Request]: Sync LC.1. (Create a basic exploration) CUJ with the acceptance tests.",
+     "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 442,
+     "age_days": 443,
      "comments": 32,
      "created_at": "2025-07-28T21:04:43Z",
      "labels": [
@@ -481,7 +481,7 @@
      "url": "https://github.com/oppia/oppia/issues/23017"
     },
     {
-     "age_days": 666,
+     "age_days": 667,
      "comments": 78,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -497,7 +497,7 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 803,
+     "age_days": 804,
      "comments": 8,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -516,7 +516,7 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 862,
+     "age_days": 863,
      "comments": 78,
      "created_at": "2024-06-03T10:40:01Z",
      "labels": [
@@ -531,24 +531,6 @@
      "status": "discussed",
      "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
      "url": "https://github.com/oppia/oppia/issues/20392"
-    },
-    {
-     "age_days": 961,
-     "comments": 11,
-     "created_at": "2024-02-25T06:10:58Z",
-     "labels": [
-      "good first issue",
-      "bug",
-      "Impact: Medium",
-      "Work: Medium",
-      "console errors",
-      "IUJ TM.3"
-     ],
-     "number": 19816,
-     "repo": "oppia/oppia",
-     "status": "discussed",
-     "title": "[BUG]: Console error in chapter editor page.",
-     "url": "https://github.com/oppia/oppia/issues/19816"
     }
    ],
    "total_open": 50
@@ -562,7 +544,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3092,
+     "age_days": 3093,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -576,7 +558,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3092,
+     "age_days": 3093,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -596,7 +578,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 220,
+     "age_days": 221,
      "comments": 34,
      "created_at": "2026-03-07T10:45:41Z",
      "labels": [

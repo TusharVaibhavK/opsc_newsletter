@@ -1,6 +1,18 @@
 [
  {
   "detail": {
+   "job": "collect_github"
+  },
+  "entity_slug": "collect_github",
+  "entity_type": "source",
+  "id": "f05110abbf27",
+  "kind": "job_failing",
+  "occurred_at": "2026-10-14T05:14:02Z",
+  "title": "collect_github failed twice in a row: 25 repos collected, 0 already fresh today, 2 of your PRs/reviews | zulip/zulip: GitHub GraphQL failed after 2 attempts: non-JSON reply (HTTP 200, 0 bytes)",
+  "url": null
+ },
+ {
+  "detail": {
    "headings": [
     "Context Navigation",
     "Students",
