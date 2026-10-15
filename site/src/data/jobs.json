@@ -1,6 +1,30 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-10-15T05:03:49Z",
+  "job": "score_and_notify",
+  "started_at": "2026-10-15T05:03:49Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-10-15T05:03:49Z",
+  "job": "watch_pages",
+  "started_at": "2026-10-15T05:03:29Z",
+  "status": "ok",
+  "summary": "50 pages: 2 edited, 1 error, 19 not-yet, 2 robots, 26 unchanged"
+ },
+ {
+  "api_calls": 53,
+  "finished_at": "2026-10-15T05:03:29Z",
+  "job": "collect_github",
+  "started_at": "2026-10-15T04:57:45Z",
+  "status": "ok",
+  "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-10-14T05:14:02Z",
   "job": "score_and_notify",
   "started_at": "2026-10-14T05:14:01Z",
