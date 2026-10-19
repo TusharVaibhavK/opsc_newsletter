@@ -1,27 +1,11 @@
 {
- "date": "2026-10-18",
+ "date": "2026-10-19",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1788,
-     "comments": 12,
-     "created_at": "2021-11-25T19:22:17Z",
-     "labels": [
-      "bug",
-      "license scan",
-      "good first issue",
-      "improve-license-detection"
-     ],
-     "number": 2767,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Incorrect RPM license detected",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
-    },
-    {
-     "age_days": 1833,
+     "age_days": 1834,
      "comments": 2,
      "created_at": "2021-10-11T07:04:43Z",
      "labels": [
@@ -38,7 +22,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2728"
     },
     {
-     "age_days": 1852,
+     "age_days": 1853,
      "comments": 3,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
@@ -53,7 +37,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2063,
+     "age_days": 2064,
      "comments": 11,
      "created_at": "2021-02-23T19:46:25Z",
      "labels": [
@@ -68,7 +52,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     },
     {
-     "age_days": 2071,
+     "age_days": 2072,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -84,7 +68,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2074,
+     "age_days": 2075,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -97,6 +81,22 @@
      "status": "discussed",
      "title": "Review requirements at https://github.com/philips-software/license-scanner/blob/b590ea0985c83daab0a913c1d3c4e2eb34a87d9f/docker/requirements.txt",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
+    },
+    {
+     "age_days": 2232,
+     "comments": 3,
+     "created_at": "2020-09-08T15:45:47Z",
+     "labels": [
+      "license scan",
+      "new and improved data",
+      "easy",
+      "good first issue"
+     ],
+     "number": 2219,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Add  \"Web Template Output Additional Permission\" AGPL exception",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2219"
     }
    ],
    "total_open": 59
@@ -110,7 +110,7 @@
    "open_to_newcomers": 18,
    "shown": [
     {
-     "age_days": 1657,
+     "age_days": 1658,
      "comments": 2,
      "created_at": "2022-04-05T01:53:13Z",
      "labels": [
@@ -124,7 +124,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2895"
     },
     {
-     "age_days": 1719,
+     "age_days": 1720,
      "comments": 6,
      "created_at": "2022-02-02T21:28:01Z",
      "labels": [
@@ -138,7 +138,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2845"
     },
     {
-     "age_days": 1719,
+     "age_days": 1720,
      "comments": 2,
      "created_at": "2022-02-02T21:25:50Z",
      "labels": [
@@ -152,7 +152,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2844"
     },
     {
-     "age_days": 1721,
+     "age_days": 1722,
      "comments": 3,
      "created_at": "2022-01-31T19:21:45Z",
      "labels": [
@@ -166,7 +166,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2841"
     },
     {
-     "age_days": 1724,
+     "age_days": 1725,
      "comments": 3,
      "created_at": "2022-01-28T01:38:40Z",
      "labels": [
@@ -180,27 +180,27 @@
      "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 3377,
-     "comments": 9,
-     "created_at": "2017-07-20T15:58:07Z",
+     "age_days": 1901,
+     "comments": 5,
+     "created_at": "2021-08-05T18:16:47Z",
      "labels": [
       "Good First Contribution",
       "Contribution Welcome"
      ],
-     "number": 683,
+     "number": 2644,
      "repo": "deepchem/deepchem",
      "status": "discussed",
-     "title": "EnzyNet",
-     "url": "https://github.com/deepchem/deepchem/issues/683"
+     "title": "Tutorial Request: In-depth Model Contribution Guide",
+     "url": "https://github.com/deepchem/deepchem/issues/2644"
     }
    ],
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 1,
+   "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 91,
+     "age_days": 92,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -216,6 +216,24 @@
      "status": "discussed",
      "title": "can i add image generation model configs for nano banana ?",
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
+    },
+    {
+     "age_days": 131,
+     "comments": 16,
+     "created_at": "2026-06-10T14:07:46Z",
+     "labels": [
+      "priority/p2",
+      "area/core",
+      "status/bot-triaged",
+      "kind/bug",
+      "good first issue",
+      "effort/medium"
+     ],
+     "number": 27790,
+     "repo": "google-gemini/gemini-cli",
+     "status": "discussed",
+     "title": "fix(vscode-ide-companion): comma operator in activate() leaks two Disposables (gemini.diff.accept, onDidChangeWorkspaceFolders)",
+     "url": "https://github.com/google-gemini/gemini-cli/issues/27790"
     }
    ],
    "total_open": 5
@@ -229,7 +247,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1829,
+     "age_days": 1830,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -244,7 +262,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1942,
+     "age_days": 1943,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -270,25 +288,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 720,
-     "comments": 11,
-     "created_at": "2024-10-28T14:33:32Z",
-     "labels": [
-      "kind/enhancement",
-      "help wanted",
-      "good first issue",
-      "issue/willfix",
-      "component/extensions",
-      "type/visual-design"
-     ],
-     "number": 12500,
-     "repo": "meshery/meshery",
-     "status": "discussed",
-     "title": "[Template] Create a AWS architecture template",
-     "url": "https://github.com/meshery/meshery/issues/12500"
-    },
-    {
-     "age_days": 725,
+     "age_days": 726,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -306,7 +306,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 726,
+     "age_days": 727,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -324,7 +324,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 726,
+     "age_days": 727,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -342,7 +342,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 977,
+     "age_days": 978,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -362,7 +362,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1041,
+     "age_days": 1042,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -376,6 +376,23 @@
      "status": "discussed",
      "title": "[Catalog] Publish Configuring Prometheus",
      "url": "https://github.com/meshery/meshery/issues/9626"
+    },
+    {
+     "age_days": 1083,
+     "comments": 14,
+     "created_at": "2023-11-01T20:54:10Z",
+     "labels": [
+      "kind/enhancement",
+      "help wanted",
+      "good first issue",
+      "issue/willfix",
+      "component/catalog"
+     ],
+     "number": 9288,
+     "repo": "meshery/meshery",
+     "status": "discussed",
+     "title": "[Catalog] Publish PHP Guestbook application with Redis",
+     "url": "https://github.com/meshery/meshery/issues/9288"
     }
    ],
    "total_open": 50
@@ -383,7 +400,7 @@
   "mllam": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 8
+   "total_open": 3
   },
   "neuroinformatics-unit": {
    "open_to_newcomers": 0,
@@ -399,7 +416,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 202,
+     "age_days": 203,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -412,7 +429,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 207,
+     "age_days": 208,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -425,7 +442,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 207,
+     "age_days": 208,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -444,23 +461,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 91,
-     "comments": 11,
-     "created_at": "2026-07-19T16:12:58Z",
-     "labels": [
-      "good first issue",
-      "enhancement",
-      "Impact: Medium",
-      "Work: Low"
-     ],
-     "number": 26843,
-     "repo": "oppia/oppia",
-     "status": "discussed",
-     "title": "[Feature Request]: Migrate acceptance tests for voiceover-admin from Puppeteer to Playwright",
-     "url": "https://github.com/oppia/oppia/issues/26843"
-    },
-    {
-     "age_days": 205,
+     "age_days": 206,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -476,7 +477,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 447,
+     "age_days": 448,
      "comments": 32,
      "created_at": "2025-07-28T21:04:43Z",
      "labels": [
@@ -492,7 +493,7 @@
      "url": "https://github.com/oppia/oppia/issues/23017"
     },
     {
-     "age_days": 671,
+     "age_days": 672,
      "comments": 78,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -508,7 +509,7 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 808,
+     "age_days": 809,
      "comments": 8,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -527,7 +528,7 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 867,
+     "age_days": 868,
      "comments": 78,
      "created_at": "2024-06-03T10:40:01Z",
      "labels": [
@@ -542,6 +543,23 @@
      "status": "discussed",
      "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
      "url": "https://github.com/oppia/oppia/issues/20392"
+    },
+    {
+     "age_days": 1130,
+     "comments": 28,
+     "created_at": "2023-09-15T02:35:09Z",
+     "labels": [
+      "good first issue",
+      "bug",
+      "Impact: Medium",
+      "Work: Medium",
+      "IUJ QS.2"
+     ],
+     "number": 18876,
+     "repo": "oppia/oppia",
+     "status": "discussed",
+     "title": "[BUG]: Concept Card does not appear after pressing it the first time (in the question submission dashboard)",
+     "url": "https://github.com/oppia/oppia/issues/18876"
     }
    ],
    "total_open": 50
@@ -555,7 +573,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3097,
+     "age_days": 3098,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -569,7 +587,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3097,
+     "age_days": 3098,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [

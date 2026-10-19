@@ -1,6 +1,47 @@
 [
  {
   "detail": {
+   "added": [
+    "Real projects",
+    "Structured guidance",
+    "Earned recognition",
+    "A real community",
+    "Contributor",
+    "Register",
+    "Explore",
+    "Contribute",
+    "Rank 01Winner7REWARDS",
+    "Winner",
+    "Top 03Podium7REWARDS",
+    "Podium",
+    "Top 05Top five6REWARDS",
+    "Top five",
+    "Top 10Top ten6REWARDS",
+    "Top ten",
+    "Registration Opens",
+    "Projects Announced",
+    "Contribution Period Begins",
+    "Registrations Close"
+   ],
+   "dates_found": [
+    "October 1, 2026",
+    "October 12, 2026",
+    "October 15, 2026",
+    "December 30, 2026",
+    "January 15, 2027"
+   ],
+   "removed": []
+  },
+  "entity_slug": "nexus-spring-of-code",
+  "entity_type": "program",
+  "id": "0006001e5305",
+  "kind": "program_page_changed",
+  "occurred_at": "2026-10-19T05:08:42Z",
+  "title": "Nexus Spring of Code page changed: 22 ideas added, 0 removed",
+  "url": "https://www.nsoc.in/"
+ },
+ {
+  "detail": {
    "job": "collect_github"
   },
   "entity_slug": "collect_github",
