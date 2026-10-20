@@ -1,28 +1,11 @@
 {
- "date": "2026-10-19",
+ "date": "2026-10-20",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1834,
-     "comments": 2,
-     "created_at": "2021-10-11T07:04:43Z",
-     "labels": [
-      "new feature",
-      "good first issue",
-      "dependencies",
-      "package-formats",
-      "hacktoberfest"
-     ],
-     "number": 2728,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Support new yarn-v2 ways of handling node modules with \"plug and play\"",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2728"
-    },
-    {
-     "age_days": 1853,
+     "age_days": 1854,
      "comments": 3,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
@@ -37,7 +20,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2064,
+     "age_days": 2065,
      "comments": 11,
      "created_at": "2021-02-23T19:46:25Z",
      "labels": [
@@ -52,7 +35,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     },
     {
-     "age_days": 2072,
+     "age_days": 2073,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -68,7 +51,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2075,
+     "age_days": 2076,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -83,7 +66,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
     },
     {
-     "age_days": 2232,
+     "age_days": 2233,
      "comments": 3,
      "created_at": "2020-09-08T15:45:47Z",
      "labels": [
@@ -97,6 +80,22 @@
      "status": "discussed",
      "title": "Add  \"Web Template Output Additional Permission\" AGPL exception",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2219"
+    },
+    {
+     "age_days": 2573,
+     "comments": 10,
+     "created_at": "2019-10-04T14:24:55Z",
+     "labels": [
+      "archive extraction",
+      "new feature",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1746,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Add support for electron ASAR archives",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     }
    ],
    "total_open": 59
@@ -110,21 +109,7 @@
    "open_to_newcomers": 18,
    "shown": [
     {
-     "age_days": 1658,
-     "comments": 2,
-     "created_at": "2022-04-05T01:53:13Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2895,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Make DeepChem Tutorials Citeable",
-     "url": "https://github.com/deepchem/deepchem/issues/2895"
-    },
-    {
-     "age_days": 1720,
+     "age_days": 1721,
      "comments": 6,
      "created_at": "2022-02-02T21:28:01Z",
      "labels": [
@@ -138,7 +123,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2845"
     },
     {
-     "age_days": 1720,
+     "age_days": 1721,
      "comments": 2,
      "created_at": "2022-02-02T21:25:50Z",
      "labels": [
@@ -152,7 +137,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2844"
     },
     {
-     "age_days": 1722,
+     "age_days": 1723,
      "comments": 3,
      "created_at": "2022-01-31T19:21:45Z",
      "labels": [
@@ -166,7 +151,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2841"
     },
     {
-     "age_days": 1725,
+     "age_days": 1726,
      "comments": 3,
      "created_at": "2022-01-28T01:38:40Z",
      "labels": [
@@ -180,7 +165,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 1901,
+     "age_days": 1902,
      "comments": 5,
      "created_at": "2021-08-05T18:16:47Z",
      "labels": [
@@ -192,6 +177,21 @@
      "status": "discussed",
      "title": "Tutorial Request: In-depth Model Contribution Guide",
      "url": "https://github.com/deepchem/deepchem/issues/2644"
+    },
+    {
+     "age_days": 1987,
+     "comments": 10,
+     "created_at": "2021-05-12T03:09:08Z",
+     "labels": [
+      "help wanted",
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 2513,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "DeepChem Common Errors",
+     "url": "https://github.com/deepchem/deepchem/issues/2513"
     }
    ],
    "total_open": 39
@@ -200,7 +200,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 92,
+     "age_days": 93,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -218,7 +218,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
     },
     {
-     "age_days": 131,
+     "age_days": 132,
      "comments": 16,
      "created_at": "2026-06-10T14:07:46Z",
      "labels": [
@@ -247,7 +247,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1830,
+     "age_days": 1831,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -262,7 +262,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1943,
+     "age_days": 1944,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -285,10 +285,28 @@
    "total_open": 2
   },
   "meshery": {
-   "open_to_newcomers": 7,
+   "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 726,
+     "age_days": 722,
+     "comments": 12,
+     "created_at": "2024-10-28T14:33:32Z",
+     "labels": [
+      "kind/enhancement",
+      "help wanted",
+      "good first issue",
+      "issue/willfix",
+      "component/extensions",
+      "type/visual-design"
+     ],
+     "number": 12500,
+     "repo": "meshery/meshery",
+     "status": "discussed",
+     "title": "[Template] Create a AWS architecture template",
+     "url": "https://github.com/meshery/meshery/issues/12500"
+    },
+    {
+     "age_days": 727,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -306,7 +324,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 727,
+     "age_days": 728,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -324,7 +342,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 727,
+     "age_days": 728,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -342,7 +360,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 978,
+     "age_days": 979,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -360,39 +378,6 @@
      "status": "discussed",
      "title": "[Models][UX]: Design Icon for ArgoCD Component - Event Bus",
      "url": "https://github.com/meshery/meshery/issues/10297"
-    },
-    {
-     "age_days": 1042,
-     "comments": 16,
-     "created_at": "2023-12-12T19:34:40Z",
-     "labels": [
-      "kind/enhancement",
-      "help wanted",
-      "good first issue",
-      "issue/willfix"
-     ],
-     "number": 9626,
-     "repo": "meshery/meshery",
-     "status": "discussed",
-     "title": "[Catalog] Publish Configuring Prometheus",
-     "url": "https://github.com/meshery/meshery/issues/9626"
-    },
-    {
-     "age_days": 1083,
-     "comments": 14,
-     "created_at": "2023-11-01T20:54:10Z",
-     "labels": [
-      "kind/enhancement",
-      "help wanted",
-      "good first issue",
-      "issue/willfix",
-      "component/catalog"
-     ],
-     "number": 9288,
-     "repo": "meshery/meshery",
-     "status": "discussed",
-     "title": "[Catalog] Publish PHP Guestbook application with Redis",
-     "url": "https://github.com/meshery/meshery/issues/9288"
     }
    ],
    "total_open": 50
@@ -400,7 +385,7 @@
   "mllam": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 3
+   "total_open": 5
   },
   "neuroinformatics-unit": {
    "open_to_newcomers": 0,
@@ -416,7 +401,7 @@
    "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 203,
+     "age_days": 204,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -429,7 +414,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 208,
+     "age_days": 209,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -442,7 +427,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 208,
+     "age_days": 209,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -461,23 +446,23 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 206,
-     "comments": 20,
-     "created_at": "2026-03-27T13:57:48Z",
+     "age_days": 93,
+     "comments": 11,
+     "created_at": "2026-07-19T16:12:58Z",
      "labels": [
       "good first issue",
       "enhancement",
-      "IUJ LC.1",
-      "target: Q2 2026"
+      "Impact: Medium",
+      "Work: Low"
      ],
-     "number": 25612,
+     "number": 26843,
      "repo": "oppia/oppia",
      "status": "discussed",
-     "title": "[Feature Request]: Sync LC.1. (Create a basic exploration) CUJ with the acceptance tests.",
-     "url": "https://github.com/oppia/oppia/issues/25612"
+     "title": "[Feature Request]: Migrate acceptance tests for voiceover-admin from Puppeteer to Playwright",
+     "url": "https://github.com/oppia/oppia/issues/26843"
     },
     {
-     "age_days": 448,
+     "age_days": 449,
      "comments": 32,
      "created_at": "2025-07-28T21:04:43Z",
      "labels": [
@@ -493,7 +478,7 @@
      "url": "https://github.com/oppia/oppia/issues/23017"
     },
     {
-     "age_days": 672,
+     "age_days": 673,
      "comments": 78,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -509,7 +494,7 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 809,
+     "age_days": 810,
      "comments": 8,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -528,7 +513,7 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 868,
+     "age_days": 869,
      "comments": 78,
      "created_at": "2024-06-03T10:40:01Z",
      "labels": [
@@ -545,7 +530,7 @@
      "url": "https://github.com/oppia/oppia/issues/20392"
     },
     {
-     "age_days": 1130,
+     "age_days": 1131,
      "comments": 28,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -573,7 +558,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3098,
+     "age_days": 3099,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -587,7 +572,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3098,
+     "age_days": 3099,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -604,8 +589,26 @@
    "total_open": 3
   },
   "zulip": {
-   "open_to_newcomers": 0,
-   "shown": [],
+   "open_to_newcomers": 1,
+   "shown": [
+    {
+     "age_days": 1359,
+     "comments": 12,
+     "created_at": "2023-01-30T21:29:00Z",
+     "labels": [
+      "bug",
+      "help wanted",
+      "question",
+      "needs reproducer",
+      "area: message feed (UI)"
+     ],
+     "number": 24228,
+     "repo": "zulip/zulip",
+     "status": "discussed",
+     "title": "Re-rendering issue when clicking on the topic name.",
+     "url": "https://github.com/zulip/zulip/issues/24228"
+    }
+   ],
    "total_open": 50
   }
  },
