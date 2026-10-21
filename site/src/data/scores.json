@@ -1423,74 +1423,6 @@
    ]
   },
   "openmrs": {
-   "band": "low",
-   "bands": [
-    {
-     "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-08-10"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-08-17"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-08-24"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-08-31"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-09-07"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-09-14"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-09-21"
-    },
-    {
-     "band": "unknown",
-     "week": "2026-09-28"
-    },
-    {
-     "band": "medium",
-     "week": "2026-10-05"
-    },
-    {
-     "band": "medium",
-     "week": "2026-10-12"
-    },
-    {
-     "band": "low",
-     "week": "2026-10-19"
-    }
-   ],
-   "confidence": 0.84,
-   "fit": 75,
-   "fit_parts": {
-    "languages": 1.0,
-    "merged_prs": 0.0,
-    "streak": 1.0,
-    "tracks": 1.0
-   },
-   "inputs_present": [
-    "new_contributors",
-    "newcomer_backlog",
-    "log_stars",
-    "slots",
-    "ideas"
-   ]
-  },
-  "oppia": {
    "band": "medium",
    "bands": [
     {
@@ -1534,11 +1466,79 @@
      "week": "2026-10-05"
     },
     {
-     "band": "low",
+     "band": "medium",
      "week": "2026-10-12"
     },
     {
      "band": "medium",
+     "week": "2026-10-19"
+    }
+   ],
+   "confidence": 0.84,
+   "fit": 75,
+   "fit_parts": {
+    "languages": 1.0,
+    "merged_prs": 0.0,
+    "streak": 1.0,
+    "tracks": 1.0
+   },
+   "inputs_present": [
+    "new_contributors",
+    "newcomer_backlog",
+    "log_stars",
+    "slots",
+    "ideas"
+   ]
+  },
+  "oppia": {
+   "band": "low",
+   "bands": [
+    {
+     "band": "unknown",
+     "week": "2026-08-03"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-10"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-17"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-24"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-08-31"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-07"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-14"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-21"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-09-28"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-05"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-12"
+    },
+    {
+     "band": "low",
      "week": "2026-10-19"
     }
    ],
