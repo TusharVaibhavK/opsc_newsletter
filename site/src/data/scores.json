@@ -673,7 +673,7 @@
    ]
   },
   "kubeflow": {
-   "band": "medium",
+   "band": "low",
    "bands": [
     {
      "band": "unknown",
@@ -720,7 +720,7 @@
      "week": "2026-10-12"
     },
     {
-     "band": "medium",
+     "band": "low",
      "week": "2026-10-19"
     }
    ],
@@ -1491,7 +1491,7 @@
    ]
   },
   "oppia": {
-   "band": "low",
+   "band": "medium",
    "bands": [
     {
      "band": "unknown",
@@ -1538,7 +1538,7 @@
      "week": "2026-10-12"
     },
     {
-     "band": "low",
+     "band": "medium",
      "week": "2026-10-19"
     }
    ],

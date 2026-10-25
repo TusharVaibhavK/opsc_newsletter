@@ -1,11 +1,11 @@
 {
- "date": "2026-10-24",
+ "date": "2026-10-25",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 14,
    "shown": [
     {
-     "age_days": 1702,
+     "age_days": 1703,
      "comments": 3,
      "created_at": "2022-02-25T11:56:40Z",
      "labels": [
@@ -22,7 +22,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 1724,
+     "age_days": 1725,
      "comments": 3,
      "created_at": "2022-02-03T07:39:54Z",
      "labels": [
@@ -39,7 +39,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2844"
     },
     {
-     "age_days": 1794,
+     "age_days": 1795,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -55,7 +55,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 1839,
+     "age_days": 1840,
      "comments": 2,
      "created_at": "2021-10-11T07:04:43Z",
      "labels": [
@@ -72,8 +72,8 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2728"
     },
     {
-     "age_days": 1858,
-     "comments": 3,
+     "age_days": 1859,
+     "comments": 4,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
       "license scan",
@@ -87,21 +87,19 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 3150,
-     "comments": 3,
-     "created_at": "2018-03-10T02:45:41Z",
+     "age_days": 2070,
+     "comments": 11,
+     "created_at": "2021-02-23T19:46:25Z",
      "labels": [
+      "bug",
       "license scan",
-      "new and improved data",
-      "easy",
-      "good first issue",
-      "license-review"
+      "good first issue"
      ],
-     "number": 974,
+     "number": 2412,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "Add license id mapping for bintray license keys",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/974"
+     "title": "Improve license detection of declared RPM licenses",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     }
    ],
    "total_open": 59
@@ -112,24 +110,10 @@
    "total_open": 1
   },
   "deepchem": {
-   "open_to_newcomers": 18,
+   "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 1906,
-     "comments": 5,
-     "created_at": "2021-08-05T18:16:47Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2644,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Tutorial Request: In-depth Model Contribution Guide",
-     "url": "https://github.com/deepchem/deepchem/issues/2644"
-    },
-    {
-     "age_days": 1991,
+     "age_days": 1992,
      "comments": 10,
      "created_at": "2021-05-12T03:09:08Z",
      "labels": [
@@ -144,23 +128,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2513"
     },
     {
-     "age_days": 2297,
-     "comments": 3,
-     "created_at": "2020-07-10T23:51:22Z",
-     "labels": [
-      "enhancement",
-      "help wanted",
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2003,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "DiskDataset.transform optimization",
-     "url": "https://github.com/deepchem/deepchem/issues/2003"
-    },
-    {
-     "age_days": 2847,
+     "age_days": 2848,
      "comments": 27,
      "created_at": "2019-01-07T21:36:30Z",
      "labels": [
@@ -175,7 +143,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1486"
     },
     {
-     "age_days": 2923,
+     "age_days": 2924,
      "comments": 8,
      "created_at": "2018-10-23T20:22:54Z",
      "labels": [
@@ -189,7 +157,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1436"
     },
     {
-     "age_days": 2967,
+     "age_days": 2968,
      "comments": 5,
      "created_at": "2018-09-09T18:58:42Z",
      "labels": [
@@ -201,6 +169,34 @@
      "status": "discussed",
      "title": "Make MoleculeNet visible on Google Dataset Search",
      "url": "https://github.com/deepchem/deepchem/issues/1400"
+    },
+    {
+     "age_days": 3031,
+     "comments": 3,
+     "created_at": "2018-07-08T03:40:59Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1309,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Add None split to those Molnet entries that don't have it",
+     "url": "https://github.com/deepchem/deepchem/issues/1309"
+    },
+    {
+     "age_days": 3069,
+     "comments": 2,
+     "created_at": "2018-05-31T19:56:51Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1282,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Extending Fingerprints to calculate counts",
+     "url": "https://github.com/deepchem/deepchem/issues/1282"
     }
    ],
    "total_open": 39
@@ -209,7 +205,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 97,
+     "age_days": 98,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -227,7 +223,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
     },
     {
-     "age_days": 136,
+     "age_days": 137,
      "comments": 16,
      "created_at": "2026-06-10T14:07:46Z",
      "labels": [
@@ -256,7 +252,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1835,
+     "age_days": 1836,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -271,7 +267,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1948,
+     "age_days": 1949,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -297,7 +293,7 @@
    "open_to_newcomers": 6,
    "shown": [
     {
-     "age_days": 726,
+     "age_days": 727,
      "comments": 12,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -315,7 +311,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 731,
+     "age_days": 732,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -333,7 +329,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 732,
+     "age_days": 733,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -351,7 +347,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 732,
+     "age_days": 733,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -369,7 +365,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 983,
+     "age_days": 984,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -389,7 +385,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1047,
+     "age_days": 1048,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -426,7 +422,7 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 1,
+     "age_days": 2,
      "comments": 2,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -440,7 +436,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 208,
+     "age_days": 209,
      "comments": 4,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -453,7 +449,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 213,
+     "age_days": 214,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -466,7 +462,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 213,
+     "age_days": 214,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -482,10 +478,10 @@
    "total_open": 26
   },
   "oppia": {
-   "open_to_newcomers": 7,
+   "open_to_newcomers": 6,
    "shown": [
     {
-     "age_days": 97,
+     "age_days": 98,
      "comments": 11,
      "created_at": "2026-07-19T16:12:58Z",
      "labels": [
@@ -501,7 +497,7 @@
      "url": "https://github.com/oppia/oppia/issues/26843"
     },
     {
-     "age_days": 211,
+     "age_days": 212,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -517,23 +513,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 453,
-     "comments": 33,
-     "created_at": "2025-07-28T21:04:43Z",
-     "labels": [
-      "good first issue",
-      "bug",
-      "Impact: Medium",
-      "Work: High"
-     ],
-     "number": 23017,
-     "repo": "oppia/oppia",
-     "status": "discussed",
-     "title": "[BUG]: When opening the exploration editor, the lesson creator is taken to the feedback tab rather then going to  editor mode",
-     "url": "https://github.com/oppia/oppia/issues/23017"
-    },
-    {
-     "age_days": 677,
+     "age_days": 678,
      "comments": 79,
      "created_at": "2024-12-16T03:50:41Z",
      "labels": [
@@ -549,7 +529,7 @@
      "url": "https://github.com/oppia/oppia/issues/21448"
     },
     {
-     "age_days": 814,
+     "age_days": 815,
      "comments": 8,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -568,7 +548,24 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 1135,
+     "age_days": 874,
+     "comments": 78,
+     "created_at": "2024-06-03T10:40:01Z",
+     "labels": [
+      "frontend",
+      "good first issue",
+      "enhancement",
+      "Impact: Medium",
+      "Work: Medium"
+     ],
+     "number": 20392,
+     "repo": "oppia/oppia",
+     "status": "discussed",
+     "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
+     "url": "https://github.com/oppia/oppia/issues/20392"
+    },
+    {
+     "age_days": 1136,
      "comments": 28,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -596,7 +593,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3103,
+     "age_days": 3104,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -610,7 +607,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3103,
+     "age_days": 3104,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -627,10 +624,24 @@
    "total_open": 3
   },
   "zulip": {
-   "open_to_newcomers": 1,
+   "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1363,
+     "age_days": 1264,
+     "comments": 16,
+     "created_at": "2023-05-10T03:34:41Z",
+     "labels": [
+      "help wanted",
+      "area: integrations (new integration requests)"
+     ],
+     "number": 25509,
+     "repo": "zulip/zulip",
+     "status": "discussed",
+     "title": "Add vercel integration",
+     "url": "https://github.com/zulip/zulip/issues/25509"
+    },
+    {
+     "age_days": 1364,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
