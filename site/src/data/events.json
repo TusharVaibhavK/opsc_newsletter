@@ -2,6 +2,64 @@
  {
   "detail": {
    "added": [
+    "Registrations Open",
+    "Orientation & Project Reveal",
+    "Contributions Begin",
+    "Winner Announcement"
+   ],
+   "dates_found": [
+    "Ongoing · Ends November 30, 2026",
+    "October 18, 2026",
+    "October 19, 2026",
+    "December 2, 2026",
+    "December 10, 2026"
+   ],
+   "removed": [
+    "Registration Opens",
+    "Projects Announced",
+    "Contribution Period Begins",
+    "Registrations Close",
+    "Results Announced"
+   ]
+  },
+  "entity_slug": "nexus-spring-of-code",
+  "entity_type": "program",
+  "id": "f78d9f125f74",
+  "kind": "program_page_changed",
+  "occurred_at": "2026-10-26T05:09:29Z",
+  "title": "Nexus Spring of Code page changed: 4 ideas added, 5 removed",
+  "url": "https://www.nsoc.in/"
+ },
+ {
+  "detail": {
+   "added": [
+    "Why maintainers and future contributors should attend​",
+    "Come with a community challenge or a curiosity​",
+    "Already a maintainer? Start Sunday​",
+    "Monday: See what projects are building​",
+    "Tuesday through Thursday: Go behind the project​",
+    "Make your first contribution​",
+    "Visit the Project Pavilion​",
+    "Don't schedule every minute​",
+    "What you can take back to your project or community​",
+    "Maintainers can come from anywhere​"
+   ],
+   "dates_found": [
+    "on October 1, 2026."
+   ],
+   "removed": []
+  },
+  "entity_slug": "lfx-mentorship",
+  "entity_type": "program",
+  "id": "e2fa38928d5b",
+  "kind": "program_page_changed",
+  "occurred_at": "2026-10-26T05:09:28Z",
+  "title": "LFX Mentorship page changed: 10 ideas added, 0 removed",
+  "url": "https://contribute.cncf.io/blog/"
+ },
+ {
+  "detail": {
+   "added": [
     "Real projects",
     "Structured guidance",
     "Earned recognition",

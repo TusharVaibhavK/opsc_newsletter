@@ -1,29 +1,12 @@
 {
- "date": "2026-10-25",
+ "date": "2026-10-26",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 14,
    "shown": [
     {
-     "age_days": 1703,
-     "comments": 3,
-     "created_at": "2022-02-25T11:56:40Z",
-     "labels": [
-      "license scan",
-      "package scan",
-      "easy",
-      "good first issue",
-      "package-formats"
-     ],
-     "number": 2879,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Research https://opendev.org/assets/js/licenses.txt",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
-    },
-    {
-     "age_days": 1725,
-     "comments": 3,
+     "age_days": 1726,
+     "comments": 4,
      "created_at": "2022-02-03T07:39:54Z",
      "labels": [
       "enhancement",
@@ -39,7 +22,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2844"
     },
     {
-     "age_days": 1795,
+     "age_days": 1796,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -55,7 +38,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 1840,
+     "age_days": 1841,
      "comments": 2,
      "created_at": "2021-10-11T07:04:43Z",
      "labels": [
@@ -72,7 +55,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2728"
     },
     {
-     "age_days": 1859,
+     "age_days": 1860,
      "comments": 4,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
@@ -87,7 +70,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2070,
+     "age_days": 2071,
      "comments": 11,
      "created_at": "2021-02-23T19:46:25Z",
      "labels": [
@@ -100,6 +83,22 @@
      "status": "discussed",
      "title": "Improve license detection of declared RPM licenses",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
+    },
+    {
+     "age_days": 2079,
+     "comments": 7,
+     "created_at": "2021-02-15T21:49:06Z",
+     "labels": [
+      "bug",
+      "license scan",
+      "easy",
+      "good first issue"
+     ],
+     "number": 2401,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Weird incorrect license detections in some JS and CSS map files and DTDs ",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     }
    ],
    "total_open": 59
@@ -113,22 +112,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 1992,
-     "comments": 10,
-     "created_at": "2021-05-12T03:09:08Z",
-     "labels": [
-      "help wanted",
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2513,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "DeepChem Common Errors",
-     "url": "https://github.com/deepchem/deepchem/issues/2513"
-    },
-    {
-     "age_days": 2848,
+     "age_days": 2849,
      "comments": 27,
      "created_at": "2019-01-07T21:36:30Z",
      "labels": [
@@ -143,7 +127,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1486"
     },
     {
-     "age_days": 2924,
+     "age_days": 2925,
      "comments": 8,
      "created_at": "2018-10-23T20:22:54Z",
      "labels": [
@@ -157,7 +141,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1436"
     },
     {
-     "age_days": 2968,
+     "age_days": 2969,
      "comments": 5,
      "created_at": "2018-09-09T18:58:42Z",
      "labels": [
@@ -171,7 +155,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1400"
     },
     {
-     "age_days": 3031,
+     "age_days": 3032,
      "comments": 3,
      "created_at": "2018-07-08T03:40:59Z",
      "labels": [
@@ -185,7 +169,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1309"
     },
     {
-     "age_days": 3069,
+     "age_days": 3070,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -197,15 +181,29 @@
      "status": "discussed",
      "title": "Extending Fingerprints to calculate counts",
      "url": "https://github.com/deepchem/deepchem/issues/1282"
+    },
+    {
+     "age_days": 3146,
+     "comments": 2,
+     "created_at": "2018-03-16T20:23:56Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1161,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Make Dataset Accept List of X, y, w, ids",
+     "url": "https://github.com/deepchem/deepchem/issues/1161"
     }
    ],
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 2,
+   "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 98,
+     "age_days": 99,
      "comments": 8,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -221,24 +219,6 @@
      "status": "discussed",
      "title": "can i add image generation model configs for nano banana ?",
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
-    },
-    {
-     "age_days": 137,
-     "comments": 16,
-     "created_at": "2026-06-10T14:07:46Z",
-     "labels": [
-      "priority/p2",
-      "area/core",
-      "status/bot-triaged",
-      "kind/bug",
-      "good first issue",
-      "effort/medium"
-     ],
-     "number": 27790,
-     "repo": "google-gemini/gemini-cli",
-     "status": "discussed",
-     "title": "fix(vscode-ide-companion): comma operator in activate() leaks two Disposables (gemini.diff.accept, onDidChangeWorkspaceFolders)",
-     "url": "https://github.com/google-gemini/gemini-cli/issues/27790"
     }
    ],
    "total_open": 5
@@ -252,7 +232,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1836,
+     "age_days": 1837,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -267,7 +247,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1949,
+     "age_days": 1950,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -290,28 +270,10 @@
    "total_open": 2
   },
   "meshery": {
-   "open_to_newcomers": 6,
+   "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 727,
-     "comments": 12,
-     "created_at": "2024-10-28T14:33:32Z",
-     "labels": [
-      "kind/enhancement",
-      "help wanted",
-      "good first issue",
-      "issue/willfix",
-      "component/extensions",
-      "type/visual-design"
-     ],
-     "number": 12500,
-     "repo": "meshery/meshery",
-     "status": "discussed",
-     "title": "[Template] Create a AWS architecture template",
-     "url": "https://github.com/meshery/meshery/issues/12500"
-    },
-    {
-     "age_days": 732,
+     "age_days": 733,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -329,7 +291,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 733,
+     "age_days": 734,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -347,7 +309,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 733,
+     "age_days": 734,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -365,7 +327,27 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 984,
+     "age_days": 978,
+     "comments": 26,
+     "created_at": "2024-02-21T18:41:16Z",
+     "labels": [
+      "kind/enhancement",
+      "help wanted",
+      "good first issue",
+      "issue/design required",
+      "component/mesheryctl",
+      "language/go",
+      "issue/willfix",
+      "component/adapters"
+     ],
+     "number": 10371,
+     "repo": "meshery/meshery",
+     "status": "discussed",
+     "title": "[mesheryctl] Install: Support new Meshery Adapter for Nighthawk",
+     "url": "https://github.com/meshery/meshery/issues/10371"
+    },
+    {
+     "age_days": 985,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -385,7 +367,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1048,
+     "age_days": 1049,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -422,7 +404,7 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 2,
+     "age_days": 3,
      "comments": 2,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -436,7 +418,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 209,
+     "age_days": 210,
      "comments": 4,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -449,7 +431,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 214,
+     "age_days": 215,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -462,7 +444,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 214,
+     "age_days": 215,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -478,10 +460,10 @@
    "total_open": 26
   },
   "oppia": {
-   "open_to_newcomers": 6,
+   "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 98,
+     "age_days": 99,
      "comments": 11,
      "created_at": "2026-07-19T16:12:58Z",
      "labels": [
@@ -497,7 +479,7 @@
      "url": "https://github.com/oppia/oppia/issues/26843"
     },
     {
-     "age_days": 212,
+     "age_days": 213,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -513,24 +495,8 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 678,
-     "comments": 79,
-     "created_at": "2024-12-16T03:50:41Z",
-     "labels": [
-      "good first issue",
-      "enhancement",
-      "Impact: Medium",
-      "Work: Low"
-     ],
-     "number": 21448,
-     "repo": "oppia/oppia",
-     "status": "discussed",
-     "title": "[Feature Request]: Colorize the errors on CI for acceptance tests",
-     "url": "https://github.com/oppia/oppia/issues/21448"
-    },
-    {
-     "age_days": 815,
-     "comments": 8,
+     "age_days": 816,
+     "comments": 12,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
       "needs debugging",
@@ -548,7 +514,7 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 874,
+     "age_days": 875,
      "comments": 78,
      "created_at": "2024-06-03T10:40:01Z",
      "labels": [
@@ -565,7 +531,7 @@
      "url": "https://github.com/oppia/oppia/issues/20392"
     },
     {
-     "age_days": 1136,
+     "age_days": 1137,
      "comments": 28,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -593,7 +559,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3104,
+     "age_days": 3105,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -607,7 +573,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3104,
+     "age_days": 3105,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -627,7 +593,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1264,
+     "age_days": 1265,
      "comments": 16,
      "created_at": "2023-05-10T03:34:41Z",
      "labels": [
@@ -641,7 +607,7 @@
      "url": "https://github.com/zulip/zulip/issues/25509"
     },
     {
-     "age_days": 1364,
+     "age_days": 1365,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [

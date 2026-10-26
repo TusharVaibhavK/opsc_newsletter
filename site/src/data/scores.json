@@ -5,10 +5,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -50,6 +46,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -74,10 +74,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -119,6 +115,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -143,10 +143,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -188,6 +184,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.25,
@@ -205,10 +205,6 @@
   "checkstyle": {
    "band": "medium",
    "bands": [
-    {
-     "band": "unknown",
-     "week": "2026-08-03"
-    },
     {
      "band": "unknown",
      "week": "2026-08-10"
@@ -252,6 +248,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -276,10 +276,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -321,6 +317,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.38,
@@ -341,10 +341,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -386,6 +382,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.72,
@@ -408,10 +408,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -453,6 +449,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.88,
@@ -476,10 +476,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -521,6 +517,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.84,
@@ -544,10 +544,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -589,6 +585,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.88,
@@ -612,10 +612,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -657,6 +653,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.38,
@@ -675,10 +675,6 @@
   "kubeflow": {
    "band": "low",
    "bands": [
-    {
-     "band": "unknown",
-     "week": "2026-08-03"
-    },
     {
      "band": "unknown",
      "week": "2026-08-10"
@@ -722,6 +718,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -746,10 +746,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -791,6 +787,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -815,10 +815,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -860,6 +856,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -884,10 +884,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -929,6 +925,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -953,10 +953,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -998,6 +994,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.72,
@@ -1020,10 +1020,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1065,6 +1061,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.72,
@@ -1087,10 +1087,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1132,6 +1128,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.38,
@@ -1152,10 +1152,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1197,6 +1193,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1221,10 +1221,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1266,6 +1262,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1290,10 +1290,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1335,6 +1331,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1359,10 +1359,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1404,6 +1400,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.88,
@@ -1427,10 +1427,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1472,6 +1468,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.84,
@@ -1493,10 +1493,6 @@
   "oppia": {
    "band": "medium",
    "bands": [
-    {
-     "band": "unknown",
-     "week": "2026-08-03"
-    },
     {
      "band": "unknown",
      "week": "2026-08-10"
@@ -1540,6 +1536,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1564,10 +1564,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1609,6 +1605,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.38,
@@ -1629,10 +1629,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1674,6 +1670,10 @@
     {
      "band": "unknown",
      "week": "2026-10-19"
+    },
+    {
+     "band": "unknown",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.38,
@@ -1692,10 +1692,6 @@
   "rocket-chat": {
    "band": "medium",
    "bands": [
-    {
-     "band": "unknown",
-     "week": "2026-08-03"
-    },
     {
      "band": "unknown",
      "week": "2026-08-10"
@@ -1739,6 +1735,10 @@
     {
      "band": "medium",
      "week": "2026-10-19"
+    },
+    {
+     "band": "medium",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1763,10 +1763,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1808,6 +1804,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 0.84,
@@ -1831,10 +1831,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1876,6 +1872,10 @@
     {
      "band": "low",
      "week": "2026-10-19"
+    },
+    {
+     "band": "low",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1900,10 +1900,6 @@
    "bands": [
     {
      "band": "unknown",
-     "week": "2026-08-03"
-    },
-    {
-     "band": "unknown",
      "week": "2026-08-10"
     },
     {
@@ -1945,6 +1941,10 @@
     {
      "band": "high",
      "week": "2026-10-19"
+    },
+    {
+     "band": "high",
+     "week": "2026-10-26"
     }
    ],
    "confidence": 1.0,
@@ -1965,7 +1965,7 @@
    ]
   }
  },
- "week": "2026-10-19",
+ "week": "2026-10-26",
  "weights": {
   "claim_speed": 0.25,
   "ideas": -0.2,
