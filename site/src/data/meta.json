@@ -2,18 +2,18 @@
  "counts": {
   "events": 6,
   "gsoc_orgs": 253,
-  "open_issues": 316,
+  "open_issues": 317,
   "orgs_with_metrics": 23
  },
  "data_mode": "history",
- "generated_at": "2026-10-26T05:09:33Z",
+ "generated_at": "2026-10-27T05:25:38Z",
  "last_ok": {
-  "collect_github": "2026-10-26T05:09:01Z",
+  "collect_github": "2026-10-27T05:25:17Z",
   "import_gsoc": "2026-10-26T05:05:30Z",
-  "score_and_notify": "2026-10-26T05:09:33Z",
+  "score_and_notify": "2026-10-27T05:25:38Z",
   "scrape_programs": "2026-10-26T05:09:33Z",
-  "watch_pages": "2026-10-26T05:09:19Z"
+  "watch_pages": "2026-10-27T05:25:38Z"
  },
  "latest_gsoc_year": 2026,
- "today": "2026-10-26"
+ "today": "2026-10-27"
 }
