@@ -1,11 +1,11 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 1706,
+     "age_days": 1707,
      "comments": 3,
      "created_at": "2022-02-25T11:56:40Z",
      "labels": [
@@ -22,7 +22,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 1798,
+     "age_days": 1799,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -38,7 +38,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 1862,
+     "age_days": 1863,
      "comments": 4,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
@@ -53,24 +53,22 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2811,
-     "comments": 10,
-     "created_at": "2019-02-16T09:35:10Z",
+     "age_days": 2074,
+     "comments": 11,
+     "created_at": "2021-02-23T19:46:25Z",
      "labels": [
+      "bug",
       "license scan",
-      "new feature",
-      "new and improved data",
-      "easy",
       "good first issue"
      ],
-     "number": 1377,
+     "number": 2412,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "Include license rule notes in data returned with a license match",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
+     "title": "Improve license detection of declared RPM licenses",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     },
     {
-     "age_days": 3141,
+     "age_days": 3142,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -87,7 +85,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     },
     {
-     "age_days": 3154,
+     "age_days": 3155,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -115,21 +113,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 2971,
-     "comments": 5,
-     "created_at": "2018-09-09T18:58:42Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 1400,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Make MoleculeNet visible on Google Dataset Search",
-     "url": "https://github.com/deepchem/deepchem/issues/1400"
-    },
-    {
-     "age_days": 3034,
+     "age_days": 3035,
      "comments": 3,
      "created_at": "2018-07-08T03:40:59Z",
      "labels": [
@@ -143,7 +127,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1309"
     },
     {
-     "age_days": 3072,
+     "age_days": 3073,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -157,7 +141,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1282"
     },
     {
-     "age_days": 3148,
+     "age_days": 3149,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -171,7 +155,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3149,
+     "age_days": 3150,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -185,7 +169,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3201,
+     "age_days": 3202,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -197,6 +181,20 @@
      "status": "discussed",
      "title": "Enabling dc.feat to accept lists/arrays of smiles",
      "url": "https://github.com/deepchem/deepchem/issues/1035"
+    },
+    {
+     "age_days": 3321,
+     "comments": 3,
+     "created_at": "2017-09-25T15:53:45Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 849,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "E3FP Featurizer",
+     "url": "https://github.com/deepchem/deepchem/issues/849"
     }
    ],
    "total_open": 39
@@ -205,7 +203,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 43,
+     "age_days": 44,
      "comments": 8,
      "created_at": "2026-09-15T09:16:22Z",
      "labels": [
@@ -223,12 +221,13 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/29338"
     },
     {
-     "age_days": 101,
-     "comments": 8,
+     "age_days": 102,
+     "comments": 9,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
       "priority/p2",
       "area/extensions",
+      "Stale",
       "status/bot-triaged",
       "kind/enhancement",
       "good first issue",
@@ -241,18 +240,18 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
     }
    ],
-   "total_open": 5
+   "total_open": 3
   },
   "kubeflow": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 5
+   "total_open": 6
   },
   "kubevirt": {
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1839,
+     "age_days": 1840,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -267,7 +266,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1952,
+     "age_days": 1953,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -293,7 +292,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 730,
+     "age_days": 731,
      "comments": 12,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -311,7 +310,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 735,
+     "age_days": 736,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -329,9 +328,9 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 736,
-     "comments": 8,
-     "created_at": "2024-10-22T14:30:55Z",
+     "age_days": 737,
+     "comments": 12,
+     "created_at": "2024-10-22T14:51:07Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
@@ -340,14 +339,14 @@
       "component/extensions",
       "type/visual-design"
      ],
-     "number": 12451,
+     "number": 12455,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Template] Create an UML Diagram template",
-     "url": "https://github.com/meshery/meshery/issues/12451"
+     "title": "[Template] Create a Mind Map template",
+     "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 980,
+     "age_days": 981,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -367,7 +366,7 @@
      "url": "https://github.com/meshery/meshery/issues/10371"
     },
     {
-     "age_days": 987,
+     "age_days": 988,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -387,7 +386,7 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1051,
+     "age_days": 1052,
      "comments": 16,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
@@ -424,7 +423,7 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 5,
+     "age_days": 6,
      "comments": 2,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -438,8 +437,8 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 212,
-     "comments": 4,
+     "age_days": 213,
+     "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
       "good first issue"
@@ -451,7 +450,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 217,
+     "age_days": 218,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -464,7 +463,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 217,
+     "age_days": 218,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -483,7 +482,7 @@
    "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 101,
+     "age_days": 102,
      "comments": 11,
      "created_at": "2026-07-19T16:12:58Z",
      "labels": [
@@ -499,7 +498,7 @@
      "url": "https://github.com/oppia/oppia/issues/26843"
     },
     {
-     "age_days": 215,
+     "age_days": 216,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -515,7 +514,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 818,
+     "age_days": 819,
      "comments": 12,
      "created_at": "2024-08-01T18:41:02Z",
      "labels": [
@@ -534,7 +533,7 @@
      "url": "https://github.com/oppia/oppia/issues/20766"
     },
     {
-     "age_days": 877,
+     "age_days": 878,
      "comments": 78,
      "created_at": "2024-06-03T10:40:01Z",
      "labels": [
@@ -551,8 +550,8 @@
      "url": "https://github.com/oppia/oppia/issues/20392"
     },
     {
-     "age_days": 1139,
-     "comments": 28,
+     "age_days": 1140,
+     "comments": 29,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
       "good first issue",
@@ -579,7 +578,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3107,
+     "age_days": 3108,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -593,7 +592,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3107,
+     "age_days": 3108,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -613,7 +612,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1367,
+     "age_days": 1368,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
