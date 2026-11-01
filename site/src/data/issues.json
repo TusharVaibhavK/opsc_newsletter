@@ -1,28 +1,11 @@
 {
- "date": "2026-10-31",
+ "date": "2026-11-01",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 1709,
-     "comments": 3,
-     "created_at": "2022-02-25T11:56:40Z",
-     "labels": [
-      "license scan",
-      "package scan",
-      "easy",
-      "good first issue",
-      "package-formats"
-     ],
-     "number": 2879,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Research https://opendev.org/assets/js/licenses.txt",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
-    },
-    {
-     "age_days": 1801,
+     "age_days": 1802,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -38,8 +21,8 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 1865,
-     "comments": 5,
+     "age_days": 1866,
+     "comments": 6,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
       "license scan",
@@ -53,7 +36,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2076,
+     "age_days": 2077,
      "comments": 11,
      "created_at": "2021-02-23T19:46:25Z",
      "labels": [
@@ -68,7 +51,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     },
     {
-     "age_days": 2084,
+     "age_days": 2085,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -84,7 +67,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2087,
+     "age_days": 2088,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -97,6 +80,22 @@
      "status": "discussed",
      "title": "Review requirements at https://github.com/philips-software/license-scanner/blob/b590ea0985c83daab0a913c1d3c4e2eb34a87d9f/docker/requirements.txt",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
+    },
+    {
+     "age_days": 2585,
+     "comments": 10,
+     "created_at": "2019-10-04T14:24:55Z",
+     "labels": [
+      "archive extraction",
+      "new feature",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1746,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Add support for electron ASAR archives",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     }
    ],
    "total_open": 59
@@ -110,7 +109,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 1670,
+     "age_days": 1671,
      "comments": 2,
      "created_at": "2022-04-05T01:53:13Z",
      "labels": [
@@ -124,21 +123,21 @@
      "url": "https://github.com/deepchem/deepchem/issues/2895"
     },
     {
-     "age_days": 3151,
-     "comments": 2,
-     "created_at": "2018-03-16T20:23:56Z",
+     "age_days": 1733,
+     "comments": 6,
+     "created_at": "2022-02-02T21:28:01Z",
      "labels": [
       "Good First Contribution",
       "Contribution Welcome"
      ],
-     "number": 1161,
+     "number": 2845,
      "repo": "deepchem/deepchem",
      "status": "discussed",
-     "title": "Make Dataset Accept List of X, y, w, ids",
-     "url": "https://github.com/deepchem/deepchem/issues/1161"
+     "title": "Create a TDC Tutorial",
+     "url": "https://github.com/deepchem/deepchem/issues/2845"
     },
     {
-     "age_days": 3152,
+     "age_days": 3153,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -152,7 +151,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3204,
+     "age_days": 3205,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -166,7 +165,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1035"
     },
     {
-     "age_days": 3323,
+     "age_days": 3324,
      "comments": 3,
      "created_at": "2017-09-25T15:53:45Z",
      "labels": [
@@ -180,7 +179,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/849"
     },
     {
-     "age_days": 3390,
+     "age_days": 3391,
      "comments": 9,
      "created_at": "2017-07-20T15:58:07Z",
      "labels": [
@@ -200,7 +199,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 46,
+     "age_days": 47,
      "comments": 8,
      "created_at": "2026-09-15T09:16:22Z",
      "labels": [
@@ -218,7 +217,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/29338"
     },
     {
-     "age_days": 104,
+     "age_days": 105,
      "comments": 9,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -248,7 +247,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1842,
+     "age_days": 1843,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -263,7 +262,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1955,
+     "age_days": 1956,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -289,7 +288,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 733,
+     "age_days": 734,
      "comments": 12,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -307,7 +306,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 738,
+     "age_days": 739,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -325,7 +324,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 739,
+     "age_days": 740,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -343,7 +342,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 739,
+     "age_days": 740,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -361,7 +360,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 983,
+     "age_days": 984,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -381,20 +380,24 @@
      "url": "https://github.com/meshery/meshery/issues/10371"
     },
     {
-     "age_days": 1054,
-     "comments": 16,
-     "created_at": "2023-12-12T19:34:40Z",
+     "age_days": 991,
+     "comments": 9,
+     "created_at": "2024-02-14T07:25:48Z",
      "labels": [
-      "kind/enhancement",
       "help wanted",
       "good first issue",
-      "issue/willfix"
+      "hacktoberfest",
+      "component/ui",
+      "issue/willfix",
+      "framework/figma",
+      "area/models",
+      "type/visual-design"
      ],
-     "number": 9626,
+     "number": 10297,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Catalog] Publish Configuring Prometheus",
-     "url": "https://github.com/meshery/meshery/issues/9626"
+     "title": "[Models][UX]: Design Icon for ArgoCD Component - Event Bus",
+     "url": "https://github.com/meshery/meshery/issues/10297"
     }
    ],
    "total_open": 50
@@ -418,8 +421,8 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 8,
-     "comments": 2,
+     "age_days": 9,
+     "comments": 4,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
       "good first issue",
@@ -432,7 +435,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 215,
+     "age_days": 216,
      "comments": 6,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -445,7 +448,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 220,
+     "age_days": 221,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -458,7 +461,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 220,
+     "age_days": 221,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -474,11 +477,11 @@
    "total_open": 26
   },
   "oppia": {
-   "open_to_newcomers": 4,
+   "open_to_newcomers": 3,
    "shown": [
     {
-     "age_days": 104,
-     "comments": 11,
+     "age_days": 105,
+     "comments": 12,
      "created_at": "2026-07-19T16:12:58Z",
      "labels": [
       "good first issue",
@@ -493,7 +496,7 @@
      "url": "https://github.com/oppia/oppia/issues/26843"
     },
     {
-     "age_days": 218,
+     "age_days": 219,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -509,24 +512,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 880,
-     "comments": 79,
-     "created_at": "2024-06-03T10:40:01Z",
-     "labels": [
-      "frontend",
-      "good first issue",
-      "enhancement",
-      "Impact: Medium",
-      "Work: Medium"
-     ],
-     "number": 20392,
-     "repo": "oppia/oppia",
-     "status": "discussed",
-     "title": "[Feature Request]: Exploration preview tab should work similar to Exploration player page",
-     "url": "https://github.com/oppia/oppia/issues/20392"
-    },
-    {
-     "age_days": 1142,
+     "age_days": 1143,
      "comments": 32,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -554,7 +540,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3110,
+     "age_days": 3111,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -568,7 +554,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3110,
+     "age_days": 3111,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -588,7 +574,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1370,
+     "age_days": 1371,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
