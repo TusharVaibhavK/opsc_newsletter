@@ -37,12 +37,6 @@
    "merged": 0,
    "opened": 0,
    "reviews": 0,
-   "week": "2026-05-04"
-  },
-  {
-   "merged": 0,
-   "opened": 0,
-   "reviews": 0,
    "week": "2026-05-11"
   },
   {
@@ -188,6 +182,12 @@
    "opened": 0,
    "reviews": 0,
    "week": "2026-10-26"
+  },
+  {
+   "merged": 0,
+   "opened": 0,
+   "reviews": 0,
+   "week": "2026-11-02"
   }
  ]
 }
