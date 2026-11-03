@@ -6,14 +6,14 @@
   "orgs_with_metrics": 23
  },
  "data_mode": "history",
- "generated_at": "2026-11-02T06:39:19Z",
+ "generated_at": "2026-11-03T07:08:08Z",
  "last_ok": {
-  "collect_github": "2026-11-01T06:37:36Z",
+  "collect_github": "2026-11-03T07:07:47Z",
   "import_gsoc": "2026-11-02T06:34:14Z",
-  "score_and_notify": "2026-11-02T06:39:19Z",
+  "score_and_notify": "2026-11-03T07:08:08Z",
   "scrape_programs": "2026-11-02T06:39:19Z",
-  "watch_pages": "2026-11-02T06:38:55Z"
+  "watch_pages": "2026-11-03T07:08:08Z"
  },
  "latest_gsoc_year": 2026,
- "today": "2026-11-02"
+ "today": "2026-11-03"
 }
