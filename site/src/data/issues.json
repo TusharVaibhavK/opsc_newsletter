@@ -1,26 +1,11 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 2079,
-     "comments": 11,
-     "created_at": "2021-02-23T19:46:25Z",
-     "labels": [
-      "bug",
-      "license scan",
-      "good first issue"
-     ],
-     "number": 2412,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Improve license detection of declared RPM licenses",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
-    },
-    {
-     "age_days": 2087,
+     "age_days": 2088,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -36,7 +21,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2090,
+     "age_days": 2091,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -51,7 +36,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
     },
     {
-     "age_days": 2587,
+     "age_days": 2588,
      "comments": 10,
      "created_at": "2019-10-04T14:24:55Z",
      "labels": [
@@ -67,7 +52,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     },
     {
-     "age_days": 2763,
+     "age_days": 2764,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -83,7 +68,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2817,
+     "age_days": 2818,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -97,6 +82,23 @@
      "status": "discussed",
      "title": "Check if all these licenses are detected",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
+    },
+    {
+     "age_days": 2818,
+     "comments": 10,
+     "created_at": "2019-02-16T09:35:10Z",
+     "labels": [
+      "license scan",
+      "new feature",
+      "new and improved data",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1377,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Include license rule notes in data returned with a license match",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     }
    ],
    "total_open": 59
@@ -110,7 +112,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 1673,
+     "age_days": 1674,
      "comments": 2,
      "created_at": "2022-04-05T01:53:13Z",
      "labels": [
@@ -124,7 +126,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2895"
     },
     {
-     "age_days": 1735,
+     "age_days": 1736,
      "comments": 6,
      "created_at": "2022-02-02T21:28:01Z",
      "labels": [
@@ -138,7 +140,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2845"
     },
     {
-     "age_days": 1735,
+     "age_days": 1736,
      "comments": 2,
      "created_at": "2022-02-02T21:25:50Z",
      "labels": [
@@ -152,7 +154,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2844"
     },
     {
-     "age_days": 1737,
+     "age_days": 1738,
      "comments": 3,
      "created_at": "2022-01-31T19:21:45Z",
      "labels": [
@@ -166,21 +168,21 @@
      "url": "https://github.com/deepchem/deepchem/issues/2841"
     },
     {
-     "age_days": 3326,
+     "age_days": 1741,
      "comments": 3,
-     "created_at": "2017-09-25T15:53:45Z",
+     "created_at": "2022-01-28T01:38:40Z",
      "labels": [
       "Good First Contribution",
       "Contribution Welcome"
      ],
-     "number": 849,
+     "number": 2836,
      "repo": "deepchem/deepchem",
      "status": "discussed",
-     "title": "E3FP Featurizer",
-     "url": "https://github.com/deepchem/deepchem/issues/849"
+     "title": "New Tutorial Topic Idea: Molecular Reinforcement Learning",
+     "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 3393,
+     "age_days": 3394,
      "comments": 9,
      "created_at": "2017-07-20T15:58:07Z",
      "labels": [
@@ -197,28 +199,10 @@
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 2,
+   "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 49,
-     "comments": 8,
-     "created_at": "2026-09-15T09:16:22Z",
-     "labels": [
-      "priority/p2",
-      "area/core",
-      "status/bot-triaged",
-      "kind/bug",
-      "good first issue",
-      "effort/medium"
-     ],
-     "number": 29338,
-     "repo": "google-gemini/gemini-cli",
-     "status": "discussed",
-     "title": "Rootless podman sandbox hit EACCES because --userns=keep-id is not set",
-     "url": "https://github.com/google-gemini/gemini-cli/issues/29338"
-    },
-    {
-     "age_days": 107,
+     "age_days": 108,
      "comments": 9,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
@@ -237,7 +221,7 @@
      "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
     }
    ],
-   "total_open": 2
+   "total_open": 1
   },
   "kubeflow": {
    "open_to_newcomers": 0,
@@ -248,7 +232,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1845,
+     "age_days": 1846,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -263,7 +247,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1958,
+     "age_days": 1959,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -289,7 +273,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 736,
+     "age_days": 737,
      "comments": 12,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -309,7 +293,7 @@
     {
      "age_days": 742,
      "comments": 12,
-     "created_at": "2024-10-22T14:51:07Z",
+     "created_at": "2024-10-23T13:42:36Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
@@ -318,14 +302,14 @@
       "component/extensions",
       "type/visual-design"
      ],
-     "number": 12455,
+     "number": 12461,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Template] Create a Mind Map template",
-     "url": "https://github.com/meshery/meshery/issues/12455"
+     "title": "[Template] Create a Gantt Chart template",
+     "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 742,
+     "age_days": 743,
      "comments": 8,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -343,7 +327,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 986,
+     "age_days": 987,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -363,7 +347,7 @@
      "url": "https://github.com/meshery/meshery/issues/10371"
     },
     {
-     "age_days": 993,
+     "age_days": 994,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -383,8 +367,8 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1057,
-     "comments": 16,
+     "age_days": 1058,
+     "comments": 17,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
       "kind/enhancement",
@@ -420,7 +404,7 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 11,
+     "age_days": 12,
      "comments": 4,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -434,7 +418,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 218,
+     "age_days": 219,
      "comments": 6,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -447,7 +431,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 223,
+     "age_days": 224,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -460,7 +444,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 223,
+     "age_days": 224,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -479,7 +463,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 221,
+     "age_days": 222,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -495,7 +479,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 1145,
+     "age_days": 1146,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -523,7 +507,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3113,
+     "age_days": 3114,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -537,7 +521,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3113,
+     "age_days": 3114,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -557,7 +541,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1373,
+     "age_days": 1374,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
