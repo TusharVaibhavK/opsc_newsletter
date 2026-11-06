@@ -1,26 +1,11 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 2092,
-     "comments": 3,
-     "created_at": "2021-02-12T08:54:26Z",
-     "labels": [
-      "easy",
-      "task",
-      "good first issue"
-     ],
-     "number": 2398,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Review requirements at https://github.com/philips-software/license-scanner/blob/b590ea0985c83daab0a913c1d3c4e2eb34a87d9f/docker/requirements.txt",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
-    },
-    {
-     "age_days": 2589,
+     "age_days": 2590,
      "comments": 10,
      "created_at": "2019-10-04T14:24:55Z",
      "labels": [
@@ -36,7 +21,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     },
     {
-     "age_days": 2765,
+     "age_days": 2766,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -52,7 +37,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2819,
+     "age_days": 2820,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -68,7 +53,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2819,
+     "age_days": 2820,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -85,7 +70,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     },
     {
-     "age_days": 3149,
+     "age_days": 3150,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -100,6 +85,23 @@
      "status": "discussed",
      "title": "Ensure all the licenses at https://github.com/ifrOSS/Lizenzcenter are detected correctly",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
+    },
+    {
+     "age_days": 3163,
+     "comments": 3,
+     "created_at": "2018-03-10T02:45:41Z",
+     "labels": [
+      "license scan",
+      "new and improved data",
+      "easy",
+      "good first issue",
+      "license-review"
+     ],
+     "number": 974,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Add license id mapping for bintray license keys",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/974"
     }
    ],
    "total_open": 59
@@ -113,21 +115,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 1675,
-     "comments": 2,
-     "created_at": "2022-04-05T01:53:13Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2895,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Make DeepChem Tutorials Citeable",
-     "url": "https://github.com/deepchem/deepchem/issues/2895"
-    },
-    {
-     "age_days": 1737,
+     "age_days": 1738,
      "comments": 6,
      "created_at": "2022-02-02T21:28:01Z",
      "labels": [
@@ -141,7 +129,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2845"
     },
     {
-     "age_days": 1737,
+     "age_days": 1738,
      "comments": 2,
      "created_at": "2022-02-02T21:25:50Z",
      "labels": [
@@ -155,7 +143,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2844"
     },
     {
-     "age_days": 1739,
+     "age_days": 1740,
      "comments": 3,
      "created_at": "2022-01-31T19:21:45Z",
      "labels": [
@@ -169,7 +157,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2841"
     },
     {
-     "age_days": 1742,
+     "age_days": 1743,
      "comments": 3,
      "created_at": "2022-01-28T01:38:40Z",
      "labels": [
@@ -183,7 +171,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 1918,
+     "age_days": 1919,
      "comments": 6,
      "created_at": "2021-08-05T18:16:47Z",
      "labels": [
@@ -195,33 +183,28 @@
      "status": "discussed",
      "title": "Tutorial Request: In-depth Model Contribution Guide",
      "url": "https://github.com/deepchem/deepchem/issues/2644"
+    },
+    {
+     "age_days": 2004,
+     "comments": 10,
+     "created_at": "2021-05-12T03:09:08Z",
+     "labels": [
+      "help wanted",
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 2513,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "DeepChem Common Errors",
+     "url": "https://github.com/deepchem/deepchem/issues/2513"
     }
    ],
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 1,
-   "shown": [
-    {
-     "age_days": 109,
-     "comments": 9,
-     "created_at": "2026-07-19T12:44:26Z",
-     "labels": [
-      "priority/p2",
-      "area/extensions",
-      "Stale",
-      "status/bot-triaged",
-      "kind/enhancement",
-      "good first issue",
-      "effort/small"
-     ],
-     "number": 28445,
-     "repo": "google-gemini/gemini-cli",
-     "status": "discussed",
-     "title": "can i add image generation model configs for nano banana ?",
-     "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
-    }
-   ],
+   "open_to_newcomers": 0,
+   "shown": [],
    "total_open": 1
   },
   "kubeflow": {
@@ -233,7 +216,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1847,
+     "age_days": 1848,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -248,7 +231,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1960,
+     "age_days": 1961,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -274,7 +257,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 738,
+     "age_days": 739,
      "comments": 12,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -292,7 +275,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 743,
+     "age_days": 744,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -310,7 +293,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 744,
+     "age_days": 745,
      "comments": 12,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -328,27 +311,25 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 988,
-     "comments": 26,
-     "created_at": "2024-02-21T18:41:16Z",
+     "age_days": 745,
+     "comments": 8,
+     "created_at": "2024-10-22T14:30:55Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
       "good first issue",
-      "issue/design required",
-      "component/mesheryctl",
-      "language/go",
       "issue/willfix",
-      "component/adapters"
+      "component/extensions",
+      "type/visual-design"
      ],
-     "number": 10371,
+     "number": 12451,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[mesheryctl] Install: Support new Meshery Adapter for Nighthawk",
-     "url": "https://github.com/meshery/meshery/issues/10371"
+     "title": "[Template] Create an UML Diagram template",
+     "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 995,
+     "age_days": 996,
      "comments": 9,
      "created_at": "2024-02-14T07:25:48Z",
      "labels": [
@@ -368,8 +349,8 @@
      "url": "https://github.com/meshery/meshery/issues/10297"
     },
     {
-     "age_days": 1059,
-     "comments": 17,
+     "age_days": 1060,
+     "comments": 18,
      "created_at": "2023-12-12T19:34:40Z",
      "labels": [
       "kind/enhancement",
@@ -405,7 +386,7 @@
    "open_to_newcomers": 4,
    "shown": [
     {
-     "age_days": 13,
+     "age_days": 14,
      "comments": 4,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -419,7 +400,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 220,
+     "age_days": 221,
      "comments": 6,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -432,7 +413,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 225,
+     "age_days": 226,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -445,7 +426,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 225,
+     "age_days": 226,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -464,7 +445,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 223,
+     "age_days": 224,
      "comments": 20,
      "created_at": "2026-03-27T13:57:48Z",
      "labels": [
@@ -480,7 +461,7 @@
      "url": "https://github.com/oppia/oppia/issues/25612"
     },
     {
-     "age_days": 1147,
+     "age_days": 1148,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -508,7 +489,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3115,
+     "age_days": 3116,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -522,7 +503,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3115,
+     "age_days": 3116,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -542,7 +523,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1375,
+     "age_days": 1376,
      "comments": 13,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
