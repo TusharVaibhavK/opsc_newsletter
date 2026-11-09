@@ -2,6 +2,36 @@
  {
   "detail": {
    "added": [
+    "Thanks toeveryone.",
+    "Watch theclosing ceremony.",
+    "Hello fromeverywhere.",
+    "Backing thebuilders."
+   ],
+   "dates_found": [],
+   "removed": [
+    "Livestreams",
+    "DEV Challenges",
+    "Global Hack Week",
+    "Sign in with MyMLH",
+    "Go to a Fest, or join online",
+    "Get a swag pack in the mail",
+    "What is Hacktoberfest 2026?",
+    "Do I still submit pull requests to earn swag?",
+    "How do I take part?",
+    "How do I earn swag?"
+   ]
+  },
+  "entity_slug": "hacktoberfest",
+  "entity_type": "program",
+  "id": "7e5519ec234e",
+  "kind": "program_page_changed",
+  "occurred_at": "2026-11-09T07:01:50Z",
+  "title": "Hacktoberfest page changed: 4 ideas added, 10 removed",
+  "url": "https://hacktoberfest.com/"
+ },
+ {
+  "detail": {
+   "added": [
     "Registrations Open",
     "Orientation & Project Reveal",
     "Contributions Begin",
