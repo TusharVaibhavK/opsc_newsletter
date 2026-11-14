@@ -158,6 +158,7 @@
 {"first_pr_at":"2026-10-15T14:10:49","login_hash":"8c0e97a772409f6eabb688996fe04257","repo":"OneBusAway/maglev"}
 {"first_pr_at":"2026-11-12T18:31:11","login_hash":"8dae27f68adfc41b5b44642b8241ba69","repo":"OneBusAway/maglev"}
 {"first_pr_at":"2026-10-16T14:53:18","login_hash":"94ba292f53317fbfc33fa8f7c539ab4a","repo":"OneBusAway/maglev"}
+{"first_pr_at":"2026-11-13T21:35:00","login_hash":"acdb6539014055cda8de1d8336f7a3b4","repo":"OneBusAway/maglev"}
 {"first_pr_at":"2026-10-27T13:32:48","login_hash":"ad0431f9e9a2e6f20a72fe9b814277d9","repo":"OneBusAway/maglev"}
 {"first_pr_at":"2026-11-09T09:52:20","login_hash":"b4d4220d8d09cc122772aa48cad8308a","repo":"OneBusAway/maglev"}
 {"first_pr_at":"2026-10-26T06:10:07","login_hash":"b617bc48cebacaa8af6e60a90ac7b2b4","repo":"OneBusAway/maglev"}
@@ -174,6 +175,7 @@
 {"first_pr_at":"2026-10-02T17:59:57","login_hash":"088b18a0da29da291916e5222c1bdd6b","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-07T18:54:11","login_hash":"09a609451c49023d8c00f198de92b419","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-22T09:09:57","login_hash":"0e1f4c69b64bb6e95080206d48c3c75b","repo":"RocketChat/Rocket.Chat"}
+{"first_pr_at":"2026-11-13T19:06:22","login_hash":"0e6b99b2f125abb75794eacd07e4ffb2","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-31T20:28:39","login_hash":"0efddcff8f9abfa36ea88c613dfcdcdb","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-11-10T08:08:14","login_hash":"0f7400c5a88ccf8c2e777f9f60396132","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-09-30T08:58:41","login_hash":"10a09b4b6e3f2fd05fdbc4083a205207","repo":"RocketChat/Rocket.Chat"}
@@ -335,6 +337,7 @@
 {"first_pr_at":"2026-09-11T15:22:52","login_hash":"6bf7e910d714c8ecdf4bae6e2f7ac925","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-11-02T18:46:23","login_hash":"6c42265ea8bb08c656326ba46bb2c27b","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-09-30T08:30:57","login_hash":"6e3d4c17dc2f5c012e8408a554cd16d1","repo":"aboutcode-org/scancode-toolkit"}
+{"first_pr_at":"2026-11-13T10:52:46","login_hash":"6ee6e3299b620b7a38e7b64b3b788c5c","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-09-08T17:34:12","login_hash":"6fdf04167a793de527c521826876db29","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-09-11T09:38:22","login_hash":"718f6982ac0f94c6256b7e5cfa984a3f","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-09-17T17:46:25","login_hash":"7415b349f14f98a8557d8f4f43433a7f","repo":"aboutcode-org/scancode-toolkit"}
@@ -345,6 +348,7 @@
 {"first_pr_at":"2026-10-02T10:44:27","login_hash":"8ac43e83df4f8b2e26fb4595b82d9d14","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-09-24T06:40:33","login_hash":"8bb083154ecfe3d05573e6bfdf6f7712","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-10-26T06:29:10","login_hash":"928933dba008bec4eaecf4365fb11eaa","repo":"aboutcode-org/scancode-toolkit"}
+{"first_pr_at":"2026-11-13T09:45:49","login_hash":"9836b33b845bc379674f919f25f15702","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-10-25T07:17:24","login_hash":"9842e25afec82a5fd2e1b01cafca137c","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-10-28T12:33:10","login_hash":"985bc77d32b4e09805a6445acd11e740","repo":"aboutcode-org/scancode-toolkit"}
 {"first_pr_at":"2026-10-22T15:00:33","login_hash":"98a34c648a475ac6e1d55b74754b0cd5","repo":"aboutcode-org/scancode-toolkit"}
@@ -440,6 +444,7 @@
 {"first_pr_at":"2026-11-11T05:11:36","login_hash":"1b5acd7b19550cfdcde7be054d399e43","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-26T06:23:45","login_hash":"20d7e06225834b047178e4ebac4b48fa","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-11T10:30:06","login_hash":"230cb76397f336104a3d4a938d0f38af","repo":"checkstyle/checkstyle"}
+{"first_pr_at":"2026-11-13T18:14:43","login_hash":"276bdd51fb100aefc58bc81a85b4dbc4","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-18T09:28:37","login_hash":"2996d8c9dfc6ec2d6223236862ca7c17","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-09T13:28:13","login_hash":"2a408d45581a44fd358f87a58509eb7d","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-09-07T15:07:33","login_hash":"2ddb40a9017e3dbfba00d155aaffea24","repo":"checkstyle/checkstyle"}
@@ -452,6 +457,7 @@
 {"first_pr_at":"2026-11-02T15:10:52","login_hash":"4245777e4b3c06c27fd90a9e667eb452","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-26T08:49:10","login_hash":"4dab0c8b4d68143039c2ca4b07a493f2","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-11T23:10:17","login_hash":"564c30e32743fc2531dd11b93af56d1c","repo":"checkstyle/checkstyle"}
+{"first_pr_at":"2026-11-14T05:27:47","login_hash":"5713610adf44d9696987a61d2afec361","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-27T21:26:46","login_hash":"5c7730f0241d447428712f2beaf6d97f","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-08-08T16:57:18","login_hash":"5fe22f2cd9c5531bb8d9b27b850a9486","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-11T12:41:46","login_hash":"62f85a33e21750f25205e89e2ec143c9","repo":"checkstyle/checkstyle"}
@@ -464,6 +470,7 @@
 {"first_pr_at":"2026-10-26T12:02:36","login_hash":"67fb91a94be2ca19e91bbf1cb8ed6c5b","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-08-13T22:14:50","login_hash":"6963ee7d0253f2333437f3d871f65ede","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-06T15:36:45","login_hash":"6afd4f5ce4d2bbafd4f6572106865556","repo":"checkstyle/checkstyle"}
+{"first_pr_at":"2026-11-13T20:31:00","login_hash":"70974e2f33351d80ae324f2a665393e7","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-01T09:58:38","login_hash":"70ad27e07ae96571e8f356364c99b2da","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-13T18:28:10","login_hash":"72b6757703a4d20451ce0fc7da600791","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-16T15:05:22","login_hash":"77d9db48c25e3c1087a7626c7d150e6c","repo":"checkstyle/checkstyle"}
@@ -584,6 +591,7 @@
 {"first_pr_at":"2026-08-27T21:10:56","login_hash":"def004492b4abdd2475273d8bb1a82ec","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-06-16T20:48:44","login_hash":"e12fca83d1fd58d39694776ec4246f36","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-07-23T23:15:34","login_hash":"e8950deeec4e806656a59dce7ad5508e","repo":"deepchem/deepchem"}
+{"first_pr_at":"2026-11-13T14:08:26","login_hash":"ea0464e0d771f3c770b3f076ce475d0d","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-10-21T16:40:42","login_hash":"ee354ebcea4d03dd500bb50c61589bf1","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-08-03T16:00:05","login_hash":"efd5c6deb75d5a848019b916e5e5cd74","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-11-12T08:36:45","login_hash":"f0cd66dd3c12619bb8b9cdd253c2fdd2","repo":"deepchem/deepchem"}
@@ -646,6 +654,7 @@
 {"first_pr_at":"2026-10-31T16:44:49","login_hash":"630e15223800cdf4d6fd102a6ba61df3","repo":"django/django"}
 {"first_pr_at":"2026-10-27T16:56:50","login_hash":"638e1fc6112ee3b0aac34fd0219216a4","repo":"django/django"}
 {"first_pr_at":"2026-10-10T09:48:58","login_hash":"66ea270ee7d5dfc418ef20820eca5ca1","repo":"django/django"}
+{"first_pr_at":"2026-11-13T11:09:14","login_hash":"677bb74505bf24938573dfc0d923348e","repo":"django/django"}
 {"first_pr_at":"2026-10-06T14:57:12","login_hash":"68ec768e5210a31c106c53cacda640d2","repo":"django/django"}
 {"first_pr_at":"2026-09-24T10:24:36","login_hash":"6ccdd9b280969c5856b42300f1984404","repo":"django/django"}
 {"first_pr_at":"2026-10-29T19:07:06","login_hash":"6fa1cb39f5c47340c60c204d83171a21","repo":"django/django"}
@@ -802,6 +811,8 @@
 {"first_pr_at":"2026-09-17T11:16:57","login_hash":"0278d108fec480a08a957de0eac5ff89","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-09-28T08:08:57","login_hash":"0303d165d2d22af0a3ae31e4771887bc","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-10T04:14:31","login_hash":"090f279fb3fb57615681984041f30d94","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T23:12:14","login_hash":"0c147aab52e23885a319e388115632be","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T12:43:57","login_hash":"0cb4922d3a359334dd6595aac9ce2ec9","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-09-27T08:50:04","login_hash":"0e4eebdcab6c152ea22bfee2a00d7c3b","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-16T02:53:23","login_hash":"0e752518d17137f8bd1ee00de497306c","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-02T01:02:55","login_hash":"0ffed6e96272a8c529175441528b41e1","repo":"google-gemini/gemini-cli"}
@@ -819,6 +830,7 @@
 {"first_pr_at":"2026-09-29T09:00:16","login_hash":"27cdd3ea88699a53eb4523e914dfdcf9","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-05T14:12:42","login_hash":"294c1060f39019f8be4c08f540a49d90","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-06T04:27:30","login_hash":"2a3342b561dac234c702fabc7fbf6cbf","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-14T04:16:59","login_hash":"2d6d2bcafc38f107c897f263f2e5cb2f","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-21T19:21:50","login_hash":"303c1d6c3a70bcc8d42319bb45c336ae","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-11T13:01:27","login_hash":"313a93175bf8304167e11790a4a69e4c","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-10T04:39:21","login_hash":"31e7832fc515f127c8b36cc52d74f005","repo":"google-gemini/gemini-cli"}
@@ -857,7 +869,9 @@
 {"first_pr_at":"2026-10-19T04:16:28","login_hash":"682238e3a666227ab69c1ad16544231d","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-26T11:17:43","login_hash":"68c9c052640afe6fc5c5578022f4e687","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-09-30T09:06:04","login_hash":"6c245f70cbd3c1f7b6a8ffe602b355dc","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-14T02:06:12","login_hash":"6c43f2df3382dc846ba8cee9aa085855","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-09-27T05:26:04","login_hash":"6dca85833ba93cfd2c61624c395f1e5b","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T10:48:27","login_hash":"6fdff48cf29d244438525e28f3784c55","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-03T14:53:04","login_hash":"7288be4449288052306d1eda47747d74","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-02T01:11:43","login_hash":"72f8da06fc25dfd96be04cd331643220","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-02T14:41:51","login_hash":"76c522d2e8fb4b9a588afb9624ddc6fd","repo":"google-gemini/gemini-cli"}
@@ -879,6 +893,8 @@
 {"first_pr_at":"2026-11-04T09:38:55","login_hash":"92470a0c99093435fc4f8a07e80ebbbe","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-23T04:56:34","login_hash":"92585d6afbe76dae391f6b59a403c9a6","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-04T23:30:20","login_hash":"92be5684692c0f56c8cb9400ee334541","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T19:48:43","login_hash":"931cf1f4d1e768ba16ee26e283a71708","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T23:02:47","login_hash":"93a58d9ea7e7ca52e61daf82519bb363","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-10T22:53:00","login_hash":"95b513b15b24dc42278de8a9a8a08c4c","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-04T22:18:09","login_hash":"95de74b17b966d25a1fda652e68eef8e","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-20T08:02:32","login_hash":"98ab1e1888d4572bfeee8b60591513c2","repo":"google-gemini/gemini-cli"}
@@ -913,8 +929,10 @@
 {"first_pr_at":"2026-10-22T14:58:42","login_hash":"c4305b3fc98b7353cffc6086022803b5","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-28T10:21:39","login_hash":"c72d5aa4c208a2e587c15b15ca11ef09","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-06T06:56:41","login_hash":"cf9f20abd6f1b8131f08115aeb50a71f","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T19:32:37","login_hash":"cfe8cc6cd61ebe7b2fba54ba386b56c8","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-11-02T17:18:16","login_hash":"d26027b3070a2d3adadd26965ffa952e","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-09-23T07:43:49","login_hash":"d3e559ae70db395d4315d204d37becb6","repo":"google-gemini/gemini-cli"}
+{"first_pr_at":"2026-11-13T15:29:58","login_hash":"d4cc3df2070bfc848df577c1c5c3b403","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-27T19:34:11","login_hash":"d54a38cb378a93d193b081c6b296e072","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-23T17:34:28","login_hash":"d7eb7809fcb5d437b56841ea149c2060","repo":"google-gemini/gemini-cli"}
 {"first_pr_at":"2026-10-24T11:25:53","login_hash":"d8684b089e468512612499b4a119705e","repo":"google-gemini/gemini-cli"}
@@ -983,6 +1001,7 @@
 {"first_pr_at":"2026-07-19T07:55:21","login_hash":"bb95bdc67d07b0cf3a20a91303853235","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-01T17:27:00","login_hash":"ced791c5917d1ad7700e78524b58de6a","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-08T01:45:41","login_hash":"cff4d20dda8d4595ecba500813da2f4e","repo":"kubeflow/pipelines"}
+{"first_pr_at":"2026-11-13T20:07:48","login_hash":"d4cc3df2070bfc848df577c1c5c3b403","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-10-06T10:06:27","login_hash":"d781ddae3aa0d583e6de1640d8615952","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-09-14T12:54:30","login_hash":"d7dc0b04ce76007b1768bafd545d92b7","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-03T11:48:32","login_hash":"dec8d2f7cb7c6ba49f0ddb861d15d235","repo":"kubeflow/pipelines"}
@@ -996,6 +1015,7 @@
 {"first_pr_at":"2026-07-12T11:49:51","login_hash":"007c44edd77fc603dc8f9520c573b28e","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-17T04:30:54","login_hash":"01bfc12d85fe00ea8f6ae9d5c0aff5ab","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-09-29T19:59:41","login_hash":"035dc8d83632332a6e8e40184c2232f3","repo":"kubeflow/trainer"}
+{"first_pr_at":"2026-11-14T01:35:05","login_hash":"0acaf86a1f399661b18dc43ce1c0ca45","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-11-02T15:41:55","login_hash":"164b8986ace7270a9a3ca9f23d46e367","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-25T20:53:57","login_hash":"181b0d8cc3804773e74d911e24efb68d","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-11-02T14:08:57","login_hash":"18e21215cd31dd2dba04516643ff543b","repo":"kubeflow/trainer"}
@@ -1190,6 +1210,7 @@
 {"first_pr_at":"2026-10-31T05:01:09","login_hash":"f6232418658910f9c0f5de89a3c810c6","repo":"meshery/meshery"}
 {"first_pr_at":"2026-11-12T03:46:18","login_hash":"f7865697cbb237426fe277118786b478","repo":"meshery/meshery"}
 {"first_pr_at":"2026-10-12T20:47:48","login_hash":"f993e61d4a2a2591f222311d70009cc3","repo":"meshery/meshery"}
+{"first_pr_at":"2026-11-13T09:18:43","login_hash":"f9cbe4485dd507262ef8d116a879720f","repo":"meshery/meshery"}
 {"first_pr_at":"2026-10-23T14:32:09","login_hash":"fd7201074c4cec0ce0d8aec05aae87a1","repo":"meshery/meshery"}
 {"first_pr_at":"2026-08-27T10:59:48","login_hash":"02271db4c485f8700800221773ccb6e5","repo":"metabrainz/listenbrainz-server"}
 {"first_pr_at":"2026-10-13T15:25:00","login_hash":"04b4f9b823afbb25f0ee79510bb52789","repo":"metabrainz/listenbrainz-server"}
@@ -1465,6 +1486,7 @@
 {"first_pr_at":"2026-09-15T08:03:19","login_hash":"652132641d69f5067be0c80f049825ed","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-10-07T12:49:31","login_hash":"704ae3d9dc083f98b953ef73c00c1f1c","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-10-26T10:19:47","login_hash":"7415b349f14f98a8557d8f4f43433a7f","repo":"sugarlabs/musicblocks"}
+{"first_pr_at":"2026-11-13T19:09:29","login_hash":"75aca46aecfdd5d9b7bf3be0bda8cbc3","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-09-28T06:09:28","login_hash":"771d533bda80da2492cbdc28bc4f647b","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-11-10T19:40:39","login_hash":"786f3dabe6b40c77bfcbe42342dc1782","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-11-03T18:07:40","login_hash":"7ba8228763c2a0540ff307c905ad34b2","repo":"sugarlabs/musicblocks"}
@@ -1528,6 +1550,7 @@
 {"first_pr_at":"2026-10-04T09:18:07","login_hash":"3d6ba6d7244bbc3c00845228e42294f0","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-10T16:28:02","login_hash":"3da9fe05c2f774a9255768060d4d798a","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-06T10:46:39","login_hash":"3ece232d0f79a9d5bf6b9e9727c010c1","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-13T08:13:15","login_hash":"3fe89f7a05bfdd916a8212ba6ac23f62","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-11T10:57:26","login_hash":"40880daf6c6e7edcddf73b8a16e1478d","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-31T00:13:56","login_hash":"4b8dcad38409688172343554cba39753","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-06T16:13:36","login_hash":"4d3c31f524fdf301635e43a61023f5e3","repo":"zulip/zulip"}
@@ -1539,12 +1562,14 @@
 {"first_pr_at":"2026-09-25T09:41:08","login_hash":"5c3017c24c3a100631a31904d0070781","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-23T10:52:24","login_hash":"5fd555da154b9a56e32b2431fbc7796c","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-07T08:49:50","login_hash":"6358c9ffe85bf59e5975ec4656d7e259","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-13T13:49:36","login_hash":"6969cb3f5710bc18d0cdb15f1cdf35a7","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-09T06:12:59","login_hash":"6a225c94306b062fb5ee4afdbf891e44","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-31T06:12:02","login_hash":"6b974c388da1ddf06ab9ed666ffcac43","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-26T11:11:44","login_hash":"6c5065fd7ad99c5a6d86316730b7a589","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-30T15:21:42","login_hash":"6d66c616ac751da70eec0f1a5f677e3c","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-09T08:45:09","login_hash":"6ee6e3299b620b7a38e7b64b3b788c5c","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-13T04:56:33","login_hash":"6f4e665267967b2fa2d91f45ac4fe7c2","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-13T09:01:33","login_hash":"6f91894128f4651b8f623acd646ce0cb","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-21T13:40:48","login_hash":"704175f8cb99204213a03f37a8ce45c1","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-29T06:24:40","login_hash":"7a571db05fb1f2408a217364e83f60da","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-24T18:00:23","login_hash":"7d1e31b6b8b0fd7e306cfcfcad122dd5","repo":"zulip/zulip"}
@@ -1581,6 +1606,7 @@
 {"first_pr_at":"2026-09-26T16:32:34","login_hash":"e011493a4db4afb12d35eac1506437ae","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-29T19:22:46","login_hash":"e8def322c3bde54f459b0ca1cbd44246","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-25T14:22:09","login_hash":"ec0fd14fd99377b64cbe33e832bef463","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-14T04:45:33","login_hash":"f6e0008e22dd47a142db304b9ae1eeb4","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-30T20:35:00","login_hash":"f7a997413155d8f219125476e50384a6","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-09T20:24:53","login_hash":"f8701f6f742fd6f689ca6f5a24c68ff6","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-18T13:44:11","login_hash":"f9f4c96eb516d09444aadb0d613e4979","repo":"zulip/zulip"}
