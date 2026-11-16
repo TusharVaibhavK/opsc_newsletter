@@ -149,3 +149,8 @@
 {"api_calls":50,"finished_at":"2026-11-15T06:57:32","id":149,"job":"collect_github","started_at":"2026-11-15T06:54:43","status":"ok","summary":"26 repos collected, 0 already fresh today, 2 of your PRs/reviews"}
 {"api_calls":67,"finished_at":"2026-11-15T06:57:50","id":150,"job":"watch_pages","started_at":"2026-11-15T06:57:32","status":"ok","summary":"50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"}
 {"api_calls":0,"finished_at":"2026-11-15T06:57:51","id":151,"job":"score_and_notify","started_at":"2026-11-15T06:57:50","status":"ok","summary":"348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"}
+{"api_calls":1,"finished_at":"2026-11-16T06:58:42","id":152,"job":"import_gsoc","started_at":"2026-11-16T06:58:42","status":"ok","summary":"unchanged since last import (HTTP 304)"}
+{"api_calls":49,"finished_at":"2026-11-16T07:01:22","id":153,"job":"collect_github","started_at":"2026-11-16T06:58:42","status":"ok","summary":"26 repos collected, 0 already fresh today, 2 of your PRs/reviews"}
+{"api_calls":67,"finished_at":"2026-11-16T07:01:45","id":154,"job":"watch_pages","started_at":"2026-11-16T07:01:22","status":"ok","summary":"50 pages: 2 edited, 1 error, 19 not-yet, 2 robots, 26 unchanged"}
+{"api_calls":53,"finished_at":"2026-11-16T07:06:58","id":155,"job":"scrape_programs","started_at":"2026-11-16T07:01:45","status":"ok","summary":"25 pages: 2 changed, 1 edited, 1 error, 2 robots, 19 unchanged"}
+{"api_calls":0,"finished_at":"2026-11-16T07:06:58","id":156,"job":"score_and_notify","started_at":"2026-11-16T07:06:58","status":"ok","summary":"348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 2 alerts via none"}

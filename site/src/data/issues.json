@@ -1,26 +1,11 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 2091,
-     "comments": 11,
-     "created_at": "2021-02-23T19:46:25Z",
-     "labels": [
-      "bug",
-      "license scan",
-      "good first issue"
-     ],
-     "number": 2412,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Improve license detection of declared RPM licenses",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
-    },
-    {
-     "age_days": 2099,
+     "age_days": 2100,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -36,7 +21,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2102,
+     "age_days": 2103,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -51,7 +36,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
     },
     {
-     "age_days": 2599,
+     "age_days": 2600,
      "comments": 10,
      "created_at": "2019-10-04T14:24:55Z",
      "labels": [
@@ -67,7 +52,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     },
     {
-     "age_days": 2775,
+     "age_days": 2776,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -83,7 +68,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2829,
+     "age_days": 2830,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -97,6 +82,23 @@
      "status": "discussed",
      "title": "Check if all these licenses are detected",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
+    },
+    {
+     "age_days": 2830,
+     "comments": 10,
+     "created_at": "2019-02-16T09:35:10Z",
+     "labels": [
+      "license scan",
+      "new feature",
+      "new and improved data",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1377,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Include license rule notes in data returned with a license match",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     }
    ],
    "total_open": 59
@@ -110,21 +112,7 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 3052,
-     "comments": 3,
-     "created_at": "2018-07-08T03:40:59Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 1309,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Add None split to those Molnet entries that don't have it",
-     "url": "https://github.com/deepchem/deepchem/issues/1309"
-    },
-    {
-     "age_days": 3090,
+     "age_days": 3091,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -138,7 +126,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1282"
     },
     {
-     "age_days": 3166,
+     "age_days": 3167,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -152,7 +140,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3167,
+     "age_days": 3168,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -166,7 +154,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3219,
+     "age_days": 3220,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -180,7 +168,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1035"
     },
     {
-     "age_days": 3338,
+     "age_days": 3339,
      "comments": 3,
      "created_at": "2017-09-25T15:53:45Z",
      "labels": [
@@ -192,6 +180,20 @@
      "status": "discussed",
      "title": "E3FP Featurizer",
      "url": "https://github.com/deepchem/deepchem/issues/849"
+    },
+    {
+     "age_days": 3406,
+     "comments": 9,
+     "created_at": "2017-07-20T15:58:07Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 683,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "EnzyNet",
+     "url": "https://github.com/deepchem/deepchem/issues/683"
     }
    ],
    "total_open": 39
@@ -210,7 +212,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1857,
+     "age_days": 1858,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -225,7 +227,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1970,
+     "age_days": 1971,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -251,7 +253,7 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 748,
+     "age_days": 749,
      "comments": 13,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -269,7 +271,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 753,
+     "age_days": 754,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -287,7 +289,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 754,
+     "age_days": 755,
      "comments": 13,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -305,7 +307,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 754,
+     "age_days": 755,
      "comments": 9,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -323,7 +325,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 998,
+     "age_days": 999,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -343,21 +345,20 @@
      "url": "https://github.com/meshery/meshery/issues/10371"
     },
     {
-     "age_days": 1110,
-     "comments": 11,
-     "created_at": "2023-11-01T20:42:23Z",
+     "age_days": 1070,
+     "comments": 19,
+     "created_at": "2023-12-12T19:34:40Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
       "good first issue",
-      "issue/willfix",
-      "component/catalog"
+      "issue/willfix"
      ],
-     "number": 9286,
+     "number": 9626,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Catalog] Publish GlusterFS",
-     "url": "https://github.com/meshery/meshery/issues/9286"
+     "title": "[Catalog] Publish Configuring Prometheus",
+     "url": "https://github.com/meshery/meshery/issues/9626"
     }
    ],
    "total_open": 50
@@ -381,7 +382,7 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 23,
+     "age_days": 24,
      "comments": 4,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -395,7 +396,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 230,
+     "age_days": 231,
      "comments": 6,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -408,7 +409,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 235,
+     "age_days": 236,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -421,7 +422,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 235,
+     "age_days": 236,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -434,7 +435,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3168"
     },
     {
-     "age_days": 235,
+     "age_days": 236,
      "comments": 2,
      "created_at": "2026-03-25T06:21:14Z",
      "labels": [
@@ -447,17 +448,17 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3167"
     },
     {
-     "age_days": 296,
-     "comments": 5,
-     "created_at": "2026-01-23T07:32:04Z",
+     "age_days": 269,
+     "comments": 6,
+     "created_at": "2026-02-20T13:22:10Z",
      "labels": [
       "good first issue"
      ],
-     "number": 2605,
+     "number": 2895,
      "repo": "DIGI-UW/OpenELIS-Global-2",
      "status": "discussed",
-     "title": "Investigate why FHIR Link Update Fails During Patient Merge  with Primary Patient Resource Not Found",
-     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2605"
+     "title": "Add tags to result reports",
+     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2895"
     }
    ],
    "total_open": 25
@@ -466,7 +467,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 529,
+     "age_days": 530,
      "comments": 4,
      "created_at": "2025-06-04T15:51:06Z",
      "labels": [
@@ -480,7 +481,7 @@
      "url": "https://github.com/oppia/oppia/issues/22762"
     },
     {
-     "age_days": 1157,
+     "age_days": 1158,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -508,7 +509,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3125,
+     "age_days": 3126,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -522,7 +523,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3125,
+     "age_days": 3126,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -542,7 +543,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1385,
+     "age_days": 1386,
      "comments": 14,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
