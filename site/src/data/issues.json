@@ -1,27 +1,11 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 2100,
-     "comments": 7,
-     "created_at": "2021-02-15T21:49:06Z",
-     "labels": [
-      "bug",
-      "license scan",
-      "easy",
-      "good first issue"
-     ],
-     "number": 2401,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Weird incorrect license detections in some JS and CSS map files and DTDs ",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
-    },
-    {
-     "age_days": 2103,
+     "age_days": 2104,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -36,7 +20,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
     },
     {
-     "age_days": 2600,
+     "age_days": 2601,
      "comments": 10,
      "created_at": "2019-10-04T14:24:55Z",
      "labels": [
@@ -52,7 +36,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     },
     {
-     "age_days": 2776,
+     "age_days": 2777,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -68,7 +52,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2830,
+     "age_days": 2831,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -84,7 +68,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2830,
+     "age_days": 2831,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -99,6 +83,23 @@
      "status": "discussed",
      "title": "Include license rule notes in data returned with a license match",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
+    },
+    {
+     "age_days": 3161,
+     "comments": 7,
+     "created_at": "2018-03-23T16:56:34Z",
+     "labels": [
+      "help wanted",
+      "license scan",
+      "new and improved data",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1003,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Ensure all the licenses at https://github.com/ifrOSS/Lizenzcenter are detected correctly",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     }
    ],
    "total_open": 59
@@ -112,21 +113,21 @@
    "open_to_newcomers": 17,
    "shown": [
     {
-     "age_days": 3091,
+     "age_days": 1687,
      "comments": 2,
-     "created_at": "2018-05-31T19:56:51Z",
+     "created_at": "2022-04-05T01:53:13Z",
      "labels": [
       "Good First Contribution",
       "Contribution Welcome"
      ],
-     "number": 1282,
+     "number": 2895,
      "repo": "deepchem/deepchem",
      "status": "discussed",
-     "title": "Extending Fingerprints to calculate counts",
-     "url": "https://github.com/deepchem/deepchem/issues/1282"
+     "title": "Make DeepChem Tutorials Citeable",
+     "url": "https://github.com/deepchem/deepchem/issues/2895"
     },
     {
-     "age_days": 3167,
+     "age_days": 3168,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -140,7 +141,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3168,
+     "age_days": 3169,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -154,7 +155,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3220,
+     "age_days": 3221,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -168,7 +169,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1035"
     },
     {
-     "age_days": 3339,
+     "age_days": 3340,
      "comments": 3,
      "created_at": "2017-09-25T15:53:45Z",
      "labels": [
@@ -182,7 +183,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/849"
     },
     {
-     "age_days": 3406,
+     "age_days": 3407,
      "comments": 9,
      "created_at": "2017-07-20T15:58:07Z",
      "labels": [
@@ -212,7 +213,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1858,
+     "age_days": 1859,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -227,7 +228,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1971,
+     "age_days": 1972,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -250,10 +251,10 @@
    "total_open": 2
   },
   "meshery": {
-   "open_to_newcomers": 8,
+   "open_to_newcomers": 6,
    "shown": [
     {
-     "age_days": 749,
+     "age_days": 750,
      "comments": 13,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -271,7 +272,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 754,
+     "age_days": 755,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -289,7 +290,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 755,
+     "age_days": 756,
      "comments": 13,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -307,8 +308,8 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 755,
-     "comments": 9,
+     "age_days": 756,
+     "comments": 10,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
       "kind/enhancement",
@@ -325,7 +326,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 999,
+     "age_days": 1000,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -345,20 +346,21 @@
      "url": "https://github.com/meshery/meshery/issues/10371"
     },
     {
-     "age_days": 1070,
-     "comments": 19,
-     "created_at": "2023-12-12T19:34:40Z",
+     "age_days": 1112,
+     "comments": 11,
+     "created_at": "2023-11-01T20:42:23Z",
      "labels": [
       "kind/enhancement",
       "help wanted",
       "good first issue",
-      "issue/willfix"
+      "issue/willfix",
+      "component/catalog"
      ],
-     "number": 9626,
+     "number": 9286,
      "repo": "meshery/meshery",
      "status": "discussed",
-     "title": "[Catalog] Publish Configuring Prometheus",
-     "url": "https://github.com/meshery/meshery/issues/9626"
+     "title": "[Catalog] Publish GlusterFS",
+     "url": "https://github.com/meshery/meshery/issues/9286"
     }
    ],
    "total_open": 50
@@ -366,7 +368,7 @@
   "mllam": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 5
+   "total_open": 4
   },
   "neuroinformatics-unit": {
    "open_to_newcomers": 0,
@@ -382,21 +384,7 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 24,
-     "comments": 4,
-     "created_at": "2026-10-23T15:15:52Z",
-     "labels": [
-      "good first issue",
-      "needs triage"
-     ],
-     "number": 4813,
-     "repo": "DIGI-UW/OpenELIS-Global-2",
-     "status": "discussed",
-     "title": "the ElectronicOrderDAOImpl refactor",
-     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
-    },
-    {
-     "age_days": 231,
+     "age_days": 232,
      "comments": 6,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -409,7 +397,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 236,
+     "age_days": 237,
      "comments": 2,
      "created_at": "2026-03-25T06:26:42Z",
      "labels": [
@@ -422,7 +410,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 236,
+     "age_days": 237,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -435,7 +423,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3168"
     },
     {
-     "age_days": 236,
+     "age_days": 237,
      "comments": 2,
      "created_at": "2026-03-25T06:21:14Z",
      "labels": [
@@ -448,7 +436,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3167"
     },
     {
-     "age_days": 269,
+     "age_days": 270,
      "comments": 6,
      "created_at": "2026-02-20T13:22:10Z",
      "labels": [
@@ -459,6 +447,19 @@
      "status": "discussed",
      "title": "Add tags to result reports",
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2895"
+    },
+    {
+     "age_days": 270,
+     "comments": 5,
+     "created_at": "2026-02-20T13:14:23Z",
+     "labels": [
+      "good first issue"
+     ],
+     "number": 2892,
+     "repo": "DIGI-UW/OpenELIS-Global-2",
+     "status": "discussed",
+     "title": "Improve configurable lab number generator",
+     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892"
     }
    ],
    "total_open": 25
@@ -467,8 +468,8 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 530,
-     "comments": 4,
+     "age_days": 531,
+     "comments": 6,
      "created_at": "2025-06-04T15:51:06Z",
      "labels": [
       "good first issue",
@@ -481,7 +482,7 @@
      "url": "https://github.com/oppia/oppia/issues/22762"
     },
     {
-     "age_days": 1158,
+     "age_days": 1159,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -509,7 +510,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3126,
+     "age_days": 3127,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -523,7 +524,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3126,
+     "age_days": 3127,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -540,10 +541,26 @@
    "total_open": 3
   },
   "zulip": {
-   "open_to_newcomers": 1,
+   "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1386,
+     "age_days": 0,
+     "comments": 3,
+     "created_at": "2026-11-17T06:43:36Z",
+     "labels": [
+      "help wanted",
+      "area: topics",
+      "area: message-editing (topics)",
+      "priority: low"
+     ],
+     "number": 40722,
+     "repo": "zulip/zulip",
+     "status": "discussed",
+     "title": "Notify sender when topic of their scheduled message is moved.",
+     "url": "https://github.com/zulip/zulip/issues/40722"
+    },
+    {
+     "age_days": 1387,
      "comments": 14,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [

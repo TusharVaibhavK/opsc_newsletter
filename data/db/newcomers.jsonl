@@ -37,6 +37,7 @@
 {"first_pr_at":"2026-09-01T21:47:42","login_hash":"d7ea3f05e2682fec17d559813679971e","repo":"DIGI-UW/OpenELIS-Global-2"}
 {"first_pr_at":"2026-08-04T07:08:42","login_hash":"d9fd24f90de36d32f7cc5f27b8f9d381","repo":"DIGI-UW/OpenELIS-Global-2"}
 {"first_pr_at":"2026-11-10T19:51:06","login_hash":"de8d8506bc86035b63a87ec076cf9ce6","repo":"DIGI-UW/OpenELIS-Global-2"}
+{"first_pr_at":"2026-11-16T09:31:56","login_hash":"f2520414465d963ecca678ac316f5cbc","repo":"DIGI-UW/OpenELIS-Global-2"}
 {"first_pr_at":"2026-10-14T10:29:11","login_hash":"f72c9fa37eb65fdf5741f0c0f4eb024f","repo":"DIGI-UW/OpenELIS-Global-2"}
 {"first_pr_at":"2026-03-24T01:20:19","login_hash":"0563021cca29d96708f381aceaef70e3","repo":"MDAnalysis/mdanalysis"}
 {"first_pr_at":"2026-03-08T08:29:56","login_hash":"06aba9f2f1c487b4519e57a070486d74","repo":"MDAnalysis/mdanalysis"}
@@ -242,6 +243,7 @@
 {"first_pr_at":"2026-11-04T10:08:04","login_hash":"7eb378dbdd27ab7ce1ab36b413a6d282","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-11-05T09:52:35","login_hash":"80f620f3661078988b53d06e7845b4a7","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-20T10:44:10","login_hash":"8136b9dccb7e7fce1904b41092c1858d","repo":"RocketChat/Rocket.Chat"}
+{"first_pr_at":"2026-11-17T05:00:35","login_hash":"816292267de6e4976f76c89ff10718e6","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-30T11:13:27","login_hash":"8505e20c9cf406eff2e9ac50896403f8","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-11-07T15:55:07","login_hash":"860dd8516d72a2df4ffbacea19da7898","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-15T20:43:23","login_hash":"865bd4122e903b1163a6afb7185d20ec","repo":"RocketChat/Rocket.Chat"}
@@ -262,6 +264,7 @@
 {"first_pr_at":"2026-10-21T15:54:45","login_hash":"9cc07ba7de1d642bc1a336a7b3793fe8","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-10-24T12:28:35","login_hash":"9d061fc3c01b4d2549152a4573cc9df8","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-09-26T14:43:05","login_hash":"9dd9ab05f071e017ed179429623a6bfc","repo":"RocketChat/Rocket.Chat"}
+{"first_pr_at":"2026-11-16T09:03:50","login_hash":"9ef8380f68da675c3f354ddfe1027637","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-11-06T14:31:41","login_hash":"a0a741b7b66689bd48e561d2a60dd3ce","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-11-12T05:03:21","login_hash":"a33c71176b41a3a9a1e0026db0a2b457","repo":"RocketChat/Rocket.Chat"}
 {"first_pr_at":"2026-09-27T06:01:32","login_hash":"a5262b7e64000bcc36bbda793cfda3e2","repo":"RocketChat/Rocket.Chat"}
@@ -404,6 +407,7 @@
 {"first_pr_at":"2026-10-09T07:57:29","login_hash":"3609463cb9dc99d9e90bb69273e8871f","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-07-30T11:38:07","login_hash":"3b844f72d382273add99420fe40feec1","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-07-26T17:14:18","login_hash":"3ed55423698e9e4efd438cbdf35624d9","repo":"aboutcode-org/vulnerablecode"}
+{"first_pr_at":"2026-11-16T09:05:57","login_hash":"427ffc1281c1c93b0caaa887e7882076","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-03-26T11:03:36","login_hash":"4d60a87c6dc8a65c00ff2a12cedb81f4","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-09-25T13:48:04","login_hash":"584a5034a9e87be43ad4074679ece18f","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-02-23T19:40:48","login_hash":"58b825afd931c73ee3b3a079d826ec8d","repo":"aboutcode-org/vulnerablecode"}
@@ -411,6 +415,7 @@
 {"first_pr_at":"2026-09-30T07:29:37","login_hash":"6651177f52495a0915a7a91357aeb1cf","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2025-11-19T03:35:24","login_hash":"6810f705fe01e5df47c8e20b69a386a1","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-03-31T04:31:37","login_hash":"6fcecabba3fb90cc945b01bf046aee2d","repo":"aboutcode-org/vulnerablecode"}
+{"first_pr_at":"2026-11-16T12:43:30","login_hash":"7142be98793030818c23e46fb0c992c3","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2025-03-20T07:45:07","login_hash":"7a572f2f255729f53e78b70bbae8744c","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-07-22T19:50:24","login_hash":"7ae37b549829a6d822114bec1e39687d","repo":"aboutcode-org/vulnerablecode"}
 {"first_pr_at":"2026-07-14T05:35:44","login_hash":"7d0f7bee07789e411ca33247e67431db","repo":"aboutcode-org/vulnerablecode"}
@@ -463,6 +468,7 @@
 {"first_pr_at":"2026-11-10T13:02:21","login_hash":"3187e2afa4727c5711d3d41b95f0fdf7","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-10-09T09:33:34","login_hash":"3609463cb9dc99d9e90bb69273e8871f","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-01T07:04:45","login_hash":"379322d6822757aaed3b6a31cd24fb96","repo":"checkstyle/checkstyle"}
+{"first_pr_at":"2026-11-16T19:01:48","login_hash":"3b051133be7b2f00a7759669a3c3031b","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-10T20:58:22","login_hash":"3f50f8046a89e485574816a44c882d4f","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-07T05:49:09","login_hash":"403c921fbb005fd8ba40f242413671dd","repo":"checkstyle/checkstyle"}
 {"first_pr_at":"2026-11-02T15:10:52","login_hash":"4245777e4b3c06c27fd90a9e667eb452","repo":"checkstyle/checkstyle"}
@@ -607,6 +613,7 @@
 {"first_pr_at":"2026-06-16T20:48:44","login_hash":"e12fca83d1fd58d39694776ec4246f36","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-07-23T23:15:34","login_hash":"e8950deeec4e806656a59dce7ad5508e","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-11-13T14:08:26","login_hash":"ea0464e0d771f3c770b3f076ce475d0d","repo":"deepchem/deepchem"}
+{"first_pr_at":"2026-11-17T04:29:34","login_hash":"eb5a30d9833329ece58e233812b70445","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-10-21T16:40:42","login_hash":"ee354ebcea4d03dd500bb50c61589bf1","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-08-03T16:00:05","login_hash":"efd5c6deb75d5a848019b916e5e5cd74","repo":"deepchem/deepchem"}
 {"first_pr_at":"2026-11-12T08:36:45","login_hash":"f0cd66dd3c12619bb8b9cdd253c2fdd2","repo":"deepchem/deepchem"}
@@ -635,6 +642,7 @@
 {"first_pr_at":"2026-10-30T23:11:55","login_hash":"142828d9f17c8ea833661828191b2e11","repo":"django/django"}
 {"first_pr_at":"2026-09-25T08:05:52","login_hash":"16ec2c449e134cb606ed329b7090cf2b","repo":"django/django"}
 {"first_pr_at":"2026-10-19T10:59:54","login_hash":"177dfcc356890aac5ee7a9849572e5cb","repo":"django/django"}
+{"first_pr_at":"2026-11-16T14:07:22","login_hash":"192841e39e2d6cdd9b95ff03d13ee539","repo":"django/django"}
 {"first_pr_at":"2026-10-12T19:07:31","login_hash":"1af8058e105bff433f60654fa7c46093","repo":"django/django"}
 {"first_pr_at":"2026-10-16T19:55:57","login_hash":"1c20a6fea97862417b1ba5f02d246856","repo":"django/django"}
 {"first_pr_at":"2026-11-15T19:02:09","login_hash":"1d68e5a01830eb7eb4a1c5d36d0d2cd3","repo":"django/django"}
@@ -686,6 +694,7 @@
 {"first_pr_at":"2026-09-07T09:51:36","login_hash":"837979306c285a0a00a935788c513832","repo":"django/django"}
 {"first_pr_at":"2026-10-28T18:50:52","login_hash":"855c6f3d193a1db59bd7d8bbb0b9ee65","repo":"django/django"}
 {"first_pr_at":"2026-10-16T02:09:25","login_hash":"865e6b6bf840a41c44e2c9b711bfdb06","repo":"django/django"}
+{"first_pr_at":"2026-11-16T23:18:34","login_hash":"8c0b5d34d0740aedcd0d3d1f4c914eb8","repo":"django/django"}
 {"first_pr_at":"2026-10-09T22:05:51","login_hash":"8ce158b72c8a78c69d6aaf83cc9850e2","repo":"django/django"}
 {"first_pr_at":"2026-11-07T10:57:36","login_hash":"900664763cfeeea479bb9a25b190f676","repo":"django/django"}
 {"first_pr_at":"2026-10-09T21:46:09","login_hash":"90a887e490c26a46707e0b5c98aff060","repo":"django/django"}
@@ -725,8 +734,10 @@
 {"first_pr_at":"2026-10-15T00:12:13","login_hash":"daf4f2e5278f2de847202d8a1d69e139","repo":"django/django"}
 {"first_pr_at":"2026-10-19T14:53:09","login_hash":"dd93f403ee4d5648a78b3fc0c352df90","repo":"django/django"}
 {"first_pr_at":"2026-09-13T13:36:39","login_hash":"df52a95ffed78944ad38a144efc4020e","repo":"django/django"}
+{"first_pr_at":"2026-11-17T07:01:24","login_hash":"e2b2c1fd06045d35edc646c253115880","repo":"django/django"}
 {"first_pr_at":"2026-08-24T11:10:34","login_hash":"e2deefb81137b2a4ff773dae417ff43b","repo":"django/django"}
 {"first_pr_at":"2026-10-08T03:49:35","login_hash":"e2e6b08e012f78ec34003eb3fc412fe6","repo":"django/django"}
+{"first_pr_at":"2026-11-17T01:13:22","login_hash":"e53746a4a073959dd1b94f55b2f7d633","repo":"django/django"}
 {"first_pr_at":"2026-09-29T13:52:22","login_hash":"e8d93c1658beb6a036066175048e89b2","repo":"django/django"}
 {"first_pr_at":"2026-11-14T06:59:13","login_hash":"ea0464e0d771f3c770b3f076ce475d0d","repo":"django/django"}
 {"first_pr_at":"2026-11-12T08:46:04","login_hash":"f0318231f05aaa3f62f808c7a6b4daf0","repo":"django/django"}
@@ -747,6 +758,7 @@
 {"first_pr_at":"2026-02-26T18:29:42","login_hash":"6b0b1be4115b9c128112451cc89cf904","repo":"eclipse-sw360/sw360"}
 {"first_pr_at":"2026-08-15T17:50:42","login_hash":"7dd9aa1e2f91be3be3c8446e02f2340a","repo":"eclipse-sw360/sw360"}
 {"first_pr_at":"2026-09-03T11:28:43","login_hash":"9469cd98d33d4ab02a151c4295de1fcd","repo":"eclipse-sw360/sw360"}
+{"first_pr_at":"2026-11-16T10:31:32","login_hash":"94c27ece58216d397c66710b28083b98","repo":"eclipse-sw360/sw360"}
 {"first_pr_at":"2026-10-06T04:05:55","login_hash":"96a750b4c3d2d2894b4680ade65dd452","repo":"eclipse-sw360/sw360"}
 {"first_pr_at":"2026-11-06T14:47:45","login_hash":"a23b37db45814ea0f26ccbafe1bd298e","repo":"eclipse-sw360/sw360"}
 {"first_pr_at":"2026-03-07T21:40:58","login_hash":"c71db524760c4b03926175d48aafe731","repo":"eclipse-sw360/sw360"}
@@ -1032,6 +1044,7 @@
 {"first_pr_at":"2026-07-19T07:55:21","login_hash":"bb95bdc67d07b0cf3a20a91303853235","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-01T17:27:00","login_hash":"ced791c5917d1ad7700e78524b58de6a","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-08T01:45:41","login_hash":"cff4d20dda8d4595ecba500813da2f4e","repo":"kubeflow/pipelines"}
+{"first_pr_at":"2026-11-16T15:06:06","login_hash":"d2445a73d5ec8d93eec972d3f20e4dd3","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-11-13T20:07:48","login_hash":"d4cc3df2070bfc848df577c1c5c3b403","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-10-06T10:06:27","login_hash":"d781ddae3aa0d583e6de1640d8615952","repo":"kubeflow/pipelines"}
 {"first_pr_at":"2026-09-14T12:54:30","login_hash":"d7dc0b04ce76007b1768bafd545d92b7","repo":"kubeflow/pipelines"}
@@ -1062,6 +1075,7 @@
 {"first_pr_at":"2026-09-26T20:56:49","login_hash":"66e53dc0f10ae0a5d608398d7a0e184a","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-03T11:02:12","login_hash":"69499d47a27ba08ff11b6983bdc7a7d6","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-09-01T18:28:03","login_hash":"6d8b59ce62378fb31147f5ea5eb74bdc","repo":"kubeflow/trainer"}
+{"first_pr_at":"2026-11-16T12:46:45","login_hash":"724a88d2cef2bc288a5fbab2ee9cf378","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-12T14:34:12","login_hash":"72f360ba9b53b0769b3f51d340f38792","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-11-08T21:23:59","login_hash":"841f4eed1388a2347c43cada652c00ec","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-11-06T05:31:49","login_hash":"84e73f992e6341ba620fefe93c00cf1a","repo":"kubeflow/trainer"}
@@ -1094,6 +1108,7 @@
 {"first_pr_at":"2026-09-04T14:27:15","login_hash":"da8254749e8b7aedc6831b7f9ad02895","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-10T13:25:26","login_hash":"e37c832c94254c7c0287da782edede88","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-17T12:19:53","login_hash":"e531d733cd677f8767f823d44c0e61ff","repo":"kubeflow/trainer"}
+{"first_pr_at":"2026-11-16T12:23:34","login_hash":"ead33990cdcadc06aed85664e4e3644c","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-09-23T19:31:34","login_hash":"eebe771109ec6f1a687c32ecc961f7ee","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-10-28T10:20:53","login_hash":"f0a4d174dade36752da51c3b49a50a42","repo":"kubeflow/trainer"}
 {"first_pr_at":"2026-11-15T08:38:14","login_hash":"f113fdf6ac501cb9a9bc46114be97965","repo":"kubeflow/trainer"}
@@ -1170,6 +1185,7 @@
 {"first_pr_at":"2026-10-02T19:32:56","login_hash":"3e6106aa110d5030a60f9a484fc97ba8","repo":"meshery/meshery"}
 {"first_pr_at":"2026-10-19T04:19:20","login_hash":"424fa9638eb6674073373b09fa451b9e","repo":"meshery/meshery"}
 {"first_pr_at":"2026-10-31T16:54:54","login_hash":"4807e7c5f0b85a7ef163d8b9e14ccd2b","repo":"meshery/meshery"}
+{"first_pr_at":"2026-11-16T08:07:09","login_hash":"4838b88de0289def8598c6266f89031f","repo":"meshery/meshery"}
 {"first_pr_at":"2026-09-25T06:40:09","login_hash":"4a5b1b55f58ead567fd408ae731b43d5","repo":"meshery/meshery"}
 {"first_pr_at":"2026-10-09T13:55:43","login_hash":"4b0447ccfb1552f285be568c9e1fa739","repo":"meshery/meshery"}
 {"first_pr_at":"2026-11-02T22:58:53","login_hash":"4edc28d321dddad910f02062ef0bdab7","repo":"meshery/meshery"}
@@ -1303,6 +1319,7 @@
 {"first_pr_at":"2026-08-27T16:30:02","login_hash":"93e22c10fc1476f070dd90c9e1a8a02b","repo":"mllam/neural-lam"}
 {"first_pr_at":"2026-07-02T18:01:24","login_hash":"9772d2d64f0095bd25a572db1a4407a2","repo":"mllam/neural-lam"}
 {"first_pr_at":"2026-04-20T18:45:58","login_hash":"a8b5f754773da1d1741831ed4627d539","repo":"mllam/neural-lam"}
+{"first_pr_at":"2026-11-16T20:19:12","login_hash":"ac1a825632e862e7b6c787e28fa6bbfe","repo":"mllam/neural-lam"}
 {"first_pr_at":"2026-04-12T05:10:20","login_hash":"b760e818e5fb7bac300f17426f1d8672","repo":"mllam/neural-lam"}
 {"first_pr_at":"2026-07-17T05:37:21","login_hash":"bf0f3ad091e83748b554aee5e9474aa2","repo":"mllam/neural-lam"}
 {"first_pr_at":"2026-11-12T14:38:07","login_hash":"c75b050546ea71346c9fc2ecefb202f6","repo":"mllam/neural-lam"}
@@ -1426,6 +1443,7 @@
 {"first_pr_at":"2026-11-04T14:17:39","login_hash":"2ed839e6b455585c1080d7085ab62fc6","repo":"oppia/oppia"}
 {"first_pr_at":"2026-11-15T22:34:06","login_hash":"2f56ca19cf5dd9c7933bb19cfff255de","repo":"oppia/oppia"}
 {"first_pr_at":"2026-09-12T17:50:54","login_hash":"318566d497a8f0a1af8a88c719b768d1","repo":"oppia/oppia"}
+{"first_pr_at":"2026-11-16T07:25:05","login_hash":"328aa0b6efc1b24b8f19cd338340bd22","repo":"oppia/oppia"}
 {"first_pr_at":"2026-09-29T11:21:18","login_hash":"333feed689acba90a9e7b8f07b5fb6b7","repo":"oppia/oppia"}
 {"first_pr_at":"2026-10-07T16:27:10","login_hash":"374211d1109336a75f678a85af4f0cc5","repo":"oppia/oppia"}
 {"first_pr_at":"2026-11-08T15:13:27","login_hash":"380fa21ef9da553d595cda8f0ab10c12","repo":"oppia/oppia"}
@@ -1484,6 +1502,7 @@
 {"first_pr_at":"2026-10-19T14:09:50","login_hash":"c75f6d915babdf91f6043e2d781df426","repo":"oppia/oppia"}
 {"first_pr_at":"2026-10-08T18:24:54","login_hash":"c924ae056f7ff6b431a9622e07a4bf67","repo":"oppia/oppia"}
 {"first_pr_at":"2026-08-12T11:33:33","login_hash":"cad8a0c2843b9a703184d9fd9753a58f","repo":"oppia/oppia"}
+{"first_pr_at":"2026-11-16T19:39:20","login_hash":"cd38b8062cd58d29155a17dc190c9eaa","repo":"oppia/oppia"}
 {"first_pr_at":"2026-10-01T07:50:31","login_hash":"ce0f470392e0194f84e0166bfcd96294","repo":"oppia/oppia"}
 {"first_pr_at":"2026-09-08T12:05:01","login_hash":"cf03ddf98d61fce4a70cf5acdc5424f7","repo":"oppia/oppia"}
 {"first_pr_at":"2026-11-16T03:24:48","login_hash":"d3733d0d449cd7e656e45baae6360817","repo":"oppia/oppia"}
@@ -1574,6 +1593,7 @@
 {"first_pr_at":"2026-11-14T19:44:01","login_hash":"f25809217f19a4fdbe8b9b2af7d947cf","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-11-06T08:13:38","login_hash":"f3fa7b11bf7ed3d2d1f088e521205fe2","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-10-23T05:58:42","login_hash":"f4790e23e1d106091463f658aed27f4a","repo":"sugarlabs/musicblocks"}
+{"first_pr_at":"2026-11-17T04:03:53","login_hash":"f658bb76e2f103289bb0f2dbe0db2a78","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-09-30T17:19:55","login_hash":"fb68f4e8d63d5ba3d949b6c2d34fa3a5","repo":"sugarlabs/musicblocks"}
 {"first_pr_at":"2026-09-15T02:24:26","login_hash":"02fd7852ff58b73cc4617bc10d8e83fb","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-12T04:13:53","login_hash":"03643b1cb7ca18614852734aafc46f17","repo":"zulip/zulip"}
@@ -1592,6 +1612,7 @@
 {"first_pr_at":"2026-09-26T17:44:12","login_hash":"256a79f50d53b08c6ab6db139b13c40d","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-04T14:10:22","login_hash":"2934f2714033983826f0c1bcdce3e500","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-23T20:24:14","login_hash":"30e74eeabe7068becc4ec40e571ae07a","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-16T11:18:29","login_hash":"3187e2afa4727c5711d3d41b95f0fdf7","repo":"zulip/zulip"}
 {"first_pr_at":"2026-08-29T03:02:10","login_hash":"33936132171e6b15194a379d73528506","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-14T14:22:05","login_hash":"33cf4742bc933984025b9e641a67fcc4","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-30T15:32:53","login_hash":"35db363fb1484165f62610071bc915e8","repo":"zulip/zulip"}
@@ -1607,6 +1628,7 @@
 {"first_pr_at":"2026-10-04T19:02:36","login_hash":"4eced851e717e8686f8472adb3b2406e","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-28T15:59:59","login_hash":"4fb49bac98fed7eb6911e823a4c4f18b","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-05T12:01:48","login_hash":"56b3c5c0d30efe259d55d0c58ab207e1","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-17T06:01:48","login_hash":"5862779fb2661a210605ec7135a32475","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-04T23:12:16","login_hash":"58cdb0a3c3e58c890a45758e9a182537","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-28T04:38:51","login_hash":"597099a6977f1a752717be63dcd8c3d4","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-25T09:41:08","login_hash":"5c3017c24c3a100631a31904d0070781","repo":"zulip/zulip"}
@@ -1647,6 +1669,7 @@
 {"first_pr_at":"2026-11-12T04:37:52","login_hash":"bb6809ce4cdbd9bb2690ccfaf5c54880","repo":"zulip/zulip"}
 {"first_pr_at":"2026-11-05T15:26:43","login_hash":"c1767b51e854ae134c9601f5ae938c42","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-31T18:39:26","login_hash":"c73db967be441e90d1b9c3e3039314b9","repo":"zulip/zulip"}
+{"first_pr_at":"2026-11-17T06:48:22","login_hash":"d22508756831e0c51c41882e87f03525","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-23T15:11:02","login_hash":"d60e676932cd56068ae7cee63cbe0772","repo":"zulip/zulip"}
 {"first_pr_at":"2026-10-03T10:24:12","login_hash":"d61abcff32d0fb067d1e9f32f4a4ec89","repo":"zulip/zulip"}
 {"first_pr_at":"2026-09-19T10:36:32","login_hash":"d62137d658436df3b7dd397f963dbf6b","repo":"zulip/zulip"}
