@@ -1,27 +1,28 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 2602,
-     "comments": 10,
-     "created_at": "2019-10-04T14:24:55Z",
+     "age_days": 1728,
+     "comments": 3,
+     "created_at": "2022-02-25T11:56:40Z",
      "labels": [
-      "archive extraction",
-      "new feature",
+      "license scan",
+      "package scan",
       "easy",
-      "good first issue"
+      "good first issue",
+      "package-formats"
      ],
-     "number": 1746,
+     "number": 2879,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "Add support for electron ASAR archives",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
+     "title": "Research https://opendev.org/assets/js/licenses.txt",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 2778,
+     "age_days": 2779,
      "comments": 3,
      "created_at": "2019-04-11T14:42:10Z",
      "labels": [
@@ -37,7 +38,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
     },
     {
-     "age_days": 2832,
+     "age_days": 2833,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -53,7 +54,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2832,
+     "age_days": 2833,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -70,7 +71,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     },
     {
-     "age_days": 3162,
+     "age_days": 3163,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -87,7 +88,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     },
     {
-     "age_days": 3175,
+     "age_days": 3176,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -115,21 +116,7 @@
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1750,
-     "comments": 2,
-     "created_at": "2022-02-02T21:25:50Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2844,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Creating a TorchDrug Tutorial",
-     "url": "https://github.com/deepchem/deepchem/issues/2844"
-    },
-    {
-     "age_days": 1752,
+     "age_days": 1753,
      "comments": 3,
      "created_at": "2022-01-31T19:21:45Z",
      "labels": [
@@ -143,7 +130,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2841"
     },
     {
-     "age_days": 1755,
+     "age_days": 1756,
      "comments": 3,
      "created_at": "2022-01-28T01:38:40Z",
      "labels": [
@@ -157,7 +144,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 1931,
+     "age_days": 1932,
      "comments": 6,
      "created_at": "2021-08-05T18:16:47Z",
      "labels": [
@@ -171,7 +158,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2644"
     },
     {
-     "age_days": 2872,
+     "age_days": 2873,
      "comments": 27,
      "created_at": "2019-01-07T21:36:30Z",
      "labels": [
@@ -186,7 +173,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1486"
     },
     {
-     "age_days": 2948,
+     "age_days": 2949,
      "comments": 8,
      "created_at": "2018-10-23T20:22:54Z",
      "labels": [
@@ -198,6 +185,20 @@
      "status": "discussed",
      "title": "MolDQN Implementation",
      "url": "https://github.com/deepchem/deepchem/issues/1436"
+    },
+    {
+     "age_days": 2993,
+     "comments": 5,
+     "created_at": "2018-09-09T18:58:42Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1400,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Make MoleculeNet visible on Google Dataset Search",
+     "url": "https://github.com/deepchem/deepchem/issues/1400"
     }
    ],
    "total_open": 39
@@ -216,7 +217,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1860,
+     "age_days": 1861,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -231,7 +232,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1973,
+     "age_days": 1974,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -254,10 +255,10 @@
    "total_open": 2
   },
   "meshery": {
-   "open_to_newcomers": 5,
+   "open_to_newcomers": 6,
    "shown": [
     {
-     "age_days": 751,
+     "age_days": 752,
      "comments": 13,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -275,7 +276,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 756,
+     "age_days": 757,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -293,7 +294,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 757,
+     "age_days": 758,
      "comments": 13,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -311,7 +312,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 757,
+     "age_days": 758,
      "comments": 10,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -329,7 +330,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 1001,
+     "age_days": 1002,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -347,6 +348,23 @@
      "status": "discussed",
      "title": "[mesheryctl] Install: Support new Meshery Adapter for Nighthawk",
      "url": "https://github.com/meshery/meshery/issues/10371"
+    },
+    {
+     "age_days": 1114,
+     "comments": 11,
+     "created_at": "2023-11-01T20:42:23Z",
+     "labels": [
+      "kind/enhancement",
+      "help wanted",
+      "good first issue",
+      "issue/willfix",
+      "component/catalog"
+     ],
+     "number": 9286,
+     "repo": "meshery/meshery",
+     "status": "discussed",
+     "title": "[Catalog] Publish GlusterFS",
+     "url": "https://github.com/meshery/meshery/issues/9286"
     }
    ],
    "total_open": 50
@@ -370,20 +388,21 @@
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 238,
-     "comments": 2,
-     "created_at": "2026-03-25T06:26:42Z",
+     "age_days": 27,
+     "comments": 4,
+     "created_at": "2026-10-23T15:15:52Z",
      "labels": [
-      "good first issue"
+      "good first issue",
+      "needs triage"
      ],
-     "number": 3169,
+     "number": 4813,
      "repo": "DIGI-UW/OpenELIS-Global-2",
      "status": "discussed",
-     "title": "AnalyzerQueryServiceIntegrationTest relies on non-existent fixture data (IDs 999901–999903)",
-     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
+     "title": "the ElectronicOrderDAOImpl refactor",
+     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 238,
+     "age_days": 239,
      "comments": 3,
      "created_at": "2026-03-25T06:24:01Z",
      "labels": [
@@ -396,7 +415,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3168"
     },
     {
-     "age_days": 238,
+     "age_days": 239,
      "comments": 2,
      "created_at": "2026-03-25T06:21:14Z",
      "labels": [
@@ -409,7 +428,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3167"
     },
     {
-     "age_days": 271,
+     "age_days": 272,
      "comments": 6,
      "created_at": "2026-02-20T13:22:10Z",
      "labels": [
@@ -422,7 +441,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2895"
     },
     {
-     "age_days": 271,
+     "age_days": 272,
      "comments": 5,
      "created_at": "2026-02-20T13:14:23Z",
      "labels": [
@@ -435,7 +454,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892"
     },
     {
-     "age_days": 299,
+     "age_days": 300,
      "comments": 5,
      "created_at": "2026-01-23T07:32:04Z",
      "labels": [
@@ -454,7 +473,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1160,
+     "age_days": 1161,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -482,7 +501,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3128,
+     "age_days": 3129,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -496,7 +515,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3128,
+     "age_days": 3129,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -516,7 +535,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1388,
+     "age_days": 1389,
      "comments": 15,
      "created_at": "2023-01-30T21:29:00Z",
      "labels": [
