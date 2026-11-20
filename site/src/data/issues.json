@@ -1,11 +1,11 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 1728,
+     "age_days": 1729,
      "comments": 3,
      "created_at": "2022-02-25T11:56:40Z",
      "labels": [
@@ -22,23 +22,23 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
     },
     {
-     "age_days": 2779,
-     "comments": 3,
-     "created_at": "2019-04-11T14:42:10Z",
+     "age_days": 1821,
+     "comments": 12,
+     "created_at": "2021-11-25T19:22:17Z",
      "labels": [
-      "enhancement",
+      "bug",
       "license scan",
-      "package scan",
-      "good first issue"
+      "good first issue",
+      "improve-license-detection"
      ],
-     "number": 1525,
+     "number": 2767,
      "repo": "aboutcode-org/scancode-toolkit",
      "status": "discussed",
-     "title": "For Maven declared_license normalization, also consider all text at once as well as POM XML comments",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1525"
+     "title": "Incorrect RPM license detected",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 2833,
+     "age_days": 2834,
      "comments": 9,
      "created_at": "2019-02-16T10:54:38Z",
      "labels": [
@@ -54,7 +54,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1381"
     },
     {
-     "age_days": 2833,
+     "age_days": 2834,
      "comments": 10,
      "created_at": "2019-02-16T09:35:10Z",
      "labels": [
@@ -71,7 +71,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1377"
     },
     {
-     "age_days": 3163,
+     "age_days": 3164,
      "comments": 7,
      "created_at": "2018-03-23T16:56:34Z",
      "labels": [
@@ -88,7 +88,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1003"
     },
     {
-     "age_days": 3176,
+     "age_days": 3177,
      "comments": 3,
      "created_at": "2018-03-10T02:45:41Z",
      "labels": [
@@ -116,21 +116,7 @@
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 1753,
-     "comments": 3,
-     "created_at": "2022-01-31T19:21:45Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 2841,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Creating a Model Contribution Guide for DeepChem",
-     "url": "https://github.com/deepchem/deepchem/issues/2841"
-    },
-    {
-     "age_days": 1756,
+     "age_days": 1757,
      "comments": 3,
      "created_at": "2022-01-28T01:38:40Z",
      "labels": [
@@ -144,7 +130,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2836"
     },
     {
-     "age_days": 1932,
+     "age_days": 1933,
      "comments": 6,
      "created_at": "2021-08-05T18:16:47Z",
      "labels": [
@@ -158,7 +144,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/2644"
     },
     {
-     "age_days": 2873,
+     "age_days": 2874,
      "comments": 27,
      "created_at": "2019-01-07T21:36:30Z",
      "labels": [
@@ -173,7 +159,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1486"
     },
     {
-     "age_days": 2949,
+     "age_days": 2950,
      "comments": 8,
      "created_at": "2018-10-23T20:22:54Z",
      "labels": [
@@ -187,7 +173,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1436"
     },
     {
-     "age_days": 2993,
+     "age_days": 2994,
      "comments": 5,
      "created_at": "2018-09-09T18:58:42Z",
      "labels": [
@@ -199,13 +185,46 @@
      "status": "discussed",
      "title": "Make MoleculeNet visible on Google Dataset Search",
      "url": "https://github.com/deepchem/deepchem/issues/1400"
+    },
+    {
+     "age_days": 3057,
+     "comments": 3,
+     "created_at": "2018-07-08T03:40:59Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 1309,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "Add None split to those Molnet entries that don't have it",
+     "url": "https://github.com/deepchem/deepchem/issues/1309"
     }
    ],
    "total_open": 39
   },
   "gemini-cli": {
-   "open_to_newcomers": 0,
-   "shown": [],
+   "open_to_newcomers": 1,
+   "shown": [
+    {
+     "age_days": 124,
+     "comments": 9,
+     "created_at": "2026-07-19T12:44:26Z",
+     "labels": [
+      "priority/p2",
+      "area/extensions",
+      "status/bot-triaged",
+      "kind/enhancement",
+      "good first issue",
+      "effort/small"
+     ],
+     "number": 28445,
+     "repo": "google-gemini/gemini-cli",
+     "status": "discussed",
+     "title": "can i add image generation model configs for nano banana ?",
+     "url": "https://github.com/google-gemini/gemini-cli/issues/28445"
+    }
+   ],
    "total_open": 1
   },
   "kubeflow": {
@@ -217,7 +236,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1861,
+     "age_days": 1862,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -232,7 +251,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1974,
+     "age_days": 1975,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -255,10 +274,10 @@
    "total_open": 2
   },
   "meshery": {
-   "open_to_newcomers": 6,
+   "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 752,
+     "age_days": 753,
      "comments": 13,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -276,7 +295,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 757,
+     "age_days": 758,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -294,7 +313,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 758,
+     "age_days": 759,
      "comments": 13,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -312,7 +331,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 758,
+     "age_days": 759,
      "comments": 10,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -330,7 +349,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 1002,
+     "age_days": 1003,
      "comments": 26,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -348,23 +367,6 @@
      "status": "discussed",
      "title": "[mesheryctl] Install: Support new Meshery Adapter for Nighthawk",
      "url": "https://github.com/meshery/meshery/issues/10371"
-    },
-    {
-     "age_days": 1114,
-     "comments": 11,
-     "created_at": "2023-11-01T20:42:23Z",
-     "labels": [
-      "kind/enhancement",
-      "help wanted",
-      "good first issue",
-      "issue/willfix",
-      "component/catalog"
-     ],
-     "number": 9286,
-     "repo": "meshery/meshery",
-     "status": "discussed",
-     "title": "[Catalog] Publish GlusterFS",
-     "url": "https://github.com/meshery/meshery/issues/9286"
     }
    ],
    "total_open": 50
@@ -382,13 +384,13 @@
   "open-transit-software-foundation": {
    "open_to_newcomers": 0,
    "shown": [],
-   "total_open": 2
+   "total_open": 1
   },
   "openelis-global": {
    "open_to_newcomers": 8,
    "shown": [
     {
-     "age_days": 27,
+     "age_days": 28,
      "comments": 4,
      "created_at": "2026-10-23T15:15:52Z",
      "labels": [
@@ -402,20 +404,20 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/4813"
     },
     {
-     "age_days": 239,
-     "comments": 3,
-     "created_at": "2026-03-25T06:24:01Z",
+     "age_days": 235,
+     "comments": 6,
+     "created_at": "2026-03-30T14:26:13Z",
      "labels": [
       "good first issue"
      ],
-     "number": 3168,
+     "number": 3243,
      "repo": "DIGI-UW/OpenELIS-Global-2",
      "status": "discussed",
-     "title": "SourceOfSampleServiceTest makes real network calls -SocketTimeoutException on analyzer ID 1",
-     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3168"
+     "title": "Import storage locations",
+     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 239,
+     "age_days": 240,
      "comments": 2,
      "created_at": "2026-03-25T06:21:14Z",
      "labels": [
@@ -428,7 +430,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3167"
     },
     {
-     "age_days": 272,
+     "age_days": 273,
      "comments": 6,
      "created_at": "2026-02-20T13:22:10Z",
      "labels": [
@@ -441,7 +443,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2895"
     },
     {
-     "age_days": 272,
+     "age_days": 273,
      "comments": 5,
      "created_at": "2026-02-20T13:14:23Z",
      "labels": [
@@ -454,7 +456,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892"
     },
     {
-     "age_days": 300,
+     "age_days": 301,
      "comments": 5,
      "created_at": "2026-01-23T07:32:04Z",
      "labels": [
@@ -473,7 +475,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1161,
+     "age_days": 1162,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -501,7 +503,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3129,
+     "age_days": 3130,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -515,7 +517,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3129,
+     "age_days": 3130,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -532,26 +534,8 @@
    "total_open": 3
   },
   "zulip": {
-   "open_to_newcomers": 1,
-   "shown": [
-    {
-     "age_days": 1389,
-     "comments": 15,
-     "created_at": "2023-01-30T21:29:00Z",
-     "labels": [
-      "bug",
-      "help wanted",
-      "question",
-      "needs reproducer",
-      "area: message feed (UI)"
-     ],
-     "number": 24228,
-     "repo": "zulip/zulip",
-     "status": "discussed",
-     "title": "Re-rendering issue when clicking on the topic name.",
-     "url": "https://github.com/zulip/zulip/issues/24228"
-    }
-   ],
+   "open_to_newcomers": 0,
+   "shown": [],
    "total_open": 50
   }
  },
