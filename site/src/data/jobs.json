@@ -1,6 +1,30 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-11-21T07:34:17Z",
+  "job": "score_and_notify",
+  "started_at": "2026-11-21T07:34:17Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-11-21T07:34:17Z",
+  "job": "watch_pages",
+  "started_at": "2026-11-21T07:33:57Z",
+  "status": "ok",
+  "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
+ },
+ {
+  "api_calls": 50,
+  "finished_at": "2026-11-21T07:33:57Z",
+  "job": "collect_github",
+  "started_at": "2026-11-21T07:30:56Z",
+  "status": "ok",
+  "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-11-20T07:38:38Z",
   "job": "score_and_notify",
   "started_at": "2026-11-20T07:38:38Z",
@@ -454,29 +478,5 @@
   "started_at": "2026-11-03T07:07:47Z",
   "status": "ok",
   "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
- },
- {
-  "api_calls": 50,
-  "finished_at": "2026-11-03T07:07:47Z",
-  "job": "collect_github",
-  "started_at": "2026-11-03T07:04:15Z",
-  "status": "ok",
-  "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
- },
- {
-  "api_calls": 0,
-  "finished_at": "2026-11-02T06:39:19Z",
-  "job": "score_and_notify",
-  "started_at": "2026-11-02T06:39:19Z",
-  "status": "ok",
-  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
- },
- {
-  "api_calls": 48,
-  "finished_at": "2026-11-02T06:39:19Z",
-  "job": "scrape_programs",
-  "started_at": "2026-11-02T06:38:55Z",
-  "status": "ok",
-  "summary": "25 pages: 2 baseline, 1 edited, 1 error, 21 unchanged"
  }
 ]
