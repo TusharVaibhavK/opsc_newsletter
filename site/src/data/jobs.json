@@ -1,6 +1,46 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-11-23T08:02:23Z",
+  "job": "score_and_notify",
+  "started_at": "2026-11-23T08:02:23Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 1 alerts via none"
+ },
+ {
+  "api_calls": 48,
+  "finished_at": "2026-11-23T08:02:23Z",
+  "job": "scrape_programs",
+  "started_at": "2026-11-23T08:02:02Z",
+  "status": "ok",
+  "summary": "25 pages: 1 changed, 1 error, 23 unchanged"
+ },
+ {
+  "api_calls": 69,
+  "finished_at": "2026-11-23T08:02:02Z",
+  "job": "watch_pages",
+  "started_at": "2026-11-23T08:01:41Z",
+  "status": "ok",
+  "summary": "50 pages: 2 edited, 1 error, 19 not-yet, 2 robots, 26 unchanged"
+ },
+ {
+  "api_calls": 52,
+  "finished_at": "2026-11-23T08:01:41Z",
+  "job": "collect_github",
+  "started_at": "2026-11-23T07:57:58Z",
+  "status": "error",
+  "summary": "25 repos collected, 0 already fresh today, 2 of your PRs/reviews | zulip/zulip: GitHub GraphQL HTTP 502: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+ },
+ {
+  "api_calls": 1,
+  "finished_at": "2026-11-23T07:57:58Z",
+  "job": "import_gsoc",
+  "started_at": "2026-11-23T07:57:58Z",
+  "status": "ok",
+  "summary": "unchanged since last import (HTTP 304)"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-11-22T07:15:16Z",
   "job": "score_and_notify",
   "started_at": "2026-11-22T07:15:16Z",
@@ -438,45 +478,5 @@
   "started_at": "2026-11-06T07:07:43Z",
   "status": "ok",
   "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
- },
- {
-  "api_calls": 0,
-  "finished_at": "2026-11-05T07:11:44Z",
-  "job": "score_and_notify",
-  "started_at": "2026-11-05T07:11:44Z",
-  "status": "ok",
-  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
- },
- {
-  "api_calls": 67,
-  "finished_at": "2026-11-05T07:11:44Z",
-  "job": "watch_pages",
-  "started_at": "2026-11-05T07:11:22Z",
-  "status": "ok",
-  "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
- },
- {
-  "api_calls": 50,
-  "finished_at": "2026-11-05T07:11:22Z",
-  "job": "collect_github",
-  "started_at": "2026-11-05T07:08:20Z",
-  "status": "ok",
-  "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
- },
- {
-  "api_calls": 0,
-  "finished_at": "2026-11-04T06:51:15Z",
-  "job": "score_and_notify",
-  "started_at": "2026-11-04T06:51:15Z",
-  "status": "ok",
-  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
- },
- {
-  "api_calls": 67,
-  "finished_at": "2026-11-04T06:51:15Z",
-  "job": "watch_pages",
-  "started_at": "2026-11-04T06:50:56Z",
-  "status": "ok",
-  "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
  }
 ]

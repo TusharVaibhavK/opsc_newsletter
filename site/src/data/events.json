@@ -2,6 +2,26 @@
  {
   "detail": {
    "added": [
+    "From Week 2 to Code Freeze",
+    "From Code Freeze to the Release"
+   ],
+   "dates_found": [],
+   "removed": [
+    "Weeks 2-8",
+    "Weeks 9-13"
+   ]
+  },
+  "entity_slug": "kubernetes-release-shadow",
+  "entity_type": "program",
+  "id": "2c178d6c2f12",
+  "kind": "program_page_changed",
+  "occurred_at": "2026-11-23T08:02:12Z",
+  "title": "Kubernetes Release Team Shadow page changed: 2 ideas added, 2 removed",
+  "url": "https://github.com/kubernetes/sig-release/blob/master/release-team/shadows.md"
+ },
+ {
+  "detail": {
+   "added": [
     "Best Use of Adaption Track"
    ],
    "dates_found": [
