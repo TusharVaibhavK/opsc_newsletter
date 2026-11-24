@@ -1,6 +1,30 @@
 [
  {
   "api_calls": 0,
+  "finished_at": "2026-11-24T10:16:21Z",
+  "job": "score_and_notify",
+  "started_at": "2026-11-24T10:16:21Z",
+  "status": "ok",
+  "summary": "348 org-weeks scored, 1 deadline alerts, 1 failing jobs, 2 alerts via none"
+ },
+ {
+  "api_calls": 67,
+  "finished_at": "2026-11-24T10:16:21Z",
+  "job": "watch_pages",
+  "started_at": "2026-11-24T10:16:00Z",
+  "status": "ok",
+  "summary": "50 pages: 2 edited, 1 error, 19 not-yet, 2 robots, 26 unchanged"
+ },
+ {
+  "api_calls": 52,
+  "finished_at": "2026-11-24T10:16:00Z",
+  "job": "collect_github",
+  "started_at": "2026-11-24T10:12:09Z",
+  "status": "error",
+  "summary": "25 repos collected, 0 already fresh today, 2 of your PRs/reviews | zulip/zulip: GitHub GraphQL HTTP 502: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+ },
+ {
+  "api_calls": 0,
   "finished_at": "2026-11-23T08:02:23Z",
   "job": "score_and_notify",
   "started_at": "2026-11-23T08:02:23Z",
@@ -452,30 +476,6 @@
   "finished_at": "2026-11-07T06:22:25Z",
   "job": "collect_github",
   "started_at": "2026-11-07T06:20:00Z",
-  "status": "ok",
-  "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
- },
- {
-  "api_calls": 0,
-  "finished_at": "2026-11-06T07:10:47Z",
-  "job": "score_and_notify",
-  "started_at": "2026-11-06T07:10:47Z",
-  "status": "ok",
-  "summary": "348 org-weeks scored, 0 deadline alerts, 0 failing jobs, 0 alerts via none"
- },
- {
-  "api_calls": 67,
-  "finished_at": "2026-11-06T07:10:47Z",
-  "job": "watch_pages",
-  "started_at": "2026-11-06T07:10:26Z",
-  "status": "ok",
-  "summary": "50 pages: 1 edited, 1 error, 19 not-yet, 2 robots, 27 unchanged"
- },
- {
-  "api_calls": 49,
-  "finished_at": "2026-11-06T07:10:26Z",
-  "job": "collect_github",
-  "started_at": "2026-11-06T07:07:43Z",
   "status": "ok",
   "summary": "26 repos collected, 0 already fresh today, 2 of your PRs/reviews"
  }
