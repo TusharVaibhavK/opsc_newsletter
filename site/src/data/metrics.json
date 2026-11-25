@@ -1,28 +1,28 @@
 {
  "orgs": {
   "aboutcode": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 337.8,
      "issues_enabled": true,
-     "median_first_response_hours": 102.0,
+     "median_first_response_hours": 86.7,
      "name": "aboutcode-org/scancode-toolkit",
-     "new_contributors_30d": 25,
+     "new_contributors_30d": 26,
      "open_gfi_count": 58,
      "open_gfi_unclaimed": 12,
      "open_newcomer_prs": 88,
-     "prs_sampled": 85,
-     "stars": 2679,
-     "unanswered_pr_share": 0.906
+     "prs_sampled": 82,
+     "stars": 2680,
+     "unanswered_pr_share": 0.915
     },
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -30,13 +30,13 @@
      "issues_enabled": true,
      "median_first_response_hours": 27.3,
      "name": "aboutcode-org/vulnerablecode",
-     "new_contributors_30d": 10,
+     "new_contributors_30d": 12,
      "open_gfi_count": 9,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 59,
-     "prs_sampled": 34,
+     "open_newcomer_prs": 60,
+     "prs_sampled": 33,
      "stars": 722,
-     "unanswered_pr_share": 0.853
+     "unanswered_pr_share": 0.848
     }
    ],
    "weekly": [
@@ -105,21 +105,21 @@
     },
     {
      "gfi_median_claim_hours": 273.9,
-     "median_first_response_hours": 64.7,
-     "new_contributors_30d": 35,
+     "median_first_response_hours": 57.0,
+     "new_contributors_30d": 38,
      "open_gfi_count": 67,
-     "open_newcomer_prs": 147,
-     "stars": 2679,
+     "open_newcomer_prs": 148,
+     "stars": 2680,
      "week": "2026-11-23"
     }
    ]
   },
   "api-dash": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -127,12 +127,12 @@
      "issues_enabled": true,
      "median_first_response_hours": 112.1,
      "name": "foss42/apidash",
-     "new_contributors_30d": 18,
+     "new_contributors_30d": 20,
      "open_gfi_count": 0,
      "open_gfi_unclaimed": 0,
      "open_newcomer_prs": 34,
      "prs_sampled": 85,
-     "stars": 2979,
+     "stars": 2980,
      "unanswered_pr_share": 0.706
     }
    ],
@@ -203,20 +203,20 @@
     {
      "gfi_median_claim_hours": 44.9,
      "median_first_response_hours": 112.1,
-     "new_contributors_30d": 18,
+     "new_contributors_30d": 20,
      "open_gfi_count": 0,
      "open_newcomer_prs": 34,
-     "stars": 2979,
+     "stars": 2980,
      "week": "2026-11-23"
     }
    ]
   },
   "checkstyle": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -224,13 +224,13 @@
      "issues_enabled": true,
      "median_first_response_hours": null,
      "name": "checkstyle/checkstyle",
-     "new_contributors_30d": 44,
+     "new_contributors_30d": 41,
      "open_gfi_count": 1,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 5,
-     "prs_sampled": 0,
-     "stars": 9665,
-     "unanswered_pr_share": null
+     "open_newcomer_prs": 3,
+     "prs_sampled": 5,
+     "stars": 9667,
+     "unanswered_pr_share": 0.8
     }
    ],
    "weekly": [
@@ -300,20 +300,20 @@
     {
      "gfi_median_claim_hours": 23.1,
      "median_first_response_hours": null,
-     "new_contributors_30d": 44,
+     "new_contributors_30d": 41,
      "open_gfi_count": 1,
-     "open_newcomer_prs": 5,
-     "stars": 9665,
+     "open_newcomer_prs": 3,
+     "stars": 9667,
      "week": "2026-11-23"
     }
    ]
   },
   "dbpedia": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [],
      "gfi_median_claim_hours": null,
      "issues_enabled": true,
@@ -404,11 +404,11 @@
    ]
   },
   "deepchem": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "Good First Contribution"
      ],
@@ -421,7 +421,7 @@
      "open_gfi_unclaimed": 16,
      "open_newcomer_prs": 100,
      "prs_sampled": 92,
-     "stars": 7156,
+     "stars": 7160,
      "unanswered_pr_share": 1.0
     }
    ],
@@ -495,29 +495,29 @@
      "new_contributors_30d": 23,
      "open_gfi_count": 39,
      "open_newcomer_prs": 100,
-     "stars": 7156,
+     "stars": 7160,
      "week": "2026-11-23"
     }
    ]
   },
   "django": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [],
      "gfi_median_claim_hours": null,
      "issues_enabled": false,
-     "median_first_response_hours": 9.1,
+     "median_first_response_hours": 9.8,
      "name": "django/django",
-     "new_contributors_30d": 47,
+     "new_contributors_30d": 48,
      "open_gfi_count": null,
      "open_gfi_unclaimed": null,
-     "open_newcomer_prs": 37,
-     "prs_sampled": 82,
-     "stars": 91832,
-     "unanswered_pr_share": 0.5
+     "open_newcomer_prs": 36,
+     "prs_sampled": 77,
+     "stars": 91869,
+     "unanswered_pr_share": 0.481
     }
    ],
    "weekly": [
@@ -586,21 +586,21 @@
     },
     {
      "gfi_median_claim_hours": null,
-     "median_first_response_hours": 9.1,
-     "new_contributors_30d": 47,
+     "median_first_response_hours": 9.8,
+     "new_contributors_30d": 48,
      "open_gfi_count": null,
-     "open_newcomer_prs": 37,
-     "stars": 91832,
+     "open_newcomer_prs": 36,
+     "stars": 91869,
      "week": "2026-11-23"
     }
    ]
   },
   "gemini-cli": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -608,13 +608,13 @@
      "issues_enabled": true,
      "median_first_response_hours": 4.4,
      "name": "google-gemini/gemini-cli",
-     "new_contributors_30d": 79,
+     "new_contributors_30d": 81,
      "open_gfi_count": 1,
      "open_gfi_unclaimed": 1,
-     "open_newcomer_prs": 66,
-     "prs_sampled": 56,
-     "stars": 109041,
-     "unanswered_pr_share": 0.732
+     "open_newcomer_prs": 69,
+     "prs_sampled": 49,
+     "stars": 109091,
+     "unanswered_pr_share": 0.735
     }
    ],
    "weekly": [
@@ -684,20 +684,20 @@
     {
      "gfi_median_claim_hours": 38.0,
      "median_first_response_hours": 4.4,
-     "new_contributors_30d": 79,
+     "new_contributors_30d": 81,
      "open_gfi_count": 1,
-     "open_newcomer_prs": 66,
-     "stars": 109041,
+     "open_newcomer_prs": 69,
+     "stars": 109091,
      "week": "2026-11-23"
     }
    ]
   },
   "kubeflow": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -709,12 +709,12 @@
      "open_gfi_count": 1,
      "open_gfi_unclaimed": 0,
      "open_newcomer_prs": 9,
-     "prs_sampled": 8,
-     "stars": 4269,
-     "unanswered_pr_share": 0.75
+     "prs_sampled": 0,
+     "stars": 4270,
+     "unanswered_pr_share": null
     },
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -725,10 +725,10 @@
      "new_contributors_30d": 20,
      "open_gfi_count": 5,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 14,
-     "prs_sampled": 47,
-     "stars": 2289,
-     "unanswered_pr_share": 0.468
+     "open_newcomer_prs": 15,
+     "prs_sampled": 48,
+     "stars": 2290,
+     "unanswered_pr_share": 0.479
     }
    ],
    "weekly": [
@@ -800,33 +800,33 @@
      "median_first_response_hours": 32.9,
      "new_contributors_30d": 46,
      "open_gfi_count": 6,
-     "open_newcomer_prs": 23,
-     "stars": 4269,
+     "open_newcomer_prs": 24,
+     "stars": 4270,
      "week": "2026-11-23"
     }
    ]
   },
   "kubevirt": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue",
       "good-first-issue"
      ],
      "gfi_median_claim_hours": 1.7,
      "issues_enabled": true,
-     "median_first_response_hours": 4.9,
+     "median_first_response_hours": 6.9,
      "name": "kubevirt/kubevirt",
-     "new_contributors_30d": 30,
+     "new_contributors_30d": 31,
      "open_gfi_count": 10,
      "open_gfi_unclaimed": 2,
-     "open_newcomer_prs": 26,
+     "open_newcomer_prs": 24,
      "prs_sampled": 50,
-     "stars": 7234,
-     "unanswered_pr_share": 0.48
+     "stars": 7237,
+     "unanswered_pr_share": 0.34
     }
    ],
    "weekly": [
@@ -895,35 +895,35 @@
     },
     {
      "gfi_median_claim_hours": 1.7,
-     "median_first_response_hours": 4.9,
-     "new_contributors_30d": 30,
+     "median_first_response_hours": 6.9,
+     "new_contributors_30d": 31,
      "open_gfi_count": 10,
-     "open_newcomer_prs": 26,
-     "stars": 7234,
+     "open_newcomer_prs": 24,
+     "stars": 7237,
      "week": "2026-11-23"
     }
    ]
   },
   "mdanalysis": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good-first-issue"
      ],
      "gfi_median_claim_hours": 195.5,
      "issues_enabled": true,
-     "median_first_response_hours": 6.9,
+     "median_first_response_hours": 8.1,
      "name": "MDAnalysis/mdanalysis",
-     "new_contributors_30d": 9,
+     "new_contributors_30d": 10,
      "open_gfi_count": 2,
      "open_gfi_unclaimed": 0,
      "open_newcomer_prs": 7,
-     "prs_sampled": 23,
+     "prs_sampled": 26,
      "stars": 1685,
-     "unanswered_pr_share": 0.13
+     "unanswered_pr_share": 0.115
     }
    ],
    "weekly": [
@@ -992,8 +992,8 @@
     },
     {
      "gfi_median_claim_hours": 195.5,
-     "median_first_response_hours": 6.9,
-     "new_contributors_30d": 9,
+     "median_first_response_hours": 8.1,
+     "new_contributors_30d": 10,
      "open_gfi_count": 2,
      "open_newcomer_prs": 7,
      "stars": 1685,
@@ -1002,11 +1002,11 @@
    ]
   },
   "meshery": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -1014,12 +1014,12 @@
      "issues_enabled": true,
      "median_first_response_hours": 0.2,
      "name": "meshery/meshery",
-     "new_contributors_30d": 67,
-     "open_gfi_count": 55,
+     "new_contributors_30d": 71,
+     "open_gfi_count": 57,
      "open_gfi_unclaimed": 5,
      "open_newcomer_prs": 0,
-     "prs_sampled": 19,
-     "stars": 12309,
+     "prs_sampled": 17,
+     "stars": 12317,
      "unanswered_pr_share": 0.0
     }
    ],
@@ -1090,32 +1090,32 @@
     {
      "gfi_median_claim_hours": 0.1,
      "median_first_response_hours": 0.2,
-     "new_contributors_30d": 67,
-     "open_gfi_count": 55,
+     "new_contributors_30d": 71,
+     "open_gfi_count": 57,
      "open_newcomer_prs": 0,
-     "stars": 12309,
+     "stars": 12317,
      "week": "2026-11-23"
     }
    ]
   },
   "metabrainz": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [],
      "gfi_median_claim_hours": null,
      "issues_enabled": false,
-     "median_first_response_hours": 33.6,
+     "median_first_response_hours": 30.8,
      "name": "metabrainz/listenbrainz-server",
      "new_contributors_30d": 14,
      "open_gfi_count": null,
      "open_gfi_unclaimed": null,
-     "open_newcomer_prs": 7,
-     "prs_sampled": 45,
-     "stars": 1078,
-     "unanswered_pr_share": 0.244
+     "open_newcomer_prs": 6,
+     "prs_sampled": 47,
+     "stars": 1079,
+     "unanswered_pr_share": 0.277
     }
    ],
    "weekly": [
@@ -1184,21 +1184,21 @@
     },
     {
      "gfi_median_claim_hours": null,
-     "median_first_response_hours": 33.6,
+     "median_first_response_hours": 30.8,
      "new_contributors_30d": 14,
      "open_gfi_count": null,
-     "open_newcomer_prs": 7,
-     "stars": 1078,
+     "open_newcomer_prs": 6,
+     "stars": 1079,
      "week": "2026-11-23"
     }
    ]
   },
   "metaflow": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -1206,13 +1206,13 @@
      "issues_enabled": true,
      "median_first_response_hours": 224.5,
      "name": "Netflix/metaflow",
-     "new_contributors_30d": 11,
+     "new_contributors_30d": 13,
      "open_gfi_count": 0,
      "open_gfi_unclaimed": 0,
      "open_newcomer_prs": 43,
-     "prs_sampled": 28,
-     "stars": 10360,
-     "unanswered_pr_share": 0.786
+     "prs_sampled": 26,
+     "stars": 10362,
+     "unanswered_pr_share": 0.769
     }
    ],
    "weekly": [
@@ -1282,34 +1282,34 @@
     {
      "gfi_median_claim_hours": null,
      "median_first_response_hours": 224.5,
-     "new_contributors_30d": 11,
+     "new_contributors_30d": 13,
      "open_gfi_count": 0,
      "open_newcomer_prs": 43,
-     "stars": 10360,
+     "stars": 10362,
      "week": "2026-11-23"
     }
    ]
   },
   "mllam": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 2.5,
      "issues_enabled": true,
-     "median_first_response_hours": 47.6,
+     "median_first_response_hours": 44.4,
      "name": "mllam/neural-lam",
      "new_contributors_30d": 12,
      "open_gfi_count": 3,
      "open_gfi_unclaimed": 0,
      "open_newcomer_prs": 20,
-     "prs_sampled": 64,
+     "prs_sampled": 65,
      "stars": 312,
-     "unanswered_pr_share": 0.328
+     "unanswered_pr_share": 0.338
     }
    ],
    "weekly": [
@@ -1378,7 +1378,7 @@
     },
     {
      "gfi_median_claim_hours": 2.5,
-     "median_first_response_hours": 47.6,
+     "median_first_response_hours": 44.4,
      "new_contributors_30d": 12,
      "open_gfi_count": 3,
      "open_newcomer_prs": 20,
@@ -1388,11 +1388,11 @@
    ]
   },
   "neuroinformatics-unit": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -1409,21 +1409,21 @@
      "unanswered_pr_share": 0.25
     },
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 522.0,
      "issues_enabled": true,
-     "median_first_response_hours": 112.7,
+     "median_first_response_hours": 103.3,
      "name": "neuroinformatics-unit/movement",
-     "new_contributors_30d": 5,
+     "new_contributors_30d": 4,
      "open_gfi_count": 1,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 35,
-     "prs_sampled": 34,
+     "open_newcomer_prs": 34,
+     "prs_sampled": 33,
      "stars": 350,
-     "unanswered_pr_share": 0.529
+     "unanswered_pr_share": 0.545
     }
    ],
    "weekly": [
@@ -1492,33 +1492,33 @@
     },
     {
      "gfi_median_claim_hours": 1425.7,
-     "median_first_response_hours": 92.6,
-     "new_contributors_30d": 6,
+     "median_first_response_hours": 87.8,
+     "new_contributors_30d": 5,
      "open_gfi_count": 1,
-     "open_newcomer_prs": 36,
+     "open_newcomer_prs": 35,
      "stars": 350,
      "week": "2026-11-23"
     }
    ]
   },
   "open-transit-software-foundation": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 10.1,
      "issues_enabled": true,
-     "median_first_response_hours": 17.5,
+     "median_first_response_hours": 20.5,
      "name": "OneBusAway/maglev",
      "new_contributors_30d": 17,
      "open_gfi_count": 1,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 4,
-     "prs_sampled": 61,
+     "open_newcomer_prs": 5,
+     "prs_sampled": 60,
      "stars": 68,
      "unanswered_pr_share": 0.0
     }
@@ -1589,36 +1589,36 @@
     },
     {
      "gfi_median_claim_hours": 10.1,
-     "median_first_response_hours": 17.5,
+     "median_first_response_hours": 20.5,
      "new_contributors_30d": 17,
      "open_gfi_count": 1,
-     "open_newcomer_prs": 4,
+     "open_newcomer_prs": 5,
      "stars": 68,
      "week": "2026-11-23"
     }
    ]
   },
   "openelis-global": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue",
       "beginner"
      ],
      "gfi_median_claim_hours": 4.2,
      "issues_enabled": true,
-     "median_first_response_hours": null,
+     "median_first_response_hours": 154.2,
      "name": "DIGI-UW/OpenELIS-Global-2",
-     "new_contributors_30d": 15,
+     "new_contributors_30d": 16,
      "open_gfi_count": 24,
      "open_gfi_unclaimed": 7,
-     "open_newcomer_prs": 20,
-     "prs_sampled": 28,
-     "stars": 295,
-     "unanswered_pr_share": 0.929
+     "open_newcomer_prs": 12,
+     "prs_sampled": 24,
+     "stars": 296,
+     "unanswered_pr_share": 0.5
     }
    ],
    "weekly": [
@@ -1687,33 +1687,33 @@
     },
     {
      "gfi_median_claim_hours": 4.2,
-     "median_first_response_hours": null,
-     "new_contributors_30d": 15,
+     "median_first_response_hours": 154.2,
+     "new_contributors_30d": 16,
      "open_gfi_count": 24,
-     "open_newcomer_prs": 20,
-     "stars": 295,
+     "open_newcomer_prs": 12,
+     "stars": 296,
      "week": "2026-11-23"
     }
    ]
   },
   "openmrs": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [],
      "gfi_median_claim_hours": null,
      "issues_enabled": true,
-     "median_first_response_hours": 28.8,
+     "median_first_response_hours": 27.8,
      "name": "openmrs/openmrs-core",
-     "new_contributors_30d": 10,
+     "new_contributors_30d": 11,
      "open_gfi_count": null,
      "open_gfi_unclaimed": null,
-     "open_newcomer_prs": 9,
-     "prs_sampled": 32,
+     "open_newcomer_prs": 10,
+     "prs_sampled": 31,
      "stars": 2002,
-     "unanswered_pr_share": 0.125
+     "unanswered_pr_share": 0.129
     }
    ],
    "weekly": [
@@ -1782,35 +1782,35 @@
     },
     {
      "gfi_median_claim_hours": null,
-     "median_first_response_hours": 28.8,
-     "new_contributors_30d": 10,
+     "median_first_response_hours": 27.8,
+     "new_contributors_30d": 11,
      "open_gfi_count": null,
-     "open_newcomer_prs": 9,
+     "open_newcomer_prs": 10,
      "stars": 2002,
      "week": "2026-11-23"
     }
    ]
   },
   "oppia": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 226.1,
      "issues_enabled": true,
-     "median_first_response_hours": 31.5,
+     "median_first_response_hours": 32.9,
      "name": "oppia/oppia",
-     "new_contributors_30d": 60,
-     "open_gfi_count": 54,
+     "new_contributors_30d": 58,
+     "open_gfi_count": 53,
      "open_gfi_unclaimed": 1,
-     "open_newcomer_prs": 22,
+     "open_newcomer_prs": 21,
      "prs_sampled": 65,
-     "stars": 7003,
-     "unanswered_pr_share": 0.492
+     "stars": 7004,
+     "unanswered_pr_share": 0.508
     }
    ],
    "weekly": [
@@ -1879,35 +1879,35 @@
     },
     {
      "gfi_median_claim_hours": 226.1,
-     "median_first_response_hours": 31.5,
-     "new_contributors_30d": 60,
-     "open_gfi_count": 54,
-     "open_newcomer_prs": 22,
-     "stars": 7003,
+     "median_first_response_hours": 32.9,
+     "new_contributors_30d": 58,
+     "open_gfi_count": 53,
+     "open_newcomer_prs": 21,
+     "stars": 7004,
      "week": "2026-11-23"
     }
    ]
   },
   "rocket-chat": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
      "gfi_median_claim_hours": 23.1,
      "issues_enabled": true,
-     "median_first_response_hours": 3.9,
+     "median_first_response_hours": 9.0,
      "name": "RocketChat/Rocket.Chat",
-     "new_contributors_30d": 66,
+     "new_contributors_30d": 65,
      "open_gfi_count": 7,
      "open_gfi_unclaimed": 0,
-     "open_newcomer_prs": 43,
-     "prs_sampled": 21,
-     "stars": 46528,
-     "unanswered_pr_share": 0.714
+     "open_newcomer_prs": 48,
+     "prs_sampled": 23,
+     "stars": 46546,
+     "unanswered_pr_share": 0.739
     }
    ],
    "weekly": [
@@ -1976,33 +1976,33 @@
     },
     {
      "gfi_median_claim_hours": 23.1,
-     "median_first_response_hours": 3.9,
-     "new_contributors_30d": 66,
+     "median_first_response_hours": 9.0,
+     "new_contributors_30d": 65,
      "open_gfi_count": 7,
-     "open_newcomer_prs": 43,
-     "stars": 46528,
+     "open_newcomer_prs": 48,
+     "stars": 46546,
      "week": "2026-11-23"
     }
    ]
   },
   "sugar-labs": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [],
      "gfi_median_claim_hours": null,
      "issues_enabled": true,
-     "median_first_response_hours": 23.4,
+     "median_first_response_hours": 24.4,
      "name": "sugarlabs/musicblocks",
-     "new_contributors_30d": 32,
+     "new_contributors_30d": 36,
      "open_gfi_count": null,
      "open_gfi_unclaimed": null,
-     "open_newcomer_prs": 3,
-     "prs_sampled": 80,
-     "stars": 932,
-     "unanswered_pr_share": 0.237
+     "open_newcomer_prs": 7,
+     "prs_sampled": 75,
+     "stars": 933,
+     "unanswered_pr_share": 0.227
     }
    ],
    "weekly": [
@@ -2071,21 +2071,21 @@
     },
     {
      "gfi_median_claim_hours": null,
-     "median_first_response_hours": 23.4,
-     "new_contributors_30d": 32,
+     "median_first_response_hours": 24.4,
+     "new_contributors_30d": 36,
      "open_gfi_count": null,
-     "open_newcomer_prs": 3,
-     "stars": 932,
+     "open_newcomer_prs": 7,
+     "stars": 933,
      "week": "2026-11-23"
     }
    ]
   },
   "sw360": {
-   "history_days": 50,
-   "last_refreshed": "2026-11-24",
+   "history_days": 51,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "gfi_labels": [
       "good first issue"
      ],
@@ -2096,9 +2096,9 @@
      "new_contributors_30d": 13,
      "open_gfi_count": 3,
      "open_gfi_unclaimed": 2,
-     "open_newcomer_prs": 11,
+     "open_newcomer_prs": 12,
      "prs_sampled": 50,
-     "stars": 270,
+     "stars": 271,
      "unanswered_pr_share": 0.48
     }
    ],
@@ -2171,32 +2171,32 @@
      "median_first_response_hours": 43.3,
      "new_contributors_30d": 13,
      "open_gfi_count": 3,
-     "open_newcomer_prs": 11,
-     "stars": 270,
+     "open_newcomer_prs": 12,
+     "stars": 271,
      "week": "2026-11-23"
     }
    ]
   },
   "zulip": {
-   "history_days": 44,
-   "last_refreshed": "2026-11-22",
+   "history_days": 45,
+   "last_refreshed": "2026-11-25",
    "repos": [
     {
-     "date": "2026-11-22",
+     "date": "2026-11-25",
      "gfi_labels": [
       "help wanted"
      ],
-     "gfi_median_claim_hours": 2.5,
+     "gfi_median_claim_hours": 2.8,
      "issues_enabled": true,
-     "median_first_response_hours": 52.6,
+     "median_first_response_hours": 53.1,
      "name": "zulip/zulip",
      "new_contributors_30d": 55,
      "open_gfi_count": 70,
      "open_gfi_unclaimed": 1,
-     "open_newcomer_prs": 11,
-     "prs_sampled": 34,
-     "stars": 26285,
-     "unanswered_pr_share": 0.294
+     "open_newcomer_prs": 8,
+     "prs_sampled": 35,
+     "stars": 26299,
+     "unanswered_pr_share": 0.257
     }
    ],
    "weekly": [
@@ -2262,6 +2262,15 @@
      "open_newcomer_prs": 11,
      "stars": 26285,
      "week": "2026-11-16"
+    },
+    {
+     "gfi_median_claim_hours": 2.8,
+     "median_first_response_hours": 53.1,
+     "new_contributors_30d": 55,
+     "open_gfi_count": 70,
+     "open_newcomer_prs": 8,
+     "stars": 26299,
+     "week": "2026-11-23"
     }
    ]
   }

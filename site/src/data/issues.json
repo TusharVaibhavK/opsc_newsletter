@@ -1,28 +1,11 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "orgs": {
   "aboutcode": {
    "open_to_newcomers": 12,
    "shown": [
     {
-     "age_days": 1733,
-     "comments": 3,
-     "created_at": "2022-02-25T11:56:40Z",
-     "labels": [
-      "license scan",
-      "package scan",
-      "easy",
-      "good first issue",
-      "package-formats"
-     ],
-     "number": 2879,
-     "repo": "aboutcode-org/scancode-toolkit",
-     "status": "discussed",
-     "title": "Research https://opendev.org/assets/js/licenses.txt",
-     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2879"
-    },
-    {
-     "age_days": 1825,
+     "age_days": 1826,
      "comments": 12,
      "created_at": "2021-11-25T19:22:17Z",
      "labels": [
@@ -38,7 +21,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2767"
     },
     {
-     "age_days": 1889,
+     "age_days": 1890,
      "comments": 7,
      "created_at": "2021-09-22T09:27:33Z",
      "labels": [
@@ -53,7 +36,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2708"
     },
     {
-     "age_days": 2100,
+     "age_days": 2101,
      "comments": 11,
      "created_at": "2021-02-23T19:46:25Z",
      "labels": [
@@ -68,7 +51,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2412"
     },
     {
-     "age_days": 2108,
+     "age_days": 2109,
      "comments": 7,
      "created_at": "2021-02-15T21:49:06Z",
      "labels": [
@@ -84,7 +67,7 @@
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2401"
     },
     {
-     "age_days": 2111,
+     "age_days": 2112,
      "comments": 3,
      "created_at": "2021-02-12T08:54:26Z",
      "labels": [
@@ -97,6 +80,22 @@
      "status": "discussed",
      "title": "Review requirements at https://github.com/philips-software/license-scanner/blob/b590ea0985c83daab0a913c1d3c4e2eb34a87d9f/docker/requirements.txt",
      "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/2398"
+    },
+    {
+     "age_days": 2609,
+     "comments": 10,
+     "created_at": "2019-10-04T14:24:55Z",
+     "labels": [
+      "archive extraction",
+      "new feature",
+      "easy",
+      "good first issue"
+     ],
+     "number": 1746,
+     "repo": "aboutcode-org/scancode-toolkit",
+     "status": "discussed",
+     "title": "Add support for electron ASAR archives",
+     "url": "https://github.com/aboutcode-org/scancode-toolkit/issues/1746"
     }
    ],
    "total_open": 59
@@ -110,21 +109,7 @@
    "open_to_newcomers": 16,
    "shown": [
     {
-     "age_days": 2998,
-     "comments": 5,
-     "created_at": "2018-09-09T18:58:42Z",
-     "labels": [
-      "Good First Contribution",
-      "Contribution Welcome"
-     ],
-     "number": 1400,
-     "repo": "deepchem/deepchem",
-     "status": "discussed",
-     "title": "Make MoleculeNet visible on Google Dataset Search",
-     "url": "https://github.com/deepchem/deepchem/issues/1400"
-    },
-    {
-     "age_days": 3061,
+     "age_days": 3062,
      "comments": 3,
      "created_at": "2018-07-08T03:40:59Z",
      "labels": [
@@ -138,7 +123,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1309"
     },
     {
-     "age_days": 3099,
+     "age_days": 3100,
      "comments": 2,
      "created_at": "2018-05-31T19:56:51Z",
      "labels": [
@@ -152,7 +137,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1282"
     },
     {
-     "age_days": 3175,
+     "age_days": 3176,
      "comments": 2,
      "created_at": "2018-03-16T20:23:56Z",
      "labels": [
@@ -166,7 +151,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1161"
     },
     {
-     "age_days": 3176,
+     "age_days": 3177,
      "comments": 5,
      "created_at": "2018-03-15T21:06:27Z",
      "labels": [
@@ -180,7 +165,7 @@
      "url": "https://github.com/deepchem/deepchem/issues/1159"
     },
     {
-     "age_days": 3228,
+     "age_days": 3229,
      "comments": 3,
      "created_at": "2018-01-22T17:54:20Z",
      "labels": [
@@ -192,6 +177,20 @@
      "status": "discussed",
      "title": "Enabling dc.feat to accept lists/arrays of smiles",
      "url": "https://github.com/deepchem/deepchem/issues/1035"
+    },
+    {
+     "age_days": 3348,
+     "comments": 3,
+     "created_at": "2017-09-25T15:53:45Z",
+     "labels": [
+      "Good First Contribution",
+      "Contribution Welcome"
+     ],
+     "number": 849,
+     "repo": "deepchem/deepchem",
+     "status": "discussed",
+     "title": "E3FP Featurizer",
+     "url": "https://github.com/deepchem/deepchem/issues/849"
     }
    ],
    "total_open": 39
@@ -200,8 +199,8 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 128,
-     "comments": 9,
+     "age_days": 129,
+     "comments": 10,
      "created_at": "2026-07-19T12:44:26Z",
      "labels": [
       "priority/p2",
@@ -229,7 +228,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 1866,
+     "age_days": 1867,
      "comments": 16,
      "created_at": "2021-10-15T08:08:21Z",
      "labels": [
@@ -244,7 +243,7 @@
      "url": "https://github.com/kubevirt/kubevirt/issues/6617"
     },
     {
-     "age_days": 1979,
+     "age_days": 1980,
      "comments": 9,
      "created_at": "2021-06-24T15:24:01Z",
      "labels": [
@@ -270,7 +269,7 @@
    "open_to_newcomers": 5,
    "shown": [
     {
-     "age_days": 757,
+     "age_days": 758,
      "comments": 13,
      "created_at": "2024-10-28T14:33:32Z",
      "labels": [
@@ -288,7 +287,7 @@
      "url": "https://github.com/meshery/meshery/issues/12500"
     },
     {
-     "age_days": 762,
+     "age_days": 763,
      "comments": 12,
      "created_at": "2024-10-23T13:42:36Z",
      "labels": [
@@ -306,7 +305,7 @@
      "url": "https://github.com/meshery/meshery/issues/12461"
     },
     {
-     "age_days": 763,
+     "age_days": 764,
      "comments": 13,
      "created_at": "2024-10-22T14:51:07Z",
      "labels": [
@@ -324,7 +323,7 @@
      "url": "https://github.com/meshery/meshery/issues/12455"
     },
     {
-     "age_days": 763,
+     "age_days": 764,
      "comments": 10,
      "created_at": "2024-10-22T14:30:55Z",
      "labels": [
@@ -342,7 +341,7 @@
      "url": "https://github.com/meshery/meshery/issues/12451"
     },
     {
-     "age_days": 1007,
+     "age_days": 1008,
      "comments": 29,
      "created_at": "2024-02-21T18:41:16Z",
      "labels": [
@@ -383,7 +382,7 @@
    "open_to_newcomers": 7,
    "shown": [
     {
-     "age_days": 239,
+     "age_days": 240,
      "comments": 5,
      "created_at": "2026-03-30T14:26:13Z",
      "labels": [
@@ -396,20 +395,20 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3243"
     },
     {
-     "age_days": 244,
-     "comments": 3,
-     "created_at": "2026-03-25T06:24:01Z",
+     "age_days": 245,
+     "comments": 2,
+     "created_at": "2026-03-25T06:26:42Z",
      "labels": [
       "good first issue"
      ],
-     "number": 3168,
+     "number": 3169,
      "repo": "DIGI-UW/OpenELIS-Global-2",
      "status": "discussed",
-     "title": "SourceOfSampleServiceTest makes real network calls -SocketTimeoutException on analyzer ID 1",
-     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3168"
+     "title": "AnalyzerQueryServiceIntegrationTest relies on non-existent fixture data (IDs 999901–999903)",
+     "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3169"
     },
     {
-     "age_days": 244,
+     "age_days": 245,
      "comments": 2,
      "created_at": "2026-03-25T06:21:14Z",
      "labels": [
@@ -422,7 +421,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3167"
     },
     {
-     "age_days": 277,
+     "age_days": 278,
      "comments": 6,
      "created_at": "2026-02-20T13:22:10Z",
      "labels": [
@@ -435,7 +434,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2895"
     },
     {
-     "age_days": 277,
+     "age_days": 278,
      "comments": 5,
      "created_at": "2026-02-20T13:14:23Z",
      "labels": [
@@ -448,7 +447,7 @@
      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892"
     },
     {
-     "age_days": 305,
+     "age_days": 306,
      "comments": 5,
      "created_at": "2026-01-23T07:32:04Z",
      "labels": [
@@ -467,7 +466,7 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1166,
+     "age_days": 1167,
      "comments": 34,
      "created_at": "2023-09-15T02:35:09Z",
      "labels": [
@@ -495,7 +494,7 @@
    "open_to_newcomers": 2,
    "shown": [
     {
-     "age_days": 3134,
+     "age_days": 3135,
      "comments": 6,
      "created_at": "2018-04-26T15:13:27Z",
      "labels": [
@@ -509,7 +508,7 @@
      "url": "https://github.com/eclipse-sw360/sw360/issues/149"
     },
     {
-     "age_days": 3134,
+     "age_days": 3135,
      "comments": 4,
      "created_at": "2018-04-26T15:08:24Z",
      "labels": [
@@ -529,21 +528,18 @@
    "open_to_newcomers": 1,
    "shown": [
     {
-     "age_days": 1394,
-     "comments": 21,
-     "created_at": "2023-01-30T21:29:00Z",
+     "age_days": 1370,
+     "comments": 20,
+     "created_at": "2023-02-24T01:05:56Z",
      "labels": [
-      "bug",
       "help wanted",
-      "question",
-      "needs reproducer",
-      "area: message feed (UI)"
+      "area: modals and overlays"
      ],
-     "number": 24228,
+     "number": 24469,
      "repo": "zulip/zulip",
      "status": "discussed",
-     "title": "Re-rendering issue when clicking on the topic name.",
-     "url": "https://github.com/zulip/zulip/issues/24228"
+     "title": "Popups show as previous narrow state in browser history (Drafts, Settings, Streams, Shortcuts)",
+     "url": "https://github.com/zulip/zulip/issues/24469"
     }
    ],
    "total_open": 50
